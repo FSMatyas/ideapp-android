@@ -1,0 +1,226 @@
+[
+    {
+        "merged": "com.example.ideapp-debug-58:/color_nav_item_color.xml.flat",
+        "source": "com.example.ideapp-main-60:/color/nav_item_color.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_ic_email.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/ic_email.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_ic_home.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/ic_home.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_status_rejected.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/status_rejected.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_ic_check.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/ic_check.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_ic_notification.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/ic_notification.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/mipmap-xxhdpi_ic_launcher.xml.flat",
+        "source": "com.example.ideapp-main-60:/mipmap-xxhdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_ic_person.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/ic_person.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/layout_fragment_my_apps.xml.flat",
+        "source": "com.example.ideapp-main-60:/layout/fragment_my_apps.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/mipmap-xxxhdpi_ic_launcher_round.xml.flat",
+        "source": "com.example.ideapp-main-60:/mipmap-xxxhdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_ic_lock.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/ic_lock.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_circle_background.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/circle_background.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_ic_add.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/ic_add.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/layout_fragment_category_detail.xml.flat",
+        "source": "com.example.ideapp-main-60:/layout/fragment_category_detail.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_ic_star.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/ic_star.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.ideapp-main-60:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_ic_facebook.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/ic_facebook.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_ic_category.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/ic_category.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_status_badge_development.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/status_badge_development.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.ideapp-main-60:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/mipmap-mdpi_ic_launcher_round.xml.flat",
+        "source": "com.example.ideapp-main-60:/mipmap-mdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/mipmap-xhdpi_ic_launcher_round.xml.flat",
+        "source": "com.example.ideapp-main-60:/mipmap-xhdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_ic_thumb_up.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/ic_thumb_up.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_status_in_development.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/status_in_development.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/mipmap-hdpi_ic_launcher.xml.flat",
+        "source": "com.example.ideapp-main-60:/mipmap-hdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_ic_app_logo.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/ic_app_logo.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/layout_example_card_layout.xml.flat",
+        "source": "com.example.ideapp-main-60:/layout/example_card_layout.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/mipmap-xxhdpi_ic_launcher_round.xml.flat",
+        "source": "com.example.ideapp-main-60:/mipmap-xxhdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/mipmap-hdpi_ic_launcher_round.xml.flat",
+        "source": "com.example.ideapp-main-60:/mipmap-hdpi/ic_launcher_round.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_ic_settings.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/ic_settings.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_status_badge_new.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/status_badge_new.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/mipmap-mdpi_ic_launcher.xml.flat",
+        "source": "com.example.ideapp-main-60:/mipmap-mdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/mipmap-xhdpi_ic_launcher.xml.flat",
+        "source": "com.example.ideapp-main-60:/mipmap-xhdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_status_completed.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/status_completed.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/layout_example_form_layout.xml.flat",
+        "source": "com.example.ideapp-main-60:/layout/example_form_layout.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/layout_activity_main.xml.flat",
+        "source": "com.example.ideapp-main-60:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_status_approved.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/status_approved.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/layout_dialog_submit_idea.xml.flat",
+        "source": "com.example.ideapp-main-60:/layout/dialog_submit_idea.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_ic_google.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/ic_google.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/xml_backup_rules.xml.flat",
+        "source": "com.example.ideapp-main-60:/xml/backup_rules.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_status_testing.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/status_testing.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/layout_example_welcome_screen.xml.flat",
+        "source": "com.example.ideapp-main-60:/layout/example_welcome_screen.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_ic_comment.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/ic_comment.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_ic_download.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/ic_download.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_ic_apps.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/ic_apps.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/menu_bottom_navigation.xml.flat",
+        "source": "com.example.ideapp-main-60:/menu/bottom_navigation.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.ideapp-main-60:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/layout_fragment_home.xml.flat",
+        "source": "com.example.ideapp-main-60:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_status_pending.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/status_pending.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/layout_fragment_categories.xml.flat",
+        "source": "com.example.ideapp-main-60:/layout/fragment_categories.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_circle_background_small.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/circle_background_small.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_status_badge_completed.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/status_badge_completed.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/mipmap-xxxhdpi_ic_launcher.xml.flat",
+        "source": "com.example.ideapp-main-60:/mipmap-xxxhdpi/ic_launcher.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/layout_item_idea_card.xml.flat",
+        "source": "com.example.ideapp-main-60:/layout/item_idea_card.xml"
+    }
+]

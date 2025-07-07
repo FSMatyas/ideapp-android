@@ -1,0 +1,114 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.LetsMakeAnApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/text_on_primary</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/accent_color</item>
+        <item name="colorSecondaryVariant">@color/accent_dark</item>
+        <item name="colorOnSecondary">@color/text_white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primary_color</item>
+        <!-- Background colors -->
+        <item name="android:windowBackground">@color/background_light</item>
+        <item name="colorSurface">@color/background_card</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+    </style>
+
+    <!-- App Toolbar Style -->
+    <style name="AppToolbarStyle" parent="Widget.Material3.Toolbar">
+        <item name="titleTextColor">@color/text_white</item>
+        <item name="android:background">@color/primary_color</item>
+        <item name="titleTextAppearance">@style/AppTextStyle.Toolbar</item>
+    </style>
+
+    <!-- Custom Button Styles -->
+    <style name="AppButtonStyle" parent="Widget.Material3.Button">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="backgroundTint">@color/primary_color</item>
+    </style>
+
+    <style name="AppButtonStyle.Submit" parent="AppButtonStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_height">56dp</item>
+        <item name="cornerRadius">16dp</item>
+        <item name="backgroundTint">@color/accent_color</item>
+    </style>
+
+    <style name="AppButtonStyle.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="strokeColor">@color/primary_color</item>
+        <item name="android:textColor">@color/primary_color</item>
+    </style>
+
+    <style name="AppButtonStyle.Primary" parent="AppButtonStyle">
+        <item name="backgroundTint">@color/primary_color</item>
+        <item name="android:textColor">@color/text_white</item>
+    </style>
+
+    <!-- Text Styles -->
+    <style name="AppTextStyle">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="fontFamily">sans-serif</item>
+    </style>
+
+    <style name="AppTextStyle.Toolbar" parent="AppTextStyle">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/text_white</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="AppTextStyle.Headline" parent="AppTextStyle">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="AppTextStyle.Title" parent="AppTextStyle">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTextStyle.Body" parent="AppTextStyle">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="AppTextStyle.Caption" parent="AppTextStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/text_secondary</item>
+    </style>
+
+    <!-- Card Styles -->
+    <style name="AppCardStyle" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardBackgroundColor">@color/background_card</item>
+    </style>
+
+    <style name="AppCardStyle.Submit" parent="AppCardStyle">
+        <item name="cardBackgroundColor">@color/background_submit</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">6dp</item>
+    </style>
+
+    <!-- Navigation Styles -->
+    <style name="AppBottomNavStyle" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/nav_background</item>
+        <item name="itemIconTint">@color/nav_item_color</item>
+        <item name="itemTextColor">@color/nav_item_color</item>
+        <item name="labelVisibilityMode">labeled</item>
+    </style>
+
+</resources>

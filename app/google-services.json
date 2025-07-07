@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1063753197192",
+    "project_id": "ideaapps-73f36",
+    "storage_bucket": "ideaapps-73f36.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1063753197192:android:08e012d3a4827004b2a13d",
+        "android_client_info": {
+          "package_name": "com.example.ideapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaFYzDjwaBVQpLM7p2gpxmplnW84_A0qI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

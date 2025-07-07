@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.ideapp-mergeDebugResources-56:/values-ldltr-v21/values-ldltr-v21.xml",
+            "map": [
+                {
+                    "source": "I:\\Androidcache\\GradleCache\\caches\\8.13\\transforms\\c33f9b986c66f5edbb7a265365f7bc34\\transformed\\appcompat-1.6.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "112",
+                        "endOffsets": "163"
+                    }
+                }
+            ]
+        }
+    ]
+}

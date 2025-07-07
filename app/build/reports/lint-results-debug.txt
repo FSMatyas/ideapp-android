@@ -1,0 +1,752 @@
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\build.gradle:15: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        targetSdk 34
+        ~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application or sdk runs on a version of Android that is more
+   recent than your targetSdkVersion specifies that it has been tested with,
+   various compatibility modes kick in. This ensures that your application
+   continues to work, but it may look out of place. For example, if the
+   targetSdkVersion is less than 14, your app may get an option button in the
+   UI.
+
+   To fix this issue, set the targetSdkVersion to the highest available value.
+   Then test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\build.gradle:10: Warning: A newer version of compileSdkVersion than 34 is available: 36 [GradleDependency]
+    compileSdk 34
+    ~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\build.gradle:42: Warning: A newer version of androidx.core:core-ktx than 1.12.0 is available: 1.16.0 [GradleDependency]
+    implementation 'androidx.core:core-ktx:1.12.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\build.gradle:43: Warning: A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.1 [GradleDependency]
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\build.gradle:44: Warning: A newer version of com.google.android.material:material than 1.11.0 is available: 1.12.0 [GradleDependency]
+    implementation 'com.google.android.material:material:1.11.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\build.gradle:45: Warning: A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1 [GradleDependency]
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\build.gradle:48: Warning: A newer version of com.google.firebase:firebase-bom than 32.7.0 is available: 33.16.0 [GradleDependency]
+    implementation platform('com.google.firebase:firebase-bom:32.7.0')
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\build.gradle:54: Warning: A newer version of androidx.navigation:navigation-fragment-ktx than 2.7.6 is available: 2.9.1 [GradleDependency]
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.7.6'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\build.gradle:55: Warning: A newer version of androidx.navigation:navigation-ui-ktx than 2.7.6 is available: 2.9.1 [GradleDependency]
+    implementation 'androidx.navigation:navigation-ui-ktx:2.7.6'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\build.gradle:58: Warning: A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.7.0 is available: 2.9.1 [GradleDependency]
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\build.gradle:59: Warning: A newer version of androidx.lifecycle:lifecycle-livedata-ktx than 2.7.0 is available: 2.9.1 [GradleDependency]
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.7.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\build.gradle:62: Warning: A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1 [GradleDependency]
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\build.gradle:63: Warning: A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1 [GradleDependency]
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\values-night\themes.xml:13: Warning: Unnecessary; SDK_INT is always >= 21 [ObsoleteSdkInt]
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+                                            ~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\values\themes.xml:13: Warning: Unnecessary; SDK_INT is always >= 21 [ObsoleteSdkInt]
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primary_color</item>
+                                            ~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ObsoleteSdkInt":
+   This check flags version checks that are not necessary, because the
+   minSdkVersion (or surrounding known API level) is already at least as high
+   as the version checked for.
+
+   Similarly, it also looks for resources in -vNN folders, such as values-v14
+   where the version qualifier is less than or equal to the minSdkVersion,
+   where the contents should be merged into the best folder.
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_card_layout.xml:66: Warning: This tag and its children can be replaced by one <TextView/> and a compound drawable [UseCompoundDrawables]
+                <LinearLayout
+                 ~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_card_layout.xml:101: Warning: This tag and its children can be replaced by one <TextView/> and a compound drawable [UseCompoundDrawables]
+                <LinearLayout
+                 ~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\item_idea_card.xml:74: Warning: This tag and its children can be replaced by one <TextView/> and a compound drawable [UseCompoundDrawables]
+        <LinearLayout
+         ~~~~~~~~~~~~
+
+   Explanation for issues of type "UseCompoundDrawables":
+   A LinearLayout which contains an ImageView and a TextView can be more
+   efficiently handled as a compound drawable (a single TextView, using the
+   drawableTop, drawableLeft, drawableRight and/or drawableBottom attributes
+   to draw one or more images adjacent to the text).
+
+   If the two widgets are offset from each other with margins, this can be
+   replaced with a drawablePadding attribute.
+
+   There's a lint quickfix to perform this conversion in the Eclipse plugin.
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\activity_main.xml:7: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme_LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\dialog_submit_idea.xml:6: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme.LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_card_layout.xml:7: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme.LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_form_layout.xml:7: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme.LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_welcome_screen.xml:7: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme_LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:6: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme.LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_category_detail.xml:6: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme.LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_home.xml:7: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme.LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:6: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme.LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "Overdraw":
+   If you set a background drawable on a root view, then you should use a
+   custom theme where the theme background is null. Otherwise, the theme
+   background will be painted first, only to have your custom background
+   completely cover it; this is called "overdraw".
+
+   NOTE: This detector relies on figuring out which layouts are associated
+   with which activities based on scanning the Java code, and it's currently
+   doing that using an inexact pattern matching algorithm. Therefore, it can
+   incorrectly conclude which activity the layout is associated with and then
+   wrongly complain that a background-theme is hidden.
+
+   If you want your custom background on multiple pages, then you should
+   consider making a custom theme with your custom background and just using
+   that theme instead of a root element background.
+
+   Of course it's possible that your custom drawable is translucent and you
+   want it to be mixed with the background. However, you will get better
+   performance if you pre-mix the background with your drawable and use that
+   resulting image or color as a custom theme background instead.
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\drawable\circle_background.xml:2: Warning: The resource R.drawable.circle_background appears to be unused [UnusedResources]
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\drawable\circle_background_small.xml:2: Warning: The resource R.drawable.circle_background_small appears to be unused [UnusedResources]
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\values\colors.xml:5: Warning: The resource R.color.purple_500 appears to be unused [UnusedResources]
+    <color name="purple_500">#FF6200EE</color>
+           ~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\values\colors.xml:8: Warning: The resource R.color.teal_700 appears to be unused [UnusedResources]
+    <color name="teal_700">#FF018786</color>
+           ~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\values\colors.xml:10: Warning: The resource R.color.white appears to be unused [UnusedResources]
+    <color name="white">#FFFFFFFF</color>
+           ~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\values\colors.xml:15: Warning: The resource R.color.primary_light appears to be unused [UnusedResources]
+    <color name="primary_light">#FFFFCC80</color>
+           ~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\values\colors.xml:19: Warning: The resource R.color.accent_light appears to be unused [UnusedResources]
+    <color name="accent_light">#FFB388FF</color>
+           ~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\values\colors.xml:24: Warning: The resource R.color.background_white appears to be unused [UnusedResources]
+    <color name="background_white">#FFFFFFFF</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\values\colors.xml:31: Warning: The resource R.color.text_hint appears to be unused [UnusedResources]
+    <color name="text_hint">#FFADB5BD</color>
+           ~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\values\colors.xml:46: Warning: The resource R.color.success_color appears to be unused [UnusedResources]
+    <color name="success_color">#FF4CAF50</color>
+           ~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\values\colors.xml:47: Warning: The resource R.color.warning_color appears to be unused [UnusedResources]
+    <color name="warning_color">#FFFFC107</color>
+           ~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\values\colors.xml:48: Warning: The resource R.color.error_color appears to be unused [UnusedResources]
+    <color name="error_color">#FFDC3545</color>
+           ~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\values\colors.xml:49: Warning: The resource R.color.info_color appears to be unused [UnusedResources]
+    <color name="info_color">#FF17A2B8</color>
+           ~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\values\colors.xml:52: Warning: The resource R.color.divider_color appears to be unused [UnusedResources]
+    <color name="divider_color">#FFE9ECEF</color>
+           ~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\values\colors.xml:53: Warning: The resource R.color.border_color appears to be unused [UnusedResources]
+    <color name="border_color">#FFDEE2E6</color>
+           ~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_card_layout.xml:2: Warning: The resource R.layout.example_card_layout appears to be unused [UnusedResources]
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_form_layout.xml:2: Warning: The resource R.layout.example_form_layout appears to be unused [UnusedResources]
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_welcome_screen.xml:2: Warning: The resource R.layout.example_welcome_screen appears to be unused [UnusedResources]
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\drawable\ic_app_logo.xml:2: Warning: The resource R.drawable.ic_app_logo appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\drawable\ic_check.xml:2: Warning: The resource R.drawable.ic_check appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\drawable\ic_comment.xml:1: Warning: The resource R.drawable.ic_comment appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\drawable\ic_email.xml:2: Warning: The resource R.drawable.ic_email appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\drawable\ic_facebook.xml:2: Warning: The resource R.drawable.ic_facebook appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\drawable\ic_google.xml:2: Warning: The resource R.drawable.ic_google appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\drawable\ic_lock.xml:2: Warning: The resource R.drawable.ic_lock appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\drawable\ic_notification.xml:2: Warning: The resource R.drawable.ic_notification appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\drawable\ic_person.xml:2: Warning: The resource R.drawable.ic_person appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\drawable\ic_settings.xml:2: Warning: The resource R.drawable.ic_settings appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\drawable\ic_star.xml:2: Warning: The resource R.drawable.ic_star appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\drawable\status_approved.xml:2: Warning: The resource R.drawable.status_approved appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\drawable\status_completed.xml:2: Warning: The resource R.drawable.status_completed appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\drawable\status_in_development.xml:2: Warning: The resource R.drawable.status_in_development appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\drawable\status_pending.xml:2: Warning: The resource R.drawable.status_pending appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\drawable\status_rejected.xml:2: Warning: The resource R.drawable.status_rejected appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\drawable\status_testing.xml:2: Warning: The resource R.drawable.status_testing appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+   Available options:
+
+   **skip-libraries** (default is true):
+   Whether the unused resource check should skip reporting unused resources in libraries.
+
+   Many libraries will declare resources that are part of the library surface; other modules depending on the library will also reference the resources. To avoid reporting all these resources as unused (in the context of a library), the unused resource check normally skips reporting unused resources in libraries. Instead, run the unused resource check on the consuming app module (along with `checkDependencies=true`).
+
+   However, there are cases where you want to check that all the resources declared in a library are used; in that case, you can disable the skip option.
+
+   To configure this option, use a `lint.xml` file with an <option> like this:
+
+   ```xml
+   <lint>
+       <issue id="UnusedResources">
+           <option name="skip-libraries" value="true" />
+       </issue>
+   </lint>
+   ```
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\mipmap-anydpi-v26\ic_launcher.xml:2: Warning: The application adaptive icon is missing a monochrome tag [MonochromeLauncherIcon]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\mipmap-anydpi-v26\ic_launcher_round.xml:2: Warning: The application adaptive roundIcon is missing a monochrome tag [MonochromeLauncherIcon]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+
+   Explanation for issues of type "MonochromeLauncherIcon":
+   If android:roundIcon and android:icon are both in your manifest, you must
+   either remove the reference to android:roundIcon if it is not needed; or,
+   supply the monochrome icon in the drawable defined by the android:roundIcon
+   and android:icon attribute.
+
+   For example, if android:roundIcon and android:icon are both in the
+   manifest, a launcher might choose to use android:roundIcon over
+   android:icon to display the adaptive app icon. Therefore, your themed
+   application iconwill not show if your monochrome attribute is not also
+   specified in android:roundIcon.
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:91: Warning: Avoid using sizes smaller than 11sp: 10sp [SmallSp]
+                        android:textSize="10sp" />
+                        ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:170: Warning: Avoid using sizes smaller than 11sp: 10sp [SmallSp]
+                        android:textSize="10sp" />
+                        ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:275: Warning: Avoid using sizes smaller than 11sp: 10sp [SmallSp]
+                        android:textSize="10sp" />
+                        ~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SmallSp":
+   Avoid using sizes smaller than 11sp.
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_card_layout.xml:73: Warning: Missing contentDescription attribute on image [ContentDescription]
+                    <ImageView
+                     ~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_card_layout.xml:108: Warning: Missing contentDescription attribute on image [ContentDescription]
+                    <ImageView
+                     ~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_card_layout.xml:171: Warning: Missing contentDescription attribute on image [ContentDescription]
+                        <ImageView
+                         ~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_card_layout.xml:214: Warning: Missing contentDescription attribute on image [ContentDescription]
+                        <ImageView
+                         ~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\item_idea_card.xml:81: Warning: Missing contentDescription attribute on image [ContentDescription]
+            <ImageView
+             ~~~~~~~~~
+
+   Explanation for issues of type "ContentDescription":
+   Non-textual widgets like ImageViews and ImageButtons should use the
+   contentDescription attribute to specify a textual description of the widget
+   such that screen readers and other accessibility tools can adequately
+   describe the user interface.
+
+   Note that elements in application screens that are purely decorative and do
+   not provide any content or enable a user action should not have
+   accessibility content descriptions. In this case, set their descriptions to
+   @null. If your app's minSdkVersion is 16 or higher, you can instead set
+   these graphical elements' android:importantForAccessibility attributes to
+   no.
+
+   Note that for text fields, you should not set both the hint and the
+   contentDescription attributes since the hint will never be shown. Just set
+   the hint.
+
+   https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\dialog_submit_idea.xml:66: Warning: Missing accessibility label: provide either a view with an android:labelFor that references this view or provide an android:hint [LabelFor]
+            <AutoCompleteTextView
+             ~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "LabelFor":
+   Editable text fields should provide an android:hint or, provided your
+   minSdkVersion is at least 17, they may be referenced by a view with a
+   android:labelFor attribute.
+
+   When using android:labelFor, be sure to provide an android:text or an
+   android:contentDescription.
+
+   If your view is labeled but by a label in a different layout which includes
+   this one, just suppress this warning from lint.
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\java\com\example\ideapp\adapter\IdeaAdapter.kt:45: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            tvCategory.text = getCategoryIcon(idea.category) + " " + idea.category.replaceFirstChar { 
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\java\com\example\ideapp\adapter\IdeaAdapter.kt:45: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            tvCategory.text = getCategoryIcon(idea.category) + " " + idea.category.replaceFirstChar { 
+                              ^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\java\com\example\ideapp\adapter\IdeaAdapter.kt:48: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            tvSubmitter.text = "by ${idea.submitterName}"
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\java\com\example\ideapp\adapter\IdeaAdapter.kt:48: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            tvSubmitter.text = "by ${idea.submitterName}"
+                                ~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\java\com\example\ideapp\adapter\IdeaAdapter.kt:56: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                tvDate.text = "Just now"
+                               ~~~~~~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\activity_main.xml:16: Warning: Hardcoded string "IdeaApps", should use @string resource [HardcodedText]
+        android:title="IdeaApps"
+        ~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\menu\bottom_navigation.xml:5: Warning: Hardcoded string "Home", should use @string resource [HardcodedText]
+        android:title="Home"
+        ~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\menu\bottom_navigation.xml:9: Warning: Hardcoded string "Categories", should use @string resource [HardcodedText]
+        android:title="Categories"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\menu\bottom_navigation.xml:13: Warning: Hardcoded string "My Apps", should use @string resource [HardcodedText]
+        android:title="My Apps"
+        ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\dialog_submit_idea.xml:21: Warning: Hardcoded string "Share Your Problem", should use @string resource [HardcodedText]
+            android:text="Share Your Problem"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\dialog_submit_idea.xml:30: Warning: Hardcoded string "Tell us about a problem you face daily. We'll build you a custom app to solve it!", should use @string resource [HardcodedText]
+            android:text="Tell us about a problem you face daily. We'll build you a custom app to solve it!"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\dialog_submit_idea.xml:41: Warning: Hardcoded string "App Idea Title", should use @string resource [HardcodedText]
+            android:hint="App Idea Title"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\dialog_submit_idea.xml:62: Warning: Hardcoded string "Category", should use @string resource [HardcodedText]
+            android:hint="Category"
+            ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\dialog_submit_idea.xml:82: Warning: Hardcoded string "Describe your problem in detail", should use @string resource [HardcodedText]
+            android:hint="Describe your problem in detail"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\dialog_submit_idea.xml:108: Warning: Hardcoded string "Your Name", should use @string resource [HardcodedText]
+            android:hint="Your Name"
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\dialog_submit_idea.xml:128: Warning: Hardcoded string "Email Address", should use @string resource [HardcodedText]
+            android:hint="Email Address"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\dialog_submit_idea.xml:164: Warning: Hardcoded string "Cancel", should use @string resource [HardcodedText]
+                android:text="Cancel" />
+                ~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\dialog_submit_idea.xml:173: Warning: Hardcoded string "Submit Idea", should use @string resource [HardcodedText]
+                android:text="Submit Idea"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_card_layout.xml:33: Warning: Hardcoded string "Dashboard", should use @string resource [HardcodedText]
+                    android:text="Dashboard"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_card_layout.xml:42: Warning: Hardcoded string "Welcome back! Here's what's happening.", should use @string resource [HardcodedText]
+                    android:text="Welcome back! Here's what's happening."
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_card_layout.xml:83: Warning: Hardcoded string "Favorites", should use @string resource [HardcodedText]
+                        android:text="Favorites"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_card_layout.xml:118: Warning: Hardcoded string "Settings", should use @string resource [HardcodedText]
+                        android:text="Settings"
+                        ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_card_layout.xml:148: Warning: Hardcoded string "Recent Activities", should use @string resource [HardcodedText]
+                    android:text="Recent Activities"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_card_layout.xml:189: Warning: Hardcoded string "Task completed", should use @string resource [HardcodedText]
+                                android:text="Task completed"
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_card_layout.xml:197: Warning: Hardcoded string "2 minutes ago", should use @string resource [HardcodedText]
+                                android:text="2 minutes ago"
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_card_layout.xml:232: Warning: Hardcoded string "New message received", should use @string resource [HardcodedText]
+                                android:text="New message received"
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_card_layout.xml:240: Warning: Hardcoded string "5 minutes ago", should use @string resource [HardcodedText]
+                                android:text="5 minutes ago"
+                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_form_layout.xml:21: Warning: Hardcoded string "Create Account", should use @string resource [HardcodedText]
+            android:text="Create Account"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_form_layout.xml:29: Warning: Hardcoded string "Fill in the information below to get started", should use @string resource [HardcodedText]
+            android:text="Fill in the information below to get started"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_form_layout.xml:38: Warning: Hardcoded string "Full Name", should use @string resource [HardcodedText]
+            android:hint="Full Name"
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_form_layout.xml:57: Warning: Hardcoded string "Email Address", should use @string resource [HardcodedText]
+            android:hint="Email Address"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_form_layout.xml:76: Warning: Hardcoded string "Password", should use @string resource [HardcodedText]
+            android:hint="Password"
+            ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_form_layout.xml:110: Warning: Hardcoded string "I agree to the Terms of Service and Privacy Policy", should use @string resource [HardcodedText]
+                android:text="I agree to the Terms of Service and Privacy Policy"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_form_layout.xml:121: Warning: Hardcoded string "Create Account", should use @string resource [HardcodedText]
+            android:text="Create Account" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_form_layout.xml:128: Warning: Hardcoded string "Sign In Instead", should use @string resource [HardcodedText]
+            android:text="Sign In Instead" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_form_layout.xml:142: Warning: Hardcoded string "Or continue with", should use @string resource [HardcodedText]
+            android:text="Or continue with"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_form_layout.xml:157: Warning: Hardcoded string "Google", should use @string resource [HardcodedText]
+                android:text="Google"
+                ~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_form_layout.xml:167: Warning: Hardcoded string "Facebook", should use @string resource [HardcodedText]
+                android:text="Facebook"
+                ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_welcome_screen.xml:18: Warning: Hardcoded string "Welcome tonLet's make an app!", should use @string resource [HardcodedText]
+        android:text="Welcome to\nLet's make an app!"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_welcome_screen.xml:35: Warning: Hardcoded string "Build amazing apps step by step", should use @string resource [HardcodedText]
+        android:text="Build amazing apps step by step"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_welcome_screen.xml:52: Warning: Hardcoded string "App logo", should use @string resource [HardcodedText]
+        android:contentDescription="App logo"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_welcome_screen.xml:65: Warning: Hardcoded string "Get Started", should use @string resource [HardcodedText]
+        android:text="Get Started"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\example_welcome_screen.xml:81: Warning: Hardcoded string "Learn More", should use @string resource [HardcodedText]
+        android:text="Learn More"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:20: Warning: Hardcoded string "Browse by Category", should use @string resource [HardcodedText]
+            android:text="Browse by Category"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:28: Warning: Hardcoded string "Explore ideas by different problem areas", should use @string resource [HardcodedText]
+            android:text="Explore ideas by different problem areas"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:62: Warning: Hardcoded string "📱", should use @string resource [HardcodedText]
+                            android:text="📱"
+                            ~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:70: Warning: Hardcoded string "Productivity", should use @string resource [HardcodedText]
+                            android:text="Productivity"
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:78: Warning: Hardcoded string "12 ideas", should use @string resource [HardcodedText]
+                            android:text="12 ideas"
+                            ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:103: Warning: Hardcoded string "👨‍👩‍👧‍👦", should use @string resource [HardcodedText]
+                            android:text="👨‍👩‍👧‍👦"
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:111: Warning: Hardcoded string "Family", should use @string resource [HardcodedText]
+                            android:text="Family"
+                            ~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:119: Warning: Hardcoded string "8 ideas", should use @string resource [HardcodedText]
+                            android:text="8 ideas"
+                            ~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:153: Warning: Hardcoded string "💼", should use @string resource [HardcodedText]
+                            android:text="💼"
+                            ~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:161: Warning: Hardcoded string "Business", should use @string resource [HardcodedText]
+                            android:text="Business"
+                            ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:169: Warning: Hardcoded string "15 ideas", should use @string resource [HardcodedText]
+                            android:text="15 ideas"
+                            ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:194: Warning: Hardcoded string "🎮", should use @string resource [HardcodedText]
+                            android:text="🎮"
+                            ~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:202: Warning: Hardcoded string "Entertainment", should use @string resource [HardcodedText]
+                            android:text="Entertainment"
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:210: Warning: Hardcoded string "6 ideas", should use @string resource [HardcodedText]
+                            android:text="6 ideas"
+                            ~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:244: Warning: Hardcoded string "💰", should use @string resource [HardcodedText]
+                            android:text="💰"
+                            ~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:252: Warning: Hardcoded string "Finance", should use @string resource [HardcodedText]
+                            android:text="Finance"
+                            ~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:260: Warning: Hardcoded string "9 ideas", should use @string resource [HardcodedText]
+                            android:text="9 ideas"
+                            ~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:285: Warning: Hardcoded string "🏥", should use @string resource [HardcodedText]
+                            android:text="🏥"
+                            ~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:293: Warning: Hardcoded string "Health", should use @string resource [HardcodedText]
+                            android:text="Health"
+                            ~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:301: Warning: Hardcoded string "4 ideas", should use @string resource [HardcodedText]
+                            android:text="4 ideas"
+                            ~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:334: Warning: Hardcoded string "🎓", should use @string resource [HardcodedText]
+                            android:text="🎓"
+                            ~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:342: Warning: Hardcoded string "Education", should use @string resource [HardcodedText]
+                            android:text="Education"
+                            ~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:350: Warning: Hardcoded string "7 ideas", should use @string resource [HardcodedText]
+                            android:text="7 ideas"
+                            ~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:375: Warning: Hardcoded string "🔧", should use @string resource [HardcodedText]
+                            android:text="🔧"
+                            ~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:383: Warning: Hardcoded string "Utilities", should use @string resource [HardcodedText]
+                            android:text="Utilities"
+                            ~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_categories.xml:391: Warning: Hardcoded string "11 ideas", should use @string resource [HardcodedText]
+                            android:text="11 ideas"
+                            ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_category_detail.xml:29: Warning: Hardcoded string "📱", should use @string resource [HardcodedText]
+                android:text="📱"
+                ~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_category_detail.xml:43: Warning: Hardcoded string "Productivity", should use @string resource [HardcodedText]
+                    android:text="Productivity"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_category_detail.xml:51: Warning: Hardcoded string "12 ideas in this category", should use @string resource [HardcodedText]
+                    android:text="12 ideas in this category" />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_category_detail.xml:70: Warning: Hardcoded string "Ideas in this Category", should use @string resource [HardcodedText]
+                android:text="Ideas in this Category" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_category_detail.xml:78: Warning: Hardcoded string "Sort by: Recent", should use @string resource [HardcodedText]
+                android:text="Sort by: Recent"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_category_detail.xml:118: Warning: Hardcoded string "🔍", should use @string resource [HardcodedText]
+                    android:text="🔍"
+                    ~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_category_detail.xml:126: Warning: Hardcoded string "No ideas in this category yet", should use @string resource [HardcodedText]
+                    android:text="No ideas in this category yet"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_category_detail.xml:134: Warning: Hardcoded string "Be the first to submit an idea in this category!", should use @string resource [HardcodedText]
+                    android:text="Be the first to submit an idea in this category!"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_home.xml:33: Warning: Hardcoded string "Got a problem? Let's solve it!", should use @string resource [HardcodedText]
+                    android:text="Got a problem? Let's solve it!"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_home.xml:42: Warning: Hardcoded string "Share your everyday problems and we'll build you a custom app to solve them - completely free!", should use @string resource [HardcodedText]
+                    android:text="Share your everyday problems and we'll build you a custom app to solve them - completely free!"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_home.xml:51: Warning: Hardcoded string "Share Your Problem", should use @string resource [HardcodedText]
+                    android:text="Share Your Problem"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_home.xml:72: Warning: Hardcoded string "Recent Ideas", should use @string resource [HardcodedText]
+                android:text="Recent Ideas" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_home.xml:78: Warning: Hardcoded string "See all", should use @string resource [HardcodedText]
+                android:text="See all"
+                ~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:20: Warning: Hardcoded string "My Ideas & Apps", should use @string resource [HardcodedText]
+            android:text="My Ideas &amp; Apps"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:28: Warning: Hardcoded string "Track your submitted ideas and download completed apps", should use @string resource [HardcodedText]
+            android:text="Track your submitted ideas and download completed apps"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:44: Warning: Hardcoded string "My Submitted Ideas", should use @string resource [HardcodedText]
+                android:text="My Submitted Ideas" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:50: Warning: Hardcoded string "3 total", should use @string resource [HardcodedText]
+                android:text="3 total"
+                ~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:80: Warning: Hardcoded string "Personal Recipe Organizer", should use @string resource [HardcodedText]
+                        android:text="Personal Recipe Organizer"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:89: Warning: Hardcoded string "In Development", should use @string resource [HardcodedText]
+                        android:text="In Development"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:100: Warning: Hardcoded string "Submitted 1 week ago • In development for 3 days", should use @string resource [HardcodedText]
+                    android:text="Submitted 1 week ago • In development for 3 days" />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:106: Warning: Hardcoded string "I need an app to organize my family recipes with photos, ingredients list, and cooking time.", should use @string resource [HardcodedText]
+                    android:text="I need an app to organize my family recipes with photos, ingredients list, and cooking time." />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:120: Warning: Hardcoded string "Est. completion: 3-5 days", should use @string resource [HardcodedText]
+                        android:text="Est. completion: 3-5 days"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:127: Warning: Hardcoded string "5 comments", should use @string resource [HardcodedText]
+                        android:text="5 comments" />
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:159: Warning: Hardcoded string "Quick Daily Journal", should use @string resource [HardcodedText]
+                        android:text="Quick Daily Journal"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:168: Warning: Hardcoded string "New", should use @string resource [HardcodedText]
+                        android:text="New"
+                        ~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:179: Warning: Hardcoded string "Submitted 2 days ago • Waiting for review", should use @string resource [HardcodedText]
+                    android:text="Submitted 2 days ago • Waiting for review" />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:185: Warning: Hardcoded string "A simple journal app where I can quickly write daily thoughts with mood tracking.", should use @string resource [HardcodedText]
+                    android:text="A simple journal app where I can quickly write daily thoughts with mood tracking." />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:199: Warning: Hardcoded string "Waiting for development start", should use @string resource [HardcodedText]
+                        android:text="Waiting for development start"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:206: Warning: Hardcoded string "1 comment", should use @string resource [HardcodedText]
+                        android:text="1 comment" />
+                        ~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:227: Warning: Hardcoded string "My Completed Apps", should use @string resource [HardcodedText]
+                android:text="My Completed Apps" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:233: Warning: Hardcoded string "1 ready", should use @string resource [HardcodedText]
+                android:text="1 ready"
+                ~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:264: Warning: Hardcoded string "Simple Password Generator", should use @string resource [HardcodedText]
+                        android:text="Simple Password Generator"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:273: Warning: Hardcoded string "Completed", should use @string resource [HardcodedText]
+                        android:text="Completed"
+                        ~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:284: Warning: Hardcoded string "Completed 2 weeks ago • Your personal copy", should use @string resource [HardcodedText]
+                    android:text="Completed 2 weeks ago • Your personal copy" />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:291: Warning: Hardcoded string "Generate secure passwords with customizable length and character sets.", should use @string resource [HardcodedText]
+                    android:text="Generate secure passwords with customizable length and character sets." />
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:297: Warning: Hardcoded string "Download My Free Copy", should use @string resource [HardcodedText]
+                    android:text="Download My Free Copy"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:305: Warning: Hardcoded string "Also available in Play Store • 47 people bought this app", should use @string resource [HardcodedText]
+                    android:text="Also available in Play Store • 47 people bought this app"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:332: Warning: Hardcoded string "💡", should use @string resource [HardcodedText]
+                    android:text="💡"
+                    ~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:340: Warning: Hardcoded string "Have more app ideas?", should use @string resource [HardcodedText]
+                    android:text="Have more app ideas?"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\fragment_my_apps.xml:348: Warning: Hardcoded string "Submit more ideas from the Home tab to get more custom apps built for you!", should use @string resource [HardcodedText]
+                    android:text="Submit more ideas from the Home tab to get more custom apps built for you!"
+                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\item_idea_card.xml:30: Warning: Hardcoded string "Idea Title", should use @string resource [HardcodedText]
+                android:text="Idea Title"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\item_idea_card.xml:37: Warning: Hardcoded string "Approved", should use @string resource [HardcodedText]
+                android:text="Approved"
+                ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\item_idea_card.xml:49: Warning: Hardcoded string "Category", should use @string resource [HardcodedText]
+            android:text="Category" />
+            ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\item_idea_card.xml:57: Warning: Hardcoded string "Submitted by Name", should use @string resource [HardcodedText]
+            android:text="Submitted by Name" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\item_idea_card.xml:65: Warning: Hardcoded string "Date", should use @string resource [HardcodedText]
+            android:text="Date" />
+            ~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\item_idea_card.xml:72: Warning: Hardcoded string "Idea description goes here...", should use @string resource [HardcodedText]
+            android:text="Idea description goes here..." />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\app\src\main\res\layout\item_idea_card.xml:93: Warning: Hardcoded string "0", should use @string resource [HardcodedText]
+                android:text="0" />
+                ~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+0 errors, 189 warnings

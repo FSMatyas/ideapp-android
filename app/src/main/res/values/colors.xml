@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material Theme Colors -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- App Theme Colors - Orange Primary -->
+    <color name="primary_color">#FFFF6F00</color>
+    <color name="primary_dark">#FFEF6C00</color>
+    <color name="primary_light">#FFFFCC80</color>
+    
+    <!-- Violet Accent -->
+    <color name="accent_color">#FF7C4DFF</color>
+    <color name="accent_light">#FFB388FF</color>
+    <color name="accent_dark">#FF651FFF</color>
+    
+    <!-- Background Colors -->
+    <color name="background_light">#FFF8F9FA</color>
+    <color name="background_white">#FFFFFFFF</color>
+    <color name="background_card">#FFFFFFFF</color>
+    <color name="background_submit">#FFFFF8E1</color>
+    
+    <!-- Text Colors -->
+    <color name="text_primary">#FF212529</color>
+    <color name="text_secondary">#FF6C757D</color>
+    <color name="text_hint">#FFADB5BD</color>
+    <color name="text_white">#FFFFFFFF</color>
+    <color name="text_on_primary">#FFFFFFFF</color>
+    
+    <!-- Status Colors -->
+    <color name="status_new">#FF4CAF50</color>
+    <color name="status_development">#FF2196F3</color>
+    <color name="status_completed">#FF9C27B0</color>
+    <color name="status_pending">#FFFFA726</color>
+    <color name="status_approved">#FF66BB6A</color>
+    <color name="status_in_development">#FF42A5F5</color>
+    <color name="status_testing">#FFAB47BC</color>
+    <color name="status_rejected">#FFEF5350</color>
+    
+    <!-- Supporting Colors -->
+    <color name="success_color">#FF4CAF50</color>
+    <color name="warning_color">#FFFFC107</color>
+    <color name="error_color">#FFDC3545</color>
+    <color name="info_color">#FF17A2B8</color>
+    
+    <!-- Border and Divider Colors -->
+    <color name="divider_color">#FFE9ECEF</color>
+    <color name="border_color">#FFDEE2E6</color>
+    
+    <!-- Navigation Colors -->
+    <color name="nav_background">#FFFFFFFF</color>
+    <color name="nav_selected">#FFFF6F00</color>
+    <color name="nav_unselected">#FF9E9E9E</color>
+</resources>
