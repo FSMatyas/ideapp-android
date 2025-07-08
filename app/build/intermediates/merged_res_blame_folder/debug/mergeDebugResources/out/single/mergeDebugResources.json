@@ -144,8 +144,16 @@
         "source": "com.example.ideapp-main-60:/drawable/status_completed.xml"
     },
     {
+        "merged": "com.example.ideapp-debug-58:/drawable_ic_bulb.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/ic_bulb.xml"
+    },
+    {
         "merged": "com.example.ideapp-debug-58:/layout_example_form_layout.xml.flat",
         "source": "com.example.ideapp-main-60:/layout/example_form_layout.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_top_shadow.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/top_shadow.xml"
     },
     {
         "merged": "com.example.ideapp-debug-58:/layout_activity_main.xml.flat",
@@ -158,6 +166,14 @@
     {
         "merged": "com.example.ideapp-debug-58:/layout_dialog_submit_idea.xml.flat",
         "source": "com.example.ideapp-main-60:/layout/dialog_submit_idea.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/layout_dialog_idea_detail.xml.flat",
+        "source": "com.example.ideapp-main-60:/layout/dialog_idea_detail.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/xml_network_security_config.xml.flat",
+        "source": "com.example.ideapp-main-60:/xml/network_security_config.xml"
     },
     {
         "merged": "com.example.ideapp-debug-58:/drawable_ic_google.xml.flat",
@@ -204,12 +220,20 @@
         "source": "com.example.ideapp-main-60:/drawable/status_pending.xml"
     },
     {
+        "merged": "com.example.ideapp-debug-58:/drawable_pagination_circle.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/pagination_circle.xml"
+    },
+    {
         "merged": "com.example.ideapp-debug-58:/layout_fragment_categories.xml.flat",
         "source": "com.example.ideapp-main-60:/layout/fragment_categories.xml"
     },
     {
         "merged": "com.example.ideapp-debug-58:/drawable_circle_background_small.xml.flat",
         "source": "com.example.ideapp-main-60:/drawable/circle_background_small.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-58:/drawable_pagination_circle_selected.xml.flat",
+        "source": "com.example.ideapp-main-60:/drawable/pagination_circle_selected.xml"
     },
     {
         "merged": "com.example.ideapp-debug-58:/drawable_status_badge_completed.xml.flat",

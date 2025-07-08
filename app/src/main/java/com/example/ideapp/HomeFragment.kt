@@ -13,7 +13,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.ideapp.adapter.IdeaAdapter
 import com.example.ideapp.data.Idea
 import com.example.ideapp.viewmodel.IdeaViewModel
-import com.google.android.material.button.MaterialButton
+import android.widget.TextView
+import kotlin.math.min
 
 class HomeFragment : Fragment() {
     
@@ -21,6 +22,11 @@ class HomeFragment : Fragment() {
     private lateinit var ideaAdapter: IdeaAdapter
     private lateinit var recyclerView: RecyclerView
     private lateinit var progressBar: ProgressBar
+    private lateinit var paginationContainer: ViewGroup
+
+    private var currentPage = 0
+    private val pageSize = 5
+    private var allIdeas: List<Idea> = emptyList()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -35,18 +41,17 @@ class HomeFragment : Fragment() {
         
         setupViews(view)
         setupRecyclerView()
+        paginationContainer = view.findViewById(R.id.paginationContainer)
         observeViewModel()
     }
     
     private fun setupViews(view: View) {
         recyclerView = view.findViewById(R.id.recyclerViewIdeas)
         progressBar = view.findViewById(R.id.progressBar)
-        
-        // Set up the submit idea button
-        val submitButton = view.findViewById<MaterialButton>(R.id.btnSubmitIdea)
+
+        val submitButton = view.findViewById<com.google.android.material.button.MaterialButton>(R.id.btnSubmitIdea)
         submitButton.setOnClickListener {
-            // Open the submission dialog
-            val dialog = SubmitIdeaDialogFragment.newInstance()
+            val dialog = com.example.ideapp.SubmitIdeaDialogFragment.newInstance()
             dialog.show(parentFragmentManager, "SubmitIdeaDialog")
         }
     }
@@ -65,7 +70,10 @@ class HomeFragment : Fragment() {
     private fun observeViewModel() {
         // Observe approved ideas
         viewModel.ideas.observe(viewLifecycleOwner) { ideas ->
-            ideaAdapter.submitList(ideas)
+            // Sort ideas by date (newest first)
+            allIdeas = ideas.sortedByDescending { it.createdAt?.toDate() }
+            updatePagedIdeas()
+            updatePaginationButtons()
         }
         
         // Observe loading state
@@ -91,8 +99,81 @@ class HomeFragment : Fragment() {
     }
     
     private fun onIdeaClick(idea: Idea) {
-        // TODO: Navigate to idea detail view
-        Toast.makeText(requireContext(), "Clicked on: ${idea.title}", Toast.LENGTH_SHORT).show()
+        val dialogView = LayoutInflater.from(requireContext())
+            .inflate(R.layout.dialog_idea_detail, null)
+
+        // Set data into dialog views
+        dialogView.findViewById<TextView>(R.id.tvDialogTitle).text = idea.title
+        dialogView.findViewById<TextView>(R.id.tvDialogCategory).text = getCategoryIcon(idea.category) + " " + idea.category.replaceFirstChar {
+            if (it.isLowerCase()) it.titlecase(java.util.Locale.getDefault()) else it.toString()
+        }
+        dialogView.findViewById<TextView>(R.id.tvDialogSubmitter).text = "by ${idea.submitterName}"
+        val dateText = idea.createdAt?.toDate()?.let {
+            java.text.SimpleDateFormat("MMM dd, yyyy", java.util.Locale.getDefault()).format(it)
+        } ?: "Just now"
+        dialogView.findViewById<TextView>(R.id.tvDialogDate).text = dateText
+        dialogView.findViewById<TextView>(R.id.tvDialogDescription).text = idea.description
+
+        val dialog = androidx.appcompat.app.AlertDialog.Builder(requireContext())
+            .setView(dialogView)
+            .create()
+        dialog.setCancelable(true)
+        dialog.setCanceledOnTouchOutside(true)
+        dialog.show()
+        // Make dialog background transparent
+        dialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
+    }
+
+    // Helper for category icon (moved from IdeaAdapter)
+    private fun getCategoryIcon(category: String): String {
+        return when (category.lowercase()) {
+            "productivity" -> "\uD83D\uDCBC" // 💼
+            "health" -> "\uD83C\uDFE5" // 🏥
+            "education" -> "\uD83C\uDF93" // 🎓
+            "social" -> "\uD83D\uDC65" // 👥
+            "entertainment" -> "\uD83C\uDFAC" // 🎬
+            "utility" -> "\uD83D\uDD27" // 🔧
+            "finance" -> "\uD83D\uDCB0" // 💰
+            "other" -> "\uD83D\uDCF1" // 📱
+            else -> "\uD83D\uDCF1" // 📱
+        }
+    }
+
+    private fun updatePagedIdeas() {
+        val fromIndex = currentPage * pageSize
+        val toIndex = min(fromIndex + pageSize, allIdeas.size)
+        val pagedIdeas = if (fromIndex < toIndex) allIdeas.subList(fromIndex, toIndex) else emptyList()
+        ideaAdapter.submitList(pagedIdeas)
+    }
+
+    private fun updatePaginationButtons() {
+        paginationContainer.removeAllViews()
+        val pageCount = (allIdeas.size + pageSize - 1) / pageSize
+        for (i in 0 until pageCount) {
+            val button = android.widget.TextView(requireContext())
+            button.text = (i + 1).toString()
+            button.setTextColor(android.graphics.Color.WHITE)
+            button.textSize = 16f
+            button.gravity = android.view.Gravity.CENTER
+            button.setPadding(0, 0, 0, 0)
+            val size = resources.displayMetrics.density * 36 // 36dp
+            val params = ViewGroup.MarginLayoutParams(size.toInt(), size.toInt())
+            params.setMargins(12, 0, 12, 0)
+            button.layoutParams = params
+            button.background = if (i == currentPage)
+                requireContext().getDrawable(R.drawable.pagination_circle_selected)
+            else
+                requireContext().getDrawable(R.drawable.pagination_circle)
+            button.setOnClickListener {
+                currentPage = i
+                updatePagedIdeas()
+                updatePaginationButtons()
+            }
+            if (i == currentPage) {
+                button.setTypeface(null, android.graphics.Typeface.BOLD)
+            }
+            paginationContainer.addView(button)
+        }
     }
 
     companion object {

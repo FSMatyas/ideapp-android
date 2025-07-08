@@ -69,7 +69,9 @@
             style="@style/AppTextStyle.Body"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Idea description goes here..." />
+            android:text="Idea description goes here..."
+            android:maxLines="2"
+            android:ellipsize="end" />
 
         <LinearLayout
             android:layout_width="match_parent"

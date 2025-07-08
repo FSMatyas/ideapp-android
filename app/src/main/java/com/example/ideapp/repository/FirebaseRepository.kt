@@ -32,7 +32,7 @@ class FirebaseRepository {
     private fun loadIdeas() {
         _isLoading.value = true
         
-        // Temporary: Load ALL ideas to debug what's in the database
+        // Simplified query without orderBy to avoid index requirements
         ideasCollection
             .addSnapshotListener { snapshot, exception ->
                 _isLoading.value = false
@@ -63,6 +63,7 @@ class FirebaseRepository {
         ideasCollection
             .whereEqualTo("category", category)
             .whereEqualTo("isApproved", true)
+            .orderBy("createdAt", Query.Direction.DESCENDING)
             .addSnapshotListener { snapshot, exception ->
                 if (exception != null) {
                     _error.value = "Failed to load category ideas: ${exception.message}"
@@ -135,6 +136,7 @@ class FirebaseRepository {
         
         ideasCollection
             .whereEqualTo("submitterEmail", email)
+            .orderBy("createdAt", Query.Direction.DESCENDING)
             .addSnapshotListener { snapshot, exception ->
                 if (exception != null) {
                     _error.value = "Failed to load your ideas: ${exception.message}"

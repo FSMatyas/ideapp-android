@@ -3,6 +3,7 @@ package com.example.ideapp
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
@@ -12,41 +13,47 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        
-        setupBottomNavigation()
-        
-        // Load the default fragment (Home) if this is the first creation
-        if (savedInstanceState == null) {
-            loadFragment(HomeFragment.newInstance())
-        }
+
+        val viewPager = findViewById<ViewPager2>(R.id.viewPager)
+        viewPager.adapter = MainPagerAdapter(this)
+        // Optionally, set the default page to Home
+        viewPager.currentItem = 0
+
+        // Optionally, sync with bottom navigation (if you want both)
+        setupBottomNavigation(viewPager)
     }
-    
-    private fun setupBottomNavigation() {
+
+    private fun setupBottomNavigation(viewPager: ViewPager2) {
         bottomNavigation = findViewById(R.id.bottom_navigation)
         bottomNavigation.selectedItemId = R.id.nav_home
-        
+
         bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.nav_home -> {
-                    loadFragment(HomeFragment.newInstance())
+                    viewPager.currentItem = 0
                     true
                 }
                 R.id.nav_categories -> {
-                    loadFragment(CategoriesFragment.newInstance())
+                    viewPager.currentItem = 1
                     true
                 }
                 R.id.nav_my_apps -> {
-                    loadFragment(MyAppsFragment.newInstance())
+                    viewPager.currentItem = 2
                     true
                 }
                 else -> false
             }
         }
-    }
-    
-    private fun loadFragment(fragment: Fragment) {
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.fragment_container, fragment)
-            .commit()
+        // Sync ViewPager2 swipes with bottom navigation
+        viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+            override fun onPageSelected(position: Int) {
+                super.onPageSelected(position)
+                when (position) {
+                    0 -> bottomNavigation.selectedItemId = R.id.nav_home
+                    1 -> bottomNavigation.selectedItemId = R.id.nav_categories
+                    2 -> bottomNavigation.selectedItemId = R.id.nav_my_apps
+                }
+            }
+        })
     }
 }

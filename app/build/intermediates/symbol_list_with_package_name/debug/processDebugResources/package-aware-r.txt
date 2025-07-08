@@ -1439,6 +1439,8 @@ color common_google_signin_btn_text_light_disabled
 color common_google_signin_btn_text_light_focused
 color common_google_signin_btn_text_light_pressed
 color common_google_signin_btn_tint
+color cta_green
+color cta_orange_light
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -2981,6 +2983,7 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen pagination_button_margin
 dimen sliding_pane_detail_pane_width
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
@@ -3111,6 +3114,7 @@ drawable ic_add
 drawable ic_app_logo
 drawable ic_apps
 drawable ic_arrow_back_black_24
+drawable ic_bulb
 drawable ic_call_answer
 drawable ic_call_answer_low
 drawable ic_call_answer_video
@@ -3216,6 +3220,8 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable pagination_circle
+drawable pagination_circle_selected
 drawable status_approved
 drawable status_badge_completed
 drawable status_badge_development
@@ -3228,6 +3234,7 @@ drawable status_testing
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable top_shadow
 id ALT
 id BOTTOM_END
 id BOTTOM_START
@@ -3326,6 +3333,7 @@ id beginning
 id bestChoice
 id blocking
 id bottom
+id bottom_nav_shadow
 id bottom_navigation
 id bounce
 id bounceBoth
@@ -3336,6 +3344,7 @@ id btnGetStarted
 id btnLearnMore
 id btnSubmit
 id btnSubmitIdea
+id bulbIcon
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3417,6 +3426,7 @@ id edit_query
 id edit_text_id
 id elastic
 id embed
+id emptyStateCard
 id end
 id endToStart
 id enterAlways
@@ -3442,7 +3452,6 @@ id fixed
 id flip
 id floating
 id forever
-id fragment_container
 id fragment_container_view_tag
 id frost
 id fullscreen_header
@@ -3596,6 +3605,9 @@ id outline
 id outward
 id overshoot
 id packed
+id paginationCompletedContainer
+id paginationContainer
+id paginationInProgressContainer
 id parallax
 id parent
 id parentPanel
@@ -3616,7 +3628,9 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerViewCompletedApps
 id recyclerViewIdeas
+id recyclerViewInProgress
 id report_drawn
 id reverseSawtooth
 id right
@@ -3747,6 +3761,11 @@ id tvCategoryIcon
 id tvCategoryName
 id tvDate
 id tvDescription
+id tvDialogCategory
+id tvDialogDate
+id tvDialogDescription
+id tvDialogSubmitter
+id tvDialogTitle
 id tvSubmitter
 id tvSubtitle
 id tvTitle
@@ -3758,6 +3777,7 @@ id unlabeled
 id up
 id useLogo
 id vertical_only
+id viewPager
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -3909,6 +3929,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_idea_detail
 layout dialog_submit_idea
 layout example_card_layout
 layout example_form_layout
@@ -4022,6 +4043,7 @@ string bottomsheet_action_expand
 string bottomsheet_action_expand_halfway
 string bottomsheet_drag_handle_clicked
 string bottomsheet_drag_handle_content_description
+string bulb_icon
 string call_notification_answer_action
 string call_notification_answer_video_action
 string call_notification_decline_action
@@ -5486,3 +5508,4 @@ styleable include constraintSet
 xml backup_rules
 xml data_extraction_rules
 xml ga_ad_services_config
+xml network_security_config

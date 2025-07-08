@@ -9,6 +9,8 @@
     <color name="background_white">#FFFFFFFF</color>
     <color name="black">#FF000000</color>
     <color name="border_color">#FFDEE2E6</color>
+    <color name="cta_green">#388E3C</color>
+    <color name="cta_orange_light">#FFD180</color>
     <color name="divider_color">#FFE9ECEF</color>
     <color name="error_color">#FFDC3545</color>
     <color name="info_color">#FF17A2B8</color>
@@ -39,14 +41,16 @@
     <color name="text_white">#FFFFFFFF</color>
     <color name="warning_color">#FFFFC107</color>
     <color name="white">#FFFFFFFF</color>
-    <string name="app_name">Let\'s make an app!</string>
+    <dimen name="pagination_button_margin">8dp</dimen>
+    <string name="app_name">IdeaApp</string>
+    <string name="bulb_icon">Bulb icon</string>
     <string name="com.google.firebase.crashlytics.mapping_file_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">00000000000000000000000000000000</string>
-    <string name="gcm_defaultSenderId" translatable="false">1063753197192</string>
-    <string name="google_api_key" translatable="false">AIzaSyBaFYzDjwaBVQpLM7p2gpxmplnW84_A0qI</string>
-    <string name="google_app_id" translatable="false">1:1063753197192:android:08e012d3a4827004b2a13d</string>
-    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBaFYzDjwaBVQpLM7p2gpxmplnW84_A0qI</string>
-    <string name="google_storage_bucket" translatable="false">ideaapps-73f36.firebasestorage.app</string>
-    <string name="project_id" translatable="false">ideaapps-73f36</string>
+    <string name="gcm_defaultSenderId" translatable="false">134706271317</string>
+    <string name="google_api_key" translatable="false">AIzaSyBNVpuTjA_oYBmTuysgeZuR8lZpOjszsDA</string>
+    <string name="google_app_id" translatable="false">1:134706271317:android:19efd04c9460e4312c70dc</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBNVpuTjA_oYBmTuysgeZuR8lZpOjszsDA</string>
+    <string name="google_storage_bucket" translatable="false">ideapp-d498a.firebasestorage.app</string>
+    <string name="project_id" translatable="false">ideapp-d498a</string>
     <style name="AppBottomNavStyle" parent="Widget.Material3.BottomNavigationView">
         <item name="android:background">@color/nav_background</item>
         <item name="itemIconTint">@color/nav_item_color</item>

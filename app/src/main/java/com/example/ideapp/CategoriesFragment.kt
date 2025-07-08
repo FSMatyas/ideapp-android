@@ -74,12 +74,13 @@ class CategoriesFragment : Fragment() {
     }
 
     private fun openCategoryDetail(categoryName: String) {
-        val fragment = CategoryDetailFragment.newInstance(categoryName)
-        
-        parentFragmentManager.beginTransaction()
-            .replace(R.id.fragment_container, fragment)
-            .addToBackStack(null)
-            .commit()
+        // Show a simple dialog with the category name (placeholder for detail view)
+        val dialog = androidx.appcompat.app.AlertDialog.Builder(requireContext())
+            .setTitle(categoryName.capitalize())
+            .setMessage("Details for $categoryName category will appear here.")
+            .setPositiveButton("OK", null)
+            .create()
+        dialog.show()
     }
 
     companion object {

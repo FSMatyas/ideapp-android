@@ -9,14 +9,17 @@ import android.widget.ArrayAdapter
 import android.widget.AutoCompleteTextView
 import android.widget.ProgressBar
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.lifecycleScope
 import com.example.ideapp.data.Idea
 import com.example.ideapp.viewmodel.IdeaViewModel
 import com.google.android.material.button.MaterialButton
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.textfield.TextInputEditText
 import com.google.android.material.textfield.TextInputLayout
+import kotlinx.coroutines.launch
 import java.util.*
 
 class SubmitIdeaDialogFragment : DialogFragment() {
@@ -115,7 +118,7 @@ class SubmitIdeaDialogFragment : DialogFragment() {
 
         btnSubmit.setOnClickListener {
             if (validateForm()) {
-                submitIdea()
+                showEmailConfirmationDialog()
             }
         }
     }
@@ -169,13 +172,16 @@ class SubmitIdeaDialogFragment : DialogFragment() {
             isValid = false
         }
 
-        // Validate contact/email
+        // Validate contact/email - Enhanced validation
         val contact = etContact.text.toString().trim()
         if (contact.isEmpty()) {
-            tilContact.error = "Please provide your email"
+            tilContact.error = "📧 Email is required - We'll contact you here about your app!"
             isValid = false
         } else if (!android.util.Patterns.EMAIL_ADDRESS.matcher(contact).matches()) {
-            tilContact.error = "Please provide a valid email address"
+            tilContact.error = "Please provide a valid email address (e.g., you@example.com)"
+            isValid = false
+        } else if (contact.length < 5 || !contact.contains("@") || !contact.contains(".")) {
+            tilContact.error = "Please enter a complete email address"
             isValid = false
         }
 
@@ -187,6 +193,24 @@ class SubmitIdeaDialogFragment : DialogFragment() {
         }
 
         return isValid
+    }
+
+    private fun showEmailConfirmationDialog() {
+        val contact = etContact.text.toString().trim()
+        
+        AlertDialog.Builder(requireContext())
+            .setTitle("📧 Confirm Your Email")
+            .setMessage("Please confirm your email address:\n\n$contact\n\nWe'll use this email to contact you about your app development. Your first idea gets built for FREE!\n\nIs this email correct?")
+            .setPositiveButton("Yes, Submit Idea") { _, _ ->
+                submitIdea()
+            }
+            .setNegativeButton("Let Me Change It") { dialog, _ ->
+                dialog.dismiss()
+                etContact.requestFocus()
+                etContact.selectAll()
+            }
+            .setCancelable(false)
+            .show()
     }
 
     private fun submitIdea() {
@@ -216,12 +240,34 @@ class SubmitIdeaDialogFragment : DialogFragment() {
         // Submit through ViewModel
         viewModel.submitIdea(idea) { success, message ->
             if (success) {
-                Toast.makeText(requireContext(), message, Toast.LENGTH_SHORT).show()
-                dismiss()
+                // Only show success dialog, email logic removed
+                showResultDialog(
+                    "✅ Success!",
+                    message ?: "Idea submitted successfully!",
+                    true
+                )
             } else {
-                Toast.makeText(requireContext(), "Error: $message", Toast.LENGTH_LONG).show()
+                showResultDialog(
+                    "❌ Error",
+                    "Failed to submit your idea:\n\n${message ?: "Unknown error"}",
+                    false
+                )
             }
         }
+    }
+
+    private fun showResultDialog(title: String, message: String, isSuccess: Boolean) {
+        AlertDialog.Builder(requireContext())
+            .setTitle(title)
+            .setMessage(message)
+            .setPositiveButton("OK") { dialog, _ ->
+                dialog.dismiss()
+                if (isSuccess) {
+                    dismiss() // Close the submit dialog only on success
+                }
+            }
+            .setCancelable(false)
+            .show()
     }
 
     override fun onStart() {

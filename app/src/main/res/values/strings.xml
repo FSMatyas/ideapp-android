@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Let\'s make an app!</string>
+    <string name="app_name">IdeaApp</string>
+    <string name="bulb_icon">Bulb icon</string>
 </resources>

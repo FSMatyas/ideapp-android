@@ -12,49 +12,58 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Submit Ideas Card - PROMINENT -->
-        <com.google.android.material.card.MaterialCardView
-            style="@style/AppCardStyle.Submit"
+        <!-- Submit Ideas Section - SIMPLIFIED -->
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp"
             android:layout_marginBottom="24dp">
 
-            <LinearLayout
+            <ImageView
+                android:id="@+id/bulbIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_bulb"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/bulb_icon" 
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                style="@style/AppTextStyle.Headline"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="24dp">
+                android:layout_marginBottom="8dp"
+                android:text="Got a problem? Let's solve it!"
+                android:textAlignment="center"
+                android:textColor="@color/primary_color"
+                android:textSize="22sp" />
 
-                <TextView
-                    style="@style/AppTextStyle.Headline"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="8dp"
-                    android:text="Got a problem? Let's solve it!"
-                    android:textAlignment="center"
-                    android:textColor="@color/primary_color" />
+            <TextView
+                style="@style/AppTextStyle.Body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Share your everyday problems and we'll build you a custom app to solve them - completely free!"
+                android:textAlignment="center"
+                android:textColor="@color/text_secondary" />
 
-                <TextView
-                    style="@style/AppTextStyle.Body"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="16dp"
-                    android:text="Share your everyday problems and we'll build you a custom app to solve them - completely free!"
-                    android:textAlignment="center"
-                    android:textColor="@color/text_secondary" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSubmitIdea"
+                style="@style/AppButtonStyle.Submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Share Your Problem"
+                app:icon="@drawable/ic_add"
+                app:iconGravity="textStart"
+                android:backgroundTint="@color/cta_green" />
 
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/btnSubmitIdea"
-                    style="@style/AppButtonStyle.Submit"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Share Your Problem"
-                    app:icon="@drawable/ic_add"
-                    app:iconGravity="textStart" />
-
-            </LinearLayout>
-
-        </com.google.android.material.card.MaterialCardView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="20dp"
+                android:background="@android:color/black" />
+        </LinearLayout>
 
         <!-- Recent Ideas Section -->
         <LinearLayout
@@ -97,6 +106,22 @@
             android:nestedScrollingEnabled="false"
             tools:itemCount="3"
             tools:listitem="@layout/item_idea_card" />
+
+        <!-- Pagination Buttons (HorizontalScrollView for overflow) -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none">
+            <LinearLayout
+                android:id="@+id/paginationContainer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp" />
+        </HorizontalScrollView>
 
     </LinearLayout>
 
