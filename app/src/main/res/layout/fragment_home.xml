@@ -80,13 +80,6 @@
                 android:layout_weight="1"
                 android:text="Recent Ideas" />
 
-            <TextView
-                style="@style/AppTextStyle.Caption"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="See all"
-                android:textColor="@color/primary_color" />
-
         </LinearLayout>
 
         <!-- Loading indicator -->

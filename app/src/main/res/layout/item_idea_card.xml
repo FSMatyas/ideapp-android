@@ -5,19 +5,19 @@
     style="@style/AppCardStyle"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="12dp"
+    android:layout_marginBottom="10dp"
     android:foreground="?android:attr/selectableItemBackground">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="13dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="6dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
@@ -28,14 +28,15 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Idea Title"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                android:textSize="13sp" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chipStatus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Approved"
-                android:textSize="12sp"
+                android:textSize="10sp"
                 style="@style/Widget.Material3.Chip.Assist" />
 
         </LinearLayout>
@@ -45,24 +46,27 @@
             style="@style/AppTextStyle.Caption"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:text="Category" />
+            android:layout_marginBottom="3dp"
+            android:text="Category"
+            android:textSize="10sp" />
 
         <TextView
             android:id="@+id/tvSubmitter"
             style="@style/AppTextStyle.Caption"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:text="Submitted by Name" />
+            android:layout_marginBottom="3dp"
+            android:text="Submitted by Name"
+            android:textSize="10sp" />
 
         <TextView
             android:id="@+id/tvDate"
             style="@style/AppTextStyle.Caption"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:text="Date" />
+            android:layout_marginBottom="6dp"
+            android:text="Date"
+            android:textSize="10sp" />
 
         <TextView
             android:id="@+id/tvDescription"
@@ -71,19 +75,20 @@
             android:layout_height="wrap_content"
             android:text="Idea description goes here..."
             android:maxLines="2"
-            android:ellipsize="end" />
+            android:ellipsize="end"
+            android:textSize="13sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="10dp"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
             <ImageView
-                android:layout_width="16dp"
-                android:layout_height="16dp"
-                android:layout_marginEnd="4dp"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:layout_marginEnd="3dp"
                 android:src="@drawable/ic_thumb_up"
                 app:tint="@color/text_secondary" />
 
@@ -92,7 +97,8 @@
                 style="@style/AppTextStyle.Caption"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="0" />
+                android:text="0"
+                android:textSize="10sp" />
 
         </LinearLayout>
 

@@ -91,6 +91,7 @@
                 android:text="@string/in_progress" />
 
             <TextView
+                android:id="@+id/tvInProgressCount"
                 style="@style/AppTextStyle.Caption"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

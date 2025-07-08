@@ -40,6 +40,7 @@ class MyAppsFragment : Fragment() {
         paginationCompleted = view.findViewById(R.id.paginationCompletedContainer)
         paginationInProgress = view.findViewById(R.id.paginationInProgressContainer)
         val emptyStateCard = view.findViewById<View>(R.id.emptyStateCard)
+        val tvInProgressCount = view.findViewById<android.widget.TextView>(R.id.tvInProgressCount)
 
         completedAdapter = IdeaAdapter { idea -> showIdeaDialog(idea) }
         inProgressAdapter = IdeaAdapter { idea -> showIdeaDialog(idea) }
@@ -91,6 +92,8 @@ class MyAppsFragment : Fragment() {
         )
         completedApps = listOf(exampleCompleted)
         inProgressApps = listOf(exampleInProgress1, exampleInProgress2)
+        // Update the in-progress count text
+        tvInProgressCount.text = "${inProgressApps.size} in progress"
         updateCompletedPage()
         updateInProgressPage()
         updateCompletedPagination()

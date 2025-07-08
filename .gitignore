@@ -67,3 +67,15 @@ node_modules/
 
 # dataconnect generated files
 .dataconnect
+
+# Android/IntelliJ/Gradle ignores
+.gradle/
+local.properties
+.idea/
+.DS_Store
+/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+*.iml
+*.hprof

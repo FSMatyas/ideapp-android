@@ -13,7 +13,7 @@
         style="@style/AppToolbarStyle"
         android:layout_width="0dp"
         android:layout_height="?attr/actionBarSize"
-        android:title="IdeaApps"
+        android:title="@string/toolbar_title_ideaapps"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

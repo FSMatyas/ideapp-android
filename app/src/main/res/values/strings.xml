@@ -1,5 +1,24 @@
 <resources>
     <string name="app_name">IdeaApp</string>
+    <string name="toolbar_title_ideaapps">IdeaApps</string>
+    <string name="toolbar_title_category_detail">Category Detail</string>
+    <string name="category_detail_page">Category Detail Page</string>
+    <string name="toolbar_title_business">Business</string>
+    <string name="business">Business</string>
+    <string name="toolbar_title_family">Family</string>
+    <string name="family">Family</string>
+    <string name="toolbar_title_finance">Finance</string>
+    <string name="finance">Finance</string>
+    <string name="toolbar_title_health">Health</string>
+    <string name="health">Health</string>
+    <string name="toolbar_title_education">Education</string>
+    <string name="education">Education</string>
+    <string name="toolbar_title_entertainment">Entertainment</string>
+    <string name="entertainment">Entertainment</string>
+    <string name="toolbar_title_productivity">Productivity</string>
+    <string name="productivity">Productivity</string>
+    <string name="toolbar_title_utilities">Utilities</string>
+    <string name="utilities">Utilities</string>
     <string name="bulb_icon">Bulb icon</string>
     <string name="my_ideas_and_apps">My Ideas &amp; Apps</string>
     <string name="track_submitted_ideas">Track your submitted ideas and download completed apps</string>
