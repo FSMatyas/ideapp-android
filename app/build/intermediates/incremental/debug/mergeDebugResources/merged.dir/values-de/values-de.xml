@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d neue Benachrichtigung</item>
+    <item quantity="other">%d neue Benachrichtigungen</item>
+  </plurals>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Zur Startseite"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Nach oben"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Weitere Optionen"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Fertig"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Alle anzeigen"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"App auswählen"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"AUS"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"AN"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt +"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Strg +"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"Löschen"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"Eingabetaste"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Funktionstaste +"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta-Taste +"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Umschalttaste +"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"Leertaste"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym-Taste +"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menütaste +"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Suchen…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Suchanfrage löschen"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Suchanfrage"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Suche"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Anfrage senden"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Sprachsuche"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Teilen mit"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Mit <ns1:g id="APPLICATION_NAME">%s</ns1:g> teilen"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Minimieren"</string>
+    <string name="agree_terms">Ich stimme den Nutzungsbedingungen und der Datenschutzrichtlinie zu</string>
+    <string name="app_idea_title">App-Ideentitel</string>
+    <string name="app_name">IdeenApp</string>
+    <string name="approved">Genehmigt</string>
+    <string name="be_first_to_submit">Sei der Erste, der eine Idee in dieser Kategorie einreicht!</string>
+    <string name="bottomsheet_action_collapse">Ansicht am unteren Rand minimieren</string>
+    <string name="bottomsheet_action_expand">Ansicht am unteren Rand maximieren</string>
+    <string name="bottomsheet_action_expand_halfway">Zur Hälfte maximieren</string>
+    <string name="bottomsheet_drag_handle_clicked">Auf Ziehpunkt doppelt getippt</string>
+    <string name="bottomsheet_drag_handle_content_description">Ziehpunkt</string>
+    <string name="browse_by_category">Nach Kategorie durchsuchen</string>
+    <string name="build_amazing_apps">Erstelle Schritt für Schritt großartige Apps</string>
+    <string name="bulb_emoji">💡</string>
+    <string name="bulb_icon">Glühbirnen-Symbol</string>
+    <string name="business">Geschäft</string>
+    <string name="business_emoji">💼</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"Annehmen"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Video"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"Ablehnen"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"Auflegen"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"Eingehender Anruf"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Aktueller Anruf"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"Filter für eingehenden Anruf"</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="category">Kategorie</string>
+    <string name="category_business">Geschäft</string>
+    <string name="category_detail_ideas_count">12 Ideen in dieser Kategorie</string>
+    <string name="category_detail_page">Kategorie-Detailseite</string>
+    <string name="category_detail_phone_emoji">📱</string>
+    <string name="category_detail_productivity">Produktivität</string>
+    <string name="category_education">Bildung</string>
+    <string name="category_entertainment">Unterhaltung</string>
+    <string name="category_family">Familie</string>
+    <string name="category_finance">Finanzen</string>
+    <string name="category_health">Gesundheit</string>
+    <string name="category_label">Kategorie</string>
+    <string name="category_productivity">Produktivität</string>
+    <string name="category_utilities">Dienstprogramme</string>
+    <string name="character_counter_content_description">Eingegebene Zeichen: %1$d von %2$d</string>
+    <string name="character_counter_overflowed_content_description">Zeichenbeschränkung überschritten: %1$d/%2$d</string>
+    <string name="clear_text_end_icon_content_description">Text löschen</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Aktivieren</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s funktioniert erst nach der Aktivierung der Google Play-Dienste.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Google Play-Dienste aktivieren</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Installieren</string>
+    <string name="common_google_play_services_install_text">Zur Nutzung von %1$s sind die Google Play-Dienste erforderlich, die auf deinem Gerät nicht installiert sind.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Google Play-Dienste installieren</string>
+    <string name="common_google_play_services_notification_channel_name">Verfügbarkeit von Google Play-Diensten</string>
+    <string name="common_google_play_services_notification_ticker">Fehler bei Zugriff auf Google Play-Dienste</string>
+    <string name="common_google_play_services_unknown_issue">%1$s hat Probleme mit Google Play-Diensten. Bitte versuche es noch einmal.</string>
+    <string name="common_google_play_services_unsupported_text">Zur Nutzung von %1$s sind Google Play-Dienste erforderlich, die auf deinem Gerät nicht unterstützt werden.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Aktualisieren</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">%1$s wird nur ausgeführt, wenn du die Google Play-Dienste aktualisierst.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Google Play-Dienste aktualisieren</string>
+    <string name="common_google_play_services_updating_text">Zur Nutzung von %1$s sind Google Play-Dienste erforderlich, die gerade aktualisiert werden.</string>
+    <string name="common_google_play_services_wear_update_text">Eine neue Version der Google Play-Dienste wird benötigt. Diese wird in Kürze automatisch aktualisiert.</string>
+    <string name="common_open_on_phone">Auf Smartphone öffnen</string>
+    <string name="common_signin_button_text">Anmelden</string>
+    <string name="common_signin_button_text_long">Über Google anmelden</string>
+    <string name="contact_helper">Kontakt-Hilfe</string>
+    <string name="create_account">Konto erstellen</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="date">Datum</string>
+    <string name="date_label">Datum</string>
+    <string name="describe_your_problem">Beschreibe dein Problem im Detail</string>
+    <string name="dialog_share_your_problem">Teile dein Problem</string>
+    <string name="dialog_tell_us_about_problem">Erzähl uns von einem Problem, das du täglich hast. Wir bauen dir eine individuelle App zur Lösung!</string>
+    <string name="education">Bildung</string>
+    <string name="education_emoji">🎓</string>
+    <string name="email_address">E-Mail-Adresse</string>
+    <string name="entertainment">Unterhaltung</string>
+    <string name="entertainment_emoji">🎮</string>
+    <string name="error_icon_content_description">Fehler</string>
+    <string name="explore_ideas_by_area">Entdecke Ideen nach verschiedenen Problembereichen</string>
+    <string name="exposed_dropdown_menu_content_description">Drop-down-Menü anzeigen</string>
+    <string name="facebook">Facebook</string>
+    <string name="family">Familie</string>
+    <string name="family_emoji">👨‍👩‍👧‍👦</string>
+    <string name="favorites">Favoriten</string>
+    <string name="fill_info_to_get_started">Fülle die folgenden Informationen aus, um zu starten</string>
+    <string name="finance">Finanzen</string>
+    <string name="finance_emoji">💰</string>
+    <string name="five_minutes_ago">Vor 5 Minuten</string>
+    <string name="full_idea_description_placeholder">Vollständige Ideenbeschreibung kommt hier hin...</string>
+    <string name="full_name">Vollständiger Name</string>
+    <string name="get_started">Loslegen</string>
+    <string name="google">Google</string>
+    <string name="got_a_problem">Hast du ein Problem? Lass es uns lösen!</string>
+    <string name="have_more_app_ideas">Hast du noch mehr App-Ideen?</string>
+    <string name="health">Gesundheit</string>
+    <string name="health_emoji">🏥</string>
+    <string name="icon_content_description">Dialogfeldsymbol</string>
+    <string name="idea_description_placeholder">Ideenbeschreibung kommt hier hin...</string>
+    <string name="idea_title">Ideentitel</string>
+    <string name="idea_title_label">Ideentitel</string>
+    <string name="ideas_in_this_category">Ideen in dieser Kategorie</string>
+    <string name="in_progress">In Bearbeitung</string>
+    <string name="item_view_role_description">Tab</string>
+    <string name="learn_more">Mehr erfahren</string>
+    <string name="material_clock_toggle_content_description">Vormittags oder Nachmittags auswählen</string>
+    <string name="material_hour_24h_suffix">%1$s Stunden</string>
+    <string name="material_hour_selection">Stunde auswählen</string>
+    <string name="material_hour_suffix">%1$s Uhr</string>
+    <string name="material_minute_selection">Minuten auswählen</string>
+    <string name="material_minute_suffix">%1$s Minuten</string>
+    <string name="material_timepicker_am">AM</string>
+    <string name="material_timepicker_clock_mode_description">In den Uhrzeitmodus wechseln, um die Uhrzeit einzugeben.</string>
+    <string name="material_timepicker_hour">Stunde</string>
+    <string name="material_timepicker_minute">Minute</string>
+    <string name="material_timepicker_pm">PM</string>
+    <string name="material_timepicker_select_time">Uhrzeit auswählen</string>
+    <string name="material_timepicker_text_input_mode_description">In den Texteingabemodus wechseln, um die Uhrzeit einzugeben.</string>
+    <string name="mtrl_badge_numberless_content_description">Neue Benachrichtigung</string>
+    <string name="mtrl_chip_close_icon_content_description">%1$s entfernen</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Mehr als %1$d neue Benachrichtigungen</string>
+    <string name="mtrl_picker_a11y_next_month">Zum nächsten Monat wechseln</string>
+    <string name="mtrl_picker_a11y_prev_month">Zum vorherigen Monat wechseln</string>
+    <string name="mtrl_picker_announce_current_range_selection">Ausgewähltes Startdatum: %1$s – Ausgewähltes Enddatum: %2$s</string>
+    <string name="mtrl_picker_announce_current_selection">Aktuelle Auswahl: %1$s</string>
+    <string name="mtrl_picker_announce_current_selection_none">Keines</string>
+    <string name="mtrl_picker_cancel">Abbrechen</string>
+    <string name="mtrl_picker_confirm">OK</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Datum auswählen</string>
+    <string name="mtrl_picker_date_header_unselected">Ausgewähltes Datum</string>
+    <string name="mtrl_picker_day_of_week_column_header">Spalte \"Wochentag\": %1$s</string>
+    <string name="mtrl_picker_end_date_description">Enddatum %1$s</string>
+    <string name="mtrl_picker_invalid_format">Ungültiges Format.</string>
+    <string name="mtrl_picker_invalid_format_example">Beispiel: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Format: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Ungültiger Bereich.</string>
+    <string name="mtrl_picker_navigate_to_current_year_description">Zum aktuellen Jahr %1$d wechseln</string>
+    <string name="mtrl_picker_navigate_to_year_description">Zum Jahr %1$d wechseln</string>
+    <string name="mtrl_picker_out_of_range">Außerhalb des Bereichs: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Startdatum – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – Enddatum</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Zeitraum auswählen</string>
+    <string name="mtrl_picker_range_header_unselected">Startdatum – Enddatum</string>
+    <string name="mtrl_picker_save">Speichern</string>
+    <string name="mtrl_picker_start_date_description">Startdatum %1$s</string>
+    <string name="mtrl_picker_text_input_date_hint">Datum</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Enddatum</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Startdatum</string>
+    <string name="mtrl_picker_text_input_day_abbr">T</string>
+    <string name="mtrl_picker_text_input_month_abbr">M</string>
+    <string name="mtrl_picker_text_input_year_abbr">J</string>
+    <string name="mtrl_picker_today_description">Heute %1$s</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">In den Kalendereingabemodus wechseln</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Tippen, um zur Kalenderansicht zu wechseln</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">In den Texteingabemodus wechseln</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Tippen, um zur Jahresansicht zu wechseln</string>
+    <string name="mtrl_timepicker_cancel">Abbrechen</string>
+    <string name="mtrl_timepicker_confirm">OK</string>
+    <string name="my_completed_apps">Meine fertigen Apps</string>
+    <string name="my_ideas_and_apps">Meine Ideen &amp; Apps</string>
+    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"Nach oben"</string>
+    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"Navigationsleiste öffnen"</string>
+    <string name="new_message_received">Neue Nachricht erhalten</string>
+    <string name="no_ideas_in_category">Noch keine Ideen in dieser Kategorie</string>
+    <string name="one_ready">1 bereit</string>
+    <string name="or_continue_with">Oder fortfahren mit</string>
+    <string name="password">Passwort</string>
+    <string name="password_toggle_content_description">Passwort anzeigen</string>
+    <string name="phone_emoji">📱</string>
+    <string name="productivity">Produktivität</string>
+    <string name="recent_activities">Letzte Aktivitäten</string>
+    <string name="recent_ideas">Neueste Ideen</string>
+    <string name="search_emoji">🔍</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Suche"</string>
+    <string name="settings">Einstellungen</string>
+    <string name="share_problem_desc">Teile deine Alltagsprobleme und wir bauen dir eine individuelle App zur Lösung – komplett kostenlos!</string>
+    <string name="share_your_problem">Teile dein Problem</string>
+    <string name="sign_in_instead">Stattdessen anmelden</string>
+    <string name="sort_by_recent">Sortieren nach: Neueste</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="submit_idea">Idee einreichen</string>
+    <string name="submit_more_ideas">Reiche weitere Ideen im Home-Tab ein, um mehr individuelle Apps für dich zu erhalten!</string>
+    <string name="submitted_by_label">Eingereicht von Name</string>
+    <string name="submitted_by_name">Eingereicht von Name</string>
+    <string name="task_completed">Aufgabe abgeschlossen</string>
+    <string name="toolbar_title_business">Geschäft</string>
+    <string name="toolbar_title_category_detail">Kategorie-Details</string>
+    <string name="toolbar_title_education">Bildung</string>
+    <string name="toolbar_title_entertainment">Unterhaltung</string>
+    <string name="toolbar_title_family">Familie</string>
+    <string name="toolbar_title_finance">Finanzen</string>
+    <string name="toolbar_title_health">Gesundheit</string>
+    <string name="toolbar_title_ideaapps">IdeenApps</string>
+    <string name="toolbar_title_productivity">Produktivität</string>
+    <string name="toolbar_title_utilities">Dienstprogramme</string>
+    <string name="track_submitted_ideas">Verfolge deine eingereichten Ideen und lade fertige Apps herunter</string>
+    <string name="two_minutes_ago">Vor 2 Minuten</string>
+    <string name="utilities">Dienstprogramme</string>
+    <string name="utilities_emoji">🔧</string>
+    <string name="welcome_back">Willkommen zurück! Das passiert gerade.</string>
+    <string name="welcome_title">Willkommen bei
+Lass uns eine App machen!</string>
+    <string name="your_name">Ihr Name</string>
+    <string name="zero">0</string>
+    <string name="zero_in_progress">0 in Bearbeitung</string>
+</resources>

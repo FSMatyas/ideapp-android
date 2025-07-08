@@ -100,4 +100,6 @@
     <string name="full_name">Vollständiger Name</string>
     <string name="email_address">E-Mail-Adresse</string>
     <string name="password">Passwort</string>
+    <string name="your_name">Ihr Name</string>
+    <string name="contact_helper">Kontakt-Hilfe</string>
 </resources>

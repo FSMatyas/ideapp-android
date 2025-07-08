@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d notificare nouă</item>
+    <item quantity="few">%d notificări noi</item>
+    <item quantity="other">%d de notificări noi</item>
+  </plurals>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Navigați la ecranul de pornire"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Navigați în sus"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Mai multe opțiuni"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Gata"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Afișați tot"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Alegeți o aplicație"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"DEZACTIVAT"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"ACTIVAT"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"delete"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Shift+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"space"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Meniu+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Căutați…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Ștergeți interogarea"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Termen de căutare"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Căutați"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Trimiteți interogarea"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Căutare vocală"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Trimiteți la"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"Trimiteți folosind <ns1:g id="APPLICATION_NAME">%s</ns1:g>"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Restrângeți"</string>
+    <string name="agree_terms">Sunt de acord cu Termenii de utilizare și Politica de confidențialitate</string>
+    <string name="app_idea_title">Titlul ideii aplicației</string>
+    <string name="app_name">IdeaApp</string>
+    <string name="approved">Aprobat</string>
+    <string name="be_first_to_submit">Fii primul care trimite o idee în această categorie!</string>
+    <string name="bottomsheet_action_collapse">Restrângeți foaia din partea de jos</string>
+    <string name="bottomsheet_action_expand">Extindeți foaia din partea de jos</string>
+    <string name="bottomsheet_action_expand_halfway">Extinde pe ecran complet</string>
+    <string name="bottomsheet_drag_handle_clicked">Ghidaj de tragere atins de două ori</string>
+    <string name="bottomsheet_drag_handle_content_description">Ghidaj de tragere</string>
+    <string name="browse_by_category">Caută după categorie</string>
+    <string name="build_amazing_apps">Construiește aplicații uimitoare pas cu pas</string>
+    <string name="bulb_emoji">💡</string>
+    <string name="bulb_icon">Pictogramă bec</string>
+    <string name="business">Afaceri</string>
+    <string name="business_emoji">💼</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"Răspunde"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Video"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"Respinge"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"Închide"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"Apel primit"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Apel în desfășurare"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"Se filtrează un apel primit"</string>
+    <string name="cancel">Anulează</string>
+    <string name="category">Categorie</string>
+    <string name="category_business">Afaceri</string>
+    <string name="category_detail_ideas_count">12 idei în această categorie</string>
+    <string name="category_detail_page">Pagină detalii categorie</string>
+    <string name="category_detail_phone_emoji">📱</string>
+    <string name="category_detail_productivity">Productivitate</string>
+    <string name="category_education">Educație</string>
+    <string name="category_entertainment">Divertisment</string>
+    <string name="category_family">Familie</string>
+    <string name="category_finance">Finanțe</string>
+    <string name="category_health">Sănătate</string>
+    <string name="category_label">Categorie</string>
+    <string name="category_productivity">Productivitate</string>
+    <string name="category_utilities">Utilitare</string>
+    <string name="character_counter_content_description">Caractere introduse: %1$d din %2$d</string>
+    <string name="character_counter_overflowed_content_description">Limita de caractere a depășit %1$d din %2$d</string>
+    <string name="clear_text_end_icon_content_description">Ștergeți textul</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Activați</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">%1$s nu va funcționa decât dacă activați serviciile Google Play.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Activați serviciile Google Play</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Instalați</string>
+    <string name="common_google_play_services_install_text">%1$s nu va rula fără serviciile Google Play, care lipsesc de pe dispozitivul dvs.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Descărcați serviciile Google Play</string>
+    <string name="common_google_play_services_notification_channel_name">Disponibilitatea serviciilor Google Play</string>
+    <string name="common_google_play_services_notification_ticker">Eroare a serviciilor Google Play</string>
+    <string name="common_google_play_services_unknown_issue">%1$s întâmpină probleme privind serviciile Google Play. Încercați din nou.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s nu va rula fără serviciile Google Play, care nu sunt acceptate de dispozitivul dvs.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Actualizați</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">%1$s nu va rula decât dacă actualizați serviciile Google Play.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Actualizați serviciile Google Play</string>
+    <string name="common_google_play_services_updating_text">%1$s nu va rula fără serviciile Google Play, care momentan se actualizează.</string>
+    <string name="common_google_play_services_wear_update_text">Este necesară o nouă versiune a serviciilor Google Play. Se vor actualiza automat în curând.</string>
+    <string name="common_open_on_phone">Deschideți pe telefon</string>
+    <string name="common_signin_button_text">Conectați-vă</string>
+    <string name="common_signin_button_text_long">Conectați-vă cu Google</string>
+    <string name="contact_helper">Ajutor contact</string>
+    <string name="create_account">Creează cont</string>
+    <string name="dashboard">Tablou de bord</string>
+    <string name="date">Data</string>
+    <string name="date_label">Data</string>
+    <string name="describe_your_problem">Descrie problema ta în detaliu</string>
+    <string name="dialog_share_your_problem">Împărtășește problema ta</string>
+    <string name="dialog_tell_us_about_problem">Spune-ne despre o problemă cu care te confrunți zilnic. Îți vom construi o aplicație personalizată pentru a o rezolva!</string>
+    <string name="education">Educație</string>
+    <string name="education_emoji">🎓</string>
+    <string name="email_address">Adresă de email</string>
+    <string name="entertainment">Divertisment</string>
+    <string name="entertainment_emoji">🎮</string>
+    <string name="error_icon_content_description">Eroare</string>
+    <string name="explore_ideas_by_area">Explorează idei din diferite domenii de probleme</string>
+    <string name="exposed_dropdown_menu_content_description">Afișați meniul drop-down</string>
+    <string name="facebook">Facebook</string>
+    <string name="family">Familie</string>
+    <string name="family_emoji">👨‍👩‍👧‍👦</string>
+    <string name="favorites">Favorite</string>
+    <string name="fill_info_to_get_started">Completează informațiile de mai jos pentru a începe</string>
+    <string name="finance">Finanțe</string>
+    <string name="finance_emoji">💰</string>
+    <string name="five_minutes_ago">Acum 5 minute</string>
+    <string name="full_idea_description_placeholder">Descrierea completă a ideii se introduce aici...</string>
+    <string name="full_name">Nume complet</string>
+    <string name="get_started">Începe</string>
+    <string name="google">Google</string>
+    <string name="got_a_problem">Ai o problemă? Hai să o rezolvăm!</string>
+    <string name="have_more_app_ideas">Ai mai multe idei de aplicații?</string>
+    <string name="health">Sănătate</string>
+    <string name="health_emoji">🏥</string>
+    <string name="icon_content_description">Pictogramă de dialog</string>
+    <string name="idea_description_placeholder">Descrierea ideii se introduce aici...</string>
+    <string name="idea_title">Titlul ideii</string>
+    <string name="idea_title_label">Titlul ideii</string>
+    <string name="ideas_in_this_category">Idei în această categorie</string>
+    <string name="in_progress">În curs</string>
+    <string name="item_view_role_description">Filă</string>
+    <string name="learn_more">Află mai multe</string>
+    <string name="material_clock_toggle_content_description">Selectați ora</string>
+    <string name="material_hour_24h_suffix">%1$s ore</string>
+    <string name="material_hour_selection">Selectați ora</string>
+    <string name="material_hour_suffix">Ora %1$s</string>
+    <string name="material_minute_selection">Selectați minutele</string>
+    <string name="material_minute_suffix">%1$s minute</string>
+    <string name="material_timepicker_am">a.m.</string>
+    <string name="material_timepicker_clock_mode_description">Pentru a introduce ora, comutați la modul ceas.</string>
+    <string name="material_timepicker_hour">Ora</string>
+    <string name="material_timepicker_minute">Minut</string>
+    <string name="material_timepicker_pm">p.m.</string>
+    <string name="material_timepicker_select_time">Selectați ora</string>
+    <string name="material_timepicker_text_input_mode_description">Pentru a introduce ora, comutați la modul de introducere a textului.</string>
+    <string name="mtrl_badge_numberless_content_description">Notificare nouă</string>
+    <string name="mtrl_chip_close_icon_content_description">Eliminați %1$s</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">Peste %1$d notificări noi</string>
+    <string name="mtrl_picker_a11y_next_month">Treceți la luna următoare</string>
+    <string name="mtrl_picker_a11y_prev_month">Treceți la luna anterioară</string>
+    <string name="mtrl_picker_announce_current_range_selection">Selectarea datei de începere: %1$s – selectarea datei de încheiere: %2$s</string>
+    <string name="mtrl_picker_announce_current_selection">Selecția actuală: %1$s</string>
+    <string name="mtrl_picker_announce_current_selection_none">niciuna</string>
+    <string name="mtrl_picker_cancel">Anulați</string>
+    <string name="mtrl_picker_confirm">OK</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Selectați data</string>
+    <string name="mtrl_picker_date_header_unselected">Data selectată</string>
+    <string name="mtrl_picker_day_of_week_column_header">Coloana cu zile: %1$s</string>
+    <string name="mtrl_picker_end_date_description">Data de încheiere: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Format nevalid.</string>
+    <string name="mtrl_picker_invalid_format_example">Exemplu: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Folosiți: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Interval nevalid.</string>
+    <string name="mtrl_picker_navigate_to_current_year_description">Navigați la anul actual %1$d</string>
+    <string name="mtrl_picker_navigate_to_year_description">Navigați la anul %1$d</string>
+    <string name="mtrl_picker_out_of_range">Fără acoperire: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Data de începere – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – data de încheiere</string>
+    <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>
+    <string name="mtrl_picker_range_header_title">Selectați intervalul</string>
+    <string name="mtrl_picker_range_header_unselected">Data de începere – data de încheiere</string>
+    <string name="mtrl_picker_save">Salvați</string>
+    <string name="mtrl_picker_start_date_description">Data de începere: %1$s</string>
+    <string name="mtrl_picker_text_input_date_hint">Dată</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Data de încheiere</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Data de începere</string>
+    <string name="mtrl_picker_text_input_day_abbr">z</string>
+    <string name="mtrl_picker_text_input_month_abbr">l</string>
+    <string name="mtrl_picker_text_input_year_abbr">a</string>
+    <string name="mtrl_picker_today_description">Astăzi, la %1$s</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Comutați la modul introducere în calendar</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Atingeți pentru a comuta la afișarea Calendar</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Comutați la modul de introducere a textului</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Atingeți pentru a comuta la afișarea An</string>
+    <string name="mtrl_timepicker_cancel">Anulați</string>
+    <string name="mtrl_timepicker_confirm">OK</string>
+    <string name="my_completed_apps">Aplicațiile mele finalizate</string>
+    <string name="my_ideas_and_apps">Ideile &amp; aplicațiile mele</string>
+    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"Navigați în sus"</string>
+    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"Deschideți panoul de navigare"</string>
+    <string name="new_message_received">Mesaj nou primit</string>
+    <string name="no_ideas_in_category">Nu există idei în această categorie încă</string>
+    <string name="one_ready">1 gata</string>
+    <string name="or_continue_with">Sau continuă cu</string>
+    <string name="password">Parolă</string>
+    <string name="password_toggle_content_description">Afișați parola</string>
+    <string name="phone_emoji">📱</string>
+    <string name="productivity">Productivitate</string>
+    <string name="recent_activities">Activități recente</string>
+    <string name="recent_ideas">Idei recente</string>
+    <string name="search_emoji">🔍</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Căutați"</string>
+    <string name="settings">Setări</string>
+    <string name="share_problem_desc">Împărtășește problemele tale zilnice și îți vom construi o aplicație personalizată pentru a le rezolva – complet gratuit!</string>
+    <string name="share_your_problem">Împărtășește problema ta</string>
+    <string name="sign_in_instead">Autentifică-te în schimb</string>
+    <string name="sort_by_recent">Sortează după: Recente</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="submit_idea">Trimite ideea</string>
+    <string name="submit_more_ideas">Trimite mai multe idei din fila Acasă pentru a primi mai multe aplicații personalizate!</string>
+    <string name="submitted_by_label">Trimis de Nume</string>
+    <string name="submitted_by_name">Trimis de Nume</string>
+    <string name="task_completed">Sarcină finalizată</string>
+    <string name="toolbar_title_business">Afaceri</string>
+    <string name="toolbar_title_category_detail">Detalii categorie</string>
+    <string name="toolbar_title_education">Educație</string>
+    <string name="toolbar_title_entertainment">Divertisment</string>
+    <string name="toolbar_title_family">Familie</string>
+    <string name="toolbar_title_finance">Finanțe</string>
+    <string name="toolbar_title_health">Sănătate</string>
+    <string name="toolbar_title_ideaapps">IdeaApps</string>
+    <string name="toolbar_title_productivity">Productivitate</string>
+    <string name="toolbar_title_utilities">Utilitare</string>
+    <string name="track_submitted_ideas">Urmărește ideile trimise și descarcă aplicațiile finalizate</string>
+    <string name="two_minutes_ago">Acum 2 minute</string>
+    <string name="utilities">Utilitare</string>
+    <string name="utilities_emoji">🔧</string>
+    <string name="welcome_back">Bine ai revenit! Iată ce se întâmplă.</string>
+    <string name="welcome_title">Bine ai venit la
+Hai să facem o aplicație!</string>
+    <string name="your_name">Numele tău</string>
+    <string name="zero">0</string>
+    <string name="zero_in_progress">0 în curs</string>
+</resources>

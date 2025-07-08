@@ -29,7 +29,9 @@
                 android:layout_weight="1"
                 android:text="@string/idea_title"
                 android:textStyle="bold"
-                android:textSize="13sp" />
+                android:textSize="13sp"
+                android:maxLines="1"
+                android:ellipsize="end" />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chipStatus"
@@ -48,7 +50,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="3dp"
             android:text="@string/category"
-            android:textSize="10sp" />
+            android:textSize="10sp"
+            android:maxLines="1"
+            android:ellipsize="end" />
 
         <TextView
             android:id="@+id/tvSubmitter"
@@ -57,7 +61,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="3dp"
             android:text="@string/submitted_by_name"
-            android:textSize="10sp" />
+            android:textSize="10sp"
+            android:maxLines="1"
+            android:ellipsize="end" />
 
         <TextView
             android:id="@+id/tvDate"
@@ -66,7 +72,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="6dp"
             android:text="@string/date"
-            android:textSize="10sp" />
+            android:textSize="10sp"
+            android:maxLines="1"
+            android:ellipsize="end" />
 
         <TextView
             android:id="@+id/tvDescription"
@@ -78,29 +86,16 @@
             android:ellipsize="end"
             android:textSize="13sp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
+        <TextView
+            android:id="@+id/tvUpvotes"
+            style="@style/AppTextStyle.Caption"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="13dp"
-                android:layout_height="13dp"
-                android:layout_marginEnd="3dp"
-                android:src="@drawable/ic_thumb_up"
-                app:tint="@color/text_secondary" />
-
-            <TextView
-                android:id="@+id/tvUpvotes"
-                style="@style/AppTextStyle.Caption"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/zero"
-                android:textSize="10sp" />
-
-        </LinearLayout>
+            android:text="0"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"
+            android:maxLines="1"
+            android:ellipsize="end" />
 
     </LinearLayout>
 

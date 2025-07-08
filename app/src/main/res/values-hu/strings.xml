@@ -100,4 +100,6 @@
     <string name="full_name">Teljes név</string>
     <string name="email_address">Email cím</string>
     <string name="password">Jelszó</string>
+    <string name="your_name">Neved</string>
+    <string name="contact_helper">Elérhetőségi segítő</string>
 </resources>

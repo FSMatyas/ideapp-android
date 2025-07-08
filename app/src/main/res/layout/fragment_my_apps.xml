@@ -18,7 +18,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
             android:text="@string/my_ideas_and_apps"
-            android:textColor="@color/primary_color" />
+            android:textColor="@color/primary_color"
+            android:maxLines="2"
+            android:ellipsize="end" />
 
         <TextView
             style="@style/AppTextStyle.Body"
@@ -26,7 +28,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:text="@string/track_submitted_ideas"
-            android:textColor="@color/text_secondary" />
+            android:textColor="@color/text_secondary"
+            android:maxLines="3"
+            android:ellipsize="end" />
 
         <!-- My Completed Apps Section (moved to top) -->
         <LinearLayout
@@ -41,14 +45,18 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/my_completed_apps" />
+                android:text="@string/my_completed_apps"
+                android:maxLines="2"
+                android:ellipsize="end" />
 
             <TextView
                 style="@style/AppTextStyle.Caption"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/one_ready"
-                android:textColor="@color/status_completed" />
+                android:textColor="@color/status_completed"
+                android:maxLines="1"
+                android:ellipsize="end" />
 
         </LinearLayout>
 
@@ -88,7 +96,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="@string/in_progress" />
+                android:text="@string/in_progress"
+                android:maxLines="2"
+                android:ellipsize="end" />
 
             <TextView
                 android:id="@+id/tvInProgressCount"
@@ -96,7 +106,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/status_development"
-                android:text="@string/zero_in_progress" />
+                android:text="@string/zero_in_progress"
+                android:maxLines="1"
+                android:ellipsize="end" />
 
         </LinearLayout>
 
@@ -144,7 +156,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:text="@string/bulb_emoji"
-                    android:textSize="48sp" />
+                    android:textSize="48sp"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
 
                 <TextView
                     style="@style/AppTextStyle.Body"
@@ -153,14 +167,18 @@
                     android:layout_marginBottom="8dp"
                     android:text="@string/have_more_app_ideas"
                     android:textAlignment="center"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:maxLines="2"
+                    android:ellipsize="end" />
 
                 <TextView
                     style="@style/AppTextStyle.Caption"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/submit_more_ideas"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:maxLines="2"
+                    android:ellipsize="end" />
 
             </LinearLayout>
 

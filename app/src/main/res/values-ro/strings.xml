@@ -100,4 +100,6 @@
     <string name="full_name">Nume complet</string>
     <string name="email_address">Adresă de email</string>
     <string name="password">Parolă</string>
+    <string name="your_name">Numele tău</string>
+    <string name="contact_helper">Ajutor contact</string>
 </resources>

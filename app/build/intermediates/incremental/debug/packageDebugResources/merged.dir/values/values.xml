@@ -69,6 +69,7 @@
     <string name="category_productivity">Productivity</string>
     <string name="category_utilities">Utilities</string>
     <string name="com.google.firebase.crashlytics.mapping_file_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">00000000000000000000000000000000</string>
+    <string name="contact_helper">Contact Helper</string>
     <string name="create_account">Create Account</string>
     <string name="dashboard">Dashboard</string>
     <string name="date">Date</string>
@@ -149,6 +150,7 @@
     <string name="welcome_back">Welcome back! Here\'s what\'s happening.</string>
     <string name="welcome_title">Welcome to
 Let\'s make an app!</string>
+    <string name="your_name">Your Name</string>
     <string name="zero">0</string>
     <string name="zero_in_progress">0 in progress</string>
     <style name="AppBottomNavStyle" parent="Widget.Material3.BottomNavigationView">

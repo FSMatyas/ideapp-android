@@ -100,4 +100,6 @@
     <string name="full_name">Tam Adı</string>
     <string name="email_address">E-posta Adresi</string>
     <string name="password">Şifre</string>
+    <string name="your_name">Adınız</string>
+    <string name="contact_helper">İletişim Yardımı</string>
 </resources>

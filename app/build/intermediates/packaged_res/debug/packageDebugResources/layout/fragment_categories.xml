@@ -18,7 +18,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="6dp"
             android:text="@string/browse_by_category"
-            android:textColor="@color/primary_color" />
+            android:textColor="@color/primary_color"
+            android:maxLines="2"
+            android:ellipsize="end" />
 
         <TextView
             style="@style/AppTextStyle.Body"
@@ -26,7 +28,9 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="19dp"
             android:text="@string/explore_ideas_by_area"
-            android:textColor="@color/text_secondary" />
+            android:textColor="@color/text_secondary"
+            android:maxLines="3"
+            android:ellipsize="end" />
 
         <!-- Categories Grid -->
         <LinearLayout
@@ -62,7 +66,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="6dp"
                             android:text="@string/phone_emoji"
-                            android:textSize="26sp" />
+                            android:textSize="26sp"
+                            android:maxLines="1"
+                            android:ellipsize="end" />
 
                         <TextView
                             style="@style/AppTextStyle.Body"
@@ -72,7 +78,9 @@
                             android:text="@string/category_productivity"
                             android:textAlignment="center"
                             android:textStyle="bold"
-                            android:textSize="13sp" />
+                            android:textSize="13sp"
+                            android:maxLines="2"
+                            android:ellipsize="end" />
 
                     </LinearLayout>
 
@@ -99,7 +107,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="6dp"
                             android:text="@string/family_emoji"
-                            android:textSize="26sp" />
+                            android:textSize="26sp"
+                            android:maxLines="1"
+                            android:ellipsize="end" />
 
                         <TextView
                             style="@style/AppTextStyle.Body"
@@ -109,7 +119,9 @@
                             android:text="@string/category_family"
                             android:textAlignment="center"
                             android:textStyle="bold"
-                            android:textSize="13sp" />
+                            android:textSize="13sp"
+                            android:maxLines="2"
+                            android:ellipsize="end" />
 
                     </LinearLayout>
 
@@ -145,7 +157,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="6dp"
                             android:text="@string/business_emoji"
-                            android:textSize="26sp" />
+                            android:textSize="26sp"
+                            android:maxLines="1"
+                            android:ellipsize="end" />
 
                         <TextView
                             style="@style/AppTextStyle.Body"
@@ -155,7 +169,9 @@
                             android:text="@string/category_business"
                             android:textAlignment="center"
                             android:textStyle="bold"
-                            android:textSize="13sp" />
+                            android:textSize="13sp"
+                            android:maxLines="2"
+                            android:ellipsize="end" />
 
                     </LinearLayout>
 
@@ -182,7 +198,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="6dp"
                             android:text="@string/entertainment_emoji"
-                            android:textSize="26sp" />
+                            android:textSize="26sp"
+                            android:maxLines="1"
+                            android:ellipsize="end" />
 
                         <TextView
                             style="@style/AppTextStyle.Body"
@@ -192,7 +210,9 @@
                             android:text="@string/category_entertainment"
                             android:textAlignment="center"
                             android:textStyle="bold"
-                            android:textSize="13sp" />
+                            android:textSize="13sp"
+                            android:maxLines="2"
+                            android:ellipsize="end" />
 
                     </LinearLayout>
 
@@ -228,7 +248,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="6dp"
                             android:text="@string/finance_emoji"
-                            android:textSize="26sp" />
+                            android:textSize="26sp"
+                            android:maxLines="1"
+                            android:ellipsize="end" />
 
                         <TextView
                             style="@style/AppTextStyle.Body"
@@ -238,7 +260,9 @@
                             android:text="@string/category_finance"
                             android:textAlignment="center"
                             android:textStyle="bold"
-                            android:textSize="13sp" />
+                            android:textSize="13sp"
+                            android:maxLines="2"
+                            android:ellipsize="end" />
 
                     </LinearLayout>
 
@@ -265,7 +289,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="6dp"
                             android:text="@string/health_emoji"
-                            android:textSize="26sp" />
+                            android:textSize="26sp"
+                            android:maxLines="1"
+                            android:ellipsize="end" />
 
                         <TextView
                             style="@style/AppTextStyle.Body"
@@ -275,7 +301,9 @@
                             android:text="@string/category_health"
                             android:textAlignment="center"
                             android:textStyle="bold"
-                            android:textSize="13sp" />
+                            android:textSize="13sp"
+                            android:maxLines="2"
+                            android:ellipsize="end" />
 
                     </LinearLayout>
 
@@ -310,7 +338,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="6dp"
                             android:text="@string/education_emoji"
-                            android:textSize="26sp" />
+                            android:textSize="26sp"
+                            android:maxLines="1"
+                            android:ellipsize="end" />
 
                         <TextView
                             style="@style/AppTextStyle.Body"
@@ -320,7 +350,9 @@
                             android:text="@string/category_education"
                             android:textAlignment="center"
                             android:textStyle="bold"
-                            android:textSize="13sp" />
+                            android:textSize="13sp"
+                            android:maxLines="2"
+                            android:ellipsize="end" />
 
                     </LinearLayout>
 
@@ -347,7 +379,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginBottom="6dp"
                             android:text="@string/utilities_emoji"
-                            android:textSize="26sp" />
+                            android:textSize="26sp"
+                            android:maxLines="1"
+                            android:ellipsize="end" />
 
                         <TextView
                             style="@style/AppTextStyle.Body"
@@ -357,7 +391,9 @@
                             android:text="@string/category_utilities"
                             android:textAlignment="center"
                             android:textStyle="bold"
-                            android:textSize="13sp" />
+                            android:textSize="13sp"
+                            android:maxLines="2"
+                            android:ellipsize="end" />
 
                     </LinearLayout>
 

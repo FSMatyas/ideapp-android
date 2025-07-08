@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2" xmlns:ns2="http://schemas.android.com/tools">
+    <plurals name="mtrl_badge_content_description">
+    <item quantity="one">%d yeni bildirim</item>
+    <item quantity="other">%d yeni bildirim</item>
+  </plurals>
+    <string msgid="5976598919945601918" name="abc_action_bar_home_description">"Eve gidiş yolunu göster"</string>
+    <string msgid="8388173803310557296" name="abc_action_bar_up_description">"Yukarı git"</string>
+    <string msgid="3937310113216875497" name="abc_action_menu_overflow_description">"Diğer seçenekler"</string>
+    <string msgid="4692188335987374352" name="abc_action_mode_done">"Bitti"</string>
+    <string msgid="1189761859438369441" name="abc_activity_chooser_view_see_all">"Tümünü göster"</string>
+    <string msgid="2165779757652331008" name="abc_activitychooserview_choose_application">"Bir uygulama seçin"</string>
+    <string msgid="4215997306490295099" name="abc_capital_off">"KAPAT"</string>
+    <string msgid="884982626291842264" name="abc_capital_on">"AÇ"</string>
+    <string msgid="8833365367933412986" name="abc_menu_alt_shortcut_label">"Alt+"</string>
+    <string msgid="2223301931652355242" name="abc_menu_ctrl_shortcut_label">"Ctrl+"</string>
+    <string msgid="838001238306846836" name="abc_menu_delete_shortcut_label">"sil"</string>
+    <string msgid="7986526966204849475" name="abc_menu_enter_shortcut_label">"enter"</string>
+    <string msgid="375214403600139847" name="abc_menu_function_shortcut_label">"Function+"</string>
+    <string msgid="4192209724446364286" name="abc_menu_meta_shortcut_label">"Meta+"</string>
+    <string msgid="4741552369836443843" name="abc_menu_shift_shortcut_label">"Üst Karakter+"</string>
+    <string msgid="5473865519181928982" name="abc_menu_space_shortcut_label">"boşluk"</string>
+    <string msgid="6180552449598693998" name="abc_menu_sym_shortcut_label">"Sym+"</string>
+    <string msgid="5520303668377388990" name="abc_prepend_shortcut_label">"Menü+"</string>
+    <string msgid="7208076849092622260" name="abc_search_hint">"Ara…"</string>
+    <string msgid="3741173234950517107" name="abc_searchview_description_clear">"Sorguyu temizle"</string>
+    <string msgid="693312494995508443" name="abc_searchview_description_query">"Arama sorgusu"</string>
+    <string msgid="3417662926640357176" name="abc_searchview_description_search">"Ara"</string>
+    <string msgid="1486535517437947103" name="abc_searchview_description_submit">"Sorguyu gönder"</string>
+    <string msgid="2293578557972875415" name="abc_searchview_description_voice">"Sesli arama"</string>
+    <string msgid="8875138169939072951" name="abc_shareactionprovider_share_with">"Şununla paylaş:"</string>
+    <string msgid="9055268688411532828" name="abc_shareactionprovider_share_with_application">"<ns1:g id="APPLICATION_NAME">%s</ns1:g> ile paylaş"</string>
+    <string msgid="1656852541809559762" name="abc_toolbar_collapse_description">"Daralt"</string>
+    <string name="agree_terms">Hizmet Şartları ve Gizlilik Politikasını kabul ediyorum</string>
+    <string name="app_idea_title">Uygulama Fikir Başlığı</string>
+    <string name="app_name">IdeaApp</string>
+    <string name="approved">Onaylandı</string>
+    <string name="be_first_to_submit">Bu kategoriye ilk fikri gönderen siz olun!</string>
+    <string name="bottomsheet_action_collapse">Alt sayfayı daralt</string>
+    <string name="bottomsheet_action_expand">Alt sayfayı genişlet</string>
+    <string name="bottomsheet_action_expand_halfway">Yarım genişlet</string>
+    <string name="bottomsheet_drag_handle_clicked">Sürükleme tutamacına iki kez dokunuldu</string>
+    <string name="bottomsheet_drag_handle_content_description">Sürükleme tutamacı</string>
+    <string name="browse_by_category">Kategoriye Göre Gözat</string>
+    <string name="build_amazing_apps">Adım adım harika uygulamalar oluşturun</string>
+    <string name="bulb_emoji">💡</string>
+    <string name="bulb_icon">Ampul simgesi</string>
+    <string name="business">İş</string>
+    <string name="business_emoji">💼</string>
+    <string msgid="881409763997275156" name="call_notification_answer_action">"Yanıtla"</string>
+    <string msgid="8793775615905189152" name="call_notification_answer_video_action">"Video"</string>
+    <string msgid="3229508546291798546" name="call_notification_decline_action">"Reddet"</string>
+    <string msgid="2659457946726154263" name="call_notification_hang_up_action">"Kapat"</string>
+    <string msgid="6107532579223922871" name="call_notification_incoming_text">"Gelen arama"</string>
+    <string msgid="8623827134497363134" name="call_notification_ongoing_text">"Devam eden arama"</string>
+    <string msgid="59049573811482460" name="call_notification_screening_text">"Gelen arama süzülüyor"</string>
+    <string name="cancel">İptal</string>
+    <string name="category">Kategori</string>
+    <string name="category_business">İş</string>
+    <string name="category_detail_ideas_count">Bu kategoride 12 fikir</string>
+    <string name="category_detail_page">Kategori Detay Sayfası</string>
+    <string name="category_detail_phone_emoji">📱</string>
+    <string name="category_detail_productivity">Verimlilik</string>
+    <string name="category_education">Eğitim</string>
+    <string name="category_entertainment">Eğlence</string>
+    <string name="category_family">Aile</string>
+    <string name="category_finance">Finans</string>
+    <string name="category_health">Sağlık</string>
+    <string name="category_label">Kategori</string>
+    <string name="category_productivity">Verimlilik</string>
+    <string name="category_utilities">Araçlar</string>
+    <string name="character_counter_content_description">Girilen karakter: %1$d / %2$d</string>
+    <string name="character_counter_overflowed_content_description">Karakter sınırı aşıldı %1$d / %2$d</string>
+    <string name="clear_text_end_icon_content_description">Metni temizle</string>
+    <string msgid="2523291102206661146" name="common_google_play_services_enable_button">Etkinleştir</string>
+    <string msgid="227660514972886228" name="common_google_play_services_enable_text">Google Play hizmetlerini etkinleştirmezseniz %1$s çalışmaz.</string>
+    <string msgid="5122002158466380389" name="common_google_play_services_enable_title">Google Play hizmetlerini etkinleştirin</string>
+    <string msgid="7153882981874058840" name="common_google_play_services_install_button">Yükle</string>
+    <string name="common_google_play_services_install_text">%1$s, şu anda cihazınızda bulunmayan Google Play hizmetleri olmadan çalışmaz.</string>
+    <string msgid="7215213145546190223" name="common_google_play_services_install_title">Google Play hizmetlerini edinin</string>
+    <string name="common_google_play_services_notification_channel_name">Google Play hizmetlerinin kullanılabilirliği</string>
+    <string name="common_google_play_services_notification_ticker">Google Play Hizmetleri hatası</string>
+    <string name="common_google_play_services_unknown_issue">%1$s, Google Play hizmetleriyle ilgili sorun yaşıyor. Lütfen tekrar deneyin.</string>
+    <string name="common_google_play_services_unsupported_text">%1$s, Google Play hizmetleri olmadan çalışmaz ve bu hizmetler cihazınız tarafından desteklenmiyor.</string>
+    <string msgid="6556509956452265614" name="common_google_play_services_update_button">Güncelle</string>
+    <string msgid="9053896323427875356" name="common_google_play_services_update_text">Google Play hizmetlerini güncellemezseniz %1$s çalışmayacak.</string>
+    <string msgid="6006316683626838685" name="common_google_play_services_update_title">Google Play hizmetlerini güncelleyin</string>
+    <string name="common_google_play_services_updating_text">%1$s, şu anda güncellenmekte olan Google Play hizmetleri olmadan çalışmaz.</string>
+    <string name="common_google_play_services_wear_update_text">Google Play hizmetlerinin yeni sürümü gerekiyor. Kendisini kısa süre içinde güncelleyecektir.</string>
+    <string name="common_open_on_phone">Telefonda aç</string>
+    <string name="common_signin_button_text">Oturum aç</string>
+    <string name="common_signin_button_text_long">Google\'da oturum aç</string>
+    <string name="contact_helper">İletişim Yardımı</string>
+    <string name="create_account">Hesap Oluştur</string>
+    <string name="dashboard">Kontrol Paneli</string>
+    <string name="date">Tarih</string>
+    <string name="date_label">Tarih</string>
+    <string name="describe_your_problem">Sorununuzu ayrıntılı olarak açıklayın</string>
+    <string name="dialog_share_your_problem">Sorununuzu Paylaşın</string>
+    <string name="dialog_tell_us_about_problem">Her gün karşılaştığınız bir sorunu anlatın. Onu çözmek için size özel bir uygulama yapalım!</string>
+    <string name="education">Eğitim</string>
+    <string name="education_emoji">🎓</string>
+    <string name="email_address">E-posta Adresi</string>
+    <string name="entertainment">Eğlence</string>
+    <string name="entertainment_emoji">🎮</string>
+    <string name="error_icon_content_description">Hata</string>
+    <string name="explore_ideas_by_area">Farklı problem alanlarında fikirleri keşfedin</string>
+    <string name="exposed_dropdown_menu_content_description">Açılır menüyü göster</string>
+    <string name="facebook">Facebook</string>
+    <string name="family">Aile</string>
+    <string name="family_emoji">👨‍👩‍👧‍👦</string>
+    <string name="favorites">Favoriler</string>
+    <string name="fill_info_to_get_started">Başlamak için aşağıdaki bilgileri doldurun</string>
+    <string name="finance">Finans</string>
+    <string name="finance_emoji">💰</string>
+    <string name="five_minutes_ago">5 dakika önce</string>
+    <string name="full_idea_description_placeholder">Tam fikir açıklaması buraya yazılacak...</string>
+    <string name="full_name">Tam Adı</string>
+    <string name="get_started">Başla</string>
+    <string name="google">Google</string>
+    <string name="got_a_problem">Bir sorununuz mu var? Hadi çözelim!</string>
+    <string name="have_more_app_ideas">Daha fazla uygulama fikriniz mi var?</string>
+    <string name="health">Sağlık</string>
+    <string name="health_emoji">🏥</string>
+    <string name="icon_content_description">İletişim kutusu simgesi</string>
+    <string name="idea_description_placeholder">Fikir açıklaması buraya yazılacak...</string>
+    <string name="idea_title">Fikir Başlığı</string>
+    <string name="idea_title_label">Fikir Başlığı</string>
+    <string name="ideas_in_this_category">Bu Kategorideki Fikirler</string>
+    <string name="in_progress">Devam ediyor</string>
+    <string name="item_view_role_description">Sekme</string>
+    <string name="learn_more">Daha Fazla Bilgi</string>
+    <string name="material_clock_toggle_content_description">ÖÖ veya ÖS\'yi seçin</string>
+    <string name="material_hour_24h_suffix">%1$s saat</string>
+    <string name="material_hour_selection">Saat seçin</string>
+    <string name="material_hour_suffix">Saat %1$s</string>
+    <string name="material_minute_selection">Dakikayı seçin</string>
+    <string name="material_minute_suffix">%1$s dakika</string>
+    <string name="material_timepicker_am">AM</string>
+    <string name="material_timepicker_clock_mode_description">Zaman girişi için saat moduna geçin.</string>
+    <string name="material_timepicker_hour">Saat</string>
+    <string name="material_timepicker_minute">Dakika</string>
+    <string name="material_timepicker_pm">PM</string>
+    <string name="material_timepicker_select_time">Zamanı seçin</string>
+    <string name="material_timepicker_text_input_mode_description">Zaman girişi için metin girişi moduna geçin.</string>
+    <string name="mtrl_badge_numberless_content_description">Yeni bildirim</string>
+    <string name="mtrl_chip_close_icon_content_description">%1$s içeriğini kaldır</string>
+    <string name="mtrl_exceed_max_badge_number_content_description" ns2:ignore="PluralsCandidate">%1$d adetten fazla yeni bildirim</string>
+    <string name="mtrl_picker_a11y_next_month">Sonraki aya değiştir</string>
+    <string name="mtrl_picker_a11y_prev_month">Önceki aya değiştir</string>
+    <string name="mtrl_picker_announce_current_range_selection">Başlangıç tarihi seçimi: %1$s – Bitiş tarihi seçimi: %2$s</string>
+    <string name="mtrl_picker_announce_current_selection">Geçerli seçim: %1$s</string>
+    <string name="mtrl_picker_announce_current_selection_none">yok</string>
+    <string name="mtrl_picker_cancel">İptal</string>
+    <string name="mtrl_picker_confirm">Tamam</string>
+    <string name="mtrl_picker_date_header_selected">%1$s</string>
+    <string name="mtrl_picker_date_header_title">Tarih Seçin</string>
+    <string name="mtrl_picker_date_header_unselected">Seçilen tarih</string>
+    <string name="mtrl_picker_day_of_week_column_header">Gün sütunu: %1$s</string>
+    <string name="mtrl_picker_end_date_description">Bitiş tarihi: %1$s</string>
+    <string name="mtrl_picker_invalid_format">Geçersiz biçim.</string>
+    <string name="mtrl_picker_invalid_format_example">Örnek: %1$s</string>
+    <string name="mtrl_picker_invalid_format_use">Tarih biçimi: %1$s</string>
+    <string name="mtrl_picker_invalid_range">Geçersiz aralık.</string>
+    <string name="mtrl_picker_navigate_to_current_year_description">Geçerli yıla (%1$d) git</string>
+    <string name="mtrl_picker_navigate_to_year_description">%1$d yılına git</string>
+    <string name="mtrl_picker_out_of_range">İzin verilen aralığın dışında: %1$s</string>
+    <string name="mtrl_picker_range_header_only_end_selected">Başlangıç tarihi – %1$s</string>
+    <string name="mtrl_picker_range_header_only_start_selected">%1$s – Bitiş tarihi</string>
+    <string name="mtrl_picker_range_header_selected">%1$s-%2$s</string>
+    <string name="mtrl_picker_range_header_title">Aralık Seçin</string>
+    <string name="mtrl_picker_range_header_unselected">Başlangıç tarihi - Bitiş tarihi</string>
+    <string name="mtrl_picker_save">Kaydet</string>
+    <string name="mtrl_picker_start_date_description">Başlangıç tarihi: %1$s</string>
+    <string name="mtrl_picker_text_input_date_hint">Tarih</string>
+    <string name="mtrl_picker_text_input_date_range_end_hint">Bitiş tarihi</string>
+    <string name="mtrl_picker_text_input_date_range_start_hint">Başlangıç tarihi</string>
+    <string name="mtrl_picker_text_input_day_abbr">g</string>
+    <string name="mtrl_picker_text_input_month_abbr">a</string>
+    <string name="mtrl_picker_text_input_year_abbr">y</string>
+    <string name="mtrl_picker_today_description">Bugün, %1$s</string>
+    <string name="mtrl_picker_toggle_to_calendar_input_mode">Takvim giriş moduna geç</string>
+    <string name="mtrl_picker_toggle_to_day_selection">Takvim görünümüne geçmek için dokunun</string>
+    <string name="mtrl_picker_toggle_to_text_input_mode">Metin giriş moduna geç</string>
+    <string name="mtrl_picker_toggle_to_year_selection">Yıl görünümüne geçmek için dokunun</string>
+    <string name="mtrl_timepicker_cancel">İptal</string>
+    <string name="mtrl_timepicker_confirm">Tamam</string>
+    <string name="my_completed_apps">Tamamlanan Uygulamalarım</string>
+    <string name="my_ideas_and_apps">Fikirlerim &amp; Uygulamalarım</string>
+    <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"Yukarı git"</string>
+    <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"Gezinme çekmecesini aç"</string>
+    <string name="new_message_received">Yeni mesaj alındı</string>
+    <string name="no_ideas_in_category">Bu kategoride henüz fikir yok</string>
+    <string name="one_ready">1 hazır</string>
+    <string name="or_continue_with">Veya devam et</string>
+    <string name="password">Şifre</string>
+    <string name="password_toggle_content_description">Şifreyi göster</string>
+    <string name="phone_emoji">📱</string>
+    <string name="productivity">Verimlilik</string>
+    <string name="recent_activities">Son Etkinlikler</string>
+    <string name="recent_ideas">Son Fikirler</string>
+    <string name="search_emoji">🔍</string>
+    <string msgid="6264217191555673260" name="search_menu_title">"Ara"</string>
+    <string name="settings">Ayarlar</string>
+    <string name="share_problem_desc">Günlük sorunlarınızı paylaşın, size özel bir uygulama yapalım - tamamen ücretsiz!</string>
+    <string name="share_your_problem">Sorununuzu Paylaşın</string>
+    <string name="sign_in_instead">Bunun yerine Giriş Yap</string>
+    <string name="sort_by_recent">Sırala: En Son</string>
+    <string msgid="6277540029070332960" name="status_bar_notification_info_overflow">"999+"</string>
+    <string name="submit_idea">Fikri Gönder</string>
+    <string name="submit_more_ideas">Daha fazla özel uygulama oluşturmak için Ana sekmeden daha fazla fikir gönderin!</string>
+    <string name="submitted_by_label">Gönderen Adı</string>
+    <string name="submitted_by_name">Gönderen Adı</string>
+    <string name="task_completed">Görev tamamlandı</string>
+    <string name="toolbar_title_business">İş</string>
+    <string name="toolbar_title_category_detail">Kategori Detayı</string>
+    <string name="toolbar_title_education">Eğitim</string>
+    <string name="toolbar_title_entertainment">Eğlence</string>
+    <string name="toolbar_title_family">Aile</string>
+    <string name="toolbar_title_finance">Finans</string>
+    <string name="toolbar_title_health">Sağlık</string>
+    <string name="toolbar_title_ideaapps">IdeaApps</string>
+    <string name="toolbar_title_productivity">Verimlilik</string>
+    <string name="toolbar_title_utilities">Araçlar</string>
+    <string name="track_submitted_ideas">Gönderdiğiniz fikirleri takip edin ve tamamlanan uygulamaları indirin</string>
+    <string name="two_minutes_ago">2 dakika önce</string>
+    <string name="utilities">Araçlar</string>
+    <string name="utilities_emoji">🔧</string>
+    <string name="welcome_back">Tekrar hoş geldiniz! İşte olanlar.</string>
+    <string name="welcome_title">Hoş geldiniz
+Hadi bir uygulama yapalım!</string>
+    <string name="your_name">Adınız</string>
+    <string name="zero">0</string>
+    <string name="zero_in_progress">0 devam ediyor</string>
+</resources>

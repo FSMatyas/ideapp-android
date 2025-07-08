@@ -27,7 +27,9 @@
                 android:background="@drawable/status_badge_new"
                 android:gravity="center"
                 android:text="@string/category_detail_phone_emoji"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:maxLines="1"
+                android:ellipsize="end" />
 
             <LinearLayout
                 android:layout_width="0dp"
@@ -41,14 +43,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/category_detail_productivity"
-                    android:textColor="@color/primary_color" />
+                    android:textColor="@color/primary_color"
+                    android:maxLines="2"
+                    android:ellipsize="end" />
 
                 <TextView
                     android:id="@+id/tvCategoryCount"
                     style="@style/AppTextStyle.Caption"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/category_detail_ideas_count" />
+                    android:text="@string/category_detail_ideas_count"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
 
             </LinearLayout>
 
@@ -67,7 +73,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Ideas in this Category" />
+                android:text="@string/ideas_in_this_category"
+                android:maxLines="2"
+                android:ellipsize="end" />
 
             <TextView
                 style="@style/AppTextStyle.Caption"
@@ -76,7 +84,9 @@
                 android:background="?attr/selectableItemBackground"
                 android:padding="8dp"
                 android:text="@string/sort_by_recent"
-                android:textColor="@color/primary_color" />
+                android:textColor="@color/primary_color"
+                android:maxLines="1"
+                android:ellipsize="end" />
 
         </LinearLayout>
 
@@ -86,7 +96,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginVertical="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
             android:visibility="gone" />
 
         <androidx.recyclerview.widget.RecyclerView
@@ -116,7 +127,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="16dp"
                     android:text="@string/search_emoji"
-                    android:textSize="48sp" />
+                    android:textSize="48sp"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
 
                 <TextView
                     style="@style/AppTextStyle.Body"
@@ -125,14 +138,18 @@
                     android:layout_marginBottom="8dp"
                     android:text="@string/no_ideas_in_category"
                     android:textAlignment="center"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    android:maxLines="2"
+                    android:ellipsize="end" />
 
                 <TextView
                     style="@style/AppTextStyle.Caption"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/be_first_to_submit"
-                    android:textAlignment="center" />
+                    android:textAlignment="center"
+                    android:maxLines="2"
+                    android:ellipsize="end" />
 
             </LinearLayout>
 

@@ -4127,6 +4127,7 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string contact_helper
 string create_account
 string dashboard
 string date
@@ -4329,6 +4330,7 @@ string utilities
 string utilities_emoji
 string welcome_back
 string welcome_title
+string your_name
 string zero
 string zero_in_progress
 style AlertDialog_AppCompat

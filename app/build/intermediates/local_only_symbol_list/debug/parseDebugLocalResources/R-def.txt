@@ -198,6 +198,7 @@ string category_label
 string category_productivity
 string category_utilities
 string com.google.firebase.crashlytics.mapping_file_id
+string contact_helper
 string create_account
 string dashboard
 string date
@@ -277,6 +278,7 @@ string utilities
 string utilities_emoji
 string welcome_back
 string welcome_title
+string your_name
 string zero
 string zero_in_progress
 style AppBottomNavStyle
