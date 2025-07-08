@@ -43,6 +43,7 @@
     <color name="white">#FFFFFFFF</color>
     <dimen name="pagination_button_margin">8dp</dimen>
     <string name="app_name">IdeaApp</string>
+    <string name="bulb_emoji">💡</string>
     <string name="bulb_icon">Bulb icon</string>
     <string name="com.google.firebase.crashlytics.mapping_file_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">00000000000000000000000000000000</string>
     <string name="gcm_defaultSenderId" translatable="false">134706271317</string>
@@ -50,7 +51,15 @@
     <string name="google_app_id" translatable="false">1:134706271317:android:19efd04c9460e4312c70dc</string>
     <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBNVpuTjA_oYBmTuysgeZuR8lZpOjszsDA</string>
     <string name="google_storage_bucket" translatable="false">ideapp-d498a.firebasestorage.app</string>
+    <string name="have_more_app_ideas">Have more app ideas?</string>
+    <string name="in_progress">In Progress</string>
+    <string name="my_completed_apps">My Completed Apps</string>
+    <string name="my_ideas_and_apps">My Ideas &amp; Apps</string>
+    <string name="one_ready">1 ready</string>
     <string name="project_id" translatable="false">ideapp-d498a</string>
+    <string name="submit_more_ideas">Submit more ideas from the Home tab to get more custom apps built for you!</string>
+    <string name="track_submitted_ideas">Track your submitted ideas and download completed apps</string>
+    <string name="zero_in_progress">0 in progress</string>
     <style name="AppBottomNavStyle" parent="Widget.Material3.BottomNavigationView">
         <item name="android:background">@color/nav_background</item>
         <item name="itemIconTint">@color/nav_item_color</item>

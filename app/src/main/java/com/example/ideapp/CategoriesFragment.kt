@@ -41,8 +41,14 @@ class CategoriesFragment : Fragment() {
         // Get all category cards and set up click listeners
         val categoryCards = getAllCategoryCards(view)
         val categoryNames = listOf(
-            "productivity", "health", "education", "social", 
-            "entertainment", "utility", "finance", "other"
+            "productivity", // 1st card
+            "family",       // 2nd card
+            "business",     // 3rd card
+            "entertainment",// 4th card
+            "finance",      // 5th card
+            "health",       // 6th card
+            "education",    // 7th card
+            "utilities"     // 8th card
         )
 
         categoryCards.forEachIndexed { index, card ->
@@ -74,13 +80,19 @@ class CategoriesFragment : Fragment() {
     }
 
     private fun openCategoryDetail(categoryName: String) {
-        // Show a simple dialog with the category name (placeholder for detail view)
-        val dialog = androidx.appcompat.app.AlertDialog.Builder(requireContext())
-            .setTitle(categoryName.capitalize())
-            .setMessage("Details for $categoryName category will appear here.")
-            .setPositiveButton("OK", null)
-            .create()
-        dialog.show()
+        val context = requireContext()
+        val intent = when (categoryName.lowercase()) {
+            "finance" -> android.content.Intent(context, FinanceActivity::class.java)
+            "health" -> android.content.Intent(context, HealthActivity::class.java)
+            "education" -> android.content.Intent(context, EducationActivity::class.java)
+            "entertainment" -> android.content.Intent(context, EntertainmentActivity::class.java)
+            "productivity" -> android.content.Intent(context, ProductivityActivity::class.java)
+            "family" -> android.content.Intent(context, FamilyActivity::class.java)
+            "business" -> android.content.Intent(context, BusinessActivity::class.java)
+            "utilities", "utility" -> android.content.Intent(context, UtilitiesActivity::class.java)
+            else -> null
+        }
+        intent?.let { startActivity(it) }
     }
 
     companion object {

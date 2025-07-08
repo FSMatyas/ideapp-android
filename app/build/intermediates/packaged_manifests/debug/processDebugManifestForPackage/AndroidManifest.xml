@@ -37,6 +37,33 @@
         android:testOnly="true"
         android:theme="@style/Theme.LetsMakeAnApp" >
         <activity
+            android:name="com.example.ideapp.FinanceActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.ideapp.HealthActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.ideapp.EducationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.ideapp.EntertainmentActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.ideapp.ProductivityActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.ideapp.FamilyActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.ideapp.BusinessActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.ideapp.UtilitiesActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.ideapp.CategoryDetailActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.ideapp.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.LetsMakeAnApp" >

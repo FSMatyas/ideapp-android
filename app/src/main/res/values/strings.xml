@@ -1,4 +1,13 @@
 <resources>
     <string name="app_name">IdeaApp</string>
     <string name="bulb_icon">Bulb icon</string>
+    <string name="my_ideas_and_apps">My Ideas &amp; Apps</string>
+    <string name="track_submitted_ideas">Track your submitted ideas and download completed apps</string>
+    <string name="my_completed_apps">My Completed Apps</string>
+    <string name="one_ready">1 ready</string>
+    <string name="in_progress">In Progress</string>
+    <string name="zero_in_progress">0 in progress</string>
+    <string name="bulb_emoji">💡</string>
+    <string name="have_more_app_ideas">Have more app ideas?</string>
+    <string name="submit_more_ideas">Submit more ideas from the Home tab to get more custom apps built for you!</string>
 </resources>
