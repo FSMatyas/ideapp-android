@@ -1,0 +1,6 @@
+<resources>
+    <!-- TODO: Add French translations here. Example below: -->
+    <string name="app_name">IdeaApp</string>
+    <string name="toolbar_title_ideaapps">IdeaApps</string>
+    <!-- ...copy all keys from English strings.xml and translate as needed... -->
+</resources>
