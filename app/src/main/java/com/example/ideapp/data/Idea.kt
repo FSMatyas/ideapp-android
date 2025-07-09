@@ -47,7 +47,6 @@ enum class IdeaStatus(val displayName: String, val color: String) {
  * Comment on an idea
  */
 data class Comment(
-    val id: String = "",
     val text: String = "",
     val authorName: String = "",
     val authorEmail: String = "",

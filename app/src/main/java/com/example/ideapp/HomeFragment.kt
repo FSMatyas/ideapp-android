@@ -59,12 +59,10 @@ class HomeFragment : Fragment() {
 
         val bulbIcon = view.findViewById<android.widget.ImageView>(R.id.bulbIcon)
         bulbIcon.setOnLongClickListener {
-            try {
-                requireActivity().findNavController(R.id.nav_host_fragment)
-                    .navigate(R.id.action_homeFragment_to_adminLoginFragment)
-            } catch (e: Exception) {
-                Toast.makeText(requireContext(), "Navigation error: ${e.localizedMessage}", Toast.LENGTH_LONG).show()
-            }
+            // --- ADMIN LOGIN: Új Activity indítása ---
+            // Ezt a blokkot bármikor eltávolíthatod vagy módosíthatod.
+            val intent = android.content.Intent(requireContext(), AdminLoginActivity::class.java)
+            startActivity(intent)
             true
         }
     }

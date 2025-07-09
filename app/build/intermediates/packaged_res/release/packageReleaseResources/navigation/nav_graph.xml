@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.ideapp.HomeFragment"
+        android:label="Home">
+        <action
+            android:id="@+id/action_homeFragment_to_adminLoginFragment"
+            app:destination="@id/adminLoginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/adminLoginFragment"
+        android:name="com.example.ideapp.AdminLoginFragment"
+        android:label="Admin Login" >
+        <action
+            android:id="@+id/action_adminLoginFragment_to_adminPanelFragment"
+            app:destination="@id/adminPanelFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/adminPanelFragment"
+        android:name="com.example.ideapp.AdminPanelFragment"
+        android:label="Admin Panel" >
+        <action
+            android:id="@+id/action_adminPanelFragment_to_adminLoginFragment"
+            app:destination="@id/adminLoginFragment" />
+        <action
+            android:id="@+id/action_adminPanelFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+</navigation>

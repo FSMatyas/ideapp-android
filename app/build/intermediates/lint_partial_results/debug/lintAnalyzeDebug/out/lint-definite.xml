@@ -1,0 +1,4106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 8.11.0" type="incidents">
+
+    <incident
+        id="OldTargetApi"
+        severity="warning"
+        message="Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the `android.os.Build.VERSION_CODES` javadoc for details.">
+        <fix-replace
+            description="Update targetSdkVersion to 36"
+            oldString="34"
+            replacement="36"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="15"
+            column="9"
+            startOffset="332"
+            endLine="15"
+            endColumn="21"
+            endOffset="344"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of `compileSdkVersion` than 34 is available: 36">
+        <fix-replace
+            description="Set compileSdkVersion to 36"
+            oldString="34"
+            replacement="36"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="10"
+            column="5"
+            startOffset="223"
+            endLine="10"
+            endColumn="18"
+            endOffset="236"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.core:core-ktx than 1.12.0 is available: 1.16.0">
+        <fix-replace
+            description="Change to 1.16.0"
+            family="Update versions"
+            oldString="1.12.0"
+            replacement="1.16.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="45"
+            column="20"
+            startOffset="1071"
+            endLine="45"
+            endColumn="51"
+            endOffset="1102"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.1">
+        <fix-replace
+            description="Change to 1.7.1"
+            family="Update versions"
+            oldString="1.6.1"
+            replacement="1.7.1"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="46"
+            column="20"
+            startOffset="1123"
+            endLine="46"
+            endColumn="56"
+            endOffset="1159"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.android.material:material than 1.11.0 is available: 1.12.0">
+        <fix-replace
+            description="Change to 1.12.0"
+            family="Update versions"
+            oldString="1.11.0"
+            replacement="1.12.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="47"
+            column="20"
+            startOffset="1180"
+            endLine="47"
+            endColumn="65"
+            endOffset="1225"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1">
+        <fix-replace
+            description="Change to 2.2.1"
+            family="Update versions"
+            oldString="2.1.4"
+            replacement="2.2.1"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="48"
+            column="20"
+            startOffset="1246"
+            endLine="48"
+            endColumn="70"
+            endOffset="1296"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of com.google.firebase:firebase-bom than 32.7.0 is available: 33.16.0">
+        <fix-replace
+            description="Change to 33.16.0"
+            family="Update versions"
+            oldString="32.7.0"
+            replacement="33.16.0"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="51"
+            column="20"
+            startOffset="1353"
+            endLine="51"
+            endColumn="71"
+            endOffset="1404"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.navigation:navigation-fragment-ktx than 2.7.6 is available: 2.9.1">
+        <fix-replace
+            description="Change to 2.9.1"
+            family="Update versions"
+            oldString="2.7.6"
+            replacement="2.9.1"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="58"
+            column="20"
+            startOffset="1721"
+            endLine="58"
+            endColumn="71"
+            endOffset="1772"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.navigation:navigation-ui-ktx than 2.7.6 is available: 2.9.1">
+        <fix-replace
+            description="Change to 2.9.1"
+            family="Update versions"
+            oldString="2.7.6"
+            replacement="2.9.1"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="59"
+            column="20"
+            startOffset="1793"
+            endLine="59"
+            endColumn="65"
+            endOffset="1838"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.7.0 is available: 2.9.1">
+        <fix-replace
+            description="Change to 2.9.1"
+            family="Update versions"
+            oldString="2.7.0"
+            replacement="2.9.1"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="62"
+            column="20"
+            startOffset="1896"
+            endLine="62"
+            endColumn="70"
+            endOffset="1946"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.lifecycle:lifecycle-livedata-ktx than 2.7.0 is available: 2.9.1">
+        <fix-replace
+            description="Change to 2.9.1"
+            family="Update versions"
+            oldString="2.7.0"
+            replacement="2.9.1"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="63"
+            column="20"
+            startOffset="1967"
+            endLine="63"
+            endColumn="69"
+            endOffset="2016"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.work:work-runtime-ktx than 2.9.0 is available: 2.10.2">
+        <fix-replace
+            description="Change to 2.10.2"
+            family="Update versions"
+            oldString="2.9.0"
+            replacement="2.10.2"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="66"
+            column="20"
+            startOffset="2098"
+            endLine="66"
+            endColumn="58"
+            endOffset="2136"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1">
+        <fix-replace
+            description="Change to 1.2.1"
+            family="Update versions"
+            oldString="1.1.5"
+            replacement="1.2.1"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="69"
+            column="31"
+            startOffset="2219"
+            endLine="69"
+            endColumn="62"
+            endOffset="2250"/>
+    </incident>
+
+    <incident
+        id="GradleDependency"
+        severity="warning"
+        message="A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1">
+        <fix-replace
+            description="Change to 3.6.1"
+            family="Update versions"
+            oldString="3.5.1"
+            replacement="3.6.1"
+            priority="0"/>
+        <location
+            file="${:app*projectDir}/build.gradle"
+            line="70"
+            column="31"
+            startOffset="2282"
+            endLine="70"
+            endColumn="75"
+            endOffset="2326"/>
+    </incident>
+
+    <incident
+        id="DiscouragedApi"
+        severity="warning"
+        message="Use of this function is discouraged because resource reflection makes it harder to perform build optimizations and compile-time verification of code. It is much more efficient to retrieve resources by identifier (e.g. `R.foo.bar`) than by name (e.g. `getIdentifier(&quot;bar&quot;, &quot;foo&quot;, null)`).">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/CategoryDetailActivity.kt"
+            line="15"
+            column="35"
+            startOffset="633"
+            endLine="15"
+            endColumn="48"
+            endOffset="646"/>
+    </incident>
+
+    <incident
+        id="DiscouragedApi"
+        severity="warning"
+        message="Use of this function is discouraged because resource reflection makes it harder to perform build optimizations and compile-time verification of code. It is much more efficient to retrieve resources by identifier (e.g. `R.foo.bar`) than by name (e.g. `getIdentifier(&quot;bar&quot;, &quot;foo&quot;, null)`).">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/SubmitIdeaDialogFragment.kt"
+            line="102"
+            column="35"
+            startOffset="3881"
+            endLine="102"
+            endColumn="48"
+            endOffset="3894"/>
+    </incident>
+
+    <incident
+        id="UseCompatLoadingForDrawables"
+        severity="warning"
+        message="Use `AppCompatResources.getDrawable()`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/HomeFragment.kt"
+            line="189"
+            column="17"
+            startOffset="7723"
+            endLine="189"
+            endColumn="84"
+            endOffset="7790"/>
+    </incident>
+
+    <incident
+        id="UseCompatLoadingForDrawables"
+        severity="warning"
+        message="Use `AppCompatResources.getDrawable()`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/HomeFragment.kt"
+            line="189"
+            column="17"
+            startOffset="7723"
+            endLine="189"
+            endColumn="84"
+            endOffset="7790"/>
+    </incident>
+
+    <incident
+        id="UseCompatLoadingForDrawables"
+        severity="warning"
+        message="Use `AppCompatResources.getDrawable()`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/HomeFragment.kt"
+            line="191"
+            column="17"
+            startOffset="7824"
+            endLine="191"
+            endColumn="75"
+            endOffset="7882"/>
+    </incident>
+
+    <incident
+        id="UseCompatLoadingForDrawables"
+        severity="warning"
+        message="Use `AppCompatResources.getDrawable()`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/HomeFragment.kt"
+            line="191"
+            column="17"
+            startOffset="7824"
+            endLine="191"
+            endColumn="75"
+            endOffset="7882"/>
+    </incident>
+
+    <incident
+        id="UseCompatLoadingForDrawables"
+        severity="warning"
+        message="Use `AppCompatResources.getDrawable()`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/MyAppsFragment.kt"
+            line="165"
+            column="17"
+            startOffset="7405"
+            endLine="165"
+            endColumn="84"
+            endOffset="7472"/>
+    </incident>
+
+    <incident
+        id="UseCompatLoadingForDrawables"
+        severity="warning"
+        message="Use `AppCompatResources.getDrawable()`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/MyAppsFragment.kt"
+            line="165"
+            column="17"
+            startOffset="7405"
+            endLine="165"
+            endColumn="84"
+            endOffset="7472"/>
+    </incident>
+
+    <incident
+        id="UseCompatLoadingForDrawables"
+        severity="warning"
+        message="Use `AppCompatResources.getDrawable()`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/MyAppsFragment.kt"
+            line="167"
+            column="17"
+            startOffset="7506"
+            endLine="167"
+            endColumn="75"
+            endOffset="7564"/>
+    </incident>
+
+    <incident
+        id="UseCompatLoadingForDrawables"
+        severity="warning"
+        message="Use `AppCompatResources.getDrawable()`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/MyAppsFragment.kt"
+            line="167"
+            column="17"
+            startOffset="7506"
+            endLine="167"
+            endColumn="75"
+            endOffset="7564"/>
+    </incident>
+
+    <incident
+        id="UseCompatLoadingForDrawables"
+        severity="warning"
+        message="Use `AppCompatResources.getDrawable()`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/MyAppsFragment.kt"
+            line="194"
+            column="17"
+            startOffset="8741"
+            endLine="194"
+            endColumn="84"
+            endOffset="8808"/>
+    </incident>
+
+    <incident
+        id="UseCompatLoadingForDrawables"
+        severity="warning"
+        message="Use `AppCompatResources.getDrawable()`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/MyAppsFragment.kt"
+            line="194"
+            column="17"
+            startOffset="8741"
+            endLine="194"
+            endColumn="84"
+            endOffset="8808"/>
+    </incident>
+
+    <incident
+        id="UseCompatLoadingForDrawables"
+        severity="warning"
+        message="Use `AppCompatResources.getDrawable()`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/MyAppsFragment.kt"
+            line="196"
+            column="17"
+            startOffset="8842"
+            endLine="196"
+            endColumn="75"
+            endOffset="8900"/>
+    </incident>
+
+    <incident
+        id="UseCompatLoadingForDrawables"
+        severity="warning"
+        message="Use `AppCompatResources.getDrawable()`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/MyAppsFragment.kt"
+            line="196"
+            column="17"
+            startOffset="8842"
+            endLine="196"
+            endColumn="75"
+            endOffset="8900"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;toolbar_title_category_detail&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="4"
+            column="13"
+            startOffset="132"
+            endLine="4"
+            endColumn="49"
+            endOffset="168"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;category_detail_page&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="5"
+            column="13"
+            startOffset="207"
+            endLine="5"
+            endColumn="40"
+            endOffset="234"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;toolbar_title_business&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="6"
+            column="13"
+            startOffset="278"
+            endLine="6"
+            endColumn="42"
+            endOffset="307"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;business&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="7"
+            column="13"
+            startOffset="339"
+            endLine="7"
+            endColumn="28"
+            endOffset="354"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;toolbar_title_family&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="8"
+            column="13"
+            startOffset="386"
+            endLine="8"
+            endColumn="40"
+            endOffset="413"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;family&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="9"
+            column="13"
+            startOffset="443"
+            endLine="9"
+            endColumn="26"
+            endOffset="456"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;toolbar_title_finance&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="10"
+            column="13"
+            startOffset="486"
+            endLine="10"
+            endColumn="41"
+            endOffset="514"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;finance&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="11"
+            column="13"
+            startOffset="545"
+            endLine="11"
+            endColumn="27"
+            endOffset="559"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;toolbar_title_health&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="12"
+            column="13"
+            startOffset="590"
+            endLine="12"
+            endColumn="40"
+            endOffset="617"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;health&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="13"
+            column="13"
+            startOffset="647"
+            endLine="13"
+            endColumn="26"
+            endOffset="660"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;toolbar_title_education&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="14"
+            column="13"
+            startOffset="690"
+            endLine="14"
+            endColumn="43"
+            endOffset="720"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;education&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="15"
+            column="13"
+            startOffset="753"
+            endLine="15"
+            endColumn="29"
+            endOffset="769"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;toolbar_title_entertainment&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="16"
+            column="13"
+            startOffset="802"
+            endLine="16"
+            endColumn="47"
+            endOffset="836"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;entertainment&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="17"
+            column="13"
+            startOffset="873"
+            endLine="17"
+            endColumn="33"
+            endOffset="893"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;toolbar_title_productivity&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="18"
+            column="13"
+            startOffset="930"
+            endLine="18"
+            endColumn="46"
+            endOffset="963"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;productivity&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="19"
+            column="13"
+            startOffset="999"
+            endLine="19"
+            endColumn="32"
+            endOffset="1018"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;toolbar_title_utilities&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="20"
+            column="13"
+            startOffset="1054"
+            endLine="20"
+            endColumn="43"
+            endOffset="1084"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;utilities&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="21"
+            column="13"
+            startOffset="1117"
+            endLine="21"
+            endColumn="29"
+            endOffset="1133"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;bulb_icon&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="22"
+            column="13"
+            startOffset="1166"
+            endLine="22"
+            endColumn="29"
+            endOffset="1182"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;my_ideas_and_apps&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="23"
+            column="13"
+            startOffset="1215"
+            endLine="23"
+            endColumn="37"
+            endOffset="1239"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;track_submitted_ideas&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="24"
+            column="13"
+            startOffset="1282"
+            endLine="24"
+            endColumn="41"
+            endOffset="1310"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;my_completed_apps&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="25"
+            column="13"
+            startOffset="1388"
+            endLine="25"
+            endColumn="37"
+            endOffset="1412"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;one_ready&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="26"
+            column="13"
+            startOffset="1453"
+            endLine="26"
+            endColumn="29"
+            endOffset="1469"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;in_progress&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="27"
+            column="13"
+            startOffset="1500"
+            endLine="27"
+            endColumn="31"
+            endOffset="1518"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;zero_in_progress&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="28"
+            column="13"
+            startOffset="1553"
+            endLine="28"
+            endColumn="36"
+            endOffset="1576"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;bulb_emoji&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="29"
+            column="13"
+            startOffset="1613"
+            endLine="29"
+            endColumn="30"
+            endOffset="1630"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;have_more_app_ideas&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="30"
+            column="13"
+            startOffset="1656"
+            endLine="30"
+            endColumn="39"
+            endOffset="1682"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;submit_more_ideas&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="31"
+            column="13"
+            startOffset="1726"
+            endLine="31"
+            endColumn="37"
+            endOffset="1750"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;idea_title&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="32"
+            column="13"
+            startOffset="1848"
+            endLine="32"
+            endColumn="30"
+            endOffset="1865"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;approved&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="33"
+            column="13"
+            startOffset="1899"
+            endLine="33"
+            endColumn="28"
+            endOffset="1914"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;category&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="34"
+            column="13"
+            startOffset="1946"
+            endLine="34"
+            endColumn="28"
+            endOffset="1961"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;submitted_by_name&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="35"
+            column="13"
+            startOffset="1993"
+            endLine="35"
+            endColumn="37"
+            endOffset="2017"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;date&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="36"
+            column="13"
+            startOffset="2058"
+            endLine="36"
+            endColumn="24"
+            endOffset="2069"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;idea_description_placeholder&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="37"
+            column="13"
+            startOffset="2097"
+            endLine="37"
+            endColumn="48"
+            endOffset="2132"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;zero&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="38"
+            column="13"
+            startOffset="2185"
+            endLine="38"
+            endColumn="24"
+            endOffset="2196"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;browse_by_category&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="39"
+            column="13"
+            startOffset="2221"
+            endLine="39"
+            endColumn="38"
+            endOffset="2246"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;explore_ideas_by_area&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="40"
+            column="13"
+            startOffset="2288"
+            endLine="40"
+            endColumn="41"
+            endOffset="2316"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;phone_emoji&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="41"
+            column="13"
+            startOffset="2380"
+            endLine="41"
+            endColumn="31"
+            endOffset="2398"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;category_productivity&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="42"
+            column="13"
+            startOffset="2424"
+            endLine="42"
+            endColumn="41"
+            endOffset="2452"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;family_emoji&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="43"
+            column="13"
+            startOffset="2488"
+            endLine="43"
+            endColumn="32"
+            endOffset="2507"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;category_family&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="44"
+            column="13"
+            startOffset="2542"
+            endLine="44"
+            endColumn="35"
+            endOffset="2564"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;business_emoji&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="45"
+            column="13"
+            startOffset="2594"
+            endLine="45"
+            endColumn="34"
+            endOffset="2615"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;category_business&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="46"
+            column="13"
+            startOffset="2641"
+            endLine="46"
+            endColumn="37"
+            endOffset="2665"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;entertainment_emoji&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="47"
+            column="13"
+            startOffset="2697"
+            endLine="47"
+            endColumn="39"
+            endOffset="2723"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;category_entertainment&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="48"
+            column="13"
+            startOffset="2749"
+            endLine="48"
+            endColumn="42"
+            endOffset="2778"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;finance_emoji&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="49"
+            column="13"
+            startOffset="2815"
+            endLine="49"
+            endColumn="33"
+            endOffset="2835"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;category_finance&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="50"
+            column="13"
+            startOffset="2861"
+            endLine="50"
+            endColumn="36"
+            endOffset="2884"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;health_emoji&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="51"
+            column="13"
+            startOffset="2915"
+            endLine="51"
+            endColumn="32"
+            endOffset="2934"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;category_health&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="52"
+            column="13"
+            startOffset="2960"
+            endLine="52"
+            endColumn="35"
+            endOffset="2982"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;education_emoji&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="53"
+            column="13"
+            startOffset="3012"
+            endLine="53"
+            endColumn="35"
+            endOffset="3034"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;category_education&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="54"
+            column="13"
+            startOffset="3060"
+            endLine="54"
+            endColumn="38"
+            endOffset="3085"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;utilities_emoji&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="55"
+            column="13"
+            startOffset="3118"
+            endLine="55"
+            endColumn="35"
+            endOffset="3140"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;category_utilities&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="56"
+            column="13"
+            startOffset="3166"
+            endLine="56"
+            endColumn="38"
+            endOffset="3191"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;got_a_problem&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="57"
+            column="13"
+            startOffset="3224"
+            endLine="57"
+            endColumn="33"
+            endOffset="3244"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;share_problem_desc&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="58"
+            column="13"
+            startOffset="3299"
+            endLine="58"
+            endColumn="38"
+            endOffset="3324"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;share_your_problem&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="59"
+            column="13"
+            startOffset="3443"
+            endLine="59"
+            endColumn="38"
+            endOffset="3468"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;recent_ideas&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="60"
+            column="13"
+            startOffset="3510"
+            endLine="60"
+            endColumn="32"
+            endOffset="3529"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;idea_title_label&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="61"
+            column="13"
+            startOffset="3565"
+            endLine="61"
+            endColumn="36"
+            endOffset="3588"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;category_label&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="62"
+            column="13"
+            startOffset="3622"
+            endLine="62"
+            endColumn="34"
+            endOffset="3643"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;submitted_by_label&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="63"
+            column="13"
+            startOffset="3675"
+            endLine="63"
+            endColumn="38"
+            endOffset="3700"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;date_label&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="64"
+            column="13"
+            startOffset="3741"
+            endLine="64"
+            endColumn="30"
+            endOffset="3758"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;full_idea_description_placeholder&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="65"
+            column="13"
+            startOffset="3786"
+            endLine="65"
+            endColumn="53"
+            endOffset="3826"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;category_detail_phone_emoji&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="66"
+            column="13"
+            startOffset="3884"
+            endLine="66"
+            endColumn="47"
+            endOffset="3918"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;category_detail_productivity&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="67"
+            column="13"
+            startOffset="3944"
+            endLine="67"
+            endColumn="48"
+            endOffset="3979"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;category_detail_ideas_count&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="68"
+            column="13"
+            startOffset="4015"
+            endLine="68"
+            endColumn="47"
+            endOffset="4049"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;ideas_in_this_category&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="69"
+            column="13"
+            startOffset="4098"
+            endLine="69"
+            endColumn="42"
+            endOffset="4127"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;sort_by_recent&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="70"
+            column="13"
+            startOffset="4173"
+            endLine="70"
+            endColumn="34"
+            endOffset="4194"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;search_emoji&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="71"
+            column="13"
+            startOffset="4233"
+            endLine="71"
+            endColumn="32"
+            endOffset="4252"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;no_ideas_in_category&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="72"
+            column="13"
+            startOffset="4278"
+            endLine="72"
+            endColumn="40"
+            endOffset="4305"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;be_first_to_submit&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="73"
+            column="13"
+            startOffset="4358"
+            endLine="73"
+            endColumn="38"
+            endOffset="4383"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;welcome_title&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="74"
+            column="13"
+            startOffset="4455"
+            endLine="74"
+            endColumn="33"
+            endOffset="4475"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;build_amazing_apps&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="75"
+            column="13"
+            startOffset="4533"
+            endLine="75"
+            endColumn="38"
+            endOffset="4558"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;get_started&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="76"
+            column="13"
+            startOffset="4613"
+            endLine="76"
+            endColumn="31"
+            endOffset="4631"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;learn_more&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="77"
+            column="13"
+            startOffset="4666"
+            endLine="77"
+            endColumn="30"
+            endOffset="4683"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;create_account&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="78"
+            column="13"
+            startOffset="4717"
+            endLine="78"
+            endColumn="34"
+            endOffset="4738"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;fill_info_to_get_started&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="79"
+            column="13"
+            startOffset="4776"
+            endLine="79"
+            endColumn="44"
+            endOffset="4807"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;agree_terms&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="80"
+            column="13"
+            startOffset="4875"
+            endLine="80"
+            endColumn="31"
+            endOffset="4893"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;sign_in_instead&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="81"
+            column="13"
+            startOffset="4967"
+            endLine="81"
+            endColumn="35"
+            endOffset="4989"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;or_continue_with&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="82"
+            column="13"
+            startOffset="5028"
+            endLine="82"
+            endColumn="36"
+            endOffset="5051"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;google&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="83"
+            column="13"
+            startOffset="5091"
+            endLine="83"
+            endColumn="26"
+            endOffset="5104"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;facebook&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="84"
+            column="13"
+            startOffset="5134"
+            endLine="84"
+            endColumn="28"
+            endOffset="5149"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;dashboard&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="85"
+            column="13"
+            startOffset="5181"
+            endLine="85"
+            endColumn="29"
+            endOffset="5197"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;welcome_back&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="86"
+            column="13"
+            startOffset="5230"
+            endLine="86"
+            endColumn="32"
+            endOffset="5249"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;favorites&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="87"
+            column="13"
+            startOffset="5313"
+            endLine="87"
+            endColumn="29"
+            endOffset="5329"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;settings&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="88"
+            column="13"
+            startOffset="5362"
+            endLine="88"
+            endColumn="28"
+            endOffset="5377"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;recent_activities&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="89"
+            column="13"
+            startOffset="5409"
+            endLine="89"
+            endColumn="37"
+            endOffset="5433"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;task_completed&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="90"
+            column="13"
+            startOffset="5474"
+            endLine="90"
+            endColumn="34"
+            endOffset="5495"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;two_minutes_ago&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="91"
+            column="13"
+            startOffset="5533"
+            endLine="91"
+            endColumn="35"
+            endOffset="5555"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;new_message_received&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="92"
+            column="13"
+            startOffset="5592"
+            endLine="92"
+            endColumn="40"
+            endOffset="5619"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;five_minutes_ago&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="93"
+            column="13"
+            startOffset="5663"
+            endLine="93"
+            endColumn="36"
+            endOffset="5686"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;dialog_share_your_problem&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="94"
+            column="13"
+            startOffset="5723"
+            endLine="94"
+            endColumn="45"
+            endOffset="5755"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;dialog_tell_us_about_problem&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="95"
+            column="13"
+            startOffset="5797"
+            endLine="95"
+            endColumn="48"
+            endOffset="5832"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;cancel&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="96"
+            column="13"
+            startOffset="5938"
+            endLine="96"
+            endColumn="26"
+            endOffset="5951"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;submit_idea&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="97"
+            column="13"
+            startOffset="5981"
+            endLine="97"
+            endColumn="31"
+            endOffset="5999"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;app_idea_title&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="98"
+            column="13"
+            startOffset="6034"
+            endLine="98"
+            endColumn="34"
+            endOffset="6055"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;describe_your_problem&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="99"
+            column="13"
+            startOffset="6093"
+            endLine="99"
+            endColumn="41"
+            endOffset="6121"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;full_name&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="100"
+            column="13"
+            startOffset="6176"
+            endLine="100"
+            endColumn="29"
+            endOffset="6192"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;email_address&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="101"
+            column="13"
+            startOffset="6225"
+            endLine="101"
+            endColumn="33"
+            endOffset="6245"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;password&quot; is not translated in &quot;fr&quot; (French)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="102"
+            column="13"
+            startOffset="6282"
+            endLine="102"
+            endColumn="28"
+            endOffset="6297"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;family_full_sentence&quot; is not translated in &quot;de&quot; (German), &quot;fr&quot; (French), &quot;hu&quot; (Hungarian), &quot;ro&quot; (Romanian), &quot;es&quot; (Spanish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="105"
+            column="13"
+            startOffset="6437"
+            endLine="105"
+            endColumn="40"
+            endOffset="6464"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;finance_full_sentence&quot; is not translated in &quot;de&quot; (German), &quot;fr&quot; (French), &quot;hu&quot; (Hungarian), &quot;ro&quot; (Romanian), &quot;es&quot; (Spanish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="106"
+            column="13"
+            startOffset="6525"
+            endLine="106"
+            endColumn="41"
+            endOffset="6553"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;health_full_sentence&quot; is not translated in &quot;de&quot; (German), &quot;fr&quot; (French), &quot;hu&quot; (Hungarian), &quot;ro&quot; (Romanian), &quot;es&quot; (Spanish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="107"
+            column="13"
+            startOffset="6615"
+            endLine="107"
+            endColumn="40"
+            endOffset="6642"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;education_full_sentence&quot; is not translated in &quot;de&quot; (German), &quot;fr&quot; (French), &quot;hu&quot; (Hungarian), &quot;ro&quot; (Romanian), &quot;es&quot; (Spanish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="108"
+            column="13"
+            startOffset="6706"
+            endLine="108"
+            endColumn="43"
+            endOffset="6736"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;entertainment_full_sentence&quot; is not translated in &quot;de&quot; (German), &quot;fr&quot; (French), &quot;hu&quot; (Hungarian), &quot;ro&quot; (Romanian), &quot;es&quot; (Spanish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="109"
+            column="13"
+            startOffset="6799"
+            endLine="109"
+            endColumn="47"
+            endOffset="6833"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;productivity_full_sentence&quot; is not translated in &quot;de&quot; (German), &quot;fr&quot; (French), &quot;hu&quot; (Hungarian), &quot;ro&quot; (Romanian), &quot;es&quot; (Spanish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="110"
+            column="13"
+            startOffset="6898"
+            endLine="110"
+            endColumn="46"
+            endOffset="6931"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;utilities_full_sentence&quot; is not translated in &quot;de&quot; (German), &quot;fr&quot; (French), &quot;hu&quot; (Hungarian), &quot;ro&quot; (Romanian), &quot;es&quot; (Spanish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="111"
+            column="13"
+            startOffset="6999"
+            endLine="111"
+            endColumn="43"
+            endOffset="7029"/>
+    </incident>
+
+    <incident
+        id="MissingTranslation"
+        severity="error"
+        message="&quot;pending_approval&quot; is not translated in &quot;de&quot; (German), &quot;fr&quot; (French), &quot;ro&quot; (Romanian), &quot;es&quot; (Spanish), &quot;tr&quot; (Turkish)">
+        <fix-attribute
+            description="Mark non-translatable"
+            attribute="translatable"
+            value="false"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="112"
+            column="13"
+            startOffset="7098"
+            endLine="112"
+            endColumn="36"
+            endOffset="7121"/>
+    </incident>
+
+    <incident
+        id="NotifyDataSetChanged"
+        severity="warning"
+        message="It will always be more efficient to use more specific change events if you can. Rely on `notifyDataSetChanged` as a last resort.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/adapter/AdminIdeaAdapter.kt"
+            line="33"
+            column="9"
+            startOffset="1094"
+            endLine="33"
+            endColumn="31"
+            endOffset="1116"/>
+    </incident>
+
+    <incident
+        id="UseCompoundDrawables"
+        severity="warning"
+        message="This tag and its children can be replaced by one `&lt;TextView/>` and a compound drawable">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/example_card_layout.xml"
+            line="66"
+            column="18"
+            startOffset="2613"
+            endLine="66"
+            endColumn="30"
+            endOffset="2625"/>
+    </incident>
+
+    <incident
+        id="UseCompoundDrawables"
+        severity="warning"
+        message="This tag and its children can be replaced by one `&lt;TextView/>` and a compound drawable">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/example_card_layout.xml"
+            line="101"
+            column="18"
+            startOffset="4088"
+            endLine="101"
+            endColumn="30"
+            endOffset="4100"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background_light` with a theme that also paints a background (inferred theme is `@style/Theme.LetsMakeAnApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_admin_login.xml"
+            line="8"
+            column="5"
+            startOffset="295"
+            endLine="8"
+            endColumn="49"
+            endOffset="339"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background_light` with a theme that also paints a background (inferred theme is `@style/Theme.LetsMakeAnApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_business.xml"
+            line="6"
+            column="5"
+            startOffset="295"
+            endLine="6"
+            endColumn="49"
+            endOffset="339"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background_light` with a theme that also paints a background (inferred theme is `@style/Theme.LetsMakeAnApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_category_detail.xml"
+            line="6"
+            column="5"
+            startOffset="295"
+            endLine="6"
+            endColumn="49"
+            endOffset="339"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background_light` with a theme that also paints a background (inferred theme is `@style/Theme.LetsMakeAnApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_education.xml"
+            line="6"
+            column="5"
+            startOffset="295"
+            endLine="6"
+            endColumn="49"
+            endOffset="339"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background_light` with a theme that also paints a background (inferred theme is `@style/Theme.LetsMakeAnApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_entertainment.xml"
+            line="6"
+            column="5"
+            startOffset="295"
+            endLine="6"
+            endColumn="49"
+            endOffset="339"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background_light` with a theme that also paints a background (inferred theme is `@style/Theme.LetsMakeAnApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_family.xml"
+            line="6"
+            column="5"
+            startOffset="295"
+            endLine="6"
+            endColumn="49"
+            endOffset="339"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background_light` with a theme that also paints a background (inferred theme is `@style/Theme.LetsMakeAnApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_finance.xml"
+            line="6"
+            column="5"
+            startOffset="295"
+            endLine="6"
+            endColumn="49"
+            endOffset="339"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background_light` with a theme that also paints a background (inferred theme is `@style/Theme.LetsMakeAnApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_health.xml"
+            line="6"
+            column="5"
+            startOffset="295"
+            endLine="6"
+            endColumn="49"
+            endOffset="339"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background_light` with a theme that also paints a background (inferred theme is `@style/Theme_LetsMakeAnApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_main.xml"
+            line="7"
+            column="5"
+            startOffset="347"
+            endLine="7"
+            endColumn="49"
+            endOffset="391"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background_light` with a theme that also paints a background (inferred theme is `@style/Theme.LetsMakeAnApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_productivity.xml"
+            line="6"
+            column="5"
+            startOffset="295"
+            endLine="6"
+            endColumn="49"
+            endOffset="339"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background_light` with a theme that also paints a background (inferred theme is `@style/Theme.LetsMakeAnApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_utilities.xml"
+            line="6"
+            column="5"
+            startOffset="295"
+            endLine="6"
+            endColumn="49"
+            endOffset="339"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background_light` with a theme that also paints a background (inferred theme is `@style/Theme.LetsMakeAnApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/dialog_submit_idea.xml"
+            line="6"
+            column="5"
+            startOffset="256"
+            endLine="6"
+            endColumn="49"
+            endOffset="300"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background_light` with a theme that also paints a background (inferred theme is `@style/Theme.LetsMakeAnApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/example_card_layout.xml"
+            line="7"
+            column="5"
+            startOffset="335"
+            endLine="7"
+            endColumn="49"
+            endOffset="379"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background_light` with a theme that also paints a background (inferred theme is `@style/Theme.LetsMakeAnApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/example_form_layout.xml"
+            line="7"
+            column="5"
+            startOffset="335"
+            endLine="7"
+            endColumn="49"
+            endOffset="379"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background_light` with a theme that also paints a background (inferred theme is `@style/Theme_LetsMakeAnApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/example_welcome_screen.xml"
+            line="7"
+            column="5"
+            startOffset="347"
+            endLine="7"
+            endColumn="49"
+            endOffset="391"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background_light` with a theme that also paints a background (inferred theme is `@style/Theme.LetsMakeAnApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_categories.xml"
+            line="6"
+            column="5"
+            startOffset="283"
+            endLine="6"
+            endColumn="49"
+            endOffset="327"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background_light` with a theme that also paints a background (inferred theme is `@style/Theme.LetsMakeAnApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_category_detail.xml"
+            line="6"
+            column="5"
+            startOffset="283"
+            endLine="6"
+            endColumn="49"
+            endOffset="327"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background_light` with a theme that also paints a background (inferred theme is `@style/Theme.LetsMakeAnApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_home.xml"
+            line="7"
+            column="5"
+            startOffset="335"
+            endLine="7"
+            endColumn="49"
+            endOffset="379"/>
+    </incident>
+
+    <incident
+        id="Overdraw"
+        severity="warning"
+        message="Possible overdraw: Root element paints background `@color/background_light` with a theme that also paints a background (inferred theme is `@style/Theme.LetsMakeAnApp`)">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_my_apps.xml"
+            line="6"
+            column="5"
+            startOffset="283"
+            endLine="6"
+            endColumn="49"
+            endOffset="327"/>
+    </incident>
+
+    <incident
+        id="TypographyEllipsis"
+        severity="warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?">
+        <fix-replace
+            description="Replace with …"
+            oldString="..."
+            replacement="…"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-de/strings.xml"
+            line="37"
+            column="49"
+            startOffset="2214"
+            endLine="37"
+            endColumn="84"
+            endOffset="2249"/>
+    </incident>
+
+    <incident
+        id="TypographyEllipsis"
+        severity="warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?">
+        <fix-replace
+            description="Replace with …"
+            oldString="..."
+            replacement="…"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-es/strings.xml"
+            line="37"
+            column="49"
+            startOffset="2213"
+            endLine="37"
+            endColumn="85"
+            endOffset="2249"/>
+    </incident>
+
+    <incident
+        id="TypographyEllipsis"
+        severity="warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?">
+        <fix-replace
+            description="Replace with …"
+            oldString="..."
+            replacement="…"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-hu/strings.xml"
+            line="37"
+            column="49"
+            startOffset="2176"
+            endLine="37"
+            endColumn="78"
+            endOffset="2205"/>
+    </incident>
+
+    <incident
+        id="TypographyEllipsis"
+        severity="warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?">
+        <fix-replace
+            description="Replace with …"
+            oldString="..."
+            replacement="…"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-ro/strings.xml"
+            line="37"
+            column="49"
+            startOffset="2187"
+            endLine="37"
+            endColumn="86"
+            endOffset="2224"/>
+    </incident>
+
+    <incident
+        id="TypographyEllipsis"
+        severity="warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?">
+        <fix-replace
+            description="Replace with …"
+            oldString="..."
+            replacement="…"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-tr/strings.xml"
+            line="37"
+            column="49"
+            startOffset="2152"
+            endLine="37"
+            endColumn="85"
+            endOffset="2188"/>
+    </incident>
+
+    <incident
+        id="TypographyEllipsis"
+        severity="warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?">
+        <fix-replace
+            description="Replace with …"
+            oldString="..."
+            replacement="…"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="37"
+            column="49"
+            startOffset="2133"
+            endLine="37"
+            endColumn="78"
+            endOffset="2162"/>
+    </incident>
+
+    <incident
+        id="TypographyEllipsis"
+        severity="warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?">
+        <fix-replace
+            description="Replace with …"
+            oldString="..."
+            replacement="…"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-de/strings.xml"
+            line="65"
+            column="54"
+            startOffset="3961"
+            endLine="65"
+            endColumn="102"
+            endOffset="4009"/>
+    </incident>
+
+    <incident
+        id="TypographyEllipsis"
+        severity="warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?">
+        <fix-replace
+            description="Replace with …"
+            oldString="..."
+            replacement="…"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-es/strings.xml"
+            line="65"
+            column="54"
+            startOffset="3972"
+            endLine="65"
+            endColumn="99"
+            endOffset="4017"/>
+    </incident>
+
+    <incident
+        id="TypographyEllipsis"
+        severity="warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?">
+        <fix-replace
+            description="Replace with …"
+            oldString="..."
+            replacement="…"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-hu/strings.xml"
+            line="65"
+            column="54"
+            startOffset="3896"
+            endLine="65"
+            endColumn="90"
+            endOffset="3932"/>
+    </incident>
+
+    <incident
+        id="TypographyEllipsis"
+        severity="warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?">
+        <fix-replace
+            description="Replace with …"
+            oldString="..."
+            replacement="…"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-ro/strings.xml"
+            line="65"
+            column="54"
+            startOffset="3935"
+            endLine="65"
+            endColumn="102"
+            endOffset="3983"/>
+    </incident>
+
+    <incident
+        id="TypographyEllipsis"
+        severity="warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?">
+        <fix-replace
+            description="Replace with …"
+            oldString="..."
+            replacement="…"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values-tr/strings.xml"
+            line="65"
+            column="54"
+            startOffset="3829"
+            endLine="65"
+            endColumn="94"
+            endOffset="3869"/>
+    </incident>
+
+    <incident
+        id="TypographyEllipsis"
+        severity="warning"
+        message="Replace &quot;...&quot; with ellipsis character (…, &amp;#8230;) ?">
+        <fix-replace
+            description="Replace with …"
+            oldString="..."
+            replacement="…"
+            priority="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/values/strings.xml"
+            line="65"
+            column="54"
+            startOffset="3827"
+            endLine="65"
+            endColumn="88"
+            endOffset="3861"/>
+    </incident>
+
+    <incident
+        id="MonochromeLauncherIcon"
+        severity="warning"
+        message="The application adaptive icon is missing a monochrome tag">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-anydpi-v26/ic_launcher.xml"
+            line="2"
+            column="1"
+            startOffset="40"
+            endLine="5"
+            endColumn="17"
+            endOffset="276"/>
+    </incident>
+
+    <incident
+        id="MonochromeLauncherIcon"
+        severity="warning"
+        message="The application adaptive roundIcon is missing a monochrome tag">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/mipmap-anydpi-v26/ic_launcher_round.xml"
+            line="2"
+            column="1"
+            startOffset="40"
+            endLine="5"
+            endColumn="17"
+            endOffset="276"/>
+    </incident>
+
+    <incident
+        id="ButtonStyle"
+        severity="warning"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)">
+        <fix-composite
+            description="Make borderless">
+            <fix-attribute
+                description="Set style=&quot;?android:attr/buttonBarStyle&quot;"
+                attribute="style"
+                value="?android:attr/buttonBarStyle">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_admin_idea.xml"
+                    startOffset="1472"
+                    endOffset="2194"/>
+            </fix-attribute>
+            <fix-attribute
+                description="Set style=&quot;?android:attr/buttonBarButtonStyle&quot;"
+                attribute="style"
+                value="?android:attr/buttonBarButtonStyle">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_admin_idea.xml"
+                    startOffset="1691"
+                    endOffset="1897"/>
+            </fix-attribute>
+            <fix-attribute
+                description="Set style=&quot;?android:attr/buttonBarButtonStyle&quot;"
+                attribute="style"
+                value="?android:attr/buttonBarButtonStyle">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_admin_idea.xml"
+                    startOffset="1913"
+                    endOffset="2169"/>
+            </fix-attribute>
+        </fix-composite>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_admin_idea.xml"
+            line="48"
+            column="14"
+            startOffset="1692"
+            endLine="48"
+            endColumn="20"
+            endOffset="1698"/>
+    </incident>
+
+    <incident
+        id="ButtonStyle"
+        severity="warning"
+        message="Buttons in button bars should be borderless; use `style=&quot;?android:attr/buttonBarButtonStyle&quot;` (and `?android:attr/buttonBarStyle` on the parent)">
+        <fix-composite
+            description="Make borderless">
+            <fix-attribute
+                description="Set style=&quot;?android:attr/buttonBarStyle&quot;"
+                attribute="style"
+                value="?android:attr/buttonBarStyle">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_admin_idea.xml"
+                    startOffset="1472"
+                    endOffset="2194"/>
+            </fix-attribute>
+            <fix-attribute
+                description="Set style=&quot;?android:attr/buttonBarButtonStyle&quot;"
+                attribute="style"
+                value="?android:attr/buttonBarButtonStyle">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_admin_idea.xml"
+                    startOffset="1691"
+                    endOffset="1897"/>
+            </fix-attribute>
+            <fix-attribute
+                description="Set style=&quot;?android:attr/buttonBarButtonStyle&quot;"
+                attribute="style"
+                value="?android:attr/buttonBarButtonStyle">
+                <range
+                    file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_admin_idea.xml"
+                    startOffset="1913"
+                    endOffset="2169"/>
+            </fix-attribute>
+        </fix-composite>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_admin_idea.xml"
+            line="54"
+            column="14"
+            startOffset="1914"
+            endLine="54"
+            endColumn="20"
+            endOffset="1920"/>
+    </incident>
+
+    <incident
+        id="TextFields"
+        severity="warning"
+        message="This text field does not specify an `inputType`">
+        <fix-attribute
+            description="Set inputType"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="inputType"
+            value="TODO"
+            point="4"
+            mark="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_admin_idea.xml"
+            line="62"
+            column="10"
+            startOffset="2207"
+            endLine="62"
+            endColumn="18"
+            endOffset="2215"/>
+    </incident>
+
+    <incident
+        id="TextFields"
+        severity="warning"
+        message="This text field does not specify an `inputType`">
+        <fix-attribute
+            description="Set inputType"
+            namespace="http://schemas.android.com/apk/res/android"
+            attribute="inputType"
+            value="TODO"
+            point="4"
+            mark="0"/>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_idea_card.xml"
+            line="137"
+            column="14"
+            startOffset="5008"
+            endLine="137"
+            endColumn="22"
+            endOffset="5016"/>
+    </incident>
+
+    <incident
+        id="SmallSp"
+        severity="warning"
+        message="Avoid using sizes smaller than `11sp`: `10sp`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_idea_card.xml"
+            line="42"
+            column="17"
+            startOffset="1676"
+            endLine="42"
+            endColumn="40"
+            endOffset="1699"/>
+    </incident>
+
+    <incident
+        id="SmallSp"
+        severity="warning"
+        message="Avoid using sizes smaller than `11sp`: `10sp`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_idea_card.xml"
+            line="54"
+            column="13"
+            startOffset="2107"
+            endLine="54"
+            endColumn="36"
+            endOffset="2130"/>
+    </incident>
+
+    <incident
+        id="SmallSp"
+        severity="warning"
+        message="Avoid using sizes smaller than `11sp`: `10sp`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_idea_card.xml"
+            line="65"
+            column="13"
+            startOffset="2507"
+            endLine="65"
+            endColumn="36"
+            endOffset="2530"/>
+    </incident>
+
+    <incident
+        id="SmallSp"
+        severity="warning"
+        message="Avoid using sizes smaller than `11sp`: `10sp`">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_idea_card.xml"
+            line="76"
+            column="13"
+            startOffset="2889"
+            endLine="76"
+            endColumn="36"
+            endOffset="2912"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                point="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_admin_login.xml"
+            line="21"
+            column="6"
+            startOffset="731"
+            endLine="21"
+            endColumn="14"
+            endOffset="739"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                point="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_admin_login.xml"
+            line="30"
+            column="6"
+            startOffset="1028"
+            endLine="30"
+            endColumn="14"
+            endOffset="1036"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                point="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_admin_login.xml"
+            line="9"
+            column="6"
+            startOffset="299"
+            endLine="9"
+            endColumn="14"
+            endOffset="307"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                point="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_admin_login.xml"
+            line="17"
+            column="6"
+            startOffset="571"
+            endLine="17"
+            endColumn="14"
+            endOffset="579"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                point="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_admin_idea.xml"
+            line="62"
+            column="10"
+            startOffset="2207"
+            endLine="62"
+            endColumn="18"
+            endOffset="2215"/>
+    </incident>
+
+    <incident
+        id="Autofill"
+        severity="warning"
+        message="Missing `autofillHints` attribute">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set autofillHints"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="autofillHints"
+                value=""
+                point="0"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAutofill=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAutofill"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_idea_card.xml"
+            line="137"
+            column="14"
+            startOffset="5008"
+            endLine="137"
+            endColumn="22"
+            endOffset="5016"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/example_card_layout.xml"
+            line="73"
+            column="22"
+            startOffset="2908"
+            endLine="73"
+            endColumn="31"
+            endOffset="2917"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/example_card_layout.xml"
+            line="108"
+            column="22"
+            startOffset="4383"
+            endLine="108"
+            endColumn="31"
+            endOffset="4392"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/example_card_layout.xml"
+            line="171"
+            column="26"
+            startOffset="7016"
+            endLine="171"
+            endColumn="35"
+            endOffset="7025"/>
+    </incident>
+
+    <incident
+        id="ContentDescription"
+        severity="warning"
+        message="Missing `contentDescription` attribute on image">
+        <fix-alternatives>
+            <fix-attribute
+                description="Set contentDescription"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="contentDescription"
+                value="TODO"
+                point="4"
+                mark="0"/>
+            <fix-attribute
+                description="Set importantForAccessibility=&quot;no&quot;"
+                namespace="http://schemas.android.com/apk/res/android"
+                attribute="importantForAccessibility"
+                value="no"/>
+        </fix-alternatives>
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/example_card_layout.xml"
+            line="214"
+            column="26"
+            startOffset="9103"
+            endLine="214"
+            endColumn="35"
+            endOffset="9112"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/HomeFragment.kt"
+            line="132"
+            column="73"
+            startOffset="5017"
+            endLine="132"
+            endColumn="109"
+            endOffset="5053"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/HomeFragment.kt"
+            line="132"
+            column="73"
+            startOffset="5017"
+            endLine="134"
+            endColumn="10"
+            endOffset="5195"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/HomeFragment.kt"
+            line="135"
+            column="74"
+            startOffset="5269"
+            endLine="135"
+            endColumn="100"
+            endOffset="5295"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/HomeFragment.kt"
+            line="135"
+            column="75"
+            startOffset="5270"
+            endLine="135"
+            endColumn="78"
+            endOffset="5273"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/HomeFragment.kt"
+            line="179"
+            column="28"
+            startOffset="7204"
+            endLine="179"
+            endColumn="33"
+            endOffset="7209"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/adapter/IdeaAdapter.kt"
+            line="53"
+            column="31"
+            startOffset="2347"
+            endLine="53"
+            endColumn="67"
+            endOffset="2383"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/adapter/IdeaAdapter.kt"
+            line="53"
+            column="31"
+            startOffset="2347"
+            endLine="55"
+            endColumn="14"
+            endOffset="2533"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/adapter/IdeaAdapter.kt"
+            line="56"
+            column="32"
+            startOffset="2565"
+            endLine="56"
+            endColumn="58"
+            endOffset="2591"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/adapter/IdeaAdapter.kt"
+            line="56"
+            column="33"
+            startOffset="2566"
+            endLine="56"
+            endColumn="36"
+            endOffset="2569"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/adapter/IdeaAdapter.kt"
+            line="64"
+            column="32"
+            startOffset="2906"
+            endLine="64"
+            endColumn="40"
+            endOffset="2914"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/adapter/IdeaAdapter.kt"
+            line="93"
+            column="35"
+            startOffset="4281"
+            endLine="93"
+            endColumn="71"
+            endOffset="4317"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/adapter/IdeaAdapter.kt"
+            line="93"
+            column="35"
+            startOffset="4281"
+            endLine="95"
+            endColumn="18"
+            endOffset="4475"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/adapter/IdeaAdapter.kt"
+            line="96"
+            column="36"
+            startOffset="4511"
+            endLine="96"
+            endColumn="62"
+            endOffset="4537"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/adapter/IdeaAdapter.kt"
+            line="96"
+            column="37"
+            startOffset="4512"
+            endLine="96"
+            endColumn="40"
+            endOffset="4515"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/adapter/IdeaAdapter.kt"
+            line="102"
+            column="36"
+            startOffset="4858"
+            endLine="102"
+            endColumn="44"
+            endOffset="4866"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/MyAppsFragment.kt"
+            line="126"
+            column="34"
+            startOffset="5652"
+            endLine="126"
+            endColumn="70"
+            endOffset="5688"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/MyAppsFragment.kt"
+            line="126"
+            column="57"
+            startOffset="5675"
+            endLine="126"
+            endColumn="69"
+            endOffset="5687"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/MyAppsFragment.kt"
+            line="155"
+            column="28"
+            startOffset="6887"
+            endLine="155"
+            endColumn="33"
+            endOffset="6892"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/MyAppsFragment.kt"
+            line="184"
+            column="28"
+            startOffset="8222"
+            endLine="184"
+            endColumn="33"
+            endOffset="8227"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/MyAppsFragment.kt"
+            line="212"
+            column="88"
+            startOffset="9611"
+            endLine="212"
+            endColumn="124"
+            endOffset="9647"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/MyAppsFragment.kt"
+            line="212"
+            column="88"
+            startOffset="9611"
+            endLine="214"
+            endColumn="10"
+            endOffset="9789"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="Do not concatenate text displayed with `setText`. Use resource string with placeholders.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/MyAppsFragment.kt"
+            line="215"
+            column="89"
+            startOffset="9878"
+            endLine="215"
+            endColumn="115"
+            endOffset="9904"/>
+    </incident>
+
+    <incident
+        id="SetTextI18n"
+        severity="warning"
+        message="String literal in `setText` can not be translated. Use Android resources instead.">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*javaDir*0}/com/example/ideapp/MyAppsFragment.kt"
+            line="215"
+            column="90"
+            startOffset="9879"
+            endLine="215"
+            endColumn="93"
+            endOffset="9882"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Admin bejelentkezés&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_admin_login.xml"
+            line="15"
+            column="9"
+            startOffset="533"
+            endLine="15"
+            endColumn="43"
+            endOffset="567"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Email&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_admin_login.xml"
+            line="25"
+            column="9"
+            startOffset="880"
+            endLine="25"
+            endColumn="29"
+            endOffset="900"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Jelszó&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_admin_login.xml"
+            line="34"
+            column="9"
+            startOffset="1180"
+            endLine="34"
+            endColumn="30"
+            endOffset="1201"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Bejelentkezés&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/activity_admin_login.xml"
+            line="43"
+            column="9"
+            startOffset="1480"
+            endLine="43"
+            endColumn="37"
+            endOffset="1508"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Home&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/menu/bottom_navigation.xml"
+            line="5"
+            column="9"
+            startOffset="162"
+            endLine="5"
+            endColumn="29"
+            endOffset="182"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Categories&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/menu/bottom_navigation.xml"
+            line="9"
+            column="9"
+            startOffset="290"
+            endLine="9"
+            endColumn="35"
+            endOffset="316"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;My Apps&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/menu/bottom_navigation.xml"
+            line="13"
+            column="9"
+            startOffset="425"
+            endLine="13"
+            endColumn="32"
+            endOffset="448"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;App logo&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/example_welcome_screen.xml"
+            line="52"
+            column="9"
+            startOffset="2079"
+            endLine="52"
+            endColumn="46"
+            endOffset="2116"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Email&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_admin_login.xml"
+            line="13"
+            column="9"
+            startOffset="449"
+            endLine="13"
+            endColumn="29"
+            endOffset="469"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Password&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_admin_login.xml"
+            line="21"
+            column="9"
+            startOffset="724"
+            endLine="21"
+            endColumn="32"
+            endOffset="747"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Login&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_admin_login.xml"
+            line="29"
+            column="9"
+            startOffset="991"
+            endLine="29"
+            endColumn="29"
+            endOffset="1011"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Kijelentkezés&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/fragment_admin_panel.xml"
+            line="31"
+            column="9"
+            startOffset="1283"
+            endLine="31"
+            endColumn="37"
+            endOffset="1311"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Ötlet szövege&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_admin_idea.xml"
+            line="22"
+            column="13"
+            startOffset="805"
+            endLine="22"
+            endColumn="41"
+            endOffset="833"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Beküldő neve&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_admin_idea.xml"
+            line="28"
+            column="13"
+            startOffset="1017"
+            endLine="28"
+            endColumn="40"
+            endOffset="1044"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Beküldő e-mail&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_admin_idea.xml"
+            line="34"
+            column="13"
+            startOffset="1229"
+            endLine="34"
+            endColumn="42"
+            endOffset="1258"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Státusz&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_admin_idea.xml"
+            line="40"
+            column="13"
+            startOffset="1435"
+            endLine="40"
+            endColumn="35"
+            endOffset="1457"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Jóváhagyás&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_admin_idea.xml"
+            line="52"
+            column="17"
+            startOffset="1869"
+            endLine="52"
+            endColumn="42"
+            endOffset="1894"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Elutasítás&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_admin_idea.xml"
+            line="58"
+            column="17"
+            startOffset="2090"
+            endLine="58"
+            endColumn="42"
+            endOffset="2115"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Üzenet a beküldőnek...&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_admin_idea.xml"
+            line="66"
+            column="13"
+            startOffset="2374"
+            endLine="66"
+            endColumn="50"
+            endOffset="2411"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Üzenet küldése&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_admin_idea.xml"
+            line="73"
+            column="13"
+            startOffset="2636"
+            endLine="73"
+            endColumn="42"
+            endOffset="2665"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;0&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_idea_card.xml"
+            line="94"
+            column="13"
+            startOffset="3536"
+            endLine="94"
+            endColumn="29"
+            endOffset="3552"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Admin üzenete:&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_idea_card.xml"
+            line="104"
+            column="13"
+            startOffset="3863"
+            endLine="104"
+            endColumn="42"
+            endOffset="3892"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Válaszod:&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_idea_card.xml"
+            line="119"
+            column="13"
+            startOffset="4393"
+            endLine="119"
+            endColumn="37"
+            endOffset="4417"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Írd be a válaszod...&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_idea_card.xml"
+            line="142"
+            column="17"
+            startOffset="5222"
+            endLine="142"
+            endColumn="52"
+            endOffset="5257"/>
+    </incident>
+
+    <incident
+        id="HardcodedText"
+        severity="warning"
+        message="Hardcoded string &quot;Küldés&quot;, should use `@string` resource">
+        <location
+            file="${:app*debug*MAIN*sourceProvider*0*resDir*0}/layout/item_idea_card.xml"
+            line="148"
+            column="17"
+            startOffset="5456"
+            endLine="148"
+            endColumn="38"
+            endOffset="5477"/>
+    </incident>
+
+</incidents>

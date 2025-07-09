@@ -36,6 +36,9 @@ android {
     lintOptions {
         abortOnError false
     }
+    buildFeatures {
+        viewBinding true // Engedélyezi a View Bindinget az egész modulban
+    }
 }
 
 dependencies {

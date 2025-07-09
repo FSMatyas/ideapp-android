@@ -3361,6 +3361,7 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btnAdminLogin
 id btnApprove
 id btnCancel
 id btnGetStarted
@@ -3462,7 +3463,9 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id etAdminEmail
 id etAdminMessage
+id etAdminPassword
 id etContact
 id etDescription
 id etIdeaTitle
@@ -3599,7 +3602,6 @@ id multiply
 id nav_categories
 id nav_controller_view_tag
 id nav_home
-id nav_host_fragment
 id nav_host_fragment_container
 id nav_my_apps
 id navigation_bar_item_active_indicator_view
@@ -3804,6 +3806,8 @@ id transition_transform
 id triangle
 id tvAdminComment
 id tvAdminCommentContent
+id tvAdminLoginTitle
+id tvAdminWelcome
 id tvBusiness
 id tvCategory
 id tvCategoryCount
@@ -3977,6 +3981,8 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_admin
+layout activity_admin_login
 layout activity_business
 layout activity_category_detail
 layout activity_education

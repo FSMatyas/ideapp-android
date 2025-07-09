@@ -1,0 +1,1240 @@
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\build.gradle:15: Warning: Not targeting the latest versions of Android; compatibility modes apply. Consider testing and updating this version. Consult the android.os.Build.VERSION_CODES javadoc for details. [OldTargetApi]
+        targetSdk 34
+        ~~~~~~~~~~~~
+
+   Explanation for issues of type "OldTargetApi":
+   When your application or sdk runs on a version of Android that is more
+   recent than your targetSdkVersion specifies that it has been tested with,
+   various compatibility modes kick in. This ensures that your application
+   continues to work, but it may look out of place. For example, if the
+   targetSdkVersion is less than 14, your app may get an option button in the
+   UI.
+
+   To fix this issue, set the targetSdkVersion to the highest available value.
+   Then test your app to make sure everything works correctly. You may want to
+   consult the compatibility notes to see what changes apply to each version
+   you are adding support for:
+   https://developer.android.com/reference/android/os/Build.VERSION_CODES.html
+   as well as follow this guide:
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.
+   html
+
+   https://developer.android.com/distribute/best-practices/develop/target-sdk.html
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\MainActivity.kt:51: Warning: batteryReceiver is missing RECEIVER_EXPORTED or RECEIVER_NOT_EXPORTED flag for unprotected broadcasts registered for an IntentFilter that cannot be inspected by lint [UnspecifiedRegisterReceiverFlag]
+        registerReceiver(batteryReceiver, BatteryLevelReceiver.getIntentFilter())
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnspecifiedRegisterReceiverFlag":
+   In Android U, all receivers registering for non-system broadcasts are
+   required to include a flag indicating the receiver's exported state. Apps
+   registering for non-system broadcasts should use the
+   ContextCompat#registerReceiver APIs with flags set to either
+   RECEIVER_EXPORTED or RECEIVER_NOT_EXPORTED.
+
+   If you are not expecting broadcasts from other apps on the device, register
+   your receiver with RECEIVER_NOT_EXPORTED to protect your receiver on all
+   platform releases.
+
+   https://developer.android.com/reference/androidx/core/content/ContextCompat#registerReceiver(android.content.Context,android.content.BroadcastReceiver,android.content.IntentFilter,int)
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\build.gradle:10: Warning: A newer version of compileSdkVersion than 34 is available: 36 [GradleDependency]
+    compileSdk 34
+    ~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\build.gradle:45: Warning: A newer version of androidx.core:core-ktx than 1.12.0 is available: 1.16.0 [GradleDependency]
+    implementation 'androidx.core:core-ktx:1.12.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\build.gradle:46: Warning: A newer version of androidx.appcompat:appcompat than 1.6.1 is available: 1.7.1 [GradleDependency]
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\build.gradle:47: Warning: A newer version of com.google.android.material:material than 1.11.0 is available: 1.12.0 [GradleDependency]
+    implementation 'com.google.android.material:material:1.11.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\build.gradle:48: Warning: A newer version of androidx.constraintlayout:constraintlayout than 2.1.4 is available: 2.2.1 [GradleDependency]
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\build.gradle:51: Warning: A newer version of com.google.firebase:firebase-bom than 32.7.0 is available: 33.16.0 [GradleDependency]
+    implementation platform('com.google.firebase:firebase-bom:32.7.0')
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\build.gradle:58: Warning: A newer version of androidx.navigation:navigation-fragment-ktx than 2.7.6 is available: 2.9.1 [GradleDependency]
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.7.6'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\build.gradle:59: Warning: A newer version of androidx.navigation:navigation-ui-ktx than 2.7.6 is available: 2.9.1 [GradleDependency]
+    implementation 'androidx.navigation:navigation-ui-ktx:2.7.6'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\build.gradle:62: Warning: A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.7.0 is available: 2.9.1 [GradleDependency]
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\build.gradle:63: Warning: A newer version of androidx.lifecycle:lifecycle-livedata-ktx than 2.7.0 is available: 2.9.1 [GradleDependency]
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.7.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\build.gradle:66: Warning: A newer version of androidx.work:work-runtime-ktx than 2.9.0 is available: 2.10.2 [GradleDependency]
+    implementation 'androidx.work:work-runtime-ktx:2.9.0'
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\build.gradle:69: Warning: A newer version of androidx.test.ext:junit than 1.1.5 is available: 1.2.1 [GradleDependency]
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\build.gradle:70: Warning: A newer version of androidx.test.espresso:espresso-core than 3.5.1 is available: 3.6.1 [GradleDependency]
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "GradleDependency":
+   This detector looks for usages of libraries where the version you are using
+   is not the current stable release. Using older versions is fine, and there
+   are cases where you deliberately want to stick with an older version.
+   However, you may simply not be aware that a more recent version is
+   available, and that is what this lint check helps find.
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\CategoryDetailActivity.kt:15: Warning: Use of this function is discouraged because resource reflection makes it harder to perform build optimizations and compile-time verification of code. It is much more efficient to retrieve resources by identifier (e.g. R.foo.bar) than by name (e.g. getIdentifier("bar", "foo", null)). [DiscouragedApi]
+            val resId = resources.getIdentifier(categoryKey, "string", packageName)
+                                  ~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\SubmitIdeaDialogFragment.kt:102: Warning: Use of this function is discouraged because resource reflection makes it harder to perform build optimizations and compile-time verification of code. It is much more efficient to retrieve resources by identifier (e.g. R.foo.bar) than by name (e.g. getIdentifier("bar", "foo", null)). [DiscouragedApi]
+            val resId = resources.getIdentifier("category_${key}", "string", requireContext().packageName)
+                                  ~~~~~~~~~~~~~
+
+   Explanation for issues of type "DiscouragedApi":
+   Discouraged APIs are allowed and are not deprecated, but they may be unfit
+   for common use (e.g. due to slow performance or subtle behavior).
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\HomeFragment.kt:189: Warning: Use AppCompatResources.getDrawable() [UseCompatLoadingForDrawables from androidx.appcompat]
+                requireContext().getDrawable(R.drawable.pagination_circle_selected)
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\HomeFragment.kt:189: Warning: Use AppCompatResources.getDrawable() [UseCompatLoadingForDrawables from androidx.appcompat]
+                requireContext().getDrawable(R.drawable.pagination_circle_selected)
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\HomeFragment.kt:191: Warning: Use AppCompatResources.getDrawable() [UseCompatLoadingForDrawables from androidx.appcompat]
+                requireContext().getDrawable(R.drawable.pagination_circle)
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\HomeFragment.kt:191: Warning: Use AppCompatResources.getDrawable() [UseCompatLoadingForDrawables from androidx.appcompat]
+                requireContext().getDrawable(R.drawable.pagination_circle)
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\MyAppsFragment.kt:165: Warning: Use AppCompatResources.getDrawable() [UseCompatLoadingForDrawables from androidx.appcompat]
+                requireContext().getDrawable(R.drawable.pagination_circle_selected)
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\MyAppsFragment.kt:165: Warning: Use AppCompatResources.getDrawable() [UseCompatLoadingForDrawables from androidx.appcompat]
+                requireContext().getDrawable(R.drawable.pagination_circle_selected)
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\MyAppsFragment.kt:167: Warning: Use AppCompatResources.getDrawable() [UseCompatLoadingForDrawables from androidx.appcompat]
+                requireContext().getDrawable(R.drawable.pagination_circle)
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\MyAppsFragment.kt:167: Warning: Use AppCompatResources.getDrawable() [UseCompatLoadingForDrawables from androidx.appcompat]
+                requireContext().getDrawable(R.drawable.pagination_circle)
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\MyAppsFragment.kt:194: Warning: Use AppCompatResources.getDrawable() [UseCompatLoadingForDrawables from androidx.appcompat]
+                requireContext().getDrawable(R.drawable.pagination_circle_selected)
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\MyAppsFragment.kt:194: Warning: Use AppCompatResources.getDrawable() [UseCompatLoadingForDrawables from androidx.appcompat]
+                requireContext().getDrawable(R.drawable.pagination_circle_selected)
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\MyAppsFragment.kt:196: Warning: Use AppCompatResources.getDrawable() [UseCompatLoadingForDrawables from androidx.appcompat]
+                requireContext().getDrawable(R.drawable.pagination_circle)
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\MyAppsFragment.kt:196: Warning: Use AppCompatResources.getDrawable() [UseCompatLoadingForDrawables from androidx.appcompat]
+                requireContext().getDrawable(R.drawable.pagination_circle)
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UseCompatLoadingForDrawables":
+   Use Compat loading of drawables
+
+   Vendor: Android Open Source Project
+   Identifier: androidx.appcompat
+   Feedback: https://issuetracker.google.com/issues/new?component=460343
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:4: Error: "toolbar_title_category_detail" is not translated in "fr" (French) [MissingTranslation]
+    <string name="toolbar_title_category_detail">Category Detail</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:5: Error: "category_detail_page" is not translated in "fr" (French) [MissingTranslation]
+    <string name="category_detail_page">Category Detail Page</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:6: Error: "toolbar_title_business" is not translated in "fr" (French) [MissingTranslation]
+    <string name="toolbar_title_business">Business</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:7: Error: "business" is not translated in "fr" (French) [MissingTranslation]
+    <string name="business">Business</string>
+            ~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:8: Error: "toolbar_title_family" is not translated in "fr" (French) [MissingTranslation]
+    <string name="toolbar_title_family">Family</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:9: Error: "family" is not translated in "fr" (French) [MissingTranslation]
+    <string name="family">Family</string>
+            ~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:10: Error: "toolbar_title_finance" is not translated in "fr" (French) [MissingTranslation]
+    <string name="toolbar_title_finance">Finance</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:11: Error: "finance" is not translated in "fr" (French) [MissingTranslation]
+    <string name="finance">Finance</string>
+            ~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:12: Error: "toolbar_title_health" is not translated in "fr" (French) [MissingTranslation]
+    <string name="toolbar_title_health">Health</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:13: Error: "health" is not translated in "fr" (French) [MissingTranslation]
+    <string name="health">Health</string>
+            ~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:14: Error: "toolbar_title_education" is not translated in "fr" (French) [MissingTranslation]
+    <string name="toolbar_title_education">Education</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:15: Error: "education" is not translated in "fr" (French) [MissingTranslation]
+    <string name="education">Education</string>
+            ~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:16: Error: "toolbar_title_entertainment" is not translated in "fr" (French) [MissingTranslation]
+    <string name="toolbar_title_entertainment">Entertainment</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:17: Error: "entertainment" is not translated in "fr" (French) [MissingTranslation]
+    <string name="entertainment">Entertainment</string>
+            ~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:18: Error: "toolbar_title_productivity" is not translated in "fr" (French) [MissingTranslation]
+    <string name="toolbar_title_productivity">Productivity</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:19: Error: "productivity" is not translated in "fr" (French) [MissingTranslation]
+    <string name="productivity">Productivity</string>
+            ~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:20: Error: "toolbar_title_utilities" is not translated in "fr" (French) [MissingTranslation]
+    <string name="toolbar_title_utilities">Utilities</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:21: Error: "utilities" is not translated in "fr" (French) [MissingTranslation]
+    <string name="utilities">Utilities</string>
+            ~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:22: Error: "bulb_icon" is not translated in "fr" (French) [MissingTranslation]
+    <string name="bulb_icon">Bulb icon</string>
+            ~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:23: Error: "my_ideas_and_apps" is not translated in "fr" (French) [MissingTranslation]
+    <string name="my_ideas_and_apps">My Ideas &amp; Apps</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:24: Error: "track_submitted_ideas" is not translated in "fr" (French) [MissingTranslation]
+    <string name="track_submitted_ideas">Track your submitted ideas and download completed apps</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:25: Error: "my_completed_apps" is not translated in "fr" (French) [MissingTranslation]
+    <string name="my_completed_apps">My Completed Apps</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:26: Error: "one_ready" is not translated in "fr" (French) [MissingTranslation]
+    <string name="one_ready">1 ready</string>
+            ~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:27: Error: "in_progress" is not translated in "fr" (French) [MissingTranslation]
+    <string name="in_progress">In Progress</string>
+            ~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:28: Error: "zero_in_progress" is not translated in "fr" (French) [MissingTranslation]
+    <string name="zero_in_progress">0 in progress</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:29: Error: "bulb_emoji" is not translated in "fr" (French) [MissingTranslation]
+    <string name="bulb_emoji">💡</string>
+            ~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:30: Error: "have_more_app_ideas" is not translated in "fr" (French) [MissingTranslation]
+    <string name="have_more_app_ideas">Have more app ideas?</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:31: Error: "submit_more_ideas" is not translated in "fr" (French) [MissingTranslation]
+    <string name="submit_more_ideas">Submit more ideas from the Home tab to get more custom apps built for you!</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:32: Error: "idea_title" is not translated in "fr" (French) [MissingTranslation]
+    <string name="idea_title">Idea Title</string>
+            ~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:33: Error: "approved" is not translated in "fr" (French) [MissingTranslation]
+    <string name="approved">Approved</string>
+            ~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:34: Error: "category" is not translated in "fr" (French) [MissingTranslation]
+    <string name="category">Category</string>
+            ~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:35: Error: "submitted_by_name" is not translated in "fr" (French) [MissingTranslation]
+    <string name="submitted_by_name">Submitted by Name</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:36: Error: "date" is not translated in "fr" (French) [MissingTranslation]
+    <string name="date">Date</string>
+            ~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:37: Error: "idea_description_placeholder" is not translated in "fr" (French) [MissingTranslation]
+    <string name="idea_description_placeholder">Idea description goes here...</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:38: Error: "zero" is not translated in "fr" (French) [MissingTranslation]
+    <string name="zero">0</string>
+            ~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:39: Error: "browse_by_category" is not translated in "fr" (French) [MissingTranslation]
+    <string name="browse_by_category">Browse by Category</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:40: Error: "explore_ideas_by_area" is not translated in "fr" (French) [MissingTranslation]
+    <string name="explore_ideas_by_area">Explore ideas by different problem areas</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:41: Error: "phone_emoji" is not translated in "fr" (French) [MissingTranslation]
+    <string name="phone_emoji">📱</string>
+            ~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:42: Error: "category_productivity" is not translated in "fr" (French) [MissingTranslation]
+    <string name="category_productivity">Productivity</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:43: Error: "family_emoji" is not translated in "fr" (French) [MissingTranslation]
+    <string name="family_emoji">👨‍👩‍👧‍👦</string>
+            ~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:44: Error: "category_family" is not translated in "fr" (French) [MissingTranslation]
+    <string name="category_family">Family</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:45: Error: "business_emoji" is not translated in "fr" (French) [MissingTranslation]
+    <string name="business_emoji">💼</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:46: Error: "category_business" is not translated in "fr" (French) [MissingTranslation]
+    <string name="category_business">Business</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:47: Error: "entertainment_emoji" is not translated in "fr" (French) [MissingTranslation]
+    <string name="entertainment_emoji">🎮</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:48: Error: "category_entertainment" is not translated in "fr" (French) [MissingTranslation]
+    <string name="category_entertainment">Entertainment</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:49: Error: "finance_emoji" is not translated in "fr" (French) [MissingTranslation]
+    <string name="finance_emoji">💰</string>
+            ~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:50: Error: "category_finance" is not translated in "fr" (French) [MissingTranslation]
+    <string name="category_finance">Finance</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:51: Error: "health_emoji" is not translated in "fr" (French) [MissingTranslation]
+    <string name="health_emoji">🏥</string>
+            ~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:52: Error: "category_health" is not translated in "fr" (French) [MissingTranslation]
+    <string name="category_health">Health</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:53: Error: "education_emoji" is not translated in "fr" (French) [MissingTranslation]
+    <string name="education_emoji">🎓</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:54: Error: "category_education" is not translated in "fr" (French) [MissingTranslation]
+    <string name="category_education">Education</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:55: Error: "utilities_emoji" is not translated in "fr" (French) [MissingTranslation]
+    <string name="utilities_emoji">🔧</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:56: Error: "category_utilities" is not translated in "fr" (French) [MissingTranslation]
+    <string name="category_utilities">Utilities</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:57: Error: "got_a_problem" is not translated in "fr" (French) [MissingTranslation]
+    <string name="got_a_problem">Got a problem? Let\'s solve it!</string>
+            ~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:58: Error: "share_problem_desc" is not translated in "fr" (French) [MissingTranslation]
+    <string name="share_problem_desc">Share your everyday problems and we\'ll build you a custom app to solve them - completely free!</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:59: Error: "share_your_problem" is not translated in "fr" (French) [MissingTranslation]
+    <string name="share_your_problem">Share Your Problem</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:60: Error: "recent_ideas" is not translated in "fr" (French) [MissingTranslation]
+    <string name="recent_ideas">Recent Ideas</string>
+            ~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:61: Error: "idea_title_label" is not translated in "fr" (French) [MissingTranslation]
+    <string name="idea_title_label">Idea Title</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:62: Error: "category_label" is not translated in "fr" (French) [MissingTranslation]
+    <string name="category_label">Category</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:63: Error: "submitted_by_label" is not translated in "fr" (French) [MissingTranslation]
+    <string name="submitted_by_label">Submitted by Name</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:64: Error: "date_label" is not translated in "fr" (French) [MissingTranslation]
+    <string name="date_label">Date</string>
+            ~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:65: Error: "full_idea_description_placeholder" is not translated in "fr" (French) [MissingTranslation]
+    <string name="full_idea_description_placeholder">Full idea description goes here...</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:66: Error: "category_detail_phone_emoji" is not translated in "fr" (French) [MissingTranslation]
+    <string name="category_detail_phone_emoji">📱</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:67: Error: "category_detail_productivity" is not translated in "fr" (French) [MissingTranslation]
+    <string name="category_detail_productivity">Productivity</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:68: Error: "category_detail_ideas_count" is not translated in "fr" (French) [MissingTranslation]
+    <string name="category_detail_ideas_count">12 ideas in this category</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:69: Error: "ideas_in_this_category" is not translated in "fr" (French) [MissingTranslation]
+    <string name="ideas_in_this_category">Ideas in this Category</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:70: Error: "sort_by_recent" is not translated in "fr" (French) [MissingTranslation]
+    <string name="sort_by_recent">Sort by: Recent</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:71: Error: "search_emoji" is not translated in "fr" (French) [MissingTranslation]
+    <string name="search_emoji">🔍</string>
+            ~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:72: Error: "no_ideas_in_category" is not translated in "fr" (French) [MissingTranslation]
+    <string name="no_ideas_in_category">No ideas in this category yet</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:73: Error: "be_first_to_submit" is not translated in "fr" (French) [MissingTranslation]
+    <string name="be_first_to_submit">Be the first to submit an idea in this category!</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:74: Error: "welcome_title" is not translated in "fr" (French) [MissingTranslation]
+    <string name="welcome_title">Welcome to&#10;Let\'s make an app!</string>
+            ~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:75: Error: "build_amazing_apps" is not translated in "fr" (French) [MissingTranslation]
+    <string name="build_amazing_apps">Build amazing apps step by step</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:76: Error: "get_started" is not translated in "fr" (French) [MissingTranslation]
+    <string name="get_started">Get Started</string>
+            ~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:77: Error: "learn_more" is not translated in "fr" (French) [MissingTranslation]
+    <string name="learn_more">Learn More</string>
+            ~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:78: Error: "create_account" is not translated in "fr" (French) [MissingTranslation]
+    <string name="create_account">Create Account</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:79: Error: "fill_info_to_get_started" is not translated in "fr" (French) [MissingTranslation]
+    <string name="fill_info_to_get_started">Fill in the information below to get started</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:80: Error: "agree_terms" is not translated in "fr" (French) [MissingTranslation]
+    <string name="agree_terms">I agree to the Terms of Service and Privacy Policy</string>
+            ~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:81: Error: "sign_in_instead" is not translated in "fr" (French) [MissingTranslation]
+    <string name="sign_in_instead">Sign In Instead</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:82: Error: "or_continue_with" is not translated in "fr" (French) [MissingTranslation]
+    <string name="or_continue_with">Or continue with</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:83: Error: "google" is not translated in "fr" (French) [MissingTranslation]
+    <string name="google">Google</string>
+            ~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:84: Error: "facebook" is not translated in "fr" (French) [MissingTranslation]
+    <string name="facebook">Facebook</string>
+            ~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:85: Error: "dashboard" is not translated in "fr" (French) [MissingTranslation]
+    <string name="dashboard">Dashboard</string>
+            ~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:86: Error: "welcome_back" is not translated in "fr" (French) [MissingTranslation]
+    <string name="welcome_back">Welcome back! Here\'s what\'s happening.</string>
+            ~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:87: Error: "favorites" is not translated in "fr" (French) [MissingTranslation]
+    <string name="favorites">Favorites</string>
+            ~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:88: Error: "settings" is not translated in "fr" (French) [MissingTranslation]
+    <string name="settings">Settings</string>
+            ~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:89: Error: "recent_activities" is not translated in "fr" (French) [MissingTranslation]
+    <string name="recent_activities">Recent Activities</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:90: Error: "task_completed" is not translated in "fr" (French) [MissingTranslation]
+    <string name="task_completed">Task completed</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:91: Error: "two_minutes_ago" is not translated in "fr" (French) [MissingTranslation]
+    <string name="two_minutes_ago">2 minutes ago</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:92: Error: "new_message_received" is not translated in "fr" (French) [MissingTranslation]
+    <string name="new_message_received">New message received</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:93: Error: "five_minutes_ago" is not translated in "fr" (French) [MissingTranslation]
+    <string name="five_minutes_ago">5 minutes ago</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:94: Error: "dialog_share_your_problem" is not translated in "fr" (French) [MissingTranslation]
+    <string name="dialog_share_your_problem">Share Your Problem</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:95: Error: "dialog_tell_us_about_problem" is not translated in "fr" (French) [MissingTranslation]
+    <string name="dialog_tell_us_about_problem">Tell us about a problem you face daily. We\'ll build you a custom app to solve it!</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:96: Error: "cancel" is not translated in "fr" (French) [MissingTranslation]
+    <string name="cancel">Cancel</string>
+            ~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:97: Error: "submit_idea" is not translated in "fr" (French) [MissingTranslation]
+    <string name="submit_idea">Submit Idea</string>
+            ~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:98: Error: "app_idea_title" is not translated in "fr" (French) [MissingTranslation]
+    <string name="app_idea_title">App Idea Title</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:99: Error: "describe_your_problem" is not translated in "fr" (French) [MissingTranslation]
+    <string name="describe_your_problem">Describe your problem in detail</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:100: Error: "full_name" is not translated in "fr" (French) [MissingTranslation]
+    <string name="full_name">Full Name</string>
+            ~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:101: Error: "email_address" is not translated in "fr" (French) [MissingTranslation]
+    <string name="email_address">Email Address</string>
+            ~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:102: Error: "password" is not translated in "fr" (French) [MissingTranslation]
+    <string name="password">Password</string>
+            ~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:105: Error: "family_full_sentence" is not translated in "de" (German), "fr" (French), "hu" (Hungarian), "ro" (Romanian), "es" (Spanish), "tr" (Turkish) [MissingTranslation]
+    <string name="family_full_sentence">Küldd be az ötleted a család témában!</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:106: Error: "finance_full_sentence" is not translated in "de" (German), "fr" (French), "hu" (Hungarian), "ro" (Romanian), "es" (Spanish), "tr" (Turkish) [MissingTranslation]
+    <string name="finance_full_sentence">Küldd be az ötleted a pénzügy témában!</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:107: Error: "health_full_sentence" is not translated in "de" (German), "fr" (French), "hu" (Hungarian), "ro" (Romanian), "es" (Spanish), "tr" (Turkish) [MissingTranslation]
+    <string name="health_full_sentence">Küldd be az ötleted az egészség témában!</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:108: Error: "education_full_sentence" is not translated in "de" (German), "fr" (French), "hu" (Hungarian), "ro" (Romanian), "es" (Spanish), "tr" (Turkish) [MissingTranslation]
+    <string name="education_full_sentence">Küldd be az ötleted az oktatás témában!</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:109: Error: "entertainment_full_sentence" is not translated in "de" (German), "fr" (French), "hu" (Hungarian), "ro" (Romanian), "es" (Spanish), "tr" (Turkish) [MissingTranslation]
+    <string name="entertainment_full_sentence">Küldd be az ötleted a szórakozás témában!</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:110: Error: "productivity_full_sentence" is not translated in "de" (German), "fr" (French), "hu" (Hungarian), "ro" (Romanian), "es" (Spanish), "tr" (Turkish) [MissingTranslation]
+    <string name="productivity_full_sentence">Küldd be az ötleted a produktivitás témában!</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:111: Error: "utilities_full_sentence" is not translated in "de" (German), "fr" (French), "hu" (Hungarian), "ro" (Romanian), "es" (Spanish), "tr" (Turkish) [MissingTranslation]
+    <string name="utilities_full_sentence">Küldd be az ötleted a segédprogramok témában!</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:112: Error: "pending_approval" is not translated in "de" (German), "fr" (French), "ro" (Romanian), "es" (Spanish), "tr" (Turkish) [MissingTranslation]
+    <string name="pending_approval">Pending approval</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "MissingTranslation":
+   If an application has more than one locale, then all the strings declared
+   in one language should also be translated in all other languages.
+
+   If the string should not be translated, you can add the attribute
+   translatable="false" on the <string> element, or you can define all your
+   non-translatable strings in a resource file called donottranslate.xml. Or,
+   you can ignore the issue with a tools:ignore="MissingTranslation"
+   attribute.
+
+   You can tell lint (and other tools) which language is the default language
+   in your res/values/ folder by specifying tools:locale="languageCode" for
+   the root <resources> element in your resource file. (The tools prefix
+   refers to the namespace declaration http://schemas.android.com/tools.)
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\adapter\AdminIdeaAdapter.kt:33: Warning: It will always be more efficient to use more specific change events if you can. Rely on notifyDataSetChanged as a last resort. [NotifyDataSetChanged]
+        notifyDataSetChanged()
+        ~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "NotifyDataSetChanged":
+   The RecyclerView adapter's onNotifyDataSetChanged method does not specify
+   what about the data set has changed, forcing any observers to assume that
+   all existing items and structure may no longer be valid. `LayoutManager`s
+   will be forced to fully rebind and relayout all visible views.
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values-night\themes.xml:13: Warning: Unnecessary; SDK_INT is always >= 21 [ObsoleteSdkInt]
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+                                            ~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\themes.xml:13: Warning: Unnecessary; SDK_INT is always >= 21 [ObsoleteSdkInt]
+        <item name="android:statusBarColor" tools:targetApi="l">@color/primary_color</item>
+                                            ~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "ObsoleteSdkInt":
+   This check flags version checks that are not necessary, because the
+   minSdkVersion (or surrounding known API level) is already at least as high
+   as the version checked for.
+
+   Similarly, it also looks for resources in -vNN folders, such as values-v14
+   where the version qualifier is less than or equal to the minSdkVersion,
+   where the contents should be merged into the best folder.
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\example_card_layout.xml:66: Warning: This tag and its children can be replaced by one <TextView/> and a compound drawable [UseCompoundDrawables]
+                <LinearLayout
+                 ~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\example_card_layout.xml:101: Warning: This tag and its children can be replaced by one <TextView/> and a compound drawable [UseCompoundDrawables]
+                <LinearLayout
+                 ~~~~~~~~~~~~
+
+   Explanation for issues of type "UseCompoundDrawables":
+   A LinearLayout which contains an ImageView and a TextView can be more
+   efficiently handled as a compound drawable (a single TextView, using the
+   drawableTop, drawableLeft, drawableRight and/or drawableBottom attributes
+   to draw one or more images adjacent to the text).
+
+   If the two widgets are offset from each other with margins, this can be
+   replaced with a drawablePadding attribute.
+
+   There's a lint quickfix to perform this conversion in the Eclipse plugin.
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\activity_admin_login.xml:8: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme.LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\activity_business.xml:6: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme.LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\activity_category_detail.xml:6: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme.LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\activity_education.xml:6: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme.LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\activity_entertainment.xml:6: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme.LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\activity_family.xml:6: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme.LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\activity_finance.xml:6: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme.LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\activity_health.xml:6: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme.LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\activity_main.xml:7: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme_LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\activity_productivity.xml:6: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme.LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\activity_utilities.xml:6: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme.LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\dialog_submit_idea.xml:6: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme.LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\example_card_layout.xml:7: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme.LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\example_form_layout.xml:7: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme.LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\example_welcome_screen.xml:7: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme_LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light"
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\fragment_categories.xml:6: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme.LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\fragment_category_detail.xml:6: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme.LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\fragment_home.xml:7: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme.LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\fragment_my_apps.xml:6: Warning: Possible overdraw: Root element paints background @color/background_light with a theme that also paints a background (inferred theme is @style/Theme.LetsMakeAnApp) [Overdraw]
+    android:background="@color/background_light">
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "Overdraw":
+   If you set a background drawable on a root view, then you should use a
+   custom theme where the theme background is null. Otherwise, the theme
+   background will be painted first, only to have your custom background
+   completely cover it; this is called "overdraw".
+
+   NOTE: This detector relies on figuring out which layouts are associated
+   with which activities based on scanning the Java code, and it's currently
+   doing that using an inexact pattern matching algorithm. Therefore, it can
+   incorrectly conclude which activity the layout is associated with and then
+   wrongly complain that a background-theme is hidden.
+
+   If you want your custom background on multiple pages, then you should
+   consider making a custom theme with your custom background and just using
+   that theme instead of a root element background.
+
+   Of course it's possible that your custom drawable is translucent and you
+   want it to be mixed with the background. However, you will get better
+   performance if you pre-mix the background with your drawable and use that
+   resulting image or color as a custom theme background instead.
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\drawable\circle_background.xml:2: Warning: The resource R.drawable.circle_background appears to be unused [UnusedResources]
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\drawable\circle_background_small.xml:2: Warning: The resource R.drawable.circle_background_small appears to be unused [UnusedResources]
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\colors.xml:5: Warning: The resource R.color.purple_500 appears to be unused [UnusedResources]
+    <color name="purple_500">#FF6200EE</color>
+           ~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\colors.xml:8: Warning: The resource R.color.teal_700 appears to be unused [UnusedResources]
+    <color name="teal_700">#FF018786</color>
+           ~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\colors.xml:10: Warning: The resource R.color.white appears to be unused [UnusedResources]
+    <color name="white">#FFFFFFFF</color>
+           ~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\colors.xml:15: Warning: The resource R.color.primary_light appears to be unused [UnusedResources]
+    <color name="primary_light">#FFFFCC80</color>
+           ~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\colors.xml:19: Warning: The resource R.color.accent_light appears to be unused [UnusedResources]
+    <color name="accent_light">#FFB388FF</color>
+           ~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\colors.xml:24: Warning: The resource R.color.background_white appears to be unused [UnusedResources]
+    <color name="background_white">#FFFFFFFF</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\colors.xml:26: Warning: The resource R.color.background_submit appears to be unused [UnusedResources]
+    <color name="background_submit">#FFFFF8E1</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\colors.xml:31: Warning: The resource R.color.text_hint appears to be unused [UnusedResources]
+    <color name="text_hint">#FFADB5BD</color>
+           ~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\colors.xml:46: Warning: The resource R.color.success_color appears to be unused [UnusedResources]
+    <color name="success_color">#FF4CAF50</color>
+           ~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\colors.xml:47: Warning: The resource R.color.warning_color appears to be unused [UnusedResources]
+    <color name="warning_color">#FFFFC107</color>
+           ~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\colors.xml:48: Warning: The resource R.color.error_color appears to be unused [UnusedResources]
+    <color name="error_color">#FFDC3545</color>
+           ~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\colors.xml:49: Warning: The resource R.color.info_color appears to be unused [UnusedResources]
+    <color name="info_color">#FF17A2B8</color>
+           ~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\colors.xml:52: Warning: The resource R.color.divider_color appears to be unused [UnusedResources]
+    <color name="divider_color">#FFE9ECEF</color>
+           ~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\colors.xml:53: Warning: The resource R.color.border_color appears to be unused [UnusedResources]
+    <color name="border_color">#FFDEE2E6</color>
+           ~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\colors.xml:61: Warning: The resource R.color.cta_orange_light appears to be unused [UnusedResources]
+    <color name="cta_orange_light">#FFD180</color>
+           ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\dimens.xml:2: Warning: The resource R.dimen.pagination_button_margin appears to be unused [UnusedResources]
+    <dimen name="pagination_button_margin">8dp</dimen>
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\example_card_layout.xml:2: Warning: The resource R.layout.example_card_layout appears to be unused [UnusedResources]
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\example_form_layout.xml:2: Warning: The resource R.layout.example_form_layout appears to be unused [UnusedResources]
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\example_welcome_screen.xml:2: Warning: The resource R.layout.example_welcome_screen appears to be unused [UnusedResources]
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\drawable\ic_app_logo.xml:2: Warning: The resource R.drawable.ic_app_logo appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\drawable\ic_check.xml:2: Warning: The resource R.drawable.ic_check appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\drawable\ic_comment.xml:1: Warning: The resource R.drawable.ic_comment appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\drawable\ic_download.xml:1: Warning: The resource R.drawable.ic_download appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\drawable\ic_email.xml:2: Warning: The resource R.drawable.ic_email appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\drawable\ic_facebook.xml:2: Warning: The resource R.drawable.ic_facebook appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\drawable\ic_google.xml:2: Warning: The resource R.drawable.ic_google appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\drawable\ic_lock.xml:2: Warning: The resource R.drawable.ic_lock appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\drawable\ic_notification.xml:2: Warning: The resource R.drawable.ic_notification appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\drawable\ic_person.xml:2: Warning: The resource R.drawable.ic_person appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\drawable\ic_settings.xml:2: Warning: The resource R.drawable.ic_settings appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\drawable\ic_star.xml:2: Warning: The resource R.drawable.ic_star appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\drawable\ic_thumb_up.xml:2: Warning: The resource R.drawable.ic_thumb_up appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\navigation\nav_graph.xml:2: Warning: The resource R.navigation.nav_graph appears to be unused [UnusedResources]
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\xml\network_security_config.xml:2: Warning: The resource R.xml.network_security_config appears to be unused [UnusedResources]
+<network-security-config>
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\drawable\status_approved.xml:2: Warning: The resource R.drawable.status_approved appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\drawable\status_badge_completed.xml:2: Warning: The resource R.drawable.status_badge_completed appears to be unused [UnusedResources]
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\drawable\status_badge_development.xml:2: Warning: The resource R.drawable.status_badge_development appears to be unused [UnusedResources]
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\drawable\status_completed.xml:2: Warning: The resource R.drawable.status_completed appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\drawable\status_in_development.xml:2: Warning: The resource R.drawable.status_in_development appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\drawable\status_pending.xml:2: Warning: The resource R.drawable.status_pending appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\drawable\status_rejected.xml:2: Warning: The resource R.drawable.status_rejected appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\drawable\status_testing.xml:2: Warning: The resource R.drawable.status_testing appears to be unused [UnusedResources]
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:5: Warning: The resource R.string.category_detail_page appears to be unused [UnusedResources]
+    <string name="category_detail_page">Category Detail Page</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:9: Warning: The resource R.string.family appears to be unused [UnusedResources]
+    <string name="family">Family</string>
+            ~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:11: Warning: The resource R.string.finance appears to be unused [UnusedResources]
+    <string name="finance">Finance</string>
+            ~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:13: Warning: The resource R.string.health appears to be unused [UnusedResources]
+    <string name="health">Health</string>
+            ~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:15: Warning: The resource R.string.education appears to be unused [UnusedResources]
+    <string name="education">Education</string>
+            ~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:17: Warning: The resource R.string.entertainment appears to be unused [UnusedResources]
+    <string name="entertainment">Entertainment</string>
+            ~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:19: Warning: The resource R.string.productivity appears to be unused [UnusedResources]
+    <string name="productivity">Productivity</string>
+            ~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:21: Warning: The resource R.string.utilities appears to be unused [UnusedResources]
+    <string name="utilities">Utilities</string>
+            ~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:38: Warning: The resource R.string.zero appears to be unused [UnusedResources]
+    <string name="zero">0</string>
+            ~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:74: Warning: The resource R.string.welcome_title appears to be unused [UnusedResources]
+    <string name="welcome_title">Welcome to&#10;Let\'s make an app!</string>
+            ~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:75: Warning: The resource R.string.build_amazing_apps appears to be unused [UnusedResources]
+    <string name="build_amazing_apps">Build amazing apps step by step</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:76: Warning: The resource R.string.get_started appears to be unused [UnusedResources]
+    <string name="get_started">Get Started</string>
+            ~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:77: Warning: The resource R.string.learn_more appears to be unused [UnusedResources]
+    <string name="learn_more">Learn More</string>
+            ~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:78: Warning: The resource R.string.create_account appears to be unused [UnusedResources]
+    <string name="create_account">Create Account</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:79: Warning: The resource R.string.fill_info_to_get_started appears to be unused [UnusedResources]
+    <string name="fill_info_to_get_started">Fill in the information below to get started</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:80: Warning: The resource R.string.agree_terms appears to be unused [UnusedResources]
+    <string name="agree_terms">I agree to the Terms of Service and Privacy Policy</string>
+            ~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:81: Warning: The resource R.string.sign_in_instead appears to be unused [UnusedResources]
+    <string name="sign_in_instead">Sign In Instead</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:82: Warning: The resource R.string.or_continue_with appears to be unused [UnusedResources]
+    <string name="or_continue_with">Or continue with</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:83: Warning: The resource R.string.google appears to be unused [UnusedResources]
+    <string name="google">Google</string>
+            ~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:84: Warning: The resource R.string.facebook appears to be unused [UnusedResources]
+    <string name="facebook">Facebook</string>
+            ~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:85: Warning: The resource R.string.dashboard appears to be unused [UnusedResources]
+    <string name="dashboard">Dashboard</string>
+            ~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:86: Warning: The resource R.string.welcome_back appears to be unused [UnusedResources]
+    <string name="welcome_back">Welcome back! Here\'s what\'s happening.</string>
+            ~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:87: Warning: The resource R.string.favorites appears to be unused [UnusedResources]
+    <string name="favorites">Favorites</string>
+            ~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:88: Warning: The resource R.string.settings appears to be unused [UnusedResources]
+    <string name="settings">Settings</string>
+            ~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:89: Warning: The resource R.string.recent_activities appears to be unused [UnusedResources]
+    <string name="recent_activities">Recent Activities</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:90: Warning: The resource R.string.task_completed appears to be unused [UnusedResources]
+    <string name="task_completed">Task completed</string>
+            ~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:91: Warning: The resource R.string.two_minutes_ago appears to be unused [UnusedResources]
+    <string name="two_minutes_ago">2 minutes ago</string>
+            ~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:92: Warning: The resource R.string.new_message_received appears to be unused [UnusedResources]
+    <string name="new_message_received">New message received</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:93: Warning: The resource R.string.five_minutes_ago appears to be unused [UnusedResources]
+    <string name="five_minutes_ago">5 minutes ago</string>
+            ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:100: Warning: The resource R.string.full_name appears to be unused [UnusedResources]
+    <string name="full_name">Full Name</string>
+            ~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:102: Warning: The resource R.string.password appears to be unused [UnusedResources]
+    <string name="password">Password</string>
+            ~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\themes.xml:54: Warning: The resource R.style.AppButtonStyle_Primary appears to be unused [UnusedResources]
+    <style name="AppButtonStyle.Primary" parent="AppButtonStyle">
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\themes.xml:100: Warning: The resource R.style.AppCardStyle_Submit appears to be unused [UnusedResources]
+    <style name="AppCardStyle.Submit" parent="AppCardStyle">
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnusedResources":
+   Unused resources make applications larger and slow down builds.
+
+
+   The unused resource check can ignore tests. If you want to include
+   resources that are only referenced from tests, consider packaging them in a
+   test source set instead.
+
+   You can include test sources in the unused resource check by setting the
+   system property lint.unused-resources.include-tests =true, and to exclude
+   them (usually for performance reasons), use
+   lint.unused-resources.exclude-tests =true.
+   ,
+
+   Available options:
+
+   **skip-libraries** (default is true):
+   Whether the unused resource check should skip reporting unused resources in libraries.
+
+   Many libraries will declare resources that are part of the library surface; other modules depending on the library will also reference the resources. To avoid reporting all these resources as unused (in the context of a library), the unused resource check normally skips reporting unused resources in libraries. Instead, run the unused resource check on the consuming app module (along with `checkDependencies=true`).
+
+   However, there are cases where you want to check that all the resources declared in a library are used; in that case, you can disable the skip option.
+
+   To configure this option, use a `lint.xml` file with an <option> like this:
+
+   ```xml
+   <lint>
+       <issue id="UnusedResources">
+           <option name="skip-libraries" value="true" />
+       </issue>
+   </lint>
+   ```
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values-de\strings.xml:37: Warning: Replace "..." with ellipsis character (…, &#8230;) ? [TypographyEllipsis]
+    <string name="idea_description_placeholder">Ideenbeschreibung kommt hier hin...</string>
+                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values-es\strings.xml:37: Warning: Replace "..." with ellipsis character (…, &#8230;) ? [TypographyEllipsis]
+    <string name="idea_description_placeholder">La descripción de la idea va aquí...</string>
+                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values-hu\strings.xml:37: Warning: Replace "..." with ellipsis character (…, &#8230;) ? [TypographyEllipsis]
+    <string name="idea_description_placeholder">Az ötlet leírása ide kerül...</string>
+                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values-ro\strings.xml:37: Warning: Replace "..." with ellipsis character (…, &#8230;) ? [TypographyEllipsis]
+    <string name="idea_description_placeholder">Descrierea ideii se introduce aici...</string>
+                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values-tr\strings.xml:37: Warning: Replace "..." with ellipsis character (…, &#8230;) ? [TypographyEllipsis]
+    <string name="idea_description_placeholder">Fikir açıklaması buraya yazılacak...</string>
+                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:37: Warning: Replace "..." with ellipsis character (…, &#8230;) ? [TypographyEllipsis]
+    <string name="idea_description_placeholder">Idea description goes here...</string>
+                                                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values-de\strings.xml:65: Warning: Replace "..." with ellipsis character (…, &#8230;) ? [TypographyEllipsis]
+    <string name="full_idea_description_placeholder">Vollständige Ideenbeschreibung kommt hier hin...</string>
+                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values-es\strings.xml:65: Warning: Replace "..." with ellipsis character (…, &#8230;) ? [TypographyEllipsis]
+    <string name="full_idea_description_placeholder">La descripción completa de la idea va aquí...</string>
+                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values-hu\strings.xml:65: Warning: Replace "..." with ellipsis character (…, &#8230;) ? [TypographyEllipsis]
+    <string name="full_idea_description_placeholder">Az ötlet teljes leírása ide kerül...</string>
+                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values-ro\strings.xml:65: Warning: Replace "..." with ellipsis character (…, &#8230;) ? [TypographyEllipsis]
+    <string name="full_idea_description_placeholder">Descrierea completă a ideii se introduce aici...</string>
+                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values-tr\strings.xml:65: Warning: Replace "..." with ellipsis character (…, &#8230;) ? [TypographyEllipsis]
+    <string name="full_idea_description_placeholder">Tam fikir açıklaması buraya yazılacak...</string>
+                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\values\strings.xml:65: Warning: Replace "..." with ellipsis character (…, &#8230;) ? [TypographyEllipsis]
+    <string name="full_idea_description_placeholder">Full idea description goes here...</string>
+                                                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "TypographyEllipsis":
+   You can replace the string "..." with a dedicated ellipsis character,
+   ellipsis character (u2026, &#8230;). This can help make the text more
+   readable.
+
+   https://en.wikipedia.org/wiki/Ellipsis
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\mipmap-anydpi-v26\ic_launcher.xml:2: Warning: The application adaptive icon is missing a monochrome tag [MonochromeLauncherIcon]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\mipmap-anydpi-v26\ic_launcher_round.xml:2: Warning: The application adaptive roundIcon is missing a monochrome tag [MonochromeLauncherIcon]
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+^
+
+   Explanation for issues of type "MonochromeLauncherIcon":
+   If android:roundIcon and android:icon are both in your manifest, you must
+   either remove the reference to android:roundIcon if it is not needed; or,
+   supply the monochrome icon in the drawable defined by the android:roundIcon
+   and android:icon attribute.
+
+   For example, if android:roundIcon and android:icon are both in the
+   manifest, a launcher might choose to use android:roundIcon over
+   android:icon to display the adaptive app icon. Therefore, your themed
+   application iconwill not show if your monochrome attribute is not also
+   specified in android:roundIcon.
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\item_admin_idea.xml:48: Warning: Buttons in button bars should be borderless; use style="?android:attr/buttonBarButtonStyle" (and ?android:attr/buttonBarStyle on the parent) [ButtonStyle]
+            <Button
+             ~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\item_admin_idea.xml:54: Warning: Buttons in button bars should be borderless; use style="?android:attr/buttonBarButtonStyle" (and ?android:attr/buttonBarStyle on the parent) [ButtonStyle]
+            <Button
+             ~~~~~~
+
+   Explanation for issues of type "ButtonStyle":
+   Button bars typically use a borderless style for the buttons. Set the
+   style="?android:attr/buttonBarButtonStyle" attribute on each of the
+   buttons, and set style="?android:attr/buttonBarStyle" on the parent layout
+
+   https://d.android.com/r/studio-ui/designer/material/dialogs
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\item_admin_idea.xml:62: Warning: This text field does not specify an inputType [TextFields]
+        <EditText
+         ~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\item_idea_card.xml:137: Warning: This text field does not specify an inputType [TextFields]
+            <EditText
+             ~~~~~~~~
+
+   Explanation for issues of type "TextFields":
+   Providing an inputType attribute on a text field improves usability because
+   depending on the data to be input, optimized keyboards can be shown to the
+   user (such as just digits and parentheses for a phone number). 
+
+   The lint detector also looks at the id of the view, and if the id offers a
+   hint of the purpose of the field (for example, the id contains the phrase
+   phone or email), then lint will also ensure that the inputType contains the
+   corresponding type attributes.
+
+   If you really want to keep the text field generic, you can suppress this
+   warning by setting inputType="text".
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\item_idea_card.xml:42: Warning: Avoid using sizes smaller than 11sp: 10sp [SmallSp]
+                android:textSize="10sp"
+                ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\item_idea_card.xml:54: Warning: Avoid using sizes smaller than 11sp: 10sp [SmallSp]
+            android:textSize="10sp"
+            ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\item_idea_card.xml:65: Warning: Avoid using sizes smaller than 11sp: 10sp [SmallSp]
+            android:textSize="10sp"
+            ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\item_idea_card.xml:76: Warning: Avoid using sizes smaller than 11sp: 10sp [SmallSp]
+            android:textSize="10sp"
+            ~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "SmallSp":
+   Avoid using sizes smaller than 11sp.
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\activity_admin_login.xml:21: Warning: Missing autofillHints attribute [Autofill]
+    <EditText
+     ~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\activity_admin_login.xml:30: Warning: Missing autofillHints attribute [Autofill]
+    <EditText
+     ~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\fragment_admin_login.xml:9: Warning: Missing autofillHints attribute [Autofill]
+    <EditText
+     ~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\fragment_admin_login.xml:17: Warning: Missing autofillHints attribute [Autofill]
+    <EditText
+     ~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\item_admin_idea.xml:62: Warning: Missing autofillHints attribute [Autofill]
+        <EditText
+         ~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\item_idea_card.xml:137: Warning: Missing autofillHints attribute [Autofill]
+            <EditText
+             ~~~~~~~~
+
+   Explanation for issues of type "Autofill":
+   Specify an autofillHints attribute when targeting SDK version 26 or higher
+   or explicitly specify that the view is not important for autofill. Your app
+   can help an autofill service classify the data correctly by providing the
+   meaning of each view that could be autofillable, such as views representing
+   usernames, passwords, credit card fields, email addresses, etc.
+
+   The hints can have any value, but it is recommended to use predefined
+   values like 'username' for a username or 'creditCardNumber' for a credit
+   card number. For a list of all predefined autofill hint constants, see the
+   AUTOFILL_HINT_ constants in the View reference at
+   https://developer.android.com/reference/android/view/View.html.
+
+   You can mark a view unimportant for autofill by specifying an
+   importantForAutofill attribute on that view or a parent view. See
+   https://developer.android.com/reference/android/view/View.html#setImportant
+   ForAutofill(int).
+
+   https://developer.android.com/guide/topics/text/autofill.html
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\example_card_layout.xml:73: Warning: Missing contentDescription attribute on image [ContentDescription]
+                    <ImageView
+                     ~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\example_card_layout.xml:108: Warning: Missing contentDescription attribute on image [ContentDescription]
+                    <ImageView
+                     ~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\example_card_layout.xml:171: Warning: Missing contentDescription attribute on image [ContentDescription]
+                        <ImageView
+                         ~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\example_card_layout.xml:214: Warning: Missing contentDescription attribute on image [ContentDescription]
+                        <ImageView
+                         ~~~~~~~~~
+
+   Explanation for issues of type "ContentDescription":
+   Non-textual widgets like ImageViews and ImageButtons should use the
+   contentDescription attribute to specify a textual description of the widget
+   such that screen readers and other accessibility tools can adequately
+   describe the user interface.
+
+   Note that elements in application screens that are purely decorative and do
+   not provide any content or enable a user action should not have
+   accessibility content descriptions. In this case, set their descriptions to
+   @null. If your app's minSdkVersion is 16 or higher, you can instead set
+   these graphical elements' android:importantForAccessibility attributes to
+   no.
+
+   Note that for text fields, you should not set both the hint and the
+   contentDescription attributes since the hint will never be shown. Just set
+   the hint.
+
+   https://developer.android.com/guide/topics/ui/accessibility/apps#special-cases
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\dialog_submit_idea.xml:72: Warning: Missing accessibility label: provide either a view with an android:labelFor that references this view or provide an android:hint [LabelFor]
+            <AutoCompleteTextView
+             ~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "LabelFor":
+   Editable text fields should provide an android:hint or, provided your
+   minSdkVersion is at least 17, they may be referenced by a view with a
+   android:labelFor attribute.
+
+   When using android:labelFor, be sure to provide an android:text or an
+   android:contentDescription.
+
+   If your view is labeled but by a label in a different layout which includes
+   this one, just suppress this warning from lint.
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\HomeFragment.kt:132: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        dialogView.findViewById<TextView>(R.id.tvDialogCategory).text = getCategoryIcon(idea.category) + " " + idea.category.replaceFirstChar {
+                                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\HomeFragment.kt:132: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        dialogView.findViewById<TextView>(R.id.tvDialogCategory).text = getCategoryIcon(idea.category) + " " + idea.category.replaceFirstChar {
+                                                                        ^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\HomeFragment.kt:135: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        dialogView.findViewById<TextView>(R.id.tvDialogSubmitter).text = "by ${idea.submitterName}"
+                                                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\HomeFragment.kt:135: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        dialogView.findViewById<TextView>(R.id.tvDialogSubmitter).text = "by ${idea.submitterName}"
+                                                                          ~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\HomeFragment.kt:179: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            button.text = (i + 1).toString()
+                           ~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\adapter\IdeaAdapter.kt:53: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            tvCategory.text = getCategoryIcon(idea.category) + " " + idea.category.replaceFirstChar {
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\adapter\IdeaAdapter.kt:53: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            tvCategory.text = getCategoryIcon(idea.category) + " " + idea.category.replaceFirstChar {
+                              ^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\adapter\IdeaAdapter.kt:56: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            tvSubmitter.text = "by ${idea.submitterName}"
+                               ~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\adapter\IdeaAdapter.kt:56: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+            tvSubmitter.text = "by ${idea.submitterName}"
+                                ~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\adapter\IdeaAdapter.kt:64: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                tvDate.text = "Just now"
+                               ~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\adapter\IdeaAdapter.kt:93: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                tvCategory.text = getCategoryIcon(idea.category) + " " + idea.category.replaceFirstChar {
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\adapter\IdeaAdapter.kt:93: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                tvCategory.text = getCategoryIcon(idea.category) + " " + idea.category.replaceFirstChar {
+                                  ^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\adapter\IdeaAdapter.kt:96: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+                tvSubmitter.text = "by ${idea.submitterName}"
+                                   ~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\adapter\IdeaAdapter.kt:96: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                tvSubmitter.text = "by ${idea.submitterName}"
+                                    ~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\adapter\IdeaAdapter.kt:102: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+                    tvDate.text = "Just now"
+                                   ~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\MyAppsFragment.kt:126: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        tvInProgressCount.text = "${inProgressApps.size} in progress"
+                                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\MyAppsFragment.kt:126: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        tvInProgressCount.text = "${inProgressApps.size} in progress"
+                                                        ~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\MyAppsFragment.kt:155: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            button.text = (i + 1).toString()
+                           ~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\MyAppsFragment.kt:184: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+            button.text = (i + 1).toString()
+                           ~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\MyAppsFragment.kt:212: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        dialogView.findViewById<android.widget.TextView>(R.id.tvDialogCategory).text = getCategoryIcon(idea.category) + " " + idea.category.replaceFirstChar {
+                                                                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\MyAppsFragment.kt:212: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        dialogView.findViewById<android.widget.TextView>(R.id.tvDialogCategory).text = getCategoryIcon(idea.category) + " " + idea.category.replaceFirstChar {
+                                                                                       ^
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\MyAppsFragment.kt:215: Warning: Do not concatenate text displayed with setText. Use resource string with placeholders. [SetTextI18n]
+        dialogView.findViewById<android.widget.TextView>(R.id.tvDialogSubmitter).text = "by ${idea.submitterName}"
+                                                                                        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\java\com\example\ideapp\MyAppsFragment.kt:215: Warning: String literal in setText can not be translated. Use Android resources instead. [SetTextI18n]
+        dialogView.findViewById<android.widget.TextView>(R.id.tvDialogSubmitter).text = "by ${idea.submitterName}"
+                                                                                         ~~~
+
+   Explanation for issues of type "SetTextI18n":
+   When calling TextView#setText
+   * Never call Number#toString() to format numbers; it will not handle
+   fraction separators and locale-specific digits properly. Consider using
+   String#format with proper format specifications (%d or %f) instead.
+   * Do not pass a string literal (e.g. "Hello") to display text. Hardcoded
+   text can not be properly translated to other languages. Consider using
+   Android resource strings instead.
+   * Do not build messages by concatenating text chunks. Such messages can not
+   be properly translated.
+
+   https://developer.android.com/guide/topics/resources/localization.html
+
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\activity_admin_login.xml:15: Warning: Hardcoded string "Admin bejelentkezés", should use @string resource [HardcodedText]
+        android:text="Admin bejelentkezés"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\activity_admin_login.xml:25: Warning: Hardcoded string "Email", should use @string resource [HardcodedText]
+        android:hint="Email"
+        ~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\activity_admin_login.xml:34: Warning: Hardcoded string "Jelszó", should use @string resource [HardcodedText]
+        android:hint="Jelszó"
+        ~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\activity_admin_login.xml:43: Warning: Hardcoded string "Bejelentkezés", should use @string resource [HardcodedText]
+        android:text="Bejelentkezés" />
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\menu\bottom_navigation.xml:5: Warning: Hardcoded string "Home", should use @string resource [HardcodedText]
+        android:title="Home"
+        ~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\menu\bottom_navigation.xml:9: Warning: Hardcoded string "Categories", should use @string resource [HardcodedText]
+        android:title="Categories"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\menu\bottom_navigation.xml:13: Warning: Hardcoded string "My Apps", should use @string resource [HardcodedText]
+        android:title="My Apps"
+        ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\example_welcome_screen.xml:52: Warning: Hardcoded string "App logo", should use @string resource [HardcodedText]
+        android:contentDescription="App logo"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\fragment_admin_login.xml:13: Warning: Hardcoded string "Email", should use @string resource [HardcodedText]
+        android:hint="Email"
+        ~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\fragment_admin_login.xml:21: Warning: Hardcoded string "Password", should use @string resource [HardcodedText]
+        android:hint="Password"
+        ~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\fragment_admin_login.xml:29: Warning: Hardcoded string "Login", should use @string resource [HardcodedText]
+        android:text="Login" />
+        ~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\fragment_admin_panel.xml:31: Warning: Hardcoded string "Kijelentkezés", should use @string resource [HardcodedText]
+        android:text="Kijelentkezés"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\item_admin_idea.xml:22: Warning: Hardcoded string "Ötlet szövege", should use @string resource [HardcodedText]
+            android:text="Ötlet szövege" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\item_admin_idea.xml:28: Warning: Hardcoded string "Beküldő neve", should use @string resource [HardcodedText]
+            android:text="Beküldő neve" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\item_admin_idea.xml:34: Warning: Hardcoded string "Beküldő e-mail", should use @string resource [HardcodedText]
+            android:text="Beküldő e-mail" />
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\item_admin_idea.xml:40: Warning: Hardcoded string "Státusz", should use @string resource [HardcodedText]
+            android:text="Státusz" />
+            ~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\item_admin_idea.xml:52: Warning: Hardcoded string "Jóváhagyás", should use @string resource [HardcodedText]
+                android:text="Jóváhagyás" />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\item_admin_idea.xml:58: Warning: Hardcoded string "Elutasítás", should use @string resource [HardcodedText]
+                android:text="Elutasítás"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\item_admin_idea.xml:66: Warning: Hardcoded string "Üzenet a beküldőnek...", should use @string resource [HardcodedText]
+            android:hint="Üzenet a beküldőnek..."
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\item_admin_idea.xml:73: Warning: Hardcoded string "Üzenet küldése", should use @string resource [HardcodedText]
+            android:text="Üzenet küldése"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\item_idea_card.xml:94: Warning: Hardcoded string "0", should use @string resource [HardcodedText]
+            android:text="0"
+            ~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\item_idea_card.xml:104: Warning: Hardcoded string "Admin üzenete:", should use @string resource [HardcodedText]
+            android:text="Admin üzenete:"
+            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\item_idea_card.xml:119: Warning: Hardcoded string "Válaszod:", should use @string resource [HardcodedText]
+            android:text="Válaszod:"
+            ~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\item_idea_card.xml:142: Warning: Hardcoded string "Írd be a válaszod...", should use @string resource [HardcodedText]
+                android:hint="Írd be a válaszod..." />
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res\layout\item_idea_card.xml:148: Warning: Hardcoded string "Küldés", should use @string resource [HardcodedText]
+                android:text="Küldés" />
+                ~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "HardcodedText":
+   Hardcoding text attributes directly in layout files is bad for several
+   reasons:
+
+   * When creating configuration variations (for example for landscape or
+   portrait) you have to repeat the actual text (and keep it up to date when
+   making changes)
+
+   * The application cannot be translated to other languages by just adding
+   new translations for existing string resources.
+
+   There are quickfixes to automatically extract this hardcoded string into a
+   resource lookup.
+
+107 errors, 211 warnings

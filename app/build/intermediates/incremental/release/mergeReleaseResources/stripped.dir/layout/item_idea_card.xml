@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    style="@style/AppCardStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="13dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/AppTextStyle.Body"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/idea_title"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:maxLines="2"
+                />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/approved"
+                android:textSize="10sp"
+                style="@style/Widget.Material3.Chip.Assist" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCategory"
+            style="@style/AppTextStyle.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="@string/category"
+            android:textSize="10sp"
+            android:maxLines="2"
+            />
+
+        <TextView
+            android:id="@+id/tvSubmitter"
+            style="@style/AppTextStyle.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:text="@string/submitted_by_name"
+            android:textSize="10sp"
+            android:maxLines="2"
+            />
+
+        <TextView
+            android:id="@+id/tvDate"
+            style="@style/AppTextStyle.Caption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:text="@string/date"
+            android:textSize="10sp"
+            android:maxLines="2"
+            />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            style="@style/AppTextStyle.Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/idea_description_placeholder"
+            android:maxLines="3"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvUpvotes"
+            style="@style/AppTextStyle.Caption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"
+            android:maxLines="2"
+            />
+
+        <TextView
+            android:id="@+id/tvAdminComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin üzenete:"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvAdminCommentContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvUserReply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Válaszod:"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvUserReplyContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layoutReply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/etUserReply"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Írd be a válaszod..." />
+
+            <Button
+                android:id="@+id/btnSendReply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Küldés" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

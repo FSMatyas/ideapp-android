@@ -46,15 +46,12 @@ class AdminIdeaAdapter(
             }
             itemView.findViewById<Button>(R.id.btnApprove).setOnClickListener { onApprove(idea) }
             itemView.findViewById<Button>(R.id.btnReject).setOnClickListener { onReject(idea) }
+            // Disable admin message UI
             val etMessage = itemView.findViewById<EditText>(R.id.etAdminMessage)
             val btnSend = itemView.findViewById<Button>(R.id.btnSendMessage)
-            btnSend.setOnClickListener {
-                val msg = etMessage.text.toString().trim()
-                if (msg.isNotEmpty()) {
-                    onSendMessage(idea, msg)
-                    etMessage.setText("")
-                }
-            }
+            etMessage.visibility = View.GONE
+            btnSend.visibility = View.GONE
+            // btnSend.setOnClickListener { ... } is disabled
         }
     }
 }

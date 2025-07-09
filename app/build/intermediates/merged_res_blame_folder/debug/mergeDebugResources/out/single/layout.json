@@ -1,0 +1,102 @@
+[
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\activity_category_detail.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\activity_category_detail.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\item_idea_card.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\item_idea_card.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\activity_education.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\activity_education.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\fragment_my_apps.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\fragment_my_apps.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\activity_admin_login.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\activity_admin_login.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\fragment_admin_panel.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\fragment_admin_panel.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\activity_family.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\activity_family.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\activity_productivity.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\activity_productivity.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\activity_business.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\activity_business.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\dialog_submit_idea.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\dialog_submit_idea.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\activity_finance.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\activity_finance.xml"
+    },
+    {
+        "merged": "com.example.ideapp-mergeDebugResources-65:/layout/activity_admin.xml",
+        "source": "com.example.ideapp-main-68:/layout/activity_admin.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\activity_main.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\item_admin_idea.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\item_admin_idea.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\fragment_admin_login.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\fragment_admin_login.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\activity_health.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\activity_health.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\activity_entertainment.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\activity_entertainment.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\example_welcome_screen.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\example_welcome_screen.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\activity_utilities.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\activity_utilities.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\example_form_layout.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\example_form_layout.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\fragment_categories.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\fragment_categories.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\fragment_category_detail.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\fragment_category_detail.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\fragment_home.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\dialog_idea_detail.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\dialog_idea_detail.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\example_card_layout.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\example_card_layout.xml"
+    }
+]

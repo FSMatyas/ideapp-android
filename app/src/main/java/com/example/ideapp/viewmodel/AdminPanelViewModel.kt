@@ -45,10 +45,12 @@ class AdminPanelViewModel : ViewModel() {
     }
 
     fun sendAdminMessage(ideaId: String, message: String) {
-        db.collection("ideas").document(ideaId)
-            .update("adminNotes", message)
-            .addOnSuccessListener { _messageSent.value = true }
-            .addOnFailureListener { _error.value = it.localizedMessage }
+        // Disabled: do nothing for now to revert to previous state
+        // db.collection("ideas").document(ideaId)
+        //     .update("adminNotes", message)
+        //     .addOnSuccessListener { _messageSent.value = true }
+        //     .addOnFailureListener { _error.value = it.localizedMessage }
+        _messageSent.value = false
     }
 
     override fun onCleared() {

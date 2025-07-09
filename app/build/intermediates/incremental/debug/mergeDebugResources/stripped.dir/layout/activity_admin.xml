@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="32dp"
+    android:background="@color/background_light">
+
+    <!-- Egyszerű admin felület -->
+    <TextView
+        android:id="@+id/tvAdminWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin felület"
+        android:textSize="22sp"
+        android:textColor="@color/primary_color"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Kijelentkezés gomb -->
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kijelentkezés" />
+
+</LinearLayout>

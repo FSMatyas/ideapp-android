@@ -12,6 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LetsMakeAnApp"
         tools:targetApi="31">
+        <activity android:name=".AdminLoginActivity" android:exported="false" />
         <activity android:name="com.example.ideapp.FinanceActivity" android:exported="false" />
         <activity android:name="com.example.ideapp.HealthActivity" android:exported="false" />
         <activity android:name="com.example.ideapp.EducationActivity" android:exported="false" />
@@ -32,6 +33,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AdminActivity" android:exported="false" />
     </application>
 
 </manifest>

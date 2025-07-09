@@ -87,6 +87,7 @@ id adminLoginFragment
 id adminPanelFragment
 id bottom_nav_shadow
 id bottom_navigation
+id btnAdminLogin
 id btnApprove
 id btnCancel
 id btnGetStarted
@@ -106,7 +107,9 @@ id cvEmptyState
 id editTextEmail
 id editTextPassword
 id emptyStateCard
+id etAdminEmail
 id etAdminMessage
+id etAdminPassword
 id etContact
 id etDescription
 id etIdeaTitle
@@ -117,7 +120,6 @@ id ivLogo
 id layoutReply
 id nav_categories
 id nav_home
-id nav_host_fragment
 id nav_my_apps
 id paginationCompletedContainer
 id paginationContainer
@@ -145,6 +147,8 @@ id toolbar_productivity
 id toolbar_utilities
 id tvAdminComment
 id tvAdminCommentContent
+id tvAdminLoginTitle
+id tvAdminWelcome
 id tvBusiness
 id tvCategory
 id tvCategoryCount
@@ -178,6 +182,8 @@ id tvUserReplyContent
 id tvUtilities
 id tvWelcome
 id viewPager
+layout activity_admin
+layout activity_admin_login
 layout activity_business
 layout activity_category_detail
 layout activity_education

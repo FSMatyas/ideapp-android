@@ -1,0 +1,98 @@
+[
+    {
+        "merged": "com.example.ideapp-mergeReleaseResources-65:/layout/fragment_categories.xml",
+        "source": "com.example.ideapp-main-67:/layout/fragment_categories.xml"
+    },
+    {
+        "merged": "com.example.ideapp-mergeReleaseResources-65:/layout/dialog_idea_detail.xml",
+        "source": "com.example.ideapp-main-67:/layout/dialog_idea_detail.xml"
+    },
+    {
+        "merged": "com.example.ideapp-mergeReleaseResources-65:/layout/activity_education.xml",
+        "source": "com.example.ideapp-main-67:/layout/activity_education.xml"
+    },
+    {
+        "merged": "com.example.ideapp-mergeReleaseResources-65:/layout/activity_utilities.xml",
+        "source": "com.example.ideapp-main-67:/layout/activity_utilities.xml"
+    },
+    {
+        "merged": "com.example.ideapp-mergeReleaseResources-65:/layout/example_welcome_screen.xml",
+        "source": "com.example.ideapp-main-67:/layout/example_welcome_screen.xml"
+    },
+    {
+        "merged": "com.example.ideapp-mergeReleaseResources-65:/layout/fragment_admin_panel.xml",
+        "source": "com.example.ideapp-main-67:/layout/fragment_admin_panel.xml"
+    },
+    {
+        "merged": "com.example.ideapp-mergeReleaseResources-65:/layout/activity_admin_login.xml",
+        "source": "com.example.ideapp-main-67:/layout/activity_admin_login.xml"
+    },
+    {
+        "merged": "com.example.ideapp-mergeReleaseResources-65:/layout/dialog_submit_idea.xml",
+        "source": "com.example.ideapp-main-67:/layout/dialog_submit_idea.xml"
+    },
+    {
+        "merged": "com.example.ideapp-mergeReleaseResources-65:/layout/activity_finance.xml",
+        "source": "com.example.ideapp-main-67:/layout/activity_finance.xml"
+    },
+    {
+        "merged": "com.example.ideapp-mergeReleaseResources-65:/layout/fragment_admin_login.xml",
+        "source": "com.example.ideapp-main-67:/layout/fragment_admin_login.xml"
+    },
+    {
+        "merged": "com.example.ideapp-mergeReleaseResources-65:/layout/activity_entertainment.xml",
+        "source": "com.example.ideapp-main-67:/layout/activity_entertainment.xml"
+    },
+    {
+        "merged": "com.example.ideapp-mergeReleaseResources-65:/layout/activity_family.xml",
+        "source": "com.example.ideapp-main-67:/layout/activity_family.xml"
+    },
+    {
+        "merged": "com.example.ideapp-mergeReleaseResources-65:/layout/fragment_my_apps.xml",
+        "source": "com.example.ideapp-main-67:/layout/fragment_my_apps.xml"
+    },
+    {
+        "merged": "com.example.ideapp-mergeReleaseResources-65:/layout/activity_health.xml",
+        "source": "com.example.ideapp-main-67:/layout/activity_health.xml"
+    },
+    {
+        "merged": "com.example.ideapp-mergeReleaseResources-65:/layout/fragment_category_detail.xml",
+        "source": "com.example.ideapp-main-67:/layout/fragment_category_detail.xml"
+    },
+    {
+        "merged": "com.example.ideapp-mergeReleaseResources-65:/layout/example_form_layout.xml",
+        "source": "com.example.ideapp-main-67:/layout/example_form_layout.xml"
+    },
+    {
+        "merged": "com.example.ideapp-mergeReleaseResources-65:/layout/fragment_home.xml",
+        "source": "com.example.ideapp-main-67:/layout/fragment_home.xml"
+    },
+    {
+        "merged": "com.example.ideapp-mergeReleaseResources-65:/layout/activity_category_detail.xml",
+        "source": "com.example.ideapp-main-67:/layout/activity_category_detail.xml"
+    },
+    {
+        "merged": "com.example.ideapp-mergeReleaseResources-65:/layout/item_admin_idea.xml",
+        "source": "com.example.ideapp-main-67:/layout/item_admin_idea.xml"
+    },
+    {
+        "merged": "com.example.ideapp-mergeReleaseResources-65:/layout/activity_main.xml",
+        "source": "com.example.ideapp-main-67:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.example.ideapp-mergeReleaseResources-65:/layout/activity_productivity.xml",
+        "source": "com.example.ideapp-main-67:/layout/activity_productivity.xml"
+    },
+    {
+        "merged": "com.example.ideapp-mergeReleaseResources-65:/layout/example_card_layout.xml",
+        "source": "com.example.ideapp-main-67:/layout/example_card_layout.xml"
+    },
+    {
+        "merged": "com.example.ideapp-mergeReleaseResources-65:/layout/activity_business.xml",
+        "source": "com.example.ideapp-main-67:/layout/activity_business.xml"
+    },
+    {
+        "merged": "com.example.ideapp-mergeReleaseResources-65:/layout/item_idea_card.xml",
+        "source": "com.example.ideapp-main-67:/layout/item_idea_card.xml"
+    }
+]

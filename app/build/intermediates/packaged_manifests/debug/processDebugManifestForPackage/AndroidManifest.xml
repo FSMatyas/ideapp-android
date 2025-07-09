@@ -38,6 +38,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.LetsMakeAnApp" >
         <activity
+            android:name="com.example.ideapp.AdminLoginActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.ideapp.FinanceActivity"
             android:exported="false" />
         <activity
@@ -74,6 +77,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.ideapp.AdminActivity"
+            android:exported="false" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"

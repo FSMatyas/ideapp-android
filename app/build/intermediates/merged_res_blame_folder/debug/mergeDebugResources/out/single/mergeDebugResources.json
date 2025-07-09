@@ -208,6 +208,10 @@
         "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\item_admin_idea.xml"
     },
     {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-debug-66:\\layout_activity_admin_login.xml.flat",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\activity_admin_login.xml"
+    },
+    {
         "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-debug-66:\\menu_bottom_navigation.xml.flat",
         "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\menu\\bottom_navigation.xml"
     },
@@ -222,6 +226,10 @@
     {
         "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-debug-66:\\drawable_ic_comment.xml.flat",
         "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\drawable\\ic_comment.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-66:/layout_activity_admin.xml.flat",
+        "source": "com.example.ideapp-main-68:/layout/activity_admin.xml"
     },
     {
         "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-debug-66:\\layout_fragment_admin_login.xml.flat",
@@ -282,10 +290,6 @@
     {
         "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-debug-66:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\mipmap-anydpi-v26\\ic_launcher.xml"
-    },
-    {
-        "merged": "com.example.ideapp-debug-66:/navigation_nav_graph.xml.flat",
-        "source": "com.example.ideapp-main-68:/navigation/nav_graph.xml"
     },
     {
         "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-debug-66:\\layout_fragment_category_detail.xml.flat",

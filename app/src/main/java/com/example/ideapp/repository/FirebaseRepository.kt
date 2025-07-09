@@ -61,7 +61,7 @@ class FirebaseRepository {
         
         ideasCollection
             .whereEqualTo("category", category)
-            .whereEqualTo("isApproved", true)
+            // .whereEqualTo("isApproved", true) // Temporarily removed for debugging
             .orderBy("createdAt", Query.Direction.DESCENDING)
             .addSnapshotListener { snapshot, exception ->
                 if (exception != null) {

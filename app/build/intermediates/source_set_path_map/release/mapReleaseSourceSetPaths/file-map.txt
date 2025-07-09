@@ -1,0 +1,69 @@
+com.example.ideapp-lifecycle-livedata-core-2.7.0-0 I:\Androidcache\GradleCache\caches\8.13\transforms\0023eac88725b26b08f62fd1fe569e3b\transformed\lifecycle-livedata-core-2.7.0\res
+com.example.ideapp-browser-1.4.0-1 I:\Androidcache\GradleCache\caches\8.13\transforms\043ff8f5775bc923b1dde8c892c5dd9c\transformed\browser-1.4.0\res
+com.example.ideapp-fragment-ktx-1.6.2-2 I:\Androidcache\GradleCache\caches\8.13\transforms\06cc3a6cc123b7bd0026969ef7a85a99\transformed\fragment-ktx-1.6.2\res
+com.example.ideapp-lifecycle-livedata-2.7.0-3 I:\Androidcache\GradleCache\caches\8.13\transforms\085007a4b15e0575736f903f596e9511\transformed\lifecycle-livedata-2.7.0\res
+com.example.ideapp-room-ktx-2.5.0-4 I:\Androidcache\GradleCache\caches\8.13\transforms\091f78766f7a33b0660577e69d532a88\transformed\room-ktx-2.5.0\res
+com.example.ideapp-annotation-experimental-1.3.0-5 I:\Androidcache\GradleCache\caches\8.13\transforms\0df0dfea8a982065e4a22e081dc73d17\transformed\annotation-experimental-1.3.0\res
+com.example.ideapp-lifecycle-viewmodel-savedstate-2.7.0-6 I:\Androidcache\GradleCache\caches\8.13\transforms\0f5e3b80703b7ed74818327ee7b6c46b\transformed\lifecycle-viewmodel-savedstate-2.7.0\res
+com.example.ideapp-lifecycle-runtime-ktx-2.7.0-7 I:\Androidcache\GradleCache\caches\8.13\transforms\1083ce8ef7b34a04ced79084e12e1d40\transformed\lifecycle-runtime-ktx-2.7.0\res
+com.example.ideapp-profileinstaller-1.3.0-8 I:\Androidcache\GradleCache\caches\8.13\transforms\113fa59d69e4e845f8fb4843a7953674\transformed\profileinstaller-1.3.0\res
+com.example.ideapp-play-services-basement-18.1.0-9 I:\Androidcache\GradleCache\caches\8.13\transforms\1a7a3e045ddeaafd4dbd86ca24a7bfad\transformed\play-services-basement-18.1.0\res
+com.example.ideapp-material-1.11.0-10 I:\Androidcache\GradleCache\caches\8.13\transforms\2935716475862bdcf100fef7701936eb\transformed\material-1.11.0\res
+com.example.ideapp-core-1.12.0-11 I:\Androidcache\GradleCache\caches\8.13\transforms\321c5bb9aeaadc190b1c49f4498a0783\transformed\core-1.12.0\res
+com.example.ideapp-core-runtime-2.2.0-12 I:\Androidcache\GradleCache\caches\8.13\transforms\3318bb8ef2d53bc6f971fab7f3a94b3c\transformed\core-runtime-2.2.0\res
+com.example.ideapp-lifecycle-runtime-2.7.0-13 I:\Androidcache\GradleCache\caches\8.13\transforms\3353b71743f59abfc7a722e518144ac3\transformed\lifecycle-runtime-2.7.0\res
+com.example.ideapp-coordinatorlayout-1.1.0-14 I:\Androidcache\GradleCache\caches\8.13\transforms\3b3e67f8175bd1be7be93433cd656fbb\transformed\coordinatorlayout-1.1.0\res
+com.example.ideapp-drawerlayout-1.1.1-15 I:\Androidcache\GradleCache\caches\8.13\transforms\3dac78aacf82d83715ad0bb5b99ec2d0\transformed\drawerlayout-1.1.1\res
+com.example.ideapp-emoji2-views-helper-1.2.0-16 I:\Androidcache\GradleCache\caches\8.13\transforms\468e6c40e9d2b771f7605c0441862541\transformed\emoji2-views-helper-1.2.0\res
+com.example.ideapp-lifecycle-viewmodel-2.7.0-17 I:\Androidcache\GradleCache\caches\8.13\transforms\4fe74630b7685a461d5cd6dd31895ce6\transformed\lifecycle-viewmodel-2.7.0\res
+com.example.ideapp-firebase-common-20.4.2-18 I:\Androidcache\GradleCache\caches\8.13\transforms\6dc62b9f1a0b763ed97e522960b7b521\transformed\firebase-common-20.4.2\res
+com.example.ideapp-navigation-runtime-2.7.6-19 I:\Androidcache\GradleCache\caches\8.13\transforms\6ea1845f6feee2188d9039a13f06a554\transformed\navigation-runtime-2.7.6\res
+com.example.ideapp-startup-runtime-1.1.1-20 I:\Androidcache\GradleCache\caches\8.13\transforms\6f8d9e8f8c0e245741b03a02c225a844\transformed\startup-runtime-1.1.1\res
+com.example.ideapp-appcompat-resources-1.6.1-21 I:\Androidcache\GradleCache\caches\8.13\transforms\73f24cfa1701b73ea7c8fc4ff0720d54\transformed\appcompat-resources-1.6.1\res
+com.example.ideapp-lifecycle-process-2.7.0-22 I:\Androidcache\GradleCache\caches\8.13\transforms\780fb8415d834c957cf53fb1d5d640fe\transformed\lifecycle-process-2.7.0\res
+com.example.ideapp-navigation-fragment-ktx-2.7.6-23 I:\Androidcache\GradleCache\caches\8.13\transforms\781d5a4c81f648eb6e7ae0916f67aa0e\transformed\navigation-fragment-ktx-2.7.6\res
+com.example.ideapp-fragment-1.6.2-24 I:\Androidcache\GradleCache\caches\8.13\transforms\7a3dd9da0f62af0499a6d627a9894a0b\transformed\fragment-1.6.2\res
+com.example.ideapp-sqlite-framework-2.3.0-25 I:\Androidcache\GradleCache\caches\8.13\transforms\7e120fbb16f354f1f770efd8e08e50e9\transformed\sqlite-framework-2.3.0\res
+com.example.ideapp-sqlite-2.3.0-26 I:\Androidcache\GradleCache\caches\8.13\transforms\7ea99ad7ac7d2db1fca8123d13d78e55\transformed\sqlite-2.3.0\res
+com.example.ideapp-play-services-base-18.0.1-27 I:\Androidcache\GradleCache\caches\8.13\transforms\84de28487c6f3a2e17d4b2386e83c03a\transformed\play-services-base-18.0.1\res
+com.example.ideapp-core-ktx-1.12.0-28 I:\Androidcache\GradleCache\caches\8.13\transforms\8a182b213ec46a0268e4cc03ebbce96b\transformed\core-ktx-1.12.0\res
+com.example.ideapp-emoji2-1.2.0-29 I:\Androidcache\GradleCache\caches\8.13\transforms\8add850b15f6e2bbe94702c8a173279b\transformed\emoji2-1.2.0\res
+com.example.ideapp-navigation-runtime-ktx-2.7.6-30 I:\Androidcache\GradleCache\caches\8.13\transforms\8afdc8eb6af7a62befbb773ba9ba6014\transformed\navigation-runtime-ktx-2.7.6\res
+com.example.ideapp-activity-1.8.0-31 I:\Androidcache\GradleCache\caches\8.13\transforms\8f48b8e33e88d4ba04091c3d2f7cd91a\transformed\activity-1.8.0\res
+com.example.ideapp-cardview-1.0.0-32 I:\Androidcache\GradleCache\caches\8.13\transforms\97b6d39977b5225326dd3835890d0d2a\transformed\cardview-1.0.0\res
+com.example.ideapp-navigation-ui-2.7.6-33 I:\Androidcache\GradleCache\caches\8.13\transforms\97baec63616b2c212eed2fd2f13d016e\transformed\navigation-ui-2.7.6\res
+com.example.ideapp-datastore-1.0.0-34 I:\Androidcache\GradleCache\caches\8.13\transforms\a30c2f62a6b7d6fe0f79c394931ff728\transformed\datastore-1.0.0\res
+com.example.ideapp-slidingpanelayout-1.2.0-35 I:\Androidcache\GradleCache\caches\8.13\transforms\a46829adf8270ed786ea7be5173530fd\transformed\slidingpanelayout-1.2.0\res
+com.example.ideapp-constraintlayout-2.1.4-36 I:\Androidcache\GradleCache\caches\8.13\transforms\abd336e4bb05499ffbb1007eb9e125c6\transformed\constraintlayout-2.1.4\res
+com.example.ideapp-work-runtime-2.9.0-37 I:\Androidcache\GradleCache\caches\8.13\transforms\aee108a1ecd9138610eb7c4fafb7bd16\transformed\work-runtime-2.9.0\res
+com.example.ideapp-navigation-common-2.7.6-38 I:\Androidcache\GradleCache\caches\8.13\transforms\b08707294cb5ba5e8ab0fa9e7afb0297\transformed\navigation-common-2.7.6\res
+com.example.ideapp-lifecycle-viewmodel-ktx-2.7.0-39 I:\Androidcache\GradleCache\caches\8.13\transforms\b32633ed9e5215f0be3b135c05ffbb80\transformed\lifecycle-viewmodel-ktx-2.7.0\res
+com.example.ideapp-activity-ktx-1.8.0-40 I:\Androidcache\GradleCache\caches\8.13\transforms\b7f3c247e856e92e84a7db0b67a46309\transformed\activity-ktx-1.8.0\res
+com.example.ideapp-recyclerview-1.1.0-41 I:\Androidcache\GradleCache\caches\8.13\transforms\c291e82797f9d512fb443de2621291b3\transformed\recyclerview-1.1.0\res
+com.example.ideapp-appcompat-1.6.1-42 I:\Androidcache\GradleCache\caches\8.13\transforms\c33f9b986c66f5edbb7a265365f7bc34\transformed\appcompat-1.6.1\res
+com.example.ideapp-ads-adservices-1.0.0-beta05-43 I:\Androidcache\GradleCache\caches\8.13\transforms\c35ef6ccd359e45745786fbb779d23ba\transformed\ads-adservices-1.0.0-beta05\res
+com.example.ideapp-datastore-preferences-1.0.0-44 I:\Androidcache\GradleCache\caches\8.13\transforms\c5c2ede9f07a0e4d195e3d8e0a2b3157\transformed\datastore-preferences-1.0.0\res
+com.example.ideapp-play-services-measurement-api-21.5.0-45 I:\Androidcache\GradleCache\caches\8.13\transforms\cdcbcbc69f0f5730d4ff117ab7ef6d77\transformed\play-services-measurement-api-21.5.0\res
+com.example.ideapp-lifecycle-livedata-core-ktx-2.7.0-46 I:\Androidcache\GradleCache\caches\8.13\transforms\d35365ef0d8de21987c829ec257ba6fd\transformed\lifecycle-livedata-core-ktx-2.7.0\res
+com.example.ideapp-viewpager2-1.0.0-47 I:\Androidcache\GradleCache\caches\8.13\transforms\d4facebc478e2c0b29253208e300e048\transformed\viewpager2-1.0.0\res
+com.example.ideapp-navigation-common-ktx-2.7.6-48 I:\Androidcache\GradleCache\caches\8.13\transforms\d7ea640026a9f67c8c5a5d352d2b5cdf\transformed\navigation-common-ktx-2.7.6\res
+com.example.ideapp-lifecycle-service-2.7.0-49 I:\Androidcache\GradleCache\caches\8.13\transforms\d821ca86d2720ee0b7f82d2f73799dd5\transformed\lifecycle-service-2.7.0\res
+com.example.ideapp-work-runtime-ktx-2.9.0-50 I:\Androidcache\GradleCache\caches\8.13\transforms\d9433adcf24295ced076578d8a84dae7\transformed\work-runtime-ktx-2.9.0\res
+com.example.ideapp-ads-adservices-java-1.0.0-beta05-51 I:\Androidcache\GradleCache\caches\8.13\transforms\e2e19493f4cb0d5b658c32e787f5ced1\transformed\ads-adservices-java-1.0.0-beta05\res
+com.example.ideapp-room-runtime-2.5.0-52 I:\Androidcache\GradleCache\caches\8.13\transforms\e77eac9a96052e54ce79ba0d8191a2b6\transformed\room-runtime-2.5.0\res
+com.example.ideapp-navigation-ui-ktx-2.7.6-53 I:\Androidcache\GradleCache\caches\8.13\transforms\eb657a78f2df349622f0853198b3a669\transformed\navigation-ui-ktx-2.7.6\res
+com.example.ideapp-lifecycle-livedata-ktx-2.7.0-54 I:\Androidcache\GradleCache\caches\8.13\transforms\ee9cdc3317c93a49d12ccf9e6b2db10c\transformed\lifecycle-livedata-ktx-2.7.0\res
+com.example.ideapp-navigation-fragment-2.7.6-55 I:\Androidcache\GradleCache\caches\8.13\transforms\f185cddb61e812d6e5afc1b25944b926\transformed\navigation-fragment-2.7.6\res
+com.example.ideapp-savedstate-1.2.1-56 I:\Androidcache\GradleCache\caches\8.13\transforms\f1e20aa7739f923c5591231f1e0642b0\transformed\savedstate-1.2.1\res
+com.example.ideapp-transition-1.4.1-57 I:\Androidcache\GradleCache\caches\8.13\transforms\f6a7a693cc8b30d88ca408aa420e0a2f\transformed\transition-1.4.1\res
+com.example.ideapp-savedstate-ktx-1.2.1-58 I:\Androidcache\GradleCache\caches\8.13\transforms\f758b1d6063ef8dec55f00081fcefda0\transformed\savedstate-ktx-1.2.1\res
+com.example.ideapp-window-1.0.0-59 I:\Androidcache\GradleCache\caches\8.13\transforms\fec5a9c0593058849878fd044aa401e7\transformed\window-1.0.0\res
+com.example.ideapp-res-60 I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\build\generated\crashlytics\res\release
+com.example.ideapp-pngs-61 I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\build\generated\res\pngs\release
+com.example.ideapp-res-62 I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\build\generated\res\processReleaseGoogleServices
+com.example.ideapp-resValues-63 I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\build\generated\res\resValues\release
+com.example.ideapp-packageReleaseResources-64 I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\build\intermediates\incremental\release\packageReleaseResources\merged.dir
+com.example.ideapp-packageReleaseResources-65 I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\build\intermediates\incremental\release\packageReleaseResources\stripped.dir
+com.example.ideapp-release-66 I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\build\intermediates\merged_res\release\mergeReleaseResources
+com.example.ideapp-main-67 I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\main\res
+com.example.ideapp-release-68 I:\PROGRAPOMAS\app\matyi\proba 4 - kozossegi app otletes app\ideapp-android\app\src\release\res
