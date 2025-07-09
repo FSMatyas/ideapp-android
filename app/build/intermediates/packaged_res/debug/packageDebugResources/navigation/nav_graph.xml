@@ -24,6 +24,13 @@
     <fragment
         android:id="@+id/adminPanelFragment"
         android:name="com.example.ideapp.AdminPanelFragment"
-        android:label="Admin Panel" />
+        android:label="Admin Panel" >
+        <action
+            android:id="@+id/action_adminPanelFragment_to_adminLoginFragment"
+            app:destination="@id/adminLoginFragment" />
+        <action
+            android:id="@+id/action_adminPanelFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 
 </navigation>

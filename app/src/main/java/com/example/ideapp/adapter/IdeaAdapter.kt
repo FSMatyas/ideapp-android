@@ -5,6 +5,7 @@ import android.graphics.Shader
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
@@ -20,7 +21,9 @@ import java.util.*
 
 class IdeaAdapter(
     private val onIdeaClick: (Idea) -> Unit,
-    private val blurUnapproved: Boolean = false // Only blur on landing page
+    private val blurUnapproved: Boolean = false, // Only blur on landing page
+    private val currentUserEmail: String,
+    private val onSendReply: (Idea, String) -> Unit
 ) : ListAdapter<Idea, IdeaAdapter.IdeaViewHolder>(IdeaDiffCallback()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): IdeaViewHolder {
@@ -98,6 +101,49 @@ class IdeaAdapter(
                 } ?: run {
                     tvDate.text = "Just now"
                 }
+            }
+
+            // --- Admin comment and user reply UI ---
+            val tvAdminComment = itemView.findViewById<TextView>(R.id.tvAdminComment)
+            val tvAdminCommentContent = itemView.findViewById<TextView>(R.id.tvAdminCommentContent)
+            val tvUserReply = itemView.findViewById<TextView>(R.id.tvUserReply)
+            val tvUserReplyContent = itemView.findViewById<TextView>(R.id.tvUserReplyContent)
+            val layoutReply = itemView.findViewById<LinearLayout>(R.id.layoutReply)
+            val etUserReply = itemView.findViewById<EditText>(R.id.etUserReply)
+            val btnSendReply = itemView.findViewById<TextView>(R.id.btnSendReply)
+
+            // Show admin comment if exists
+            if (idea.adminNotes.isNotBlank()) {
+                tvAdminComment.visibility = View.VISIBLE
+                tvAdminCommentContent.visibility = View.VISIBLE
+                tvAdminCommentContent.text = idea.adminNotes
+            } else {
+                tvAdminComment.visibility = View.GONE
+                tvAdminCommentContent.visibility = View.GONE
+            }
+
+            // Show user reply if exists
+            if (idea.userReply.isNotBlank()) {
+                tvUserReply.visibility = View.VISIBLE
+                tvUserReplyContent.visibility = View.VISIBLE
+                tvUserReplyContent.text = idea.userReply
+            } else {
+                tvUserReply.visibility = View.GONE
+                tvUserReplyContent.visibility = View.GONE
+            }
+
+            // Only show reply input if current user is the submitter and hasn't replied yet
+            if (idea.submitterEmail == currentUserEmail && idea.adminNotes.isNotBlank() && idea.userReply.isBlank()) {
+                layoutReply.visibility = View.VISIBLE
+                btnSendReply.setOnClickListener {
+                    val reply = etUserReply.text.toString().trim()
+                    if (reply.isNotEmpty()) {
+                        onSendReply(idea, reply)
+                        etUserReply.setText("")
+                    }
+                }
+            } else {
+                layoutReply.visibility = View.GONE
             }
 
             // Set click listener

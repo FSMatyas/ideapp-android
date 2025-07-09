@@ -12,6 +12,8 @@ import com.example.ideapp.data.Idea
 import android.widget.LinearLayout
 import android.graphics.Color
 import kotlin.math.min
+import com.google.firebase.auth.FirebaseAuth
+import android.widget.Toast
 
 class MyAppsFragment : Fragment() {
     private lateinit var completedAdapter: IdeaAdapter
@@ -42,8 +44,36 @@ class MyAppsFragment : Fragment() {
         val emptyStateCard = view.findViewById<View>(R.id.emptyStateCard)
         val tvInProgressCount = view.findViewById<android.widget.TextView>(R.id.tvInProgressCount)
 
-        completedAdapter = IdeaAdapter({ idea -> showIdeaDialog(idea) }, blurUnapproved = false)
-        inProgressAdapter = IdeaAdapter({ idea -> showIdeaDialog(idea) }, blurUnapproved = false)
+        completedAdapter = IdeaAdapter(
+            onIdeaClick = { idea -> showIdeaDialog(idea) },
+            blurUnapproved = false,
+            currentUserEmail = FirebaseAuth.getInstance().currentUser?.email ?: "",
+            onSendReply = { idea, reply ->
+                com.example.ideapp.repository.IdeaRepository.sendUserReply(idea.id, reply,
+                    onSuccess = {
+                        Toast.makeText(requireContext(), "Válasz elküldve!", Toast.LENGTH_SHORT).show()
+                    },
+                    onError = {
+                        Toast.makeText(requireContext(), "Hiba: ${it.localizedMessage}", Toast.LENGTH_LONG).show()
+                    }
+                )
+            }
+        )
+        inProgressAdapter = IdeaAdapter(
+            onIdeaClick = { idea -> showIdeaDialog(idea) },
+            blurUnapproved = false,
+            currentUserEmail = FirebaseAuth.getInstance().currentUser?.email ?: "",
+            onSendReply = { idea, reply ->
+                com.example.ideapp.repository.IdeaRepository.sendUserReply(idea.id, reply,
+                    onSuccess = {
+                        Toast.makeText(requireContext(), "Válasz elküldve!", Toast.LENGTH_SHORT).show()
+                    },
+                    onError = {
+                        Toast.makeText(requireContext(), "Hiba: ${it.localizedMessage}", Toast.LENGTH_LONG).show()
+                    }
+                )
+            }
+        )
         recyclerViewCompleted.layoutManager = LinearLayoutManager(requireContext())
         recyclerViewInProgress.layoutManager = LinearLayoutManager(requireContext())
         recyclerViewCompleted.adapter = completedAdapter

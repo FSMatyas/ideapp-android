@@ -79,6 +79,8 @@ drawable status_rejected
 drawable status_testing
 drawable top_shadow
 id action_adminLoginFragment_to_adminPanelFragment
+id action_adminPanelFragment_to_adminLoginFragment
+id action_adminPanelFragment_to_homeFragment
 id action_homeFragment_to_adminLoginFragment
 id actvCategory
 id adminLoginFragment
@@ -92,6 +94,7 @@ id btnLearnMore
 id btnLogout
 id btnReject
 id btnSendMessage
+id btnSendReply
 id btnSubmit
 id btnSubmitIdea
 id bulbIcon
@@ -108,8 +111,10 @@ id etContact
 id etDescription
 id etIdeaTitle
 id etUserName
+id etUserReply
 id homeFragment
 id ivLogo
+id layoutReply
 id nav_categories
 id nav_home
 id nav_host_fragment
@@ -138,6 +143,8 @@ id toolbar_finance
 id toolbar_health
 id toolbar_productivity
 id toolbar_utilities
+id tvAdminComment
+id tvAdminCommentContent
 id tvBusiness
 id tvCategory
 id tvCategoryCount
@@ -166,6 +173,8 @@ id tvSubmitterName
 id tvSubtitle
 id tvTitle
 id tvUpvotes
+id tvUserReply
+id tvUserReplyContent
 id tvUtilities
 id tvWelcome
 id viewPager

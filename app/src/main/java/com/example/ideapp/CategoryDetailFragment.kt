@@ -15,6 +15,7 @@ import com.example.ideapp.adapter.IdeaAdapter
 import com.example.ideapp.data.Idea
 import com.example.ideapp.viewmodel.IdeaViewModel
 import com.google.android.material.card.MaterialCardView
+import com.google.firebase.auth.FirebaseAuth
 import java.util.*
 
 class CategoryDetailFragment : Fragment() {
@@ -65,10 +66,22 @@ class CategoryDetailFragment : Fragment() {
     }
 
     private fun setupRecyclerView() {
-        ideaAdapter = IdeaAdapter({ idea ->
-            onIdeaClick(idea)
-        }, blurUnapproved = false)
-        
+        val currentUserEmail = FirebaseAuth.getInstance().currentUser?.email ?: ""
+        ideaAdapter = IdeaAdapter(
+            onIdeaClick = { idea -> onIdeaClick(idea) },
+            blurUnapproved = false,
+            currentUserEmail = currentUserEmail,
+            onSendReply = { idea, reply ->
+                com.example.ideapp.repository.IdeaRepository.sendUserReply(idea.id, reply,
+                    onSuccess = {
+                        Toast.makeText(requireContext(), "Válasz elküldve!", Toast.LENGTH_SHORT).show()
+                    },
+                    onError = {
+                        Toast.makeText(requireContext(), "Hiba: ${it.localizedMessage}", Toast.LENGTH_LONG).show()
+                    }
+                )
+            }
+        )
         recyclerViewIdeas.apply {
             adapter = ideaAdapter
             layoutManager = LinearLayoutManager(requireContext())

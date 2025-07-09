@@ -20,6 +20,7 @@ class AdminPanelViewModel : ViewModel() {
 
     fun fetchIdeas() {
         listener?.remove()
+        // Admin: fetch all ideas, no filter
         listener = db.collection("ideas")
             .addSnapshotListener { snapshot, e ->
                 if (e != null) {

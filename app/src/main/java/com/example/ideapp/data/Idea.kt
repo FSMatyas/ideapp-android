@@ -27,7 +27,8 @@ data class Idea(
     val createdAt: Timestamp? = null,
     @ServerTimestamp
     val updatedAt: Timestamp? = null,
-    val adminNotes: String = ""
+    val adminNotes: String = "",
+    val userReply: String = ""
 )
 
 /**

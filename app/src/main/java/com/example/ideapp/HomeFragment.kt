@@ -15,6 +15,7 @@ import com.example.ideapp.adapter.IdeaAdapter
 import com.example.ideapp.data.Idea
 import com.example.ideapp.viewmodel.IdeaViewModel
 import android.widget.TextView
+import com.google.firebase.auth.FirebaseAuth
 import kotlin.math.min
 
 class HomeFragment : Fragment() {
@@ -69,9 +70,23 @@ class HomeFragment : Fragment() {
     }
     
     private fun setupRecyclerView() {
-        ideaAdapter = IdeaAdapter({ idea ->
-            onIdeaClick(idea)
-        }, blurUnapproved = true)
+        val currentUserEmail = FirebaseAuth.getInstance().currentUser?.email ?: ""
+        ideaAdapter = IdeaAdapter(
+            onIdeaClick = { idea -> onIdeaClick(idea) },
+            blurUnapproved = true,
+            currentUserEmail = currentUserEmail,
+            onSendReply = { idea, reply ->
+                com.example.ideapp.repository.IdeaRepository.sendUserReply(idea.id, reply,
+                    onSuccess = {
+                        Toast.makeText(requireContext(), "Válasz elküldve!", Toast.LENGTH_SHORT).show()
+                        // Optionally refresh ideas here
+                    },
+                    onError = {
+                        Toast.makeText(requireContext(), "Hiba: ${it.localizedMessage}", Toast.LENGTH_LONG).show()
+                    }
+                )
+            }
+        )
         
         recyclerView.apply {
             adapter = ideaAdapter

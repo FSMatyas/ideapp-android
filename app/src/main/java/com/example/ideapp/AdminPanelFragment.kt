@@ -14,6 +14,7 @@ import com.example.ideapp.adapter.AdminIdeaAdapter
 import com.example.ideapp.viewmodel.AdminPanelViewModel
 import com.google.firebase.auth.FirebaseAuth
 import android.widget.Button
+import androidx.navigation.fragment.findNavController
 
 class AdminPanelFragment : Fragment() {
     private val viewModel: AdminPanelViewModel by viewModels()
@@ -45,7 +46,7 @@ class AdminPanelFragment : Fragment() {
         logoutButton.setOnClickListener {
             FirebaseAuth.getInstance().signOut()
             Toast.makeText(requireContext(), "Kijelentkezve", Toast.LENGTH_SHORT).show()
-            requireActivity().onBackPressedDispatcher.onBackPressed()
+            findNavController().navigate(R.id.action_adminPanelFragment_to_homeFragment)
         }
         adapter = AdminIdeaAdapter(emptyList(),
             onApprove = { idea ->

@@ -3298,6 +3298,8 @@ id actionDown
 id actionDownUp
 id actionUp
 id action_adminLoginFragment_to_adminPanelFragment
+id action_adminPanelFragment_to_adminLoginFragment
+id action_adminPanelFragment_to_homeFragment
 id action_bar
 id action_bar_activity_content
 id action_bar_container
@@ -3366,6 +3368,7 @@ id btnLearnMore
 id btnLogout
 id btnReject
 id btnSendMessage
+id btnSendReply
 id btnSubmit
 id btnSubmitIdea
 id bulbIcon
@@ -3464,6 +3467,7 @@ id etContact
 id etDescription
 id etIdeaTitle
 id etUserName
+id etUserReply
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3520,6 +3524,7 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id layout
+id layoutReply
 id left
 id leftToRight
 id legacy
@@ -3797,6 +3802,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvAdminComment
+id tvAdminCommentContent
 id tvBusiness
 id tvCategory
 id tvCategoryCount
@@ -3825,6 +3832,8 @@ id tvSubmitterName
 id tvSubtitle
 id tvTitle
 id tvUpvotes
+id tvUserReply
+id tvUserReplyContent
 id tvUtilities
 id tvWelcome
 id unchecked

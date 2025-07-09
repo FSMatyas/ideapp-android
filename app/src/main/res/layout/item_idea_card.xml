@@ -97,6 +97,57 @@
             android:maxLines="2"
             />
 
+        <TextView
+            android:id="@+id/tvAdminComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Admin üzenete:"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvAdminCommentContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvUserReply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Válaszod:"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvUserReplyContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/layoutReply"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/etUserReply"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Írd be a válaszod..." />
+
+            <Button
+                android:id="@+id/btnSendReply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Küldés" />
+        </LinearLayout>
+
     </LinearLayout>
 
 </com.google.android.material.card.MaterialCardView>
