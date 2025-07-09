@@ -184,7 +184,7 @@
                 android:layout_weight="1"
                 android:text="@string/submit_idea"
                 app:icon="@drawable/ic_add"
-                android:maxLines="1"
+                android:maxLines="2"
                 />
 
         </LinearLayout>
