@@ -1371,7 +1371,11 @@ attr yearStyle
 attr yearTodayStyle
 bool abc_action_bar_embed_tabs
 bool abc_config_actionMenuItemAllCaps
+bool enable_system_alarm_service_default
+bool enable_system_foreground_service_default
+bool enable_system_job_service_default
 bool mtrl_btn_textappearance_all_caps
+bool workmanager_test_configuration
 color abc_background_cache_hint_selector_material_dark
 color abc_background_cache_hint_selector_material_light
 color abc_btn_colored_borderless_text_material
@@ -2149,6 +2153,7 @@ color nav_selected
 color nav_unselected
 color notification_action_color_filter
 color notification_icon_bg_color
+color orange
 color primary_color
 color primary_dark
 color primary_dark_material_dark
@@ -3768,9 +3773,9 @@ id triangle
 id tvBusiness
 id tvCategory
 id tvCategoryCount
-id tvCategoryDetail
 id tvCategoryIcon
 id tvCategoryName
+id tvCategoryPlaceholder
 id tvDate
 id tvDescription
 id tvDialogCategory
@@ -4138,9 +4143,11 @@ string dialog_share_your_problem
 string dialog_tell_us_about_problem
 string education
 string education_emoji
+string education_full_sentence
 string email_address
 string entertainment
 string entertainment_emoji
+string entertainment_full_sentence
 string error_a11y_label
 string error_icon_content_description
 string explore_ideas_by_area
@@ -4150,10 +4157,12 @@ string fab_transformation_sheet_behavior
 string facebook
 string family
 string family_emoji
+string family_full_sentence
 string favorites
 string fill_info_to_get_started
 string finance
 string finance_emoji
+string finance_full_sentence
 string five_minutes_ago
 string full_idea_description_placeholder
 string full_name
@@ -4168,6 +4177,7 @@ string got_a_problem
 string have_more_app_ideas
 string health
 string health_emoji
+string health_full_sentence
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string idea_description_placeholder
@@ -4293,6 +4303,7 @@ string path_password_eye_mask_visible
 string path_password_strike_through
 string phone_emoji
 string productivity
+string productivity_full_sentence
 string project_id
 string recent_activities
 string recent_ideas
@@ -4328,6 +4339,7 @@ string track_submitted_ideas
 string two_minutes_ago
 string utilities
 string utilities_emoji
+string utilities_full_sentence
 string welcome_back
 string welcome_title
 string your_name

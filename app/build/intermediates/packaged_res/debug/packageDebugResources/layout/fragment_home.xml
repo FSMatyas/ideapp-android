@@ -38,8 +38,7 @@
                 android:textAlignment="center"
                 android:textColor="@color/primary_color"
                 android:textSize="22sp"
-                android:maxLines="2"
-                android:ellipsize="end" />
+                android:maxLines="2" />
 
             <TextView
                 style="@style/AppTextStyle.Body"
@@ -49,8 +48,7 @@
                 android:text="@string/share_problem_desc"
                 android:textAlignment="center"
                 android:textColor="@color/text_secondary"
-                android:maxLines="3"
-                android:ellipsize="end" />
+                android:maxLines="3" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/btnSubmitIdea"

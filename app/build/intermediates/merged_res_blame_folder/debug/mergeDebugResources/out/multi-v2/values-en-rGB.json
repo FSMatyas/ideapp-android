@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.ideapp-mergeDebugResources-56:/values-en-rGB/values-en-rGB.xml",
+            "outputFile": "com.example.ideapp-mergeDebugResources-63:/values-en-rGB/values-en-rGB.xml",
             "map": [
                 {
                     "source": "I:\\Androidcache\\GradleCache\\caches\\8.13\\transforms\\c33f9b986c66f5edbb7a265365f7bc34\\transformed\\appcompat-1.6.1\\res\\values-en-rGB\\values-en-rGB.xml",

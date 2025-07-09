@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.ideapp-mergeDebugResources-56:/values-ko/values-ko.xml",
+            "outputFile": "com.example.ideapp-mergeDebugResources-63:/values-ko/values-ko.xml",
             "map": [
                 {
                     "source": "I:\\Androidcache\\GradleCache\\caches\\8.13\\transforms\\2935716475862bdcf100fef7701936eb\\transformed\\material-1.11.0\\res\\values-ko\\values-ko.xml",

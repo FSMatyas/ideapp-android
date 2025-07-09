@@ -60,4 +60,7 @@
     <!-- Call to Action Colors -->
     <color name="cta_orange_light">#FFD180</color>
     <color name="cta_green">#388E3C</color>
+    
+    <!-- Placeholder Text Color -->
+    <color name="orange">#FFFF9800</color>
 </resources>

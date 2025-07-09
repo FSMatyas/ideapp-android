@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.ideapp-mergeDebugResources-56:/values-zh-rTW/values-zh-rTW.xml",
+            "outputFile": "com.example.ideapp-mergeDebugResources-63:/values-zh-rTW/values-zh-rTW.xml",
             "map": [
                 {
                     "source": "I:\\Androidcache\\GradleCache\\caches\\8.13\\transforms\\84de28487c6f3a2e17d4b2386e83c03a\\transformed\\play-services-base-18.0.1\\res\\values-zh-rTW\\values.xml",

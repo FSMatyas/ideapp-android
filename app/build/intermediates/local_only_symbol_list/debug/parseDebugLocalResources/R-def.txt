@@ -18,6 +18,7 @@ color nav_background
 color nav_item_color
 color nav_selected
 color nav_unselected
+color orange
 color primary_color
 color primary_dark
 color primary_light
@@ -124,9 +125,9 @@ id toolbar_utilities
 id tvBusiness
 id tvCategory
 id tvCategoryCount
-id tvCategoryDetail
 id tvCategoryIcon
 id tvCategoryName
+id tvCategoryPlaceholder
 id tvDate
 id tvDescription
 id tvDialogCategory
@@ -208,17 +209,21 @@ string dialog_share_your_problem
 string dialog_tell_us_about_problem
 string education
 string education_emoji
+string education_full_sentence
 string email_address
 string entertainment
 string entertainment_emoji
+string entertainment_full_sentence
 string explore_ideas_by_area
 string facebook
 string family
 string family_emoji
+string family_full_sentence
 string favorites
 string fill_info_to_get_started
 string finance
 string finance_emoji
+string finance_full_sentence
 string five_minutes_ago
 string full_idea_description_placeholder
 string full_name
@@ -233,6 +238,7 @@ string got_a_problem
 string have_more_app_ideas
 string health
 string health_emoji
+string health_full_sentence
 string idea_description_placeholder
 string idea_title
 string idea_title_label
@@ -248,6 +254,7 @@ string or_continue_with
 string password
 string phone_emoji
 string productivity
+string productivity_full_sentence
 string project_id
 string recent_activities
 string recent_ideas
@@ -276,6 +283,7 @@ string track_submitted_ideas
 string two_minutes_ago
 string utilities
 string utilities_emoji
+string utilities_full_sentence
 string welcome_back
 string welcome_title
 string your_name

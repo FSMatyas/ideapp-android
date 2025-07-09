@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:maxLines="2"
-        android:ellipsize="end" />
+        />
 
     <TextView
         android:id="@+id/tvBusiness"
@@ -30,7 +30,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:maxLines="3"
-        android:ellipsize="end"
         android:gravity="center" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

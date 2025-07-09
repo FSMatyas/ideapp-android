@@ -16,21 +16,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:maxLines="2"
-        android:ellipsize="end" />
+        />
 
     <TextView
-        android:id="@+id/tvCategoryDetail"
+        android:id="@+id/tvCategoryPlaceholder"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/category_detail_page"
+        android:text=""
+        android:textColor="@color/orange"
         android:textSize="24sp"
-        android:textColor="@color/primary_color"
+        android:gravity="center"
         app:layout_constraintTop_toBottomOf="@id/toolbar_category_detail"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:maxLines="3"
-        android:ellipsize="end"
-        android:gravity="center" />
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

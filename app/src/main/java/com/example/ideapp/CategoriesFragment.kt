@@ -81,18 +81,11 @@ class CategoriesFragment : Fragment() {
 
     private fun openCategoryDetail(categoryName: String) {
         val context = requireContext()
-        val intent = when (categoryName.lowercase()) {
-            "finance" -> android.content.Intent(context, FinanceActivity::class.java)
-            "health" -> android.content.Intent(context, HealthActivity::class.java)
-            "education" -> android.content.Intent(context, EducationActivity::class.java)
-            "entertainment" -> android.content.Intent(context, EntertainmentActivity::class.java)
-            "productivity" -> android.content.Intent(context, ProductivityActivity::class.java)
-            "family" -> android.content.Intent(context, FamilyActivity::class.java)
-            "business" -> android.content.Intent(context, BusinessActivity::class.java)
-            "utilities", "utility" -> android.content.Intent(context, UtilitiesActivity::class.java)
-            else -> null
-        }
-        intent?.let { startActivity(it) }
+        val intent = android.content.Intent(context, CategoryDetailActivity::class.java)
+        // Pass the string resource key for the selected category
+        val categoryKey = "category_" + categoryName.lowercase()
+        intent.putExtra("category_key", categoryKey)
+        startActivity(intent)
     }
 
     companion object {

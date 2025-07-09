@@ -30,8 +30,8 @@
                 android:text="@string/idea_title"
                 android:textStyle="bold"
                 android:textSize="13sp"
-                android:maxLines="1"
-                android:ellipsize="end" />
+                android:maxLines="2"
+                />
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chipStatus"
@@ -51,8 +51,8 @@
             android:layout_marginBottom="3dp"
             android:text="@string/category"
             android:textSize="10sp"
-            android:maxLines="1"
-            android:ellipsize="end" />
+            android:maxLines="2"
+            />
 
         <TextView
             android:id="@+id/tvSubmitter"
@@ -62,8 +62,8 @@
             android:layout_marginBottom="3dp"
             android:text="@string/submitted_by_name"
             android:textSize="10sp"
-            android:maxLines="1"
-            android:ellipsize="end" />
+            android:maxLines="2"
+            />
 
         <TextView
             android:id="@+id/tvDate"
@@ -73,8 +73,8 @@
             android:layout_marginBottom="6dp"
             android:text="@string/date"
             android:textSize="10sp"
-            android:maxLines="1"
-            android:ellipsize="end" />
+            android:maxLines="2"
+            />
 
         <TextView
             android:id="@+id/tvDescription"
@@ -82,8 +82,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/idea_description_placeholder"
-            android:maxLines="2"
-            android:ellipsize="end"
+            android:maxLines="3"
             android:textSize="13sp" />
 
         <TextView
@@ -94,8 +93,8 @@
             android:text="0"
             android:textSize="12sp"
             android:layout_marginTop="4dp"
-            android:maxLines="1"
-            android:ellipsize="end" />
+            android:maxLines="2"
+            />
 
     </LinearLayout>
 

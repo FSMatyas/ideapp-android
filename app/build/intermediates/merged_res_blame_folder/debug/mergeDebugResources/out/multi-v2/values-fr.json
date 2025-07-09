@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.ideapp-mergeDebugResources-56:/values-fr/values-fr.xml",
+            "outputFile": "com.example.ideapp-mergeDebugResources-63:/values-fr/values-fr.xml",
             "map": [
                 {
                     "source": "I:\\Androidcache\\GradleCache\\caches\\8.13\\transforms\\1a7a3e045ddeaafd4dbd86ca24a7bfad\\transformed\\play-services-basement-18.1.0\\res\\values-fr\\values.xml",

@@ -102,4 +102,11 @@
     <string name="password">Password</string>
     <string name="your_name">Your Name</string>
     <string name="contact_helper">Contact Helper</string>
+    <string name="family_full_sentence">Küldd be az ötleted a család témában!</string>
+    <string name="finance_full_sentence">Küldd be az ötleted a pénzügy témában!</string>
+    <string name="health_full_sentence">Küldd be az ötleted az egészség témában!</string>
+    <string name="education_full_sentence">Küldd be az ötleted az oktatás témában!</string>
+    <string name="entertainment_full_sentence">Küldd be az ötleted a szórakozás témában!</string>
+    <string name="productivity_full_sentence">Küldd be az ötleted a produktivitás témában!</string>
+    <string name="utilities_full_sentence">Küldd be az ötleted a segédprogramok témában!</string>
 </resources>

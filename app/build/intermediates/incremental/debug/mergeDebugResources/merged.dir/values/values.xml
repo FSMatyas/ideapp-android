@@ -632,7 +632,11 @@
     </attr>
     <bool name="abc_action_bar_embed_tabs">true</bool>
     <bool name="abc_config_actionMenuItemAllCaps">true</bool>
+    <bool name="enable_system_alarm_service_default">true</bool>
+    <bool name="enable_system_foreground_service_default">true</bool>
+    <bool name="enable_system_job_service_default">false</bool>
     <bool name="mtrl_btn_textappearance_all_caps">true</bool>
+    <bool name="workmanager_test_configuration">false</bool>
     <color name="abc_decor_view_status_guard">#ff000000</color>
     <color name="abc_decor_view_status_guard_light">#ffffffff</color>
     <color name="abc_search_url_text_normal">#7fa87f</color>
@@ -969,6 +973,7 @@
     <color name="nav_unselected">#FF9E9E9E</color>
     <color name="notification_action_color_filter">#ffffffff</color>
     <color name="notification_icon_bg_color">#ff9e9e9e</color>
+    <color name="orange">#FFFF9800</color>
     <color name="primary_color">#FFFF6F00</color>
     <color name="primary_dark">#FFEF6C00</color>
     <color name="primary_dark_material_dark">@android:color/black</color>
@@ -2104,9 +2109,11 @@
     <string name="dialog_tell_us_about_problem">Tell us about a problem you face daily. We\'ll build you a custom app to solve it!</string>
     <string name="education">Education</string>
     <string name="education_emoji">🎓</string>
+    <string name="education_full_sentence">Küldd be az ötleted az oktatás témában!</string>
     <string name="email_address">Email Address</string>
     <string name="entertainment">Entertainment</string>
     <string name="entertainment_emoji">🎮</string>
+    <string name="entertainment_full_sentence">Küldd be az ötleted a szórakozás témában!</string>
     <string description="Screen reader announcement for when a checkbox is on error. [CHAR LIMIT=NONE]" name="error_a11y_label">
     Error: invalid
   </string>
@@ -2118,10 +2125,12 @@
     <string name="facebook">Facebook</string>
     <string name="family">Family</string>
     <string name="family_emoji">👨‍👩‍👧‍👦</string>
+    <string name="family_full_sentence">Küldd be az ötleted a család témában!</string>
     <string name="favorites">Favorites</string>
     <string name="fill_info_to_get_started">Fill in the information below to get started</string>
     <string name="finance">Finance</string>
     <string name="finance_emoji">💰</string>
+    <string name="finance_full_sentence">Küldd be az ötleted a pénzügy témában!</string>
     <string name="five_minutes_ago">5 minutes ago</string>
     <string name="full_idea_description_placeholder">Full idea description goes here...</string>
     <string name="full_name">Full Name</string>
@@ -2136,6 +2145,7 @@
     <string name="have_more_app_ideas">Have more app ideas?</string>
     <string name="health">Health</string>
     <string name="health_emoji">🏥</string>
+    <string name="health_full_sentence">Küldd be az ötleted az egészség témában!</string>
     <string name="hide_bottom_view_on_scroll_behavior" translatable="false">com.google.android.material.behavior.HideBottomViewOnScrollBehavior</string>
     <string description="Content description for an icon that appears in the title area of a dialog" name="icon_content_description">Dialog Icon</string>
     <string name="idea_description_placeholder">Idea description goes here...</string>
@@ -2267,6 +2277,7 @@
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="phone_emoji">📱</string>
     <string name="productivity">Productivity</string>
+    <string name="productivity_full_sentence">Küldd be az ötleted a produktivitás témában!</string>
     <string name="project_id" translatable="false">ideapp-d498a</string>
     <string name="recent_activities">Recent Activities</string>
     <string name="recent_ideas">Recent Ideas</string>
@@ -2304,6 +2315,7 @@
     <string name="two_minutes_ago">2 minutes ago</string>
     <string name="utilities">Utilities</string>
     <string name="utilities_emoji">🔧</string>
+    <string name="utilities_full_sentence">Küldd be az ötleted a segédprogramok témában!</string>
     <string name="welcome_back">Welcome back! Here\'s what\'s happening.</string>
     <string name="welcome_title">Welcome to
 Let\'s make an app!</string>

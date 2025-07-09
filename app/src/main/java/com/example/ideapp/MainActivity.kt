@@ -1,15 +1,18 @@
 package com.example.ideapp
 
+import android.content.IntentFilter
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import androidx.work.*
+import java.util.concurrent.TimeUnit
 
 class MainActivity : AppCompatActivity() {
-    
     private lateinit var bottomNavigation: BottomNavigationView
-    
+    private var batteryReceiver: BatteryLevelReceiver? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -21,6 +24,38 @@ class MainActivity : AppCompatActivity() {
 
         // Optionally, sync with bottom navigation (if you want both)
         setupBottomNavigation(viewPager)
+
+        // Schedule a periodic background task using WorkManager (safe for Doze)
+        val workRequest = PeriodicWorkRequestBuilder<BackgroundWorker>(1, TimeUnit.HOURS)
+            .setConstraints(
+                Constraints.Builder()
+                    .setRequiresBatteryNotLow(true)
+                    .build()
+            )
+            .build()
+        WorkManager.getInstance(this).enqueueUniquePeriodicWork(
+            "background_task",
+            ExistingPeriodicWorkPolicy.KEEP,
+            workRequest
+        )
+    }
+
+    override fun onStart() {
+        super.onStart()
+        // Register battery receiver
+        batteryReceiver = BatteryLevelReceiver {
+            runOnUiThread {
+                Toast.makeText(this, "Battery is low! Some features may be limited.", Toast.LENGTH_LONG).show()
+            }
+        }
+        registerReceiver(batteryReceiver, BatteryLevelReceiver.getIntentFilter())
+    }
+
+    override fun onStop() {
+        super.onStop()
+        // Unregister battery receiver
+        batteryReceiver?.let { unregisterReceiver(it) }
+        batteryReceiver = null
     }
 
     private fun setupBottomNavigation(viewPager: ViewPager2) {
@@ -55,5 +90,14 @@ class MainActivity : AppCompatActivity() {
                 }
             }
         })
+    }
+}
+
+// BackgroundWorker for safe background tasks (uses WorkManager, Doze/standby safe)
+class BackgroundWorker(appContext: android.content.Context, workerParams: WorkerParameters) : Worker(appContext, workerParams) {
+    override fun doWork(): Result {
+        // Do background work here (sync, notifications, etc.)
+        // This will be deferred if device is in Doze or battery is low
+        return Result.success()
     }
 }
