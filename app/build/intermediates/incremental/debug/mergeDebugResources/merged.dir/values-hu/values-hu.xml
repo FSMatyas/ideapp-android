@@ -91,6 +91,7 @@
     <string name="common_signin_button_text">Bejelentkezés</string>
     <string name="common_signin_button_text_long">Bejelentkezés Google-fiókkal</string>
     <string name="contact_helper">Elérhetőségi segítő</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Link vágólapra másolva"</string>
     <string name="create_account">Fiók létrehozása</string>
     <string name="dashboard">Vezérlőpult</string>
     <string name="date">Dátum</string>
@@ -107,6 +108,9 @@
     <string name="explore_ideas_by_area">Fedezd fel az ötleteket különböző területeken</string>
     <string name="exposed_dropdown_menu_content_description">Legördülő menü megjelenítése</string>
     <string name="facebook">Facebook</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Link másolása"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Megnyitás böngészőben"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Link megosztása"</string>
     <string name="family">Család</string>
     <string name="family_emoji">👨‍👩‍👧‍👦</string>
     <string name="favorites">Kedvencek</string>

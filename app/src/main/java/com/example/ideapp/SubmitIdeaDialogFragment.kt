@@ -42,13 +42,13 @@ class SubmitIdeaDialogFragment : DialogFragment() {
 
     private val categories = arrayOf(
         "productivity",
-        "health",
-        "education", 
-        "social",
+        "family",
+        "business",
         "entertainment",
-        "utility",
         "finance",
-        "other"
+        "health",
+        "education",
+        "utilities"
     )
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {

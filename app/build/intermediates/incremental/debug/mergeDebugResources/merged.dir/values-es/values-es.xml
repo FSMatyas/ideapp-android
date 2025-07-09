@@ -91,6 +91,7 @@
     <string name="common_signin_button_text">Iniciar sesión</string>
     <string name="common_signin_button_text_long">Iniciar sesión con Google</string>
     <string name="contact_helper">Ayuda de contacto</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Enlace copiado en el portapapeles"</string>
     <string name="create_account">Crear cuenta</string>
     <string name="dashboard">Panel</string>
     <string name="date">Fecha</string>
@@ -107,6 +108,9 @@
     <string name="explore_ideas_by_area">Explora ideas por diferentes áreas de problema</string>
     <string name="exposed_dropdown_menu_content_description">Mostrar menú desplegable</string>
     <string name="facebook">Facebook</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Copiar enlace"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Abrir en el navegador"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Compartir enlace"</string>
     <string name="family">Familia</string>
     <string name="family_emoji">👨‍👩‍👧‍👦</string>
     <string name="favorites">Favoritos</string>

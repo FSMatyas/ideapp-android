@@ -49,6 +49,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore-ktx'
     implementation 'com.google.firebase:firebase-analytics-ktx'
     implementation 'com.google.firebase:firebase-crashlytics-ktx'
+    implementation 'com.google.firebase:firebase-auth-ktx'
     
     // Navigation for fragments
     implementation 'androidx.navigation:navigation-fragment-ktx:2.7.6'

@@ -92,6 +92,7 @@
     <string name="common_signin_button_text">Conectați-vă</string>
     <string name="common_signin_button_text_long">Conectați-vă cu Google</string>
     <string name="contact_helper">Ajutor contact</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Linkul a fost copiat în clipboard"</string>
     <string name="create_account">Creează cont</string>
     <string name="dashboard">Tablou de bord</string>
     <string name="date">Data</string>
@@ -108,6 +109,9 @@
     <string name="explore_ideas_by_area">Explorează idei din diferite domenii de probleme</string>
     <string name="exposed_dropdown_menu_content_description">Afișați meniul drop-down</string>
     <string name="facebook">Facebook</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Copiați linkul"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Deschideți în browser"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Trimiteți linkul"</string>
     <string name="family">Familie</string>
     <string name="family_emoji">👨‍👩‍👧‍👦</string>
     <string name="favorites">Favorite</string>

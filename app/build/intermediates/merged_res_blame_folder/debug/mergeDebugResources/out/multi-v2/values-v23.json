@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.ideapp-mergeDebugResources-63:/values-v23/values-v23.xml",
+            "outputFile": "com.example.ideapp-mergeDebugResources-64:/values-v23/values-v23.xml",
             "map": [
                 {
                     "source": "I:\\Androidcache\\GradleCache\\caches\\8.13\\transforms\\aee108a1ecd9138610eb7c4fafb7bd16\\transformed\\work-runtime-2.9.0\\res\\values-v23\\values-v23.xml",

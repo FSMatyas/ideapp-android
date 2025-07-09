@@ -91,6 +91,7 @@
     <string name="common_signin_button_text">Anmelden</string>
     <string name="common_signin_button_text_long">Über Google anmelden</string>
     <string name="contact_helper">Kontakt-Hilfe</string>
+    <string msgid="3260749812566568062" name="copy_toast_msg">"Link in Zwischenablage kopiert"</string>
     <string name="create_account">Konto erstellen</string>
     <string name="dashboard">Dashboard</string>
     <string name="date">Datum</string>
@@ -107,6 +108,9 @@
     <string name="explore_ideas_by_area">Entdecke Ideen nach verschiedenen Problembereichen</string>
     <string name="exposed_dropdown_menu_content_description">Drop-down-Menü anzeigen</string>
     <string name="facebook">Facebook</string>
+    <string msgid="4566929209979330987" name="fallback_menu_item_copy_link">"Link kopieren"</string>
+    <string msgid="3413186855122069269" name="fallback_menu_item_open_in_browser">"Im Browser öffnen"</string>
+    <string msgid="7145444925855055364" name="fallback_menu_item_share_link">"Link teilen"</string>
     <string name="family">Familie</string>
     <string name="family_emoji">👨‍👩‍👧‍👦</string>
     <string name="favorites">Favoriten</string>
