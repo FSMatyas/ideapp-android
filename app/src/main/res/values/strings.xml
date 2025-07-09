@@ -109,4 +109,5 @@
     <string name="entertainment_full_sentence">Küldd be az ötleted a szórakozás témában!</string>
     <string name="productivity_full_sentence">Küldd be az ötleted a produktivitás témában!</string>
     <string name="utilities_full_sentence">Küldd be az ötleted a segédprogramok témában!</string>
+    <string name="pending_approval">Pending approval</string>
 </resources>

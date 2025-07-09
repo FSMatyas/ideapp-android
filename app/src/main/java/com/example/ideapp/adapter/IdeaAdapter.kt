@@ -5,6 +5,7 @@ import android.graphics.Shader
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
@@ -18,7 +19,8 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 class IdeaAdapter(
-    private val onIdeaClick: (Idea) -> Unit
+    private val onIdeaClick: (Idea) -> Unit,
+    private val blurUnapproved: Boolean = false // Only blur on landing page
 ) : ListAdapter<Idea, IdeaAdapter.IdeaViewHolder>(IdeaDiffCallback()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): IdeaViewHolder {
@@ -33,6 +35,7 @@ class IdeaAdapter(
 
     inner class IdeaViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val cardView: MaterialCardView = itemView.findViewById(R.id.cardView)
+        private val contentLayout: LinearLayout = itemView.findViewById(R.id.contentLayout)
         private val tvTitle: TextView = itemView.findViewById(R.id.tvTitle)
         private val tvDescription: TextView = itemView.findViewById(R.id.tvDescription)
         private val tvCategory: TextView = itemView.findViewById(R.id.tvCategory)
@@ -44,11 +47,11 @@ class IdeaAdapter(
         fun bind(idea: Idea) {
             tvTitle.text = idea.title
             tvDescription.text = idea.description
-            tvCategory.text = getCategoryIcon(idea.category) + " " + idea.category.replaceFirstChar { 
-                if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() 
+            tvCategory.text = getCategoryIcon(idea.category) + " " + idea.category.replaceFirstChar {
+                if (it.isLowerCase()) it.titlecase(java.util.Locale.getDefault()) else it.toString()
             }
             tvSubmitter.text = "by ${idea.submitterName}"
-            
+
             // Format date
             idea.createdAt?.let { timestamp ->
                 val date = timestamp.toDate()
@@ -65,34 +68,35 @@ class IdeaAdapter(
             // Set upvotes
             tvUpvotes.text = idea.upvotes.toString()
 
-            // Blur or dim card if not approved
-            if (idea.status != IdeaStatus.APPROVED) {
-                cardView.alpha = 0.4f
-                tvTitle.alpha = 0.6f
-                tvDescription.alpha = 0.6f
-                tvCategory.alpha = 0.6f
-                tvSubmitter.alpha = 0.6f
-                tvDate.alpha = 0.6f
-                chipStatus.alpha = 0.6f
-                tvUpvotes.alpha = 0.6f
-                cardView.isClickable = false
-                // Apply blur effect (API 31+)
+            // Blur or hide content for pending items
+            if (idea.status == IdeaStatus.PENDING) {
+                // For API 31+, blur the content area
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
-                    cardView.setRenderEffect(RenderEffect.createBlurEffect(12f, 12f, Shader.TileMode.CLAMP))
+                    contentLayout.setRenderEffect(RenderEffect.createBlurEffect(16f, 16f, Shader.TileMode.CLAMP))
+                } else {
+                    // For lower APIs, hide the content or show a placeholder
+                    tvDescription.text = itemView.context.getString(R.string.pending_approval)
+                    tvCategory.text = ""
+                    tvSubmitter.text = ""
+                    tvDate.text = ""
                 }
             } else {
-                cardView.alpha = 1.0f
-                tvTitle.alpha = 1.0f
-                tvDescription.alpha = 1.0f
-                tvCategory.alpha = 1.0f
-                tvSubmitter.alpha = 1.0f
-                tvDate.alpha = 1.0f
-                chipStatus.alpha = 1.0f
-                tvUpvotes.alpha = 1.0f
-                cardView.isClickable = true
-                // Remove blur effect
+                // Remove blur/hiding for approved items
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
-                    cardView.setRenderEffect(null)
+                    contentLayout.setRenderEffect(null)
+                }
+                // Restore normal content for lower APIs
+                tvDescription.text = idea.description
+                tvCategory.text = getCategoryIcon(idea.category) + " " + idea.category.replaceFirstChar {
+                    if (it.isLowerCase()) it.titlecase(java.util.Locale.getDefault()) else it.toString()
+                }
+                tvSubmitter.text = "by ${idea.submitterName}"
+                idea.createdAt?.let { timestamp ->
+                    val date = timestamp.toDate()
+                    val formatter = SimpleDateFormat("MMM dd, yyyy", java.util.Locale.getDefault())
+                    tvDate.text = formatter.format(date)
+                } ?: run {
+                    tvDate.text = "Just now"
                 }
             }
 

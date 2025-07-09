@@ -89,6 +89,7 @@ id btnSubmitIdea
 id bulbIcon
 id cardView
 id chipStatus
+id contentLayout
 id cvEmptyState
 id emptyStateCard
 id etContact
@@ -252,6 +253,7 @@ string no_ideas_in_category
 string one_ready
 string or_continue_with
 string password
+string pending_approval
 string phone_emoji
 string productivity
 string productivity_full_sentence

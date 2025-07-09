@@ -57,9 +57,9 @@ class HomeFragment : Fragment() {
     }
     
     private fun setupRecyclerView() {
-        ideaAdapter = IdeaAdapter { idea ->
+        ideaAdapter = IdeaAdapter({ idea ->
             onIdeaClick(idea)
-        }
+        }, blurUnapproved = true)
         
         recyclerView.apply {
             adapter = ideaAdapter

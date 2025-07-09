@@ -3380,6 +3380,7 @@ id confirm_button
 id constraint
 id container
 id content
+id contentLayout
 id contentPanel
 id contiguous
 id continuousVelocity
@@ -4301,6 +4302,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string pending_approval
 string phone_emoji
 string productivity
 string productivity_full_sentence

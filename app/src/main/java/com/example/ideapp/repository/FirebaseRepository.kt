@@ -31,10 +31,8 @@ class FirebaseRepository {
      */
     private fun loadIdeas() {
         _isLoading.value = true
-        
-        // Only load approved ideas for public/landing page
+        // Fetch all ideas, regardless of status
         ideasCollection
-            .whereEqualTo("status", IdeaStatus.APPROVED.name)
             .addSnapshotListener { snapshot, exception ->
                 _isLoading.value = false
                 

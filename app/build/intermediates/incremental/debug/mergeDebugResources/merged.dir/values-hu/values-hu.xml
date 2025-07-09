@@ -195,6 +195,7 @@
     <string name="or_continue_with">Vagy folytasd ezzel</string>
     <string name="password">Jelszó</string>
     <string name="password_toggle_content_description">Jelszó megjelenítése</string>
+    <string name="pending_approval">Jóváhagyásra vár</string>
     <string name="phone_emoji">📱</string>
     <string name="productivity">Produktivitás</string>
     <string name="recent_activities">Legutóbbi tevékenységek</string>

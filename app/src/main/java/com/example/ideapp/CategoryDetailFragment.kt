@@ -65,9 +65,9 @@ class CategoryDetailFragment : Fragment() {
     }
 
     private fun setupRecyclerView() {
-        ideaAdapter = IdeaAdapter { idea ->
+        ideaAdapter = IdeaAdapter({ idea ->
             onIdeaClick(idea)
-        }
+        }, blurUnapproved = false)
         
         recyclerViewIdeas.apply {
             adapter = ideaAdapter

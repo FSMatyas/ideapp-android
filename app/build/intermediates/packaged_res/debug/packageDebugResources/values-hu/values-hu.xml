@@ -69,6 +69,7 @@
     <string name="one_ready">1 kész</string>
     <string name="or_continue_with">Vagy folytasd ezzel</string>
     <string name="password">Jelszó</string>
+    <string name="pending_approval">Jóváhagyásra vár</string>
     <string name="phone_emoji">📱</string>
     <string name="productivity">Produktivitás</string>
     <string name="recent_activities">Legutóbbi tevékenységek</string>

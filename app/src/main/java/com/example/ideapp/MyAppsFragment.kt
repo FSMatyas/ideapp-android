@@ -42,8 +42,8 @@ class MyAppsFragment : Fragment() {
         val emptyStateCard = view.findViewById<View>(R.id.emptyStateCard)
         val tvInProgressCount = view.findViewById<android.widget.TextView>(R.id.tvInProgressCount)
 
-        completedAdapter = IdeaAdapter { idea -> showIdeaDialog(idea) }
-        inProgressAdapter = IdeaAdapter { idea -> showIdeaDialog(idea) }
+        completedAdapter = IdeaAdapter({ idea -> showIdeaDialog(idea) }, blurUnapproved = false)
+        inProgressAdapter = IdeaAdapter({ idea -> showIdeaDialog(idea) }, blurUnapproved = false)
         recyclerViewCompleted.layoutManager = LinearLayoutManager(requireContext())
         recyclerViewInProgress.layoutManager = LinearLayoutManager(requireContext())
         recyclerViewCompleted.adapter = completedAdapter
