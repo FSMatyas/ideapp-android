@@ -32,8 +32,9 @@ class FirebaseRepository {
     private fun loadIdeas() {
         _isLoading.value = true
         
-        // Simplified query without orderBy to avoid index requirements
+        // Only load approved ideas for public/landing page
         ideasCollection
+            .whereEqualTo("status", IdeaStatus.APPROVED.name)
             .addSnapshotListener { snapshot, exception ->
                 _isLoading.value = false
                 

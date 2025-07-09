@@ -97,18 +97,26 @@ class SubmitIdeaDialogFragment : DialogFragment() {
     }
 
     private fun setupCategoryDropdown() {
-        val displayCategories = categories.map { category ->
-            category.replaceFirstChar { 
-                if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() 
-            }
-        }.toTypedArray()
-        
+        // Map: English key -> localized label
+        val categoryKeyToLabel = categories.associateWith { key ->
+            val resId = resources.getIdentifier("category_${key}", "string", requireContext().packageName)
+            if (resId != 0) getString(resId) else key.replaceFirstChar { if (it.isLowerCase()) it.titlecase(Locale.getDefault()) else it.toString() }
+        }
+        val displayCategories = categoryKeyToLabel.values.toList()
+
         val adapter = ArrayAdapter(
             requireContext(),
             android.R.layout.simple_dropdown_item_1line,
             displayCategories
         )
         actvCategory.setAdapter(adapter)
+
+        // When user selects a label, store the corresponding key as a tag for later use
+        actvCategory.setOnItemClickListener { _, _, position, _ ->
+            val selectedLabel = displayCategories[position]
+            val selectedKey = categoryKeyToLabel.entries.firstOrNull { it.value == selectedLabel }?.key
+            actvCategory.tag = selectedKey
+        }
     }
 
     private fun setupClickListeners() {
@@ -155,12 +163,11 @@ class SubmitIdeaDialogFragment : DialogFragment() {
         }
 
         // Validate category
-        val category = actvCategory.text.toString().trim()
-        val categoryLowercase = category.lowercase()
-        if (category.isEmpty()) {
+        val categoryKey = actvCategory.tag as? String ?: actvCategory.text.toString().trim().lowercase()
+        if (actvCategory.text.toString().trim().isEmpty()) {
             tilCategory.error = "Please select a category"
             isValid = false
-        } else if (!categories.contains(categoryLowercase)) {
+        } else if (!categories.contains(categoryKey)) {
             tilCategory.error = "Please select a valid category"
             isValid = false
         }
@@ -215,8 +222,7 @@ class SubmitIdeaDialogFragment : DialogFragment() {
 
     private fun submitIdea() {
         val title = etIdeaTitle.text.toString().trim()
-        val categoryDisplay = actvCategory.text.toString().trim()
-        val category = categoryDisplay.lowercase()
+        val categoryKey = actvCategory.tag as? String ?: actvCategory.text.toString().trim().lowercase()
         val description = etDescription.text.toString().trim()
         val contact = etContact.text.toString().trim()
         val userName = if (etUserName != etContact) {
@@ -232,7 +238,7 @@ class SubmitIdeaDialogFragment : DialogFragment() {
         val idea = Idea(
             title = title,
             description = description,
-            category = category,
+            category = categoryKey,
             submitterEmail = contact,
             submitterName = userName
         )

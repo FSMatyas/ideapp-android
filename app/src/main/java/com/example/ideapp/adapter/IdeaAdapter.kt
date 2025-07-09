@@ -1,5 +1,7 @@
 package com.example.ideapp.adapter
 
+import android.graphics.RenderEffect
+import android.graphics.Shader
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -63,9 +65,42 @@ class IdeaAdapter(
             // Set upvotes
             tvUpvotes.text = idea.upvotes.toString()
 
+            // Blur or dim card if not approved
+            if (idea.status != IdeaStatus.APPROVED) {
+                cardView.alpha = 0.4f
+                tvTitle.alpha = 0.6f
+                tvDescription.alpha = 0.6f
+                tvCategory.alpha = 0.6f
+                tvSubmitter.alpha = 0.6f
+                tvDate.alpha = 0.6f
+                chipStatus.alpha = 0.6f
+                tvUpvotes.alpha = 0.6f
+                cardView.isClickable = false
+                // Apply blur effect (API 31+)
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
+                    cardView.setRenderEffect(RenderEffect.createBlurEffect(12f, 12f, Shader.TileMode.CLAMP))
+                }
+            } else {
+                cardView.alpha = 1.0f
+                tvTitle.alpha = 1.0f
+                tvDescription.alpha = 1.0f
+                tvCategory.alpha = 1.0f
+                tvSubmitter.alpha = 1.0f
+                tvDate.alpha = 1.0f
+                chipStatus.alpha = 1.0f
+                tvUpvotes.alpha = 1.0f
+                cardView.isClickable = true
+                // Remove blur effect
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
+                    cardView.setRenderEffect(null)
+                }
+            }
+
             // Set click listener
             cardView.setOnClickListener {
-                onIdeaClick(idea)
+                if (idea.status == IdeaStatus.APPROVED) {
+                    onIdeaClick(idea)
+                }
             }
         }
 
