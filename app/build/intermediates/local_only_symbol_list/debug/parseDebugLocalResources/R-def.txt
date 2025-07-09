@@ -85,9 +85,13 @@ id adminLoginFragment
 id adminPanelFragment
 id bottom_nav_shadow
 id bottom_navigation
+id btnApprove
 id btnCancel
 id btnGetStarted
 id btnLearnMore
+id btnLogout
+id btnReject
+id btnSendMessage
 id btnSubmit
 id btnSubmitIdea
 id bulbIcon
@@ -99,6 +103,7 @@ id cvEmptyState
 id editTextEmail
 id editTextPassword
 id emptyStateCard
+id etAdminMessage
 id etContact
 id etDescription
 id etIdeaTitle
@@ -113,6 +118,8 @@ id paginationCompletedContainer
 id paginationContainer
 id paginationInProgressContainer
 id progressBar
+id progressBarAdmin
+id recyclerViewAdminIdeas
 id recyclerViewCompletedApps
 id recyclerViewIdeas
 id recyclerViewInProgress
@@ -149,9 +156,13 @@ id tvEntertainment
 id tvFamily
 id tvFinance
 id tvHealth
+id tvIdeaText
 id tvInProgressCount
 id tvProductivity
+id tvStatus
 id tvSubmitter
+id tvSubmitterEmail
+id tvSubmitterName
 id tvSubtitle
 id tvTitle
 id tvUpvotes
@@ -174,10 +185,12 @@ layout example_card_layout
 layout example_form_layout
 layout example_welcome_screen
 layout fragment_admin_login
+layout fragment_admin_panel
 layout fragment_categories
 layout fragment_category_detail
 layout fragment_home
 layout fragment_my_apps
+layout item_admin_idea
 layout item_idea_card
 menu bottom_navigation
 mipmap ic_launcher
