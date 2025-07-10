@@ -58,11 +58,13 @@ class HomeFragment : Fragment() {
             .whereEqualTo("creatorId", deviceId)
             .addSnapshotListener { snapshots, e ->
                 if (e != null || snapshots == null) return@addSnapshotListener
+                if (!isAdded) return@addSnapshotListener
+                val ctx = context ?: return@addSnapshotListener
 
                 for (docChange in snapshots.documentChanges) {
                     val idea = docChange.document.toObject(com.example.ideapp.data.Idea::class.java)
                     val adminMessages = idea.messages.filter { it.sender == "admin" }
-                    val prefs = requireContext().getSharedPreferences("admin_msg_prefs", android.content.Context.MODE_PRIVATE)
+                    val prefs = ctx.getSharedPreferences("admin_msg_prefs", android.content.Context.MODE_PRIVATE)
                     val lastSeenCount = prefs.getInt("admin_msg_count_${idea.id}", 0)
                     if (adminMessages.size > lastSeenCount) {
                         // --- Show real notification ---
@@ -78,18 +80,18 @@ class HomeFragment : Fragment() {
                                 enableVibration(true)
                                 setSound(soundUri, android.app.Notification.AUDIO_ATTRIBUTES_DEFAULT)
                             }
-                            val notificationManager: NotificationManager = requireContext().getSystemService(NotificationManager::class.java)
+                            val notificationManager: NotificationManager = ctx.getSystemService(NotificationManager::class.java)
                             notificationManager.createNotificationChannel(channel)
                         }
                         val intent = requireActivity().intent.clone() as android.content.Intent
                         intent.putExtra("open_idea_id", idea.id)
                         val pendingIntent = android.app.PendingIntent.getActivity(
-                            requireContext(),
+                            ctx,
                             0,
                             intent,
                             android.app.PendingIntent.FLAG_UPDATE_CURRENT or android.app.PendingIntent.FLAG_IMMUTABLE
                         )
-                        val builder = NotificationCompat.Builder(requireContext(), channelId)
+                        val builder = NotificationCompat.Builder(ctx, channelId)
                             .setSmallIcon(android.R.drawable.ic_dialog_email)
                             .setContentTitle("Új admin üzenet")
                             .setContentText(adminMessages.last().text)
@@ -97,7 +99,7 @@ class HomeFragment : Fragment() {
                             .setAutoCancel(true)
                             .setColor(resources.getColor(R.color.primary_color, null))
                             .setContentIntent(pendingIntent)
-                        with(NotificationManagerCompat.from(requireContext())) {
+                        with(NotificationManagerCompat.from(ctx)) {
                             notify(notificationId, builder.build())
                         }
                         prefs.edit().putInt("admin_msg_count_${idea.id}", adminMessages.size).apply()

@@ -99,7 +99,6 @@ id btnSendReply
 id btnSendReplyDialog
 id btnSubmit
 id btnSubmitIdea
-id btnWork
 id bulbIcon
 id buttonLogin
 id cardView

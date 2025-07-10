@@ -14,8 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 class CardAdminAdapter(
     private val cards: MutableList<Card>, // Changed to MutableList
     private val onApprove: (Card) -> Unit,
-    private val onReject: (Card) -> Unit,
-    private val onWorkClick: (Card) -> Unit // New callback for work button
+    private val onReject: (Card) -> Unit
 ) : RecyclerView.Adapter<CardAdminAdapter.CardViewHolder>() {
 
     class CardViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -26,7 +25,6 @@ class CardAdminAdapter(
         val tvStatus: TextView = itemView.findViewById(R.id.tvStatus)
         val cardRoot: View = itemView
         val btnSendMessage: Button = itemView.findViewById(R.id.btnSendMessage)
-        val btnWork: Button = itemView.findViewById(R.id.btnWork)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardViewHolder {
@@ -111,9 +109,6 @@ class CardAdminAdapter(
                 }
                 .setNegativeButton("Mégse", null)
                 .show()
-        }
-        holder.btnWork.setOnClickListener {
-            onWorkClick(card)
         }
     }
 

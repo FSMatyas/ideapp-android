@@ -47,38 +47,7 @@ class AdminActivity : AppCompatActivity() {
             return
         }
         try {
-            adapter = CardAdminAdapter(cards, ::onApproveClicked, ::onRejectClicked) { card ->
-                // Remove card from admin list
-                val removed = cards.remove(card)
-                adapter.notifyDataSetChanged()
-                // Convert Card to Idea and add to InProgressCardStore
-                val ideaStatus = when (card.status.uppercase()) {
-                    "APPROVED" -> com.example.ideapp.data.IdeaStatus.APPROVED
-                    "IN_DEVELOPMENT" -> com.example.ideapp.data.IdeaStatus.IN_DEVELOPMENT
-                    "TESTING" -> com.example.ideapp.data.IdeaStatus.TESTING
-                    "COMPLETED" -> com.example.ideapp.data.IdeaStatus.COMPLETED
-                    "REJECTED" -> com.example.ideapp.data.IdeaStatus.REJECTED
-                    else -> com.example.ideapp.data.IdeaStatus.PENDING
-                }
-                val idea = com.example.ideapp.data.Idea(
-                    id = card.id,
-                    title = card.title,
-                    description = card.description,
-                    submitterEmail = card.submitterEmail,
-                    submitterName = card.submitterName,
-                    creatorId = card.creatorId,
-                    messages = card.messages.map {
-                        com.example.ideapp.data.Message(
-                            sender = it.sender,
-                            text = it.text,
-                            timestamp = it.timestamp
-                        )
-                    },
-                    createdAt = card.createdAt,
-                    status = ideaStatus
-                )
-                com.example.ideapp.InProgressCardStore.inProgressCards.add(idea)
-            }
+            adapter = CardAdminAdapter(cards, ::onApproveClicked, ::onRejectClicked)
             recyclerView.adapter = adapter
             recyclerView.layoutManager = LinearLayoutManager(this)
         } catch (e: Exception) {
@@ -140,7 +109,7 @@ class AdminActivity : AppCompatActivity() {
     }
 
     private fun onRejectClicked(card: Card) {
-        updateCardStatus(card, "rejected")
+        updateCardStatus(card, "REJECTED")
     }
 
     private fun updateCardStatus(card: Card, status: String) {
