@@ -49,6 +49,17 @@ class MainActivity : AppCompatActivity() {
             }
         }
         registerReceiver(batteryReceiver, BatteryLevelReceiver.getIntentFilter())
+
+        // --- Handle notification tap to open card ---
+        intent?.getStringExtra("open_idea_id")?.let { ideaId ->
+            // Find the HomeFragment and call a method to open the card
+            val homeFragment = supportFragmentManager.fragments
+                .flatMap { it.childFragmentManager.fragments }
+                .find { it is com.example.ideapp.HomeFragment } as? com.example.ideapp.HomeFragment
+            homeFragment?.openIdeaById(ideaId)
+            // Remove the extra so it doesn't trigger again
+            intent.removeExtra("open_idea_id")
+        }
     }
 
     override fun onStop() {

@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -14,7 +15,6 @@ import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.ideapp.R;
 import com.google.android.material.card.MaterialCardView;
-import com.google.android.material.chip.Chip;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -30,13 +30,19 @@ public final class ItemIdeaCardBinding implements ViewBinding {
   public final MaterialCardView cardView;
 
   @NonNull
-  public final Chip chipStatus;
-
-  @NonNull
   public final LinearLayout contentLayout;
 
   @NonNull
   public final EditText etUserReply;
+
+  @NonNull
+  public final ImageView ivEnvelope;
+
+  @NonNull
+  public final LinearLayout layoutMessageIcon;
+
+  @NonNull
+  public final LinearLayout layoutMessages;
 
   @NonNull
   public final LinearLayout layoutReply;
@@ -57,13 +63,13 @@ public final class ItemIdeaCardBinding implements ViewBinding {
   public final TextView tvDescription;
 
   @NonNull
+  public final TextView tvMessageCount;
+
+  @NonNull
   public final TextView tvSubmitter;
 
   @NonNull
   public final TextView tvTitle;
-
-  @NonNull
-  public final TextView tvUpvotes;
 
   @NonNull
   public final TextView tvUserReply;
@@ -72,28 +78,31 @@ public final class ItemIdeaCardBinding implements ViewBinding {
   public final TextView tvUserReplyContent;
 
   private ItemIdeaCardBinding(@NonNull MaterialCardView rootView, @NonNull Button btnSendReply,
-      @NonNull MaterialCardView cardView, @NonNull Chip chipStatus,
-      @NonNull LinearLayout contentLayout, @NonNull EditText etUserReply,
+      @NonNull MaterialCardView cardView, @NonNull LinearLayout contentLayout,
+      @NonNull EditText etUserReply, @NonNull ImageView ivEnvelope,
+      @NonNull LinearLayout layoutMessageIcon, @NonNull LinearLayout layoutMessages,
       @NonNull LinearLayout layoutReply, @NonNull TextView tvAdminComment,
       @NonNull TextView tvAdminCommentContent, @NonNull TextView tvCategory,
-      @NonNull TextView tvDate, @NonNull TextView tvDescription, @NonNull TextView tvSubmitter,
-      @NonNull TextView tvTitle, @NonNull TextView tvUpvotes, @NonNull TextView tvUserReply,
+      @NonNull TextView tvDate, @NonNull TextView tvDescription, @NonNull TextView tvMessageCount,
+      @NonNull TextView tvSubmitter, @NonNull TextView tvTitle, @NonNull TextView tvUserReply,
       @NonNull TextView tvUserReplyContent) {
     this.rootView = rootView;
     this.btnSendReply = btnSendReply;
     this.cardView = cardView;
-    this.chipStatus = chipStatus;
     this.contentLayout = contentLayout;
     this.etUserReply = etUserReply;
+    this.ivEnvelope = ivEnvelope;
+    this.layoutMessageIcon = layoutMessageIcon;
+    this.layoutMessages = layoutMessages;
     this.layoutReply = layoutReply;
     this.tvAdminComment = tvAdminComment;
     this.tvAdminCommentContent = tvAdminCommentContent;
     this.tvCategory = tvCategory;
     this.tvDate = tvDate;
     this.tvDescription = tvDescription;
+    this.tvMessageCount = tvMessageCount;
     this.tvSubmitter = tvSubmitter;
     this.tvTitle = tvTitle;
-    this.tvUpvotes = tvUpvotes;
     this.tvUserReply = tvUserReply;
     this.tvUserReplyContent = tvUserReplyContent;
   }
@@ -133,12 +142,6 @@ public final class ItemIdeaCardBinding implements ViewBinding {
 
       MaterialCardView cardView = (MaterialCardView) rootView;
 
-      id = R.id.chipStatus;
-      Chip chipStatus = ViewBindings.findChildViewById(rootView, id);
-      if (chipStatus == null) {
-        break missingId;
-      }
-
       id = R.id.contentLayout;
       LinearLayout contentLayout = ViewBindings.findChildViewById(rootView, id);
       if (contentLayout == null) {
@@ -148,6 +151,24 @@ public final class ItemIdeaCardBinding implements ViewBinding {
       id = R.id.etUserReply;
       EditText etUserReply = ViewBindings.findChildViewById(rootView, id);
       if (etUserReply == null) {
+        break missingId;
+      }
+
+      id = R.id.ivEnvelope;
+      ImageView ivEnvelope = ViewBindings.findChildViewById(rootView, id);
+      if (ivEnvelope == null) {
+        break missingId;
+      }
+
+      id = R.id.layoutMessageIcon;
+      LinearLayout layoutMessageIcon = ViewBindings.findChildViewById(rootView, id);
+      if (layoutMessageIcon == null) {
+        break missingId;
+      }
+
+      id = R.id.layoutMessages;
+      LinearLayout layoutMessages = ViewBindings.findChildViewById(rootView, id);
+      if (layoutMessages == null) {
         break missingId;
       }
 
@@ -187,6 +208,12 @@ public final class ItemIdeaCardBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvMessageCount;
+      TextView tvMessageCount = ViewBindings.findChildViewById(rootView, id);
+      if (tvMessageCount == null) {
+        break missingId;
+      }
+
       id = R.id.tvSubmitter;
       TextView tvSubmitter = ViewBindings.findChildViewById(rootView, id);
       if (tvSubmitter == null) {
@@ -196,12 +223,6 @@ public final class ItemIdeaCardBinding implements ViewBinding {
       id = R.id.tvTitle;
       TextView tvTitle = ViewBindings.findChildViewById(rootView, id);
       if (tvTitle == null) {
-        break missingId;
-      }
-
-      id = R.id.tvUpvotes;
-      TextView tvUpvotes = ViewBindings.findChildViewById(rootView, id);
-      if (tvUpvotes == null) {
         break missingId;
       }
 
@@ -218,9 +239,9 @@ public final class ItemIdeaCardBinding implements ViewBinding {
       }
 
       return new ItemIdeaCardBinding((MaterialCardView) rootView, btnSendReply, cardView,
-          chipStatus, contentLayout, etUserReply, layoutReply, tvAdminComment,
-          tvAdminCommentContent, tvCategory, tvDate, tvDescription, tvSubmitter, tvTitle, tvUpvotes,
-          tvUserReply, tvUserReplyContent);
+          contentLayout, etUserReply, ivEnvelope, layoutMessageIcon, layoutMessages, layoutReply,
+          tvAdminComment, tvAdminCommentContent, tvCategory, tvDate, tvDescription, tvMessageCount,
+          tvSubmitter, tvTitle, tvUserReply, tvUserReplyContent);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

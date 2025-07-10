@@ -5,6 +5,7 @@ import android.graphics.Shader
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -44,8 +45,6 @@ class IdeaAdapter(
         private val tvCategory: TextView = itemView.findViewById(R.id.tvCategory)
         private val tvSubmitter: TextView = itemView.findViewById(R.id.tvSubmitter)
         private val tvDate: TextView = itemView.findViewById(R.id.tvDate)
-        private val chipStatus: Chip = itemView.findViewById(R.id.chipStatus)
-        private val tvUpvotes: TextView = itemView.findViewById(R.id.tvUpvotes)
 
         fun bind(idea: Idea) {
             tvTitle.text = idea.title
@@ -64,13 +63,6 @@ class IdeaAdapter(
                 tvDate.text = "Just now"
             }
 
-            // Set status chip
-            chipStatus.text = idea.status.displayName
-            chipStatus.setChipBackgroundColorResource(getStatusColorResource(idea.status))
-
-            // Set upvotes
-            tvUpvotes.text = idea.upvotes.toString()
-
             // Blur or hide content for pending items
             if (idea.status == IdeaStatus.PENDING) {
                 // For API 31+, blur the content area
@@ -81,69 +73,42 @@ class IdeaAdapter(
                     tvDescription.text = itemView.context.getString(R.string.pending_approval)
                     tvCategory.text = ""
                     tvSubmitter.text = ""
-                    tvDate.text = ""
                 }
             } else {
-                // Remove blur/hiding for approved items
+                // Remove blur if not pending
                 if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.S) {
                     contentLayout.setRenderEffect(null)
                 }
-                // Restore normal content for lower APIs
-                tvDescription.text = idea.description
-                tvCategory.text = getCategoryIcon(idea.category) + " " + idea.category.replaceFirstChar {
-                    if (it.isLowerCase()) it.titlecase(java.util.Locale.getDefault()) else it.toString()
-                }
-                tvSubmitter.text = "by ${idea.submitterName}"
-                idea.createdAt?.let { timestamp ->
-                    val date = timestamp.toDate()
-                    val formatter = SimpleDateFormat("MMM dd, yyyy", java.util.Locale.getDefault())
-                    tvDate.text = formatter.format(date)
-                } ?: run {
-                    tvDate.text = "Just now"
-                }
             }
 
-            // --- Admin comment and user reply UI ---
+            // --- Hide admin and user messages in card preview ---
             val tvAdminComment = itemView.findViewById<TextView>(R.id.tvAdminComment)
             val tvAdminCommentContent = itemView.findViewById<TextView>(R.id.tvAdminCommentContent)
             val tvUserReply = itemView.findViewById<TextView>(R.id.tvUserReply)
             val tvUserReplyContent = itemView.findViewById<TextView>(R.id.tvUserReplyContent)
             val layoutReply = itemView.findViewById<LinearLayout>(R.id.layoutReply)
             val etUserReply = itemView.findViewById<EditText>(R.id.etUserReply)
-            val btnSendReply = itemView.findViewById<TextView>(R.id.btnSendReply)
+            val btnSendReply = itemView.findViewById<Button>(R.id.btnSendReply)
 
-            // Show admin comment if exists
-            if (idea.adminNotes.isNotBlank()) {
-                tvAdminComment.visibility = View.VISIBLE
-                tvAdminCommentContent.visibility = View.VISIBLE
-                tvAdminCommentContent.text = idea.adminNotes
-            } else {
-                tvAdminComment.visibility = View.GONE
-                tvAdminCommentContent.visibility = View.GONE
-            }
+            // Hide admin and user messages
+            tvAdminComment.visibility = View.GONE
+            tvAdminCommentContent.visibility = View.GONE
+            tvUserReply.visibility = View.GONE
+            tvUserReplyContent.visibility = View.GONE
+            layoutReply.visibility = View.GONE
 
-            // Show user reply if exists
-            if (idea.userReply.isNotBlank()) {
-                tvUserReply.visibility = View.VISIBLE
-                tvUserReplyContent.visibility = View.VISIBLE
-                tvUserReplyContent.text = idea.userReply
+            // Envelope icon and counter logic
+            val layoutMessageIcon = itemView.findViewById<LinearLayout>(R.id.layoutMessageIcon)
+            val ivEnvelope = itemView.findViewById<android.widget.ImageView>(R.id.ivEnvelope)
+            val tvMessageCount = itemView.findViewById<TextView>(R.id.tvMessageCount)
+            val adminMessages = idea.messages.filter { it.sender == "admin" }
+            if (adminMessages.isNotEmpty()) {
+                ivEnvelope.visibility = View.VISIBLE
+                tvMessageCount.visibility = View.VISIBLE
+                tvMessageCount.text = idea.messages.size.toString()
             } else {
-                tvUserReply.visibility = View.GONE
-                tvUserReplyContent.visibility = View.GONE
-            }
-
-            // Only show reply input if current user is the submitter and hasn't replied yet
-            if (idea.submitterEmail == currentUserEmail && idea.adminNotes.isNotBlank() && idea.userReply.isBlank()) {
-                layoutReply.visibility = View.VISIBLE
-                btnSendReply.setOnClickListener {
-                    val reply = etUserReply.text.toString().trim()
-                    if (reply.isNotEmpty()) {
-                        onSendReply(idea, reply)
-                        etUserReply.setText("")
-                    }
-                }
-            } else {
-                layoutReply.visibility = View.GONE
+                ivEnvelope.visibility = View.GONE
+                tvMessageCount.visibility = View.GONE
             }
 
             // Set click listener

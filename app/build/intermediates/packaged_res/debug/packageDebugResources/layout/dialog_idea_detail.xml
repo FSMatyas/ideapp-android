@@ -53,6 +53,39 @@
             android:layout_marginTop="16dp"
             android:text="@string/full_idea_description_placeholder" />
 
+        <!-- Message thread for admin/user communication -->
+        <LinearLayout
+            android:id="@+id/layoutDialogMessages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Reply box for user (only visible for creator) -->
+        <LinearLayout
+            android:id="@+id/layoutReplyDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <EditText
+                android:id="@+id/etUserReplyDialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Írd be a válaszod..." />
+
+            <Button
+                android:id="@+id/btnSendReplyDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Küldés" />
+        </LinearLayout>
+
     </LinearLayout>
 
 </com.google.android.material.card.MaterialCardView>

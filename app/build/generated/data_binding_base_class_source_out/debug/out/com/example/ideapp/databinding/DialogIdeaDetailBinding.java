@@ -4,6 +4,9 @@ package com.example.ideapp.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -18,6 +21,18 @@ import java.lang.String;
 public final class DialogIdeaDetailBinding implements ViewBinding {
   @NonNull
   private final MaterialCardView rootView;
+
+  @NonNull
+  public final Button btnSendReplyDialog;
+
+  @NonNull
+  public final EditText etUserReplyDialog;
+
+  @NonNull
+  public final LinearLayout layoutDialogMessages;
+
+  @NonNull
+  public final LinearLayout layoutReplyDialog;
 
   @NonNull
   public final TextView tvDialogCategory;
@@ -35,10 +50,16 @@ public final class DialogIdeaDetailBinding implements ViewBinding {
   public final TextView tvDialogTitle;
 
   private DialogIdeaDetailBinding(@NonNull MaterialCardView rootView,
+      @NonNull Button btnSendReplyDialog, @NonNull EditText etUserReplyDialog,
+      @NonNull LinearLayout layoutDialogMessages, @NonNull LinearLayout layoutReplyDialog,
       @NonNull TextView tvDialogCategory, @NonNull TextView tvDialogDate,
       @NonNull TextView tvDialogDescription, @NonNull TextView tvDialogSubmitter,
       @NonNull TextView tvDialogTitle) {
     this.rootView = rootView;
+    this.btnSendReplyDialog = btnSendReplyDialog;
+    this.etUserReplyDialog = etUserReplyDialog;
+    this.layoutDialogMessages = layoutDialogMessages;
+    this.layoutReplyDialog = layoutReplyDialog;
     this.tvDialogCategory = tvDialogCategory;
     this.tvDialogDate = tvDialogDate;
     this.tvDialogDescription = tvDialogDescription;
@@ -73,6 +94,30 @@ public final class DialogIdeaDetailBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.btnSendReplyDialog;
+      Button btnSendReplyDialog = ViewBindings.findChildViewById(rootView, id);
+      if (btnSendReplyDialog == null) {
+        break missingId;
+      }
+
+      id = R.id.etUserReplyDialog;
+      EditText etUserReplyDialog = ViewBindings.findChildViewById(rootView, id);
+      if (etUserReplyDialog == null) {
+        break missingId;
+      }
+
+      id = R.id.layoutDialogMessages;
+      LinearLayout layoutDialogMessages = ViewBindings.findChildViewById(rootView, id);
+      if (layoutDialogMessages == null) {
+        break missingId;
+      }
+
+      id = R.id.layoutReplyDialog;
+      LinearLayout layoutReplyDialog = ViewBindings.findChildViewById(rootView, id);
+      if (layoutReplyDialog == null) {
+        break missingId;
+      }
+
       id = R.id.tvDialogCategory;
       TextView tvDialogCategory = ViewBindings.findChildViewById(rootView, id);
       if (tvDialogCategory == null) {
@@ -103,7 +148,8 @@ public final class DialogIdeaDetailBinding implements ViewBinding {
         break missingId;
       }
 
-      return new DialogIdeaDetailBinding((MaterialCardView) rootView, tvDialogCategory,
+      return new DialogIdeaDetailBinding((MaterialCardView) rootView, btnSendReplyDialog,
+          etUserReplyDialog, layoutDialogMessages, layoutReplyDialog, tvDialogCategory,
           tvDialogDate, tvDialogDescription, tvDialogSubmitter, tvDialogTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);

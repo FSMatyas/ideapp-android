@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">IdeaApp</string>
-    <string name="contact_helper">Aide de contact</string>
-    <string name="toolbar_title_ideaapps">IdeaApps</string>
-    <string name="your_name">Votre nom</string>
-</resources>

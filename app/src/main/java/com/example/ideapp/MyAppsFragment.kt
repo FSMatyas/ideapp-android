@@ -23,9 +23,7 @@ class MyAppsFragment : Fragment() {
     private lateinit var paginationCompleted: LinearLayout
     private lateinit var paginationInProgress: LinearLayout
     private var completedApps: List<Idea> = emptyList()
-    private var inProgressApps: List<Idea> = emptyList()
     private var completedPage = 0
-    private var inProgressPage = 0
     private val pageSize = 5
 
     override fun onCreateView(
@@ -41,8 +39,6 @@ class MyAppsFragment : Fragment() {
         recyclerViewInProgress = view.findViewById(R.id.recyclerViewInProgress)
         paginationCompleted = view.findViewById(R.id.paginationCompletedContainer)
         paginationInProgress = view.findViewById(R.id.paginationInProgressContainer)
-        val emptyStateCard = view.findViewById<View>(R.id.emptyStateCard)
-        val tvInProgressCount = view.findViewById<android.widget.TextView>(R.id.tvInProgressCount)
 
         completedAdapter = IdeaAdapter(
             onIdeaClick = { idea -> showIdeaDialog(idea) },
@@ -74,9 +70,7 @@ class MyAppsFragment : Fragment() {
                 )
             }
         )
-        recyclerViewCompleted.layoutManager = LinearLayoutManager(requireContext())
         recyclerViewInProgress.layoutManager = LinearLayoutManager(requireContext())
-        recyclerViewCompleted.adapter = completedAdapter
         recyclerViewInProgress.adapter = inProgressAdapter
 
         // Example completed app card for prototype/demo
@@ -121,20 +115,23 @@ class MyAppsFragment : Fragment() {
             createdAt = null
         )
         completedApps = listOf(exampleCompleted)
-        inProgressApps = listOf(exampleInProgress1, exampleInProgress2)
         // Update the in-progress count text
-        tvInProgressCount.text = "${inProgressApps.size} in progress"
-        updateCompletedPage()
-        updateInProgressPage()
-        updateCompletedPagination()
-        updateInProgressPagination()
-
+        val tvInProgressCount = view.findViewById<android.widget.TextView>(R.id.tvInProgressCount)
+        tvInProgressCount.text = "${com.example.ideapp.InProgressCardStore.inProgressCards.size} in progress"
         // Hide empty state card if there are any apps
-        if (completedApps.isNotEmpty() || inProgressApps.isNotEmpty()) {
+        val emptyStateCard = view.findViewById<View>(R.id.emptyStateCard)
+        if (com.example.ideapp.InProgressCardStore.inProgressCards.isNotEmpty()) {
             emptyStateCard.visibility = View.GONE
         } else {
             emptyStateCard.visibility = View.VISIBLE
         }
+        updateCompletedPage()
+        updateCompletedPagination()
+    }
+
+    override fun onResume() {
+        super.onResume()
+        updateInProgressPage()
     }
 
     private fun updateCompletedPage() {
@@ -143,9 +140,7 @@ class MyAppsFragment : Fragment() {
         completedAdapter.submitList(if (from < to) completedApps.subList(from, to) else emptyList())
     }
     private fun updateInProgressPage() {
-        val from = inProgressPage * pageSize
-        val to = min(from + pageSize, inProgressApps.size)
-        inProgressAdapter.submitList(if (from < to) inProgressApps.subList(from, to) else emptyList())
+        inProgressAdapter.submitList(com.example.ideapp.InProgressCardStore.inProgressCards)
     }
     private fun updateCompletedPagination() {
         paginationCompleted.removeAllViews()
@@ -174,35 +169,6 @@ class MyAppsFragment : Fragment() {
                 button.setTypeface(null, android.graphics.Typeface.BOLD)
             }
             paginationCompleted.addView(button)
-        }
-    }
-    private fun updateInProgressPagination() {
-        paginationInProgress.removeAllViews()
-        val pageCount = (inProgressApps.size + pageSize - 1) / pageSize
-        for (i in 0 until pageCount) {
-            val button = android.widget.TextView(requireContext())
-            button.text = (i + 1).toString()
-            button.setTextColor(android.graphics.Color.WHITE)
-            button.textSize = 16f
-            button.gravity = android.view.Gravity.CENTER
-            button.setPadding(0, 0, 0, 0)
-            val size = resources.displayMetrics.density * 36 // 36dp
-            val params = LinearLayout.LayoutParams(size.toInt(), size.toInt())
-            params.setMargins(12, 0, 12, 0)
-            button.layoutParams = params
-            button.background = if (i == inProgressPage)
-                requireContext().getDrawable(R.drawable.pagination_circle_selected)
-            else
-                requireContext().getDrawable(R.drawable.pagination_circle)
-            button.setOnClickListener {
-                inProgressPage = i
-                updateInProgressPage()
-                updateInProgressPagination()
-            }
-            if (i == inProgressPage) {
-                button.setTypeface(null, android.graphics.Typeface.BOLD)
-            }
-            paginationInProgress.addView(button)
         }
     }
     private fun showIdeaDialog(idea: Idea) {

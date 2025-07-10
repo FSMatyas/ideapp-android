@@ -234,13 +234,17 @@ class SubmitIdeaDialogFragment : DialogFragment() {
             }
         }
 
+        // Get device-based creatorId
+        val creatorId = com.example.ideapp.util.DeviceIdUtil.getDeviceId(requireContext())
+
         // Create Idea object
         val idea = Idea(
             title = title,
             description = description,
             category = categoryKey,
             submitterEmail = contact,
-            submitterName = userName
+            submitterName = userName,
+            creatorId = creatorId // Set creatorId here
         )
 
         // Submit through ViewModel

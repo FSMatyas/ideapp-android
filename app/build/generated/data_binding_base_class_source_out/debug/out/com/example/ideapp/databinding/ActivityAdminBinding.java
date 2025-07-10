@@ -6,9 +6,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.ideapp.R;
@@ -24,13 +26,26 @@ public final class ActivityAdminBinding implements ViewBinding {
   public final Button btnLogout;
 
   @NonNull
+  public final ProgressBar progressBar;
+
+  @NonNull
+  public final RecyclerView recyclerViewCards;
+
+  @NonNull
   public final TextView tvAdminWelcome;
 
+  @NonNull
+  public final TextView tvEmpty;
+
   private ActivityAdminBinding(@NonNull LinearLayout rootView, @NonNull Button btnLogout,
-      @NonNull TextView tvAdminWelcome) {
+      @NonNull ProgressBar progressBar, @NonNull RecyclerView recyclerViewCards,
+      @NonNull TextView tvAdminWelcome, @NonNull TextView tvEmpty) {
     this.rootView = rootView;
     this.btnLogout = btnLogout;
+    this.progressBar = progressBar;
+    this.recyclerViewCards = recyclerViewCards;
     this.tvAdminWelcome = tvAdminWelcome;
+    this.tvEmpty = tvEmpty;
   }
 
   @Override
@@ -66,13 +81,32 @@ public final class ActivityAdminBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.progressBar;
+      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
+      if (progressBar == null) {
+        break missingId;
+      }
+
+      id = R.id.recyclerViewCards;
+      RecyclerView recyclerViewCards = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerViewCards == null) {
+        break missingId;
+      }
+
       id = R.id.tvAdminWelcome;
       TextView tvAdminWelcome = ViewBindings.findChildViewById(rootView, id);
       if (tvAdminWelcome == null) {
         break missingId;
       }
 
-      return new ActivityAdminBinding((LinearLayout) rootView, btnLogout, tvAdminWelcome);
+      id = R.id.tvEmpty;
+      TextView tvEmpty = ViewBindings.findChildViewById(rootView, id);
+      if (tvEmpty == null) {
+        break missingId;
+      }
+
+      return new ActivityAdminBinding((LinearLayout) rootView, btnLogout, progressBar,
+          recyclerViewCards, tvAdminWelcome, tvEmpty);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -34,14 +34,6 @@
                 android:maxLines="2"
                 />
 
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chipStatus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/approved"
-                android:textSize="10sp"
-                style="@style/Widget.Material3.Chip.Assist" />
-
         </LinearLayout>
 
         <TextView
@@ -85,17 +77,6 @@
             android:text="@string/idea_description_placeholder"
             android:maxLines="3"
             android:textSize="13sp" />
-
-        <TextView
-            android:id="@+id/tvUpvotes"
-            style="@style/AppTextStyle.Caption"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="0"
-            android:textSize="12sp"
-            android:layout_marginTop="4dp"
-            android:maxLines="2"
-            />
 
         <TextView
             android:id="@+id/tvAdminComment"
@@ -146,6 +127,45 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Küldés" />
+        </LinearLayout>
+
+        <!-- Message thread for admin/user communication -->
+        <LinearLayout
+            android:id="@+id/layoutMessages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Envelope icon with counter for messages -->
+        <LinearLayout
+            android:id="@+id/layoutMessageIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="bottom|start"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp">
+
+            <ImageView
+                android:id="@+id/ivEnvelope"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_dialog_email"
+                android:contentDescription="@string/messages"
+                android:visibility="gone"
+                android:tint="@color/primary_color" />
+
+            <TextView
+                android:id="@+id/tvMessageCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textSize="12sp"
+                android:layout_marginStart="4dp"
+                android:visibility="gone"
+                android:textColor="@color/black" />
         </LinearLayout>
 
     </LinearLayout>

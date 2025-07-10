@@ -1,5 +1,10 @@
 package com.example.ideapp
 
+import android.app.NotificationChannel
+import android.app.NotificationManager
+import android.os.Build
+import androidx.core.app.NotificationCompat
+import androidx.core.app.NotificationManagerCompat
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -45,6 +50,60 @@ class HomeFragment : Fragment() {
         setupRecyclerView()
         paginationContainer = view.findViewById(R.id.paginationContainer)
         observeViewModel()
+
+        // --- In-app admin message notification listener ---
+        val db = com.google.firebase.firestore.FirebaseFirestore.getInstance()
+        val deviceId = com.example.ideapp.util.DeviceIdUtil.getDeviceId(requireContext())
+        db.collection("ideas")
+            .whereEqualTo("creatorId", deviceId)
+            .addSnapshotListener { snapshots, e ->
+                if (e != null || snapshots == null) return@addSnapshotListener
+
+                for (docChange in snapshots.documentChanges) {
+                    val idea = docChange.document.toObject(com.example.ideapp.data.Idea::class.java)
+                    val adminMessages = idea.messages.filter { it.sender == "admin" }
+                    val prefs = requireContext().getSharedPreferences("admin_msg_prefs", android.content.Context.MODE_PRIVATE)
+                    val lastSeenCount = prefs.getInt("admin_msg_count_${idea.id}", 0)
+                    if (adminMessages.size > lastSeenCount) {
+                        // --- Show real notification ---
+                        val channelId = "admin_message_channel_v2" // New channel ID to force recreation
+                        val notificationId = idea.id.hashCode()
+                        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                            val name = "Admin üzenetek"
+                            val descriptionText = "Értesítések admin üzenetekről"
+                            val importance = NotificationManager.IMPORTANCE_HIGH
+                            val soundUri = android.media.RingtoneManager.getDefaultUri(android.media.RingtoneManager.TYPE_NOTIFICATION)
+                            val channel = NotificationChannel(channelId, name, importance).apply {
+                                description = descriptionText
+                                enableVibration(true)
+                                setSound(soundUri, android.app.Notification.AUDIO_ATTRIBUTES_DEFAULT)
+                            }
+                            val notificationManager: NotificationManager = requireContext().getSystemService(NotificationManager::class.java)
+                            notificationManager.createNotificationChannel(channel)
+                        }
+                        val intent = requireActivity().intent.clone() as android.content.Intent
+                        intent.putExtra("open_idea_id", idea.id)
+                        val pendingIntent = android.app.PendingIntent.getActivity(
+                            requireContext(),
+                            0,
+                            intent,
+                            android.app.PendingIntent.FLAG_UPDATE_CURRENT or android.app.PendingIntent.FLAG_IMMUTABLE
+                        )
+                        val builder = NotificationCompat.Builder(requireContext(), channelId)
+                            .setSmallIcon(android.R.drawable.ic_dialog_email)
+                            .setContentTitle("Új admin üzenet")
+                            .setContentText(adminMessages.last().text)
+                            .setPriority(NotificationCompat.PRIORITY_HIGH)
+                            .setAutoCancel(true)
+                            .setColor(resources.getColor(R.color.primary_color, null))
+                            .setContentIntent(pendingIntent)
+                        with(NotificationManagerCompat.from(requireContext())) {
+                            notify(notificationId, builder.build())
+                        }
+                        prefs.edit().putInt("admin_msg_count_${idea.id}", adminMessages.size).apply()
+                    }
+                }
+            }
     }
     
     private fun setupViews(view: View) {
@@ -139,6 +198,50 @@ class HomeFragment : Fragment() {
         dialogView.findViewById<TextView>(R.id.tvDialogDate).text = dateText
         dialogView.findViewById<TextView>(R.id.tvDialogDescription).text = idea.description
 
+        // Show messages in the dialog at the bottom
+        val layoutDialogMessages = dialogView.findViewById<android.widget.LinearLayout>(R.id.layoutDialogMessages)
+        layoutDialogMessages?.removeAllViews()
+        if (idea.messages.isNotEmpty()) {
+            idea.messages.forEach { msg ->
+                val tv = android.widget.TextView(requireContext())
+                tv.text = if (msg.sender == "admin") {
+                    "Admin: ${msg.text}"
+                } else {
+                    "Te: ${msg.text}"
+                }
+                tv.setPadding(0, 4, 0, 4)
+                layoutDialogMessages?.addView(tv)
+            }
+        }
+
+        // --- Reply box logic ---
+        val layoutReply = dialogView.findViewById<android.widget.LinearLayout>(R.id.layoutReplyDialog)
+        val etUserReply = dialogView.findViewById<android.widget.EditText>(R.id.etUserReplyDialog)
+        val btnSendReply = dialogView.findViewById<android.widget.Button>(R.id.btnSendReplyDialog)
+        layoutReply?.visibility = View.GONE
+        // Only show if current user is creator and there is at least one admin message
+        val deviceId = com.example.ideapp.util.DeviceIdUtil.getDeviceId(requireContext())
+        val hasAdminMsg = idea.messages.any { it.sender == "admin" }
+        if (deviceId == idea.creatorId && hasAdminMsg) {
+            layoutReply?.visibility = View.VISIBLE
+            btnSendReply?.setOnClickListener {
+                val replyText = etUserReply?.text?.toString()?.trim()
+                if (!replyText.isNullOrEmpty()) {
+                    val db = com.google.firebase.firestore.FirebaseFirestore.getInstance()
+                    val message = hashMapOf(
+                        "sender" to deviceId,
+                        "text" to replyText,
+                        "timestamp" to com.google.firebase.Timestamp.now()
+                    )
+                    db.collection("ideas")
+                        .document(idea.id)
+                        .update("messages", com.google.firebase.firestore.FieldValue.arrayUnion(message))
+                    layoutReply.visibility = View.GONE
+                    Toast.makeText(requireContext(), "Válasz elküldve!", Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+
         val dialog = androidx.appcompat.app.AlertDialog.Builder(requireContext())
             .setView(dialogView)
             .create()
@@ -198,6 +301,13 @@ class HomeFragment : Fragment() {
                 button.setTypeface(null, android.graphics.Typeface.BOLD)
             }
             paginationContainer.addView(button)
+        }
+    }
+
+    fun openIdeaById(ideaId: String) {
+        val idea = allIdeas.find { it.id == ideaId }
+        if (idea != null) {
+            onIdeaClick(idea)
         }
     }
 

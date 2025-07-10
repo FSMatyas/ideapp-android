@@ -3,8 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center"
-    android:padding="32dp"
+    android:padding="16dp"
     android:background="@color/background_light">
 
     <!-- Egyszerű admin felület -->
@@ -15,13 +14,43 @@
         android:text="Admin felület"
         android:textSize="22sp"
         android:textColor="@color/primary_color"
-        android:layout_marginBottom="24dp" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Betöltés jelző -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+    <!-- Üres állapot szöveg -->
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nincs megjeleníthető kártya."
+        android:textAlignment="center"
+        android:visibility="gone"
+        android:layout_marginTop="24dp" />
+
+    <!-- RecyclerView a kártyák listájához -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCards"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp" />
 
     <!-- Kijelentkezés gomb -->
     <Button
         android:id="@+id/btnLogout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kijelentkezés" />
+        android:text="Kijelentkezés"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp" />
 
 </LinearLayout>

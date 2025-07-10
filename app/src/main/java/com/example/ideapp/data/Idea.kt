@@ -28,7 +28,9 @@ data class Idea(
     @ServerTimestamp
     val updatedAt: Timestamp? = null,
     val adminNotes: String = "",
-    val userReply: String = ""
+    val userReply: String = "",
+    val creatorId: String = "",
+    val messages: List<Message> = emptyList()
 )
 
 /**
@@ -65,4 +67,13 @@ data class Category(
     val icon: String = "",
     val color: String = "",
     val ideaCount: Int = 0
+)
+
+/**
+ * Message data class for idea communication
+ */
+data class Message(
+    val sender: String = "",
+    val text: String = "",
+    val timestamp: com.google.firebase.Timestamp? = null
 )
