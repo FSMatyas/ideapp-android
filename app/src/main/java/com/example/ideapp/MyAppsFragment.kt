@@ -87,7 +87,6 @@ class MyAppsFragment : Fragment() {
         val currentUserId = com.example.ideapp.util.DeviceIdUtil.getDeviceId(requireContext())
         val db = com.google.firebase.firestore.FirebaseFirestore.getInstance()
         inProgressListener = db.collection("ideas")
-            .whereEqualTo("creatorId", currentUserId)
             .whereEqualTo("status", com.example.ideapp.data.IdeaStatus.IN_DEVELOPMENT.name)
             .addSnapshotListener { snapshot, exception ->
                 if (exception != null || !isAdded) return@addSnapshotListener
@@ -108,7 +107,6 @@ class MyAppsFragment : Fragment() {
 
         // Listen to live completed ideas for the current user
         db.collection("ideas")
-            .whereEqualTo("creatorId", currentUserId)
             .whereEqualTo("status", com.example.ideapp.data.IdeaStatus.COMPLETED.name)
             .addSnapshotListener { snapshot, exception ->
                 if (exception != null || !isAdded) return@addSnapshotListener

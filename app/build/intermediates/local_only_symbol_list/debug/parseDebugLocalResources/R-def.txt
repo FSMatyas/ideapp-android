@@ -87,6 +87,7 @@ id adminLoginFragment
 id adminPanelFragment
 id admin_bottom_nav
 id admin_nav_host_fragment
+id bottomSpacerAdminCompleted
 id bottomSpacerAdminHome
 id bottom_nav_shadow
 id bottom_navigation
@@ -97,8 +98,10 @@ id btnComplete
 id btnGetStarted
 id btnLearnMore
 id btnLogout
+id btnNextPageAdminCompleted
 id btnNextPageAdminHome
 id btnNextPageAdminWork
+id btnPrevPageAdminCompleted
 id btnPrevPageAdminHome
 id btnPrevPageAdminWork
 id btnReject
@@ -141,11 +144,14 @@ id nav_home
 id nav_my_apps
 id paginationCompletedContainer
 id paginationContainer
+id paginationContainerAdminCompleted
 id paginationContainerAdminHome
 id paginationContainerAdminWork
 id paginationInProgressContainer
 id progressBar
 id progressBarAdmin
+id progressBarAdminCompleted
+id recyclerViewAdminCompleted
 id recyclerViewAdminIdeas
 id recyclerViewAdminWork
 id recyclerViewCards
@@ -195,6 +201,7 @@ id tvHealth
 id tvIdeaText
 id tvInProgressCount
 id tvMessageCount
+id tvPageIndicatorAdminCompleted
 id tvPageIndicatorAdminHome
 id tvPageIndicatorAdminWork
 id tvProductivity
@@ -228,6 +235,7 @@ layout dialog_submit_idea
 layout example_card_layout
 layout example_form_layout
 layout example_welcome_screen
+layout fragment_admin_completed
 layout fragment_admin_login
 layout fragment_admin_panel
 layout fragment_admin_work
