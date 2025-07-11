@@ -8,4 +8,8 @@
         android:id="@+id/nav_admin_work"
         android:icon="@android:drawable/ic_menu_manage"
         android:title="Work" />
+    <item
+        android:id="@+id/nav_admin_completed"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:title="Completed" />
 </menu>

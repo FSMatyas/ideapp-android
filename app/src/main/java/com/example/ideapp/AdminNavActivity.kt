@@ -27,6 +27,10 @@ class AdminNavActivity : AppCompatActivity() {
                     switchFragment(AdminWorkFragment())
                     true
                 }
+                R.id.nav_admin_completed -> {
+                    switchFragment(AdminCompletedFragment())
+                    true
+                }
                 else -> false
             }
         }

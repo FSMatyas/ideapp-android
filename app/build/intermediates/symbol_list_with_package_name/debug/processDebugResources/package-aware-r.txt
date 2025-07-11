@@ -3618,6 +3618,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id nav_admin_completed
 id nav_admin_home
 id nav_admin_work
 id nav_categories

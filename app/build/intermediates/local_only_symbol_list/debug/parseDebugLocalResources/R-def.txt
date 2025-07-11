@@ -137,6 +137,7 @@ id layoutMessageIcon
 id layoutMessages
 id layoutReply
 id layoutReplyDialog
+id nav_admin_completed
 id nav_admin_home
 id nav_admin_work
 id nav_categories
