@@ -43,6 +43,11 @@ class MyAppsFragment : Fragment() {
         paginationCompleted = view.findViewById(R.id.paginationCompletedContainer)
         paginationInProgress = view.findViewById(R.id.paginationInProgressContainer)
 
+        // Completed count TextView
+        val tvCompletedCount = view.findViewById<android.widget.TextView?>(R.id.tvCompletedCount)
+        // Empty state card for completed
+        val emptyCompletedStateCard = view.findViewById<View?>(R.id.emptyCompletedStateCard)
+
         completedAdapter = IdeaAdapter(
             onIdeaClick = { idea -> showIdeaDialog(idea) },
             blurUnapproved = false,
@@ -58,6 +63,8 @@ class MyAppsFragment : Fragment() {
                 )
             }
         )
+        recyclerViewCompleted.layoutManager = LinearLayoutManager(requireContext())
+        recyclerViewCompleted.adapter = completedAdapter
         inProgressAdapter = IdeaAdapter(
             onIdeaClick = { idea -> showIdeaDialog(idea) },
             blurUnapproved = false,
@@ -83,7 +90,7 @@ class MyAppsFragment : Fragment() {
             .whereEqualTo("creatorId", currentUserId)
             .whereEqualTo("status", com.example.ideapp.data.IdeaStatus.IN_DEVELOPMENT.name)
             .addSnapshotListener { snapshot, exception ->
-                if (exception != null) return@addSnapshotListener
+                if (exception != null || !isAdded) return@addSnapshotListener
                 allInProgressIdeas = snapshot?.documents?.mapNotNull { it.toObject(com.example.ideapp.data.Idea::class.java) } ?: emptyList()
                 updateInProgressPage()
                 updateInProgressPagination()
@@ -98,23 +105,23 @@ class MyAppsFragment : Fragment() {
                     emptyStateCard.visibility = View.VISIBLE
                 }
             }
-        // Completed apps demo (keep as before)
-        val exampleCompleted = Idea(
-            id = "1",
-            title = "Simple Password Generator",
-            description = "Generate secure passwords with customizable length and character sets.",
-            category = "Utility",
-            submitterEmail = "demo@example.com",
-            submitterName = "Demo User",
-            status = com.example.ideapp.data.IdeaStatus.COMPLETED,
-            upvotes = 47,
-            estimatedDevelopmentDays = 2,
-            estimatedPrice = 0.0,
-            createdAt = null
-        )
-        completedApps = listOf(exampleCompleted)
-        updateCompletedPage()
-        updateCompletedPagination()
+
+        // Listen to live completed ideas for the current user
+        db.collection("ideas")
+            .whereEqualTo("creatorId", currentUserId)
+            .whereEqualTo("status", com.example.ideapp.data.IdeaStatus.COMPLETED.name)
+            .addSnapshotListener { snapshot, exception ->
+                if (exception != null || !isAdded) return@addSnapshotListener
+                completedApps = snapshot?.documents?.mapNotNull { it.toObject(com.example.ideapp.data.Idea::class.java) } ?: emptyList()
+                updateCompletedPage()
+                updateCompletedPagination()
+                // Update the completed count text
+                tvCompletedCount?.text = "${completedApps.size} ready"
+                // Hide empty state card if there are any completed apps
+                if (emptyCompletedStateCard != null) {
+                    emptyCompletedStateCard.visibility = if (completedApps.isNotEmpty()) View.GONE else View.VISIBLE
+                }
+            }
     }
 
     override fun onResume() {

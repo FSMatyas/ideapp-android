@@ -23,6 +23,9 @@ public final class FragmentMyAppsBinding implements ViewBinding {
   private final NestedScrollView rootView;
 
   @NonNull
+  public final MaterialCardView emptyCompletedStateCard;
+
+  @NonNull
   public final MaterialCardView emptyStateCard;
 
   @NonNull
@@ -38,19 +41,25 @@ public final class FragmentMyAppsBinding implements ViewBinding {
   public final RecyclerView recyclerViewInProgress;
 
   @NonNull
+  public final TextView tvCompletedCount;
+
+  @NonNull
   public final TextView tvInProgressCount;
 
   private FragmentMyAppsBinding(@NonNull NestedScrollView rootView,
-      @NonNull MaterialCardView emptyStateCard, @NonNull LinearLayout paginationCompletedContainer,
+      @NonNull MaterialCardView emptyCompletedStateCard, @NonNull MaterialCardView emptyStateCard,
+      @NonNull LinearLayout paginationCompletedContainer,
       @NonNull LinearLayout paginationInProgressContainer,
       @NonNull RecyclerView recyclerViewCompletedApps, @NonNull RecyclerView recyclerViewInProgress,
-      @NonNull TextView tvInProgressCount) {
+      @NonNull TextView tvCompletedCount, @NonNull TextView tvInProgressCount) {
     this.rootView = rootView;
+    this.emptyCompletedStateCard = emptyCompletedStateCard;
     this.emptyStateCard = emptyStateCard;
     this.paginationCompletedContainer = paginationCompletedContainer;
     this.paginationInProgressContainer = paginationInProgressContainer;
     this.recyclerViewCompletedApps = recyclerViewCompletedApps;
     this.recyclerViewInProgress = recyclerViewInProgress;
+    this.tvCompletedCount = tvCompletedCount;
     this.tvInProgressCount = tvInProgressCount;
   }
 
@@ -81,6 +90,12 @@ public final class FragmentMyAppsBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.emptyCompletedStateCard;
+      MaterialCardView emptyCompletedStateCard = ViewBindings.findChildViewById(rootView, id);
+      if (emptyCompletedStateCard == null) {
+        break missingId;
+      }
+
       id = R.id.emptyStateCard;
       MaterialCardView emptyStateCard = ViewBindings.findChildViewById(rootView, id);
       if (emptyStateCard == null) {
@@ -111,15 +126,21 @@ public final class FragmentMyAppsBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.tvCompletedCount;
+      TextView tvCompletedCount = ViewBindings.findChildViewById(rootView, id);
+      if (tvCompletedCount == null) {
+        break missingId;
+      }
+
       id = R.id.tvInProgressCount;
       TextView tvInProgressCount = ViewBindings.findChildViewById(rootView, id);
       if (tvInProgressCount == null) {
         break missingId;
       }
 
-      return new FragmentMyAppsBinding((NestedScrollView) rootView, emptyStateCard,
-          paginationCompletedContainer, paginationInProgressContainer, recyclerViewCompletedApps,
-          recyclerViewInProgress, tvInProgressCount);
+      return new FragmentMyAppsBinding((NestedScrollView) rootView, emptyCompletedStateCard,
+          emptyStateCard, paginationCompletedContainer, paginationInProgressContainer,
+          recyclerViewCompletedApps, recyclerViewInProgress, tvCompletedCount, tvInProgressCount);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -48,12 +48,12 @@ class IdeaAdapter(
         private val tvDate: TextView = itemView.findViewById(R.id.tvDate)
 
         fun bind(idea: Idea) {
-            tvTitle.text = idea.title
-            tvDescription.text = idea.description
+            tvTitle.text = if (!idea.title.isNullOrBlank()) idea.title else itemView.context.getString(R.string.untitled_idea)
+            tvDescription.text = if (!idea.description.isNullOrBlank()) idea.description else itemView.context.getString(R.string.no_description)
             tvCategory.text = getCategoryIcon(idea.category) + " " + idea.category.replaceFirstChar {
                 if (it.isLowerCase()) it.titlecase(java.util.Locale.getDefault()) else it.toString()
             }
-            tvSubmitter.text = "by ${idea.submitterName}"
+            tvSubmitter.text = if (!idea.submitterName.isNullOrBlank()) "by ${idea.submitterName}" else itemView.context.getString(R.string.unknown_submitter)
 
             // Format date
             idea.createdAt?.let { timestamp ->
@@ -129,9 +129,7 @@ class IdeaAdapter(
                 tvMessageCount.visibility = View.GONE
             }
 
-            // Hide the Work button for all non-admin (user) idea cards
-            val btnWork = itemView.findViewById<Button>(R.id.btnWork)
-            btnWork.visibility = View.GONE
+            // Work button removed from user layout; nothing to do here
 
             // Set click listener: allow all statuses to open detail dialog
             cardView.setOnClickListener {

@@ -25,6 +25,9 @@ public final class ItemAdminIdeaBinding implements ViewBinding {
   public final Button btnApprove;
 
   @NonNull
+  public final Button btnComplete;
+
+  @NonNull
   public final Button btnReject;
 
   @NonNull
@@ -52,12 +55,13 @@ public final class ItemAdminIdeaBinding implements ViewBinding {
   public final TextView tvSubmitterName;
 
   private ItemAdminIdeaBinding(@NonNull CardView rootView, @NonNull Button btnApprove,
-      @NonNull Button btnReject, @NonNull Button btnSendMessage, @NonNull Button btnWork,
-      @NonNull EditText etAdminMessage, @NonNull TextView tvCreatedAt, @NonNull TextView tvIdeaText,
-      @NonNull TextView tvStatus, @NonNull TextView tvSubmitterEmail,
+      @NonNull Button btnComplete, @NonNull Button btnReject, @NonNull Button btnSendMessage,
+      @NonNull Button btnWork, @NonNull EditText etAdminMessage, @NonNull TextView tvCreatedAt,
+      @NonNull TextView tvIdeaText, @NonNull TextView tvStatus, @NonNull TextView tvSubmitterEmail,
       @NonNull TextView tvSubmitterName) {
     this.rootView = rootView;
     this.btnApprove = btnApprove;
+    this.btnComplete = btnComplete;
     this.btnReject = btnReject;
     this.btnSendMessage = btnSendMessage;
     this.btnWork = btnWork;
@@ -99,6 +103,12 @@ public final class ItemAdminIdeaBinding implements ViewBinding {
       id = R.id.btnApprove;
       Button btnApprove = ViewBindings.findChildViewById(rootView, id);
       if (btnApprove == null) {
+        break missingId;
+      }
+
+      id = R.id.btnComplete;
+      Button btnComplete = ViewBindings.findChildViewById(rootView, id);
+      if (btnComplete == null) {
         break missingId;
       }
 
@@ -156,9 +166,9 @@ public final class ItemAdminIdeaBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemAdminIdeaBinding((CardView) rootView, btnApprove, btnReject, btnSendMessage,
-          btnWork, etAdminMessage, tvCreatedAt, tvIdeaText, tvStatus, tvSubmitterEmail,
-          tvSubmitterName);
+      return new ItemAdminIdeaBinding((CardView) rootView, btnApprove, btnComplete, btnReject,
+          btnSendMessage, btnWork, etAdminMessage, tvCreatedAt, tvIdeaText, tvStatus,
+          tvSubmitterEmail, tvSubmitterName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

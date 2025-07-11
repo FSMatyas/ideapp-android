@@ -1,4 +1,7 @@
 <resources>
+    <string name="untitled_idea">(Untitled Idea)</string>
+    <string name="no_description">(No description provided)</string>
+    <string name="unknown_submitter">(Unknown submitter)</string>
     <string name="app_name">IdeaApp</string>
     <string name="toolbar_title_ideaapps">IdeaApps</string>
     <string name="toolbar_title_category_detail">Category Detail</string>

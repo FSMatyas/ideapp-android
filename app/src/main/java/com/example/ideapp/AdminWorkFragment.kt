@@ -12,6 +12,8 @@ import com.example.ideapp.adapter.AdminIdeaAdapter
 import com.example.ideapp.data.Idea
 import com.google.firebase.firestore.FirebaseFirestore
 
+import com.example.ideapp.onCompleteClicked
+
 class AdminWorkFragment : Fragment() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var adapter: AdminIdeaAdapter
@@ -54,7 +56,7 @@ class AdminWorkFragment : Fragment() {
         fetchInDevelopmentIdeas()
     }
 
-    private fun fetchInDevelopmentIdeas() {
+    fun fetchInDevelopmentIdeas() {
         FirebaseFirestore.getInstance().collection("ideas")
             .whereEqualTo("status", "IN_DEVELOPMENT")
             .addSnapshotListener { snapshot, error ->

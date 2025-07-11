@@ -33,6 +33,7 @@
             android:ellipsize="end" />
 
         <!-- My Completed Apps Section (moved to top) -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -50,15 +51,65 @@
                 android:ellipsize="end" />
 
             <TextView
+                android:id="@+id/tvCompletedCount"
                 style="@style/AppTextStyle.Caption"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/one_ready"
                 android:textColor="@color/status_completed"
+                android:text="@string/one_ready"
                 android:maxLines="1"
                 android:ellipsize="end" />
 
         </LinearLayout>
+
+        <!-- Empty State for Completed Apps -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/emptyCompletedStateCard"
+            style="@style/AppCardStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:alpha="0.7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="32dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/bulb_emoji"
+                    android:textSize="48sp"
+                    android:maxLines="1"
+                    android:ellipsize="end" />
+
+                <TextView
+                    style="@style/AppTextStyle.Body"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:text="@string/have_more_app_ideas"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:maxLines="2"
+                    android:ellipsize="end" />
+
+                <TextView
+                    style="@style/AppTextStyle.Caption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/submit_more_ideas"
+                    android:textAlignment="center"
+                    android:maxLines="2"
+                    android:ellipsize="end" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
 
         <!-- Completed Apps RecyclerView -->
         <androidx.recyclerview.widget.RecyclerView

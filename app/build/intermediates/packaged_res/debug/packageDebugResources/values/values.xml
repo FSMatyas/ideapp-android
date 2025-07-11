@@ -120,6 +120,7 @@
     <string name="my_completed_apps">My Completed Apps</string>
     <string name="my_ideas_and_apps">My Ideas &amp; Apps</string>
     <string name="new_message_received">New message received</string>
+    <string name="no_description">(No description provided)</string>
     <string name="no_ideas_in_category">No ideas in this category yet</string>
     <string name="one_ready">1 ready</string>
     <string name="or_continue_with">Or continue with</string>
@@ -154,6 +155,8 @@
     <string name="toolbar_title_utilities">Utilities</string>
     <string name="track_submitted_ideas">Track your submitted ideas and download completed apps</string>
     <string name="two_minutes_ago">2 minutes ago</string>
+    <string name="unknown_submitter">(Unknown submitter)</string>
+    <string name="untitled_idea">(Untitled Idea)</string>
     <string name="utilities">Utilities</string>
     <string name="utilities_emoji">🔧</string>
     <string name="utilities_full_sentence">Küldd be az ötleted a segédprogramok témában!</string>

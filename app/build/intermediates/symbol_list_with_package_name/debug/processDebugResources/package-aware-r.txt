@@ -3367,6 +3367,7 @@ id browser_actions_menu_view
 id btnAdminLogin
 id btnApprove
 id btnCancel
+id btnComplete
 id btnGetStarted
 id btnLearnMore
 id btnLogout
@@ -3466,6 +3467,7 @@ id edit_query
 id edit_text_id
 id elastic
 id embed
+id emptyCompletedStateCard
 id emptyStateCard
 id end
 id endToStart
@@ -3834,6 +3836,7 @@ id tvCategoryCount
 id tvCategoryIcon
 id tvCategoryName
 id tvCategoryPlaceholder
+id tvCompletedCount
 id tvCreatedAt
 id tvDate
 id tvDescription
@@ -4378,6 +4381,7 @@ string my_ideas_and_apps
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
 string new_message_received
+string no_description
 string no_ideas_in_category
 string one_ready
 string or_continue_with
@@ -4424,6 +4428,8 @@ string toolbar_title_productivity
 string toolbar_title_utilities
 string track_submitted_ideas
 string two_minutes_ago
+string unknown_submitter
+string untitled_idea
 string utilities
 string utilities_emoji
 string utilities_full_sentence

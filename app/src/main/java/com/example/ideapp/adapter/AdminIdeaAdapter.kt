@@ -1,5 +1,7 @@
 package com.example.ideapp.adapter
 
+import com.example.ideapp.onCompleteClicked
+
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -56,22 +58,36 @@ class AdminIdeaAdapter(
             val btnApprove = itemView.findViewById<Button>(R.id.btnApprove)
             val btnReject = itemView.findViewById<Button>(R.id.btnReject)
             val btnWork = itemView.findViewById<Button>(R.id.btnWork)
+            val btnComplete = itemView.findViewById<Button>(R.id.btnComplete)
+            btnComplete.visibility = View.GONE
             if (idea.status == com.example.ideapp.data.IdeaStatus.PENDING) {
                 btnApprove.visibility = View.VISIBLE
                 btnReject.visibility = View.VISIBLE
                 btnWork.visibility = View.GONE
+                btnComplete.visibility = View.GONE
                 btnApprove.setOnClickListener { onApprove(idea) }
                 btnReject.setOnClickListener { onReject(idea) }
             } else if (idea.status == com.example.ideapp.data.IdeaStatus.APPROVED) {
                 btnApprove.visibility = View.GONE
                 btnReject.visibility = View.GONE
                 btnWork.visibility = View.VISIBLE
+                btnComplete.visibility = View.GONE
                 btnWork.setOnClickListener { 
-                    // Call a callback if needed, or update status in fragment
                     (itemView.context as? android.app.Activity)?.let { activity ->
                         if (activity is com.example.ideapp.AdminNavActivity) {
-                            // Let fragment handle Firestore update
                             (activity.supportFragmentManager.findFragmentById(R.id.admin_nav_host_fragment) as? com.example.ideapp.AdminPanelFragment)?.onWorkClicked(idea)
+                        }
+                    }
+                }
+            } else if (idea.status == com.example.ideapp.data.IdeaStatus.IN_DEVELOPMENT) {
+                btnApprove.visibility = View.GONE
+                btnReject.visibility = View.GONE
+                btnWork.visibility = View.GONE
+                btnComplete.visibility = View.VISIBLE
+                btnComplete.setOnClickListener {
+                    (itemView.context as? android.app.Activity)?.let { activity ->
+                        if (activity is com.example.ideapp.AdminNavActivity) {
+                            (activity.supportFragmentManager.findFragmentById(R.id.admin_nav_host_fragment) as? com.example.ideapp.AdminWorkFragment)?.onCompleteClicked(idea)
                         }
                     }
                 }
@@ -79,6 +95,7 @@ class AdminIdeaAdapter(
                 btnApprove.visibility = View.GONE
                 btnReject.visibility = View.GONE
                 btnWork.visibility = View.GONE
+                btnComplete.visibility = View.GONE
             }
             // Enable admin message UI
             val etMessage = itemView.findViewById<EditText>(R.id.etAdminMessage)

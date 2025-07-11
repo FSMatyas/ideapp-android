@@ -93,6 +93,7 @@ id bottom_navigation
 id btnAdminLogin
 id btnApprove
 id btnCancel
+id btnComplete
 id btnGetStarted
 id btnLearnMore
 id btnLogout
@@ -114,6 +115,7 @@ id contentLayout
 id cvEmptyState
 id editTextEmail
 id editTextPassword
+id emptyCompletedStateCard
 id emptyStateCard
 id etAdminEmail
 id etAdminMessage
@@ -175,6 +177,7 @@ id tvCategoryCount
 id tvCategoryIcon
 id tvCategoryName
 id tvCategoryPlaceholder
+id tvCompletedCount
 id tvCreatedAt
 id tvDate
 id tvDescription
@@ -317,6 +320,7 @@ string messages
 string my_completed_apps
 string my_ideas_and_apps
 string new_message_received
+string no_description
 string no_ideas_in_category
 string one_ready
 string or_continue_with
@@ -351,6 +355,8 @@ string toolbar_title_productivity
 string toolbar_title_utilities
 string track_submitted_ideas
 string two_minutes_ago
+string unknown_submitter
+string untitled_idea
 string utilities
 string utilities_emoji
 string utilities_full_sentence
