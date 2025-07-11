@@ -79,3 +79,4 @@ local.properties
 .cxx/
 *.iml
 *.hprof
+:/app/build
