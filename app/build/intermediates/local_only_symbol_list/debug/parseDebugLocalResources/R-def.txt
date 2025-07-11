@@ -85,6 +85,9 @@ id action_homeFragment_to_adminLoginFragment
 id actvCategory
 id adminLoginFragment
 id adminPanelFragment
+id admin_bottom_nav
+id admin_nav_host_fragment
+id bottomSpacerAdminHome
 id bottom_nav_shadow
 id bottom_navigation
 id btnAdminLogin
@@ -93,6 +96,10 @@ id btnCancel
 id btnGetStarted
 id btnLearnMore
 id btnLogout
+id btnNextPageAdminHome
+id btnNextPageAdminWork
+id btnPrevPageAdminHome
+id btnPrevPageAdminWork
 id btnReject
 id btnSendMessage
 id btnSendReply
@@ -125,15 +132,20 @@ id layoutMessageIcon
 id layoutMessages
 id layoutReply
 id layoutReplyDialog
+id nav_admin_home
+id nav_admin_work
 id nav_categories
 id nav_home
 id nav_my_apps
 id paginationCompletedContainer
 id paginationContainer
+id paginationContainerAdminHome
+id paginationContainerAdminWork
 id paginationInProgressContainer
 id progressBar
 id progressBarAdmin
 id recyclerViewAdminIdeas
+id recyclerViewAdminWork
 id recyclerViewCards
 id recyclerViewCompletedApps
 id recyclerViewIdeas
@@ -163,6 +175,7 @@ id tvCategoryCount
 id tvCategoryIcon
 id tvCategoryName
 id tvCategoryPlaceholder
+id tvCreatedAt
 id tvDate
 id tvDescription
 id tvDialogCategory
@@ -179,6 +192,8 @@ id tvHealth
 id tvIdeaText
 id tvInProgressCount
 id tvMessageCount
+id tvPageIndicatorAdminHome
+id tvPageIndicatorAdminWork
 id tvProductivity
 id tvSentDateTime
 id tvStatus
@@ -194,6 +209,7 @@ id tvWelcome
 id viewPager
 layout activity_admin
 layout activity_admin_login
+layout activity_admin_nav
 layout activity_business
 layout activity_category_detail
 layout activity_education
@@ -211,6 +227,7 @@ layout example_form_layout
 layout example_welcome_screen
 layout fragment_admin_login
 layout fragment_admin_panel
+layout fragment_admin_work
 layout fragment_categories
 layout fragment_category_detail
 layout fragment_home
@@ -218,6 +235,7 @@ layout fragment_my_apps
 layout item_admin_idea
 layout item_card_admin
 layout item_idea_card
+menu admin_bottom_nav_menu
 menu bottom_navigation
 mipmap ic_launcher
 mipmap ic_launcher_round

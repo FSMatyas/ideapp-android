@@ -26,6 +26,8 @@ class MyAppsFragment : Fragment() {
     private var completedPage = 0
     private var inProgressPage = 0
     private val pageSize = 5
+    private var allInProgressIdeas: List<Idea> = emptyList()
+    private var inProgressListener: com.google.firebase.firestore.ListenerRegistration? = null
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -74,7 +76,29 @@ class MyAppsFragment : Fragment() {
         recyclerViewInProgress.layoutManager = LinearLayoutManager(requireContext())
         recyclerViewInProgress.adapter = inProgressAdapter
 
-        // Example completed app card for prototype/demo
+        // Listen to live in-progress ideas for the current user
+        val currentUserId = com.example.ideapp.util.DeviceIdUtil.getDeviceId(requireContext())
+        val db = com.google.firebase.firestore.FirebaseFirestore.getInstance()
+        inProgressListener = db.collection("ideas")
+            .whereEqualTo("creatorId", currentUserId)
+            .whereEqualTo("status", com.example.ideapp.data.IdeaStatus.IN_DEVELOPMENT.name)
+            .addSnapshotListener { snapshot, exception ->
+                if (exception != null) return@addSnapshotListener
+                allInProgressIdeas = snapshot?.documents?.mapNotNull { it.toObject(com.example.ideapp.data.Idea::class.java) } ?: emptyList()
+                updateInProgressPage()
+                updateInProgressPagination()
+                // Update the in-progress count text
+                val tvInProgressCount = view.findViewById<android.widget.TextView>(R.id.tvInProgressCount)
+                tvInProgressCount.text = "${allInProgressIdeas.size} in progress"
+                // Hide empty state card if there are any apps
+                val emptyStateCard = view.findViewById<View>(R.id.emptyStateCard)
+                if (allInProgressIdeas.isNotEmpty()) {
+                    emptyStateCard.visibility = View.GONE
+                } else {
+                    emptyStateCard.visibility = View.VISIBLE
+                }
+            }
+        // Completed apps demo (keep as before)
         val exampleCompleted = Idea(
             id = "1",
             title = "Simple Password Generator",
@@ -86,50 +110,11 @@ class MyAppsFragment : Fragment() {
             upvotes = 47,
             estimatedDevelopmentDays = 2,
             estimatedPrice = 0.0,
-            createdAt = null // You can set a Timestamp if needed
-        )
-        // Example in-progress cards for pagination test
-        val exampleInProgress1 = Idea(
-            id = "2",
-            title = "Personal Recipe Organizer",
-            description = "Organize family recipes with photos, ingredients, and cooking time.",
-            category = "Productivity",
-            submitterEmail = "client1@example.com",
-            submitterName = "Client One",
-            status = com.example.ideapp.data.IdeaStatus.IN_DEVELOPMENT,
-            upvotes = 5,
-            estimatedDevelopmentDays = 3,
-            estimatedPrice = 0.0,
-            createdAt = null
-        )
-        val exampleInProgress2 = Idea(
-            id = "3",
-            title = "Quick Daily Journal",
-            description = "A simple journal app for daily thoughts and mood tracking.",
-            category = "Health",
-            submitterEmail = "client2@example.com",
-            submitterName = "Client Two",
-            status = com.example.ideapp.data.IdeaStatus.IN_DEVELOPMENT,
-            upvotes = 2,
-            estimatedDevelopmentDays = 4,
-            estimatedPrice = 0.0,
             createdAt = null
         )
         completedApps = listOf(exampleCompleted)
-        // Update the in-progress count text
-        val tvInProgressCount = view.findViewById<android.widget.TextView>(R.id.tvInProgressCount)
-        tvInProgressCount.text = "${com.example.ideapp.InProgressCardStore.inProgressCards.size} in progress"
-        // Hide empty state card if there are any apps
-        val emptyStateCard = view.findViewById<View>(R.id.emptyStateCard)
-        if (com.example.ideapp.InProgressCardStore.inProgressCards.isNotEmpty()) {
-            emptyStateCard.visibility = View.GONE
-        } else {
-            emptyStateCard.visibility = View.VISIBLE
-        }
         updateCompletedPage()
         updateCompletedPagination()
-        updateInProgressPage()
-        updateInProgressPagination()
     }
 
     override fun onResume() {
@@ -145,10 +130,13 @@ class MyAppsFragment : Fragment() {
     }
 
     private fun updateInProgressPage() {
-        val inProgress = com.example.ideapp.InProgressCardStore.inProgressCards
         val from = inProgressPage * pageSize
-        val to = min(from + pageSize, inProgress.size)
-        inProgressAdapter.submitList(if (from < to) inProgress.subList(from, to) else emptyList())
+        val to = min(from + pageSize, allInProgressIdeas.size)
+        inProgressAdapter.submitList(if (from < to) allInProgressIdeas.subList(from, to) else emptyList())
+    }
+    override fun onDestroyView() {
+        super.onDestroyView()
+        inProgressListener?.remove()
     }
 
     private fun updateCompletedPagination() {
@@ -183,8 +171,7 @@ class MyAppsFragment : Fragment() {
 
     private fun updateInProgressPagination() {
         paginationInProgress.removeAllViews()
-        val inProgress = com.example.ideapp.InProgressCardStore.inProgressCards
-        val pageCount = (inProgress.size + pageSize - 1) / pageSize
+        val pageCount = (allInProgressIdeas.size + pageSize - 1) / pageSize
         for (i in 0 until pageCount) {
             val button = android.widget.TextView(requireContext())
             button.text = (i + 1).toString()
@@ -224,6 +211,51 @@ class MyAppsFragment : Fragment() {
         } ?: "Just now"
         dialogView.findViewById<android.widget.TextView>(R.id.tvDialogDate).text = dateText
         dialogView.findViewById<android.widget.TextView>(R.id.tvDialogDescription).text = idea.description
+
+        // Show messages in the dialog at the bottom
+        val layoutDialogMessages = dialogView.findViewById<android.widget.LinearLayout>(R.id.layoutDialogMessages)
+        layoutDialogMessages?.removeAllViews()
+        if (idea.messages.isNotEmpty()) {
+            idea.messages.forEach { msg ->
+                val tv = android.widget.TextView(requireContext())
+                tv.text = if (msg.sender == "admin") {
+                    "Admin: ${msg.text}"
+                } else {
+                    "Te: ${msg.text}"
+                }
+                tv.setPadding(0, 4, 0, 4)
+                layoutDialogMessages?.addView(tv)
+            }
+        }
+
+        // --- Reply box logic ---
+        val layoutReply = dialogView.findViewById<android.widget.LinearLayout>(R.id.layoutReplyDialog)
+        val etUserReply = dialogView.findViewById<android.widget.EditText>(R.id.etUserReplyDialog)
+        val btnSendReply = dialogView.findViewById<android.widget.Button>(R.id.btnSendReplyDialog)
+        layoutReply?.visibility = View.GONE
+        // Only show if current user is creator and there is at least one admin message
+        val deviceId = com.example.ideapp.util.DeviceIdUtil.getDeviceId(requireContext())
+        val hasAdminMsg = idea.messages.any { it.sender == "admin" }
+        if (deviceId == idea.creatorId && hasAdminMsg) {
+            layoutReply?.visibility = View.VISIBLE
+            btnSendReply?.setOnClickListener {
+                val replyText = etUserReply?.text?.toString()?.trim()
+                if (!replyText.isNullOrEmpty()) {
+                    val db = com.google.firebase.firestore.FirebaseFirestore.getInstance()
+                    val message = hashMapOf(
+                        "sender" to deviceId,
+                        "text" to replyText,
+                        "timestamp" to com.google.firebase.Timestamp.now()
+                    )
+                    db.collection("ideas")
+                        .document(idea.id)
+                        .update("messages", com.google.firebase.firestore.FieldValue.arrayUnion(message))
+                    layoutReply.visibility = View.GONE
+                    android.widget.Toast.makeText(requireContext(), "Válasz elküldve!", android.widget.Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+
         val dialog = androidx.appcompat.app.AlertDialog.Builder(requireContext())
             .setView(dialogView)
             .create()

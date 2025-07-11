@@ -5,7 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.LinearLayout;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -22,7 +24,19 @@ public final class FragmentAdminPanelBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
+  public final View bottomSpacerAdminHome;
+
+  @NonNull
   public final Button btnLogout;
+
+  @NonNull
+  public final Button btnNextPageAdminHome;
+
+  @NonNull
+  public final Button btnPrevPageAdminHome;
+
+  @NonNull
+  public final LinearLayout paginationContainerAdminHome;
 
   @NonNull
   public final ProgressBar progressBarAdmin;
@@ -30,12 +44,23 @@ public final class FragmentAdminPanelBinding implements ViewBinding {
   @NonNull
   public final RecyclerView recyclerViewAdminIdeas;
 
-  private FragmentAdminPanelBinding(@NonNull ConstraintLayout rootView, @NonNull Button btnLogout,
-      @NonNull ProgressBar progressBarAdmin, @NonNull RecyclerView recyclerViewAdminIdeas) {
+  @NonNull
+  public final TextView tvPageIndicatorAdminHome;
+
+  private FragmentAdminPanelBinding(@NonNull ConstraintLayout rootView,
+      @NonNull View bottomSpacerAdminHome, @NonNull Button btnLogout,
+      @NonNull Button btnNextPageAdminHome, @NonNull Button btnPrevPageAdminHome,
+      @NonNull LinearLayout paginationContainerAdminHome, @NonNull ProgressBar progressBarAdmin,
+      @NonNull RecyclerView recyclerViewAdminIdeas, @NonNull TextView tvPageIndicatorAdminHome) {
     this.rootView = rootView;
+    this.bottomSpacerAdminHome = bottomSpacerAdminHome;
     this.btnLogout = btnLogout;
+    this.btnNextPageAdminHome = btnNextPageAdminHome;
+    this.btnPrevPageAdminHome = btnPrevPageAdminHome;
+    this.paginationContainerAdminHome = paginationContainerAdminHome;
     this.progressBarAdmin = progressBarAdmin;
     this.recyclerViewAdminIdeas = recyclerViewAdminIdeas;
+    this.tvPageIndicatorAdminHome = tvPageIndicatorAdminHome;
   }
 
   @Override
@@ -65,9 +90,33 @@ public final class FragmentAdminPanelBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.bottomSpacerAdminHome;
+      View bottomSpacerAdminHome = ViewBindings.findChildViewById(rootView, id);
+      if (bottomSpacerAdminHome == null) {
+        break missingId;
+      }
+
       id = R.id.btnLogout;
       Button btnLogout = ViewBindings.findChildViewById(rootView, id);
       if (btnLogout == null) {
+        break missingId;
+      }
+
+      id = R.id.btnNextPageAdminHome;
+      Button btnNextPageAdminHome = ViewBindings.findChildViewById(rootView, id);
+      if (btnNextPageAdminHome == null) {
+        break missingId;
+      }
+
+      id = R.id.btnPrevPageAdminHome;
+      Button btnPrevPageAdminHome = ViewBindings.findChildViewById(rootView, id);
+      if (btnPrevPageAdminHome == null) {
+        break missingId;
+      }
+
+      id = R.id.paginationContainerAdminHome;
+      LinearLayout paginationContainerAdminHome = ViewBindings.findChildViewById(rootView, id);
+      if (paginationContainerAdminHome == null) {
         break missingId;
       }
 
@@ -83,8 +132,15 @@ public final class FragmentAdminPanelBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentAdminPanelBinding((ConstraintLayout) rootView, btnLogout, progressBarAdmin,
-          recyclerViewAdminIdeas);
+      id = R.id.tvPageIndicatorAdminHome;
+      TextView tvPageIndicatorAdminHome = ViewBindings.findChildViewById(rootView, id);
+      if (tvPageIndicatorAdminHome == null) {
+        break missingId;
+      }
+
+      return new FragmentAdminPanelBinding((ConstraintLayout) rootView, bottomSpacerAdminHome,
+          btnLogout, btnNextPageAdminHome, btnPrevPageAdminHome, paginationContainerAdminHome,
+          progressBarAdmin, recyclerViewAdminIdeas, tvPageIndicatorAdminHome);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

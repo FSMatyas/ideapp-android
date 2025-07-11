@@ -3326,6 +3326,8 @@ id adjust_height
 id adjust_width
 id adminLoginFragment
 id adminPanelFragment
+id admin_bottom_nav
+id admin_nav_host_fragment
 id alertTitle
 id aligned
 id all
@@ -3350,6 +3352,7 @@ id beginning
 id bestChoice
 id blocking
 id bottom
+id bottomSpacerAdminHome
 id bottom_nav_shadow
 id bottom_navigation
 id bounce
@@ -3367,6 +3370,10 @@ id btnCancel
 id btnGetStarted
 id btnLearnMore
 id btnLogout
+id btnNextPageAdminHome
+id btnNextPageAdminWork
+id btnPrevPageAdminHome
+id btnPrevPageAdminWork
 id btnReject
 id btnSendMessage
 id btnSendReply
@@ -3606,6 +3613,8 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id nav_admin_home
+id nav_admin_work
 id nav_categories
 id nav_controller_view_tag
 id nav_home
@@ -3652,6 +3661,8 @@ id overshoot
 id packed
 id paginationCompletedContainer
 id paginationContainer
+id paginationContainerAdminHome
+id paginationContainerAdminWork
 id paginationInProgressContainer
 id parallax
 id parent
@@ -3675,6 +3686,7 @@ id radio
 id ratio
 id rectangles
 id recyclerViewAdminIdeas
+id recyclerViewAdminWork
 id recyclerViewCards
 id recyclerViewCompletedApps
 id recyclerViewIdeas
@@ -3822,6 +3834,7 @@ id tvCategoryCount
 id tvCategoryIcon
 id tvCategoryName
 id tvCategoryPlaceholder
+id tvCreatedAt
 id tvDate
 id tvDescription
 id tvDialogCategory
@@ -3838,6 +3851,8 @@ id tvHealth
 id tvIdeaText
 id tvInProgressCount
 id tvMessageCount
+id tvPageIndicatorAdminHome
+id tvPageIndicatorAdminWork
 id tvProductivity
 id tvSentDateTime
 id tvStatus
@@ -3993,6 +4008,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_admin
 layout activity_admin_login
+layout activity_admin_nav
 layout activity_business
 layout activity_category_detail
 layout activity_education
@@ -4028,6 +4044,7 @@ layout example_form_layout
 layout example_welcome_screen
 layout fragment_admin_login
 layout fragment_admin_panel
+layout fragment_admin_work
 layout fragment_categories
 layout fragment_category_detail
 layout fragment_home
@@ -4098,6 +4115,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+menu admin_bottom_nav_menu
 menu bottom_navigation
 mipmap ic_launcher
 mipmap ic_launcher_round

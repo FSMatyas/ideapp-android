@@ -20,14 +20,17 @@ class AdminPanelViewModel : ViewModel() {
 
     fun fetchIdeas() {
         listener?.remove()
-        // Admin: fetch all ideas, no filter
+        // Admin: fetch all ideas except those in development, sorted by createdAt (newest first)
         listener = db.collection("ideas")
             .addSnapshotListener { snapshot, e ->
                 if (e != null) {
                     _error.value = e.localizedMessage
                     return@addSnapshotListener
                 }
-                val ideaList = snapshot?.documents?.mapNotNull { it.toObject<Idea>()?.copy(id = it.id) } ?: emptyList()
+                val ideaList = snapshot?.documents
+                    ?.mapNotNull { it.toObject<Idea>()?.copy(id = it.id) }
+                    ?.filter { it.status.toString() != "IN_DEVELOPMENT" }
+                    ?.sortedByDescending { it.createdAt } ?: emptyList()
                 _ideas.value = ideaList
             }
     }
@@ -45,12 +48,10 @@ class AdminPanelViewModel : ViewModel() {
     }
 
     fun sendAdminMessage(ideaId: String, message: String) {
-        // Disabled: do nothing for now to revert to previous state
-        // db.collection("ideas").document(ideaId)
-        //     .update("adminNotes", message)
-        //     .addOnSuccessListener { _messageSent.value = true }
-        //     .addOnFailureListener { _error.value = it.localizedMessage }
-        _messageSent.value = false
+        db.collection("ideas").document(ideaId)
+            .update("adminNotes", message)
+            .addOnSuccessListener { _messageSent.value = true }
+            .addOnFailureListener { _error.value = it.localizedMessage }
     }
 
     override fun onCleared() {

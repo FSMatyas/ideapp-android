@@ -44,14 +44,38 @@ class AdminIdeaAdapter(
                 com.example.ideapp.data.IdeaStatus.REJECTED -> "Elutasítva"
                 else -> idea.status.displayName
             }
-            itemView.findViewById<Button>(R.id.btnApprove).setOnClickListener { onApprove(idea) }
-            itemView.findViewById<Button>(R.id.btnReject).setOnClickListener { onReject(idea) }
-            // Disable admin message UI
+            // Show creation date/time
+            val tvCreatedAt = itemView.findViewById<TextView>(R.id.tvCreatedAt)
+            val createdAt = idea.createdAt?.toDate()
+            tvCreatedAt.text = if (createdAt != null) {
+                val sdf = java.text.SimpleDateFormat("yyyy.MM.dd HH:mm", java.util.Locale.getDefault())
+                "Beküldés ideje: ${sdf.format(createdAt)}"
+            } else {
+                "Beküldés ideje: -"
+            }
+            val btnApprove = itemView.findViewById<Button>(R.id.btnApprove)
+            val btnReject = itemView.findViewById<Button>(R.id.btnReject)
+            if (idea.status == com.example.ideapp.data.IdeaStatus.PENDING) {
+                btnApprove.visibility = View.VISIBLE
+                btnReject.visibility = View.VISIBLE
+                btnApprove.setOnClickListener { onApprove(idea) }
+                btnReject.setOnClickListener { onReject(idea) }
+            } else {
+                btnApprove.visibility = View.GONE
+                btnReject.visibility = View.GONE
+            }
+            // Enable admin message UI
             val etMessage = itemView.findViewById<EditText>(R.id.etAdminMessage)
             val btnSend = itemView.findViewById<Button>(R.id.btnSendMessage)
-            etMessage.visibility = View.GONE
-            btnSend.visibility = View.GONE
-            // btnSend.setOnClickListener { ... } is disabled
+            etMessage.visibility = View.VISIBLE
+            btnSend.visibility = View.VISIBLE
+            btnSend.setOnClickListener {
+                val msg = etMessage.text.toString().trim()
+                if (msg.isNotEmpty()) {
+                    onSendMessage(idea, msg)
+                    etMessage.text.clear()
+                }
+            }
         }
     }
 }

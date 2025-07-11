@@ -152,10 +152,10 @@ class HomeFragment : Fragment() {
                 )
             },
             onStatusChanged = {
-                // Find the idea being updated and change its status in allIdeas
-                val selected = ideaAdapter.currentList.find { it.status == com.example.ideapp.data.IdeaStatus.IN_DEVELOPMENT }
-                selected?.let { updateIdeaStatus(it.id, com.example.ideapp.data.IdeaStatus.IN_DEVELOPMENT) }
+                // Remove all ideas with status IN_DEVELOPMENT from the landing page immediately
+                allIdeas = allIdeas.filter { it.status != com.example.ideapp.data.IdeaStatus.IN_DEVELOPMENT }
                 updatePagedIdeas()
+                updatePaginationButtons()
             }
         )
         
@@ -168,8 +168,10 @@ class HomeFragment : Fragment() {
     private fun observeViewModel() {
         // Observe approved ideas
         viewModel.ideas.observe(viewLifecycleOwner) { ideas ->
-            // Sort ideas by date (newest first)
-            allIdeas = ideas.sortedByDescending { it.createdAt?.toDate() }
+            // Only show ideas with status PENDING or APPROVED
+            allIdeas = ideas
+                .filter { it.status == com.example.ideapp.data.IdeaStatus.PENDING || it.status == com.example.ideapp.data.IdeaStatus.APPROVED }
+                .sortedByDescending { it.createdAt?.toDate() }
             updatePagedIdeas()
             updatePaginationButtons()
         }

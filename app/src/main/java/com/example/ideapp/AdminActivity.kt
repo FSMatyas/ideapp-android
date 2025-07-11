@@ -26,36 +26,10 @@ class AdminActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        try {
-            setContentView(R.layout.activity_admin)
-        } catch (e: Exception) {
-            return
-        }
-        try {
-            recyclerView = findViewById(R.id.recyclerViewCards)
-            progressBar = findViewById(R.id.progressBar)
-            tvEmpty = findViewById(R.id.tvEmpty)
-            val btnLogout = findViewById<Button>(R.id.btnLogout)
-            btnLogout.setOnClickListener {
-                FirebaseAuth.getInstance().signOut()
-                val intent = Intent(this, MainActivity::class.java)
-                intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-                startActivity(intent)
-                finish()
-            }
-        } catch (e: Exception) {
-            return
-        }
-        try {
-            adapter = CardAdminAdapter(cards, ::onApproveClicked, ::onRejectClicked)
-            recyclerView.adapter = adapter
-            recyclerView.layoutManager = LinearLayoutManager(this)
-        } catch (e: Exception) {
-            return
-        }
-
-        // Összes kártya lekérdezése és megjelenítése
-        listenForCards()
+        // Redirect to new AdminNavActivity with bottom nav
+        val intent = Intent(this, AdminNavActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 
     private fun listenForCards() {

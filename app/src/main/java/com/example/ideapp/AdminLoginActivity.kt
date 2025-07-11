@@ -38,14 +38,13 @@ class AdminLoginActivity : AppCompatActivity() {
             auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener { task ->
                     if (task.isSuccessful) {
-                        // Sikeres bejelentkezés
                         Toast.makeText(this, "Sikeres bejelentkezés", Toast.LENGTH_SHORT).show()
-                        // AdminActivity indítása, hogy ne lehessen visszalépni a loginra
-                        val intent = android.content.Intent(this, AdminActivity::class.java)
+                        // Go to AdminNavActivity with bottom nav and clear back stack
+                        val intent = android.content.Intent(this, AdminNavActivity::class.java)
+                        intent.flags = android.content.Intent.FLAG_ACTIVITY_NEW_TASK or android.content.Intent.FLAG_ACTIVITY_CLEAR_TASK
                         startActivity(intent)
-                        finish() // Login Activity bezárása
+                        finish()
                     } else {
-                        // Sikertelen bejelentkezés
                         val errorMsg = task.exception?.localizedMessage ?: "Ismeretlen hiba"
                         Toast.makeText(this, "Hiba: $errorMsg", Toast.LENGTH_LONG).show()
                     }

@@ -80,6 +80,9 @@
         <activity
             android:name="com.example.ideapp.AdminActivity"
             android:exported="false" />
+        <activity
+            android:name="com.example.ideapp.AdminNavActivity"
+            android:exported="false" />
 
         <service
             android:name="com.google.firebase.components.ComponentDiscoveryService"

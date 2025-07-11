@@ -12,12 +12,12 @@
         "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\activity_education.xml"
     },
     {
-        "merged": "com.example.ideapp-mergeDebugResources-65:/layout/item_idea_card.xml",
-        "source": "com.example.ideapp-main-68:/layout/item_idea_card.xml"
-    },
-    {
         "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\fragment_my_apps.xml",
         "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\fragment_my_apps.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\activity_admin_nav.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\activity_admin_nav.xml"
     },
     {
         "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\activity_admin_login.xml",
@@ -48,12 +48,20 @@
         "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\activity_admin.xml"
     },
     {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\fragment_admin_work.xml",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\fragment_admin_work.xml"
+    },
+    {
         "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\activity_finance.xml",
         "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\activity_finance.xml"
     },
     {
         "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\activity_main.xml",
         "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "com.example.ideapp-mergeDebugResources-65:/layout/item_admin_idea.xml",
+        "source": "com.example.ideapp-main-68:/layout/item_admin_idea.xml"
     },
     {
         "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-mergeDebugResources-65:\\layout\\item_admin_idea.xml",

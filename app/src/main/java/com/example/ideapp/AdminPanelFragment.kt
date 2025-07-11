@@ -22,6 +22,12 @@ class AdminPanelFragment : Fragment() {
     private lateinit var recyclerView: RecyclerView
     private lateinit var progressBar: View
     private lateinit var logoutButton: Button
+    private lateinit var btnPrev: Button
+    private lateinit var btnNext: Button
+    private lateinit var tvPage: android.widget.TextView
+    private var allIdeas: List<com.example.ideapp.data.Idea> = emptyList()
+    private var currentPage = 0
+    private val pageSize = 5
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -43,10 +49,16 @@ class AdminPanelFragment : Fragment() {
         recyclerView = view.findViewById(R.id.recyclerViewAdminIdeas)
         progressBar = view.findViewById(R.id.progressBarAdmin)
         logoutButton = view.findViewById(R.id.btnLogout)
+        btnPrev = view.findViewById(R.id.btnPrevPageAdminHome)
+        btnNext = view.findViewById(R.id.btnNextPageAdminHome)
+        tvPage = view.findViewById(R.id.tvPageIndicatorAdminHome)
         logoutButton.setOnClickListener {
             FirebaseAuth.getInstance().signOut()
             Toast.makeText(requireContext(), "Kijelentkezve", Toast.LENGTH_SHORT).show()
-            findNavController().navigate(R.id.action_adminPanelFragment_to_homeFragment)
+            val intent = android.content.Intent(requireContext(), com.example.ideapp.MainActivity::class.java)
+            intent.flags = android.content.Intent.FLAG_ACTIVITY_NEW_TASK or android.content.Intent.FLAG_ACTIVITY_CLEAR_TASK
+            startActivity(intent)
+            requireActivity().finish()
         }
         adapter = AdminIdeaAdapter(emptyList(),
             onApprove = { idea ->
@@ -61,13 +73,39 @@ class AdminPanelFragment : Fragment() {
         )
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
         recyclerView.adapter = adapter
+        btnPrev.setOnClickListener {
+            if (currentPage > 0) {
+                currentPage--
+                updatePage()
+            }
+        }
+        btnNext.setOnClickListener {
+            val maxPage = if (allIdeas.isEmpty()) 0 else (allIdeas.size - 1) / pageSize
+            if (currentPage < maxPage) {
+                currentPage++
+                updatePage()
+            }
+        }
         observeViewModel()
         viewModel.fetchIdeas()
     }
 
+    private fun updatePage() {
+        val from = currentPage * pageSize
+        val to = minOf(from + pageSize, allIdeas.size)
+        val pageIdeas = if (from < to) allIdeas.subList(from, to) else emptyList()
+        adapter.updateIdeas(pageIdeas)
+        val maxPage = if (allIdeas.isEmpty()) 1 else ((allIdeas.size - 1) / pageSize) + 1
+        tvPage.text = "${currentPage + 1}/$maxPage"
+        btnPrev.isEnabled = currentPage > 0
+        btnNext.isEnabled = currentPage < maxPage - 1
+    }
+
     private fun observeViewModel() {
         viewModel.ideas.observe(viewLifecycleOwner, Observer { ideas ->
-            adapter.updateIdeas(ideas)
+            allIdeas = ideas
+            currentPage = 0
+            updatePage()
             progressBar.visibility = View.GONE
         })
         viewModel.error.observe(viewLifecycleOwner, Observer { error ->

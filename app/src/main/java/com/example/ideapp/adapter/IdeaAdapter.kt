@@ -82,7 +82,7 @@ class IdeaAdapter(
                 }
             }
 
-            // --- Hide admin and user messages in card preview ---
+            // --- Show latest admin and user messages in card preview ---
             val tvAdminComment = itemView.findViewById<TextView>(R.id.tvAdminComment)
             val tvAdminCommentContent = itemView.findViewById<TextView>(R.id.tvAdminCommentContent)
             val tvUserReply = itemView.findViewById<TextView>(R.id.tvUserReply)
@@ -91,11 +91,28 @@ class IdeaAdapter(
             val etUserReply = itemView.findViewById<EditText>(R.id.etUserReply)
             val btnSendReply = itemView.findViewById<Button>(R.id.btnSendReply)
 
-            // Hide admin and user messages
-            tvAdminComment.visibility = View.GONE
-            tvAdminCommentContent.visibility = View.GONE
-            tvUserReply.visibility = View.GONE
-            tvUserReplyContent.visibility = View.GONE
+            // Show last admin message if present
+            val lastAdminMsg = idea.messages.lastOrNull { it.sender == "admin" }
+            if (lastAdminMsg != null) {
+                tvAdminComment.visibility = View.VISIBLE
+                tvAdminCommentContent.visibility = View.VISIBLE
+                tvAdminCommentContent.text = lastAdminMsg.text
+            } else {
+                tvAdminComment.visibility = View.GONE
+                tvAdminCommentContent.visibility = View.GONE
+            }
+
+            // Show last user reply if present
+            val lastUserMsg = idea.messages.lastOrNull { it.sender != "admin" }
+            if (lastUserMsg != null) {
+                tvUserReply.visibility = View.VISIBLE
+                tvUserReplyContent.visibility = View.VISIBLE
+                tvUserReplyContent.text = lastUserMsg.text
+            } else {
+                tvUserReply.visibility = View.GONE
+                tvUserReplyContent.visibility = View.GONE
+            }
+
             layoutReply.visibility = View.GONE
 
             // Envelope icon and counter logic
@@ -115,19 +132,23 @@ class IdeaAdapter(
             // Set up the Work button
             val btnWork = itemView.findViewById<Button>(R.id.btnWork)
             btnWork.setOnClickListener {
-                val updatedIdea = idea.copy(status = IdeaStatus.IN_DEVELOPMENT)
-                val store = com.example.ideapp.InProgressCardStore.inProgressCards
-                if (store.none { it.id == updatedIdea.id }) {
-                    store.add(updatedIdea)
-                }
-                onStatusChanged?.invoke() // Notify fragment to refresh UI
+                // Update status and creatorId in Firestore to ensure MyApps query matches
+                val db = com.google.firebase.firestore.FirebaseFirestore.getInstance()
+                val currentUserId = com.example.ideapp.util.DeviceIdUtil.getDeviceId(itemView.context)
+                db.collection("ideas")
+                    .document(idea.id)
+                    .update(mapOf(
+                        "status" to IdeaStatus.IN_DEVELOPMENT.name,
+                        "creatorId" to currentUserId
+                    ))
+                    .addOnSuccessListener {
+                        onStatusChanged?.invoke() // Notify fragment to refresh UI
+                    }
             }
 
-            // Set click listener
+            // Set click listener: allow all statuses to open detail dialog
             cardView.setOnClickListener {
-                if (idea.status == IdeaStatus.APPROVED) {
-                    onIdeaClick(idea)
-                }
+                onIdeaClick(idea)
             }
         }
 
