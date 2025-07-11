@@ -128,6 +128,12 @@ class HomeFragment : Fragment() {
         }
     }
     
+    private fun updateIdeaStatus(ideaId: String, newStatus: com.example.ideapp.data.IdeaStatus) {
+        allIdeas = allIdeas.map { idea ->
+            if (idea.id == ideaId) idea.copy(status = newStatus) else idea
+        }
+    }
+
     private fun setupRecyclerView() {
         val currentUserEmail = FirebaseAuth.getInstance().currentUser?.email ?: ""
         ideaAdapter = IdeaAdapter(
@@ -144,6 +150,12 @@ class HomeFragment : Fragment() {
                         Toast.makeText(requireContext(), "Hiba: ${it.localizedMessage}", Toast.LENGTH_LONG).show()
                     }
                 )
+            },
+            onStatusChanged = {
+                // Find the idea being updated and change its status in allIdeas
+                val selected = ideaAdapter.currentList.find { it.status == com.example.ideapp.data.IdeaStatus.IN_DEVELOPMENT }
+                selected?.let { updateIdeaStatus(it.id, com.example.ideapp.data.IdeaStatus.IN_DEVELOPMENT) }
+                updatePagedIdeas()
             }
         )
         

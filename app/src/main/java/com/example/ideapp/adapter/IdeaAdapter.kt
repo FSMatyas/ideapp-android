@@ -24,7 +24,8 @@ class IdeaAdapter(
     private val onIdeaClick: (Idea) -> Unit,
     private val blurUnapproved: Boolean = false, // Only blur on landing page
     private val currentUserEmail: String,
-    private val onSendReply: (Idea, String) -> Unit
+    private val onSendReply: (Idea, String) -> Unit,
+    private val onStatusChanged: (() -> Unit)? = null // Add callback for status change
 ) : ListAdapter<Idea, IdeaAdapter.IdeaViewHolder>(IdeaDiffCallback()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): IdeaViewHolder {
@@ -109,6 +110,17 @@ class IdeaAdapter(
             } else {
                 ivEnvelope.visibility = View.GONE
                 tvMessageCount.visibility = View.GONE
+            }
+
+            // Set up the Work button
+            val btnWork = itemView.findViewById<Button>(R.id.btnWork)
+            btnWork.setOnClickListener {
+                val updatedIdea = idea.copy(status = IdeaStatus.IN_DEVELOPMENT)
+                val store = com.example.ideapp.InProgressCardStore.inProgressCards
+                if (store.none { it.id == updatedIdea.id }) {
+                    store.add(updatedIdea)
+                }
+                onStatusChanged?.invoke() // Notify fragment to refresh UI
             }
 
             // Set click listener

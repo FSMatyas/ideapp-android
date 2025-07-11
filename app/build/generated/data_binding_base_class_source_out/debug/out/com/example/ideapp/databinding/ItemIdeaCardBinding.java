@@ -27,6 +27,9 @@ public final class ItemIdeaCardBinding implements ViewBinding {
   public final Button btnSendReply;
 
   @NonNull
+  public final Button btnWork;
+
+  @NonNull
   public final MaterialCardView cardView;
 
   @NonNull
@@ -78,16 +81,17 @@ public final class ItemIdeaCardBinding implements ViewBinding {
   public final TextView tvUserReplyContent;
 
   private ItemIdeaCardBinding(@NonNull MaterialCardView rootView, @NonNull Button btnSendReply,
-      @NonNull MaterialCardView cardView, @NonNull LinearLayout contentLayout,
-      @NonNull EditText etUserReply, @NonNull ImageView ivEnvelope,
-      @NonNull LinearLayout layoutMessageIcon, @NonNull LinearLayout layoutMessages,
-      @NonNull LinearLayout layoutReply, @NonNull TextView tvAdminComment,
-      @NonNull TextView tvAdminCommentContent, @NonNull TextView tvCategory,
-      @NonNull TextView tvDate, @NonNull TextView tvDescription, @NonNull TextView tvMessageCount,
-      @NonNull TextView tvSubmitter, @NonNull TextView tvTitle, @NonNull TextView tvUserReply,
-      @NonNull TextView tvUserReplyContent) {
+      @NonNull Button btnWork, @NonNull MaterialCardView cardView,
+      @NonNull LinearLayout contentLayout, @NonNull EditText etUserReply,
+      @NonNull ImageView ivEnvelope, @NonNull LinearLayout layoutMessageIcon,
+      @NonNull LinearLayout layoutMessages, @NonNull LinearLayout layoutReply,
+      @NonNull TextView tvAdminComment, @NonNull TextView tvAdminCommentContent,
+      @NonNull TextView tvCategory, @NonNull TextView tvDate, @NonNull TextView tvDescription,
+      @NonNull TextView tvMessageCount, @NonNull TextView tvSubmitter, @NonNull TextView tvTitle,
+      @NonNull TextView tvUserReply, @NonNull TextView tvUserReplyContent) {
     this.rootView = rootView;
     this.btnSendReply = btnSendReply;
+    this.btnWork = btnWork;
     this.cardView = cardView;
     this.contentLayout = contentLayout;
     this.etUserReply = etUserReply;
@@ -137,6 +141,12 @@ public final class ItemIdeaCardBinding implements ViewBinding {
       id = R.id.btnSendReply;
       Button btnSendReply = ViewBindings.findChildViewById(rootView, id);
       if (btnSendReply == null) {
+        break missingId;
+      }
+
+      id = R.id.btnWork;
+      Button btnWork = ViewBindings.findChildViewById(rootView, id);
+      if (btnWork == null) {
         break missingId;
       }
 
@@ -238,7 +248,7 @@ public final class ItemIdeaCardBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ItemIdeaCardBinding((MaterialCardView) rootView, btnSendReply, cardView,
+      return new ItemIdeaCardBinding((MaterialCardView) rootView, btnSendReply, btnWork, cardView,
           contentLayout, etUserReply, ivEnvelope, layoutMessageIcon, layoutMessages, layoutReply,
           tvAdminComment, tvAdminCommentContent, tvCategory, tvDate, tvDescription, tvMessageCount,
           tvSubmitter, tvTitle, tvUserReply, tvUserReplyContent);
