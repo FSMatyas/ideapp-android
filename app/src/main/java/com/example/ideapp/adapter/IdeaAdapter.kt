@@ -129,22 +129,9 @@ class IdeaAdapter(
                 tvMessageCount.visibility = View.GONE
             }
 
-            // Set up the Work button
+            // Hide the Work button for all non-admin (user) idea cards
             val btnWork = itemView.findViewById<Button>(R.id.btnWork)
-            btnWork.setOnClickListener {
-                // Update status and creatorId in Firestore to ensure MyApps query matches
-                val db = com.google.firebase.firestore.FirebaseFirestore.getInstance()
-                val currentUserId = com.example.ideapp.util.DeviceIdUtil.getDeviceId(itemView.context)
-                db.collection("ideas")
-                    .document(idea.id)
-                    .update(mapOf(
-                        "status" to IdeaStatus.IN_DEVELOPMENT.name,
-                        "creatorId" to currentUserId
-                    ))
-                    .addOnSuccessListener {
-                        onStatusChanged?.invoke() // Notify fragment to refresh UI
-                    }
-            }
+            btnWork.visibility = View.GONE
 
             // Set click listener: allow all statuses to open detail dialog
             cardView.setOnClickListener {

@@ -67,6 +67,13 @@
                 android:layout_height="wrap_content"
                 android:text="Elutasítás"
                 android:layout_marginStart="16dp" />
+            
+            <Button
+                android:id="@+id/btnWork"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Munka"
+                android:layout_marginStart="16dp" />
         </LinearLayout>
 
         <EditText

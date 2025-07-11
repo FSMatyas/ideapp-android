@@ -17,6 +17,24 @@ import android.widget.Button
 import androidx.navigation.fragment.findNavController
 
 class AdminPanelFragment : Fragment() {
+    // Called from AdminIdeaAdapter when 'Work' button is clicked
+    fun onWorkClicked(idea: com.example.ideapp.data.Idea) {
+        // Set status to IN_DEVELOPMENT and set creatorId to admin email
+        val db = com.google.firebase.firestore.FirebaseFirestore.getInstance()
+        val adminEmail = FirebaseAuth.getInstance().currentUser?.email ?: ""
+        db.collection("ideas").document(idea.id)
+            .update(mapOf(
+                "status" to com.example.ideapp.data.IdeaStatus.IN_DEVELOPMENT,
+                "creatorId" to adminEmail
+            ))
+            .addOnSuccessListener {
+                Toast.makeText(requireContext(), "Átállítva fejlesztésre!", Toast.LENGTH_SHORT).show()
+                viewModel.fetchIdeas()
+            }
+            .addOnFailureListener { e ->
+                Toast.makeText(requireContext(), "Hiba: ${e.localizedMessage}", Toast.LENGTH_LONG).show()
+            }
+    }
     private val viewModel: AdminPanelViewModel by viewModels()
     private lateinit var adapter: AdminIdeaAdapter
     private lateinit var recyclerView: RecyclerView

@@ -55,14 +55,30 @@ class AdminIdeaAdapter(
             }
             val btnApprove = itemView.findViewById<Button>(R.id.btnApprove)
             val btnReject = itemView.findViewById<Button>(R.id.btnReject)
+            val btnWork = itemView.findViewById<Button>(R.id.btnWork)
             if (idea.status == com.example.ideapp.data.IdeaStatus.PENDING) {
                 btnApprove.visibility = View.VISIBLE
                 btnReject.visibility = View.VISIBLE
+                btnWork.visibility = View.GONE
                 btnApprove.setOnClickListener { onApprove(idea) }
                 btnReject.setOnClickListener { onReject(idea) }
+            } else if (idea.status == com.example.ideapp.data.IdeaStatus.APPROVED) {
+                btnApprove.visibility = View.GONE
+                btnReject.visibility = View.GONE
+                btnWork.visibility = View.VISIBLE
+                btnWork.setOnClickListener { 
+                    // Call a callback if needed, or update status in fragment
+                    (itemView.context as? android.app.Activity)?.let { activity ->
+                        if (activity is com.example.ideapp.AdminNavActivity) {
+                            // Let fragment handle Firestore update
+                            (activity.supportFragmentManager.findFragmentById(R.id.admin_nav_host_fragment) as? com.example.ideapp.AdminPanelFragment)?.onWorkClicked(idea)
+                        }
+                    }
+                }
             } else {
                 btnApprove.visibility = View.GONE
                 btnReject.visibility = View.GONE
+                btnWork.visibility = View.GONE
             }
             // Enable admin message UI
             val etMessage = itemView.findViewById<EditText>(R.id.etAdminMessage)

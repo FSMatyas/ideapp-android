@@ -1,23 +1,23 @@
 [
     {
-        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-debug-66:\\layout_fragment_my_apps.xml.flat",
-        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\fragment_my_apps.xml"
-    },
-    {
         "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-debug-66:\\mipmap-mdpi_ic_launcher_round.xml.flat",
         "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\mipmap-mdpi\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-debug-66:\\layout_fragment_my_apps.xml.flat",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\fragment_my_apps.xml"
     },
     {
         "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-debug-66:\\drawable_ic_apps.xml.flat",
         "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\drawable\\ic_apps.xml"
     },
     {
-        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-debug-66:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
-    },
-    {
         "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-debug-66:\\drawable_status_approved.xml.flat",
         "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\drawable\\status_approved.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-debug-66:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
         "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-debug-66:\\mipmap-xhdpi_ic_launcher_round.xml.flat",
@@ -36,12 +36,12 @@
         "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\fragment_categories.xml"
     },
     {
-        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-debug-66:\\xml_backup_rules.xml.flat",
-        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\xml\\backup_rules.xml"
-    },
-    {
         "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-debug-66:\\drawable_status_completed.xml.flat",
         "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\drawable\\status_completed.xml"
+    },
+    {
+        "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-debug-66:\\xml_backup_rules.xml.flat",
+        "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\xml\\backup_rules.xml"
     },
     {
         "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-debug-66:\\drawable_ic_star.xml.flat",
@@ -254,6 +254,10 @@
     {
         "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-debug-66:\\drawable_status_badge_completed.xml.flat",
         "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\drawable\\status_badge_completed.xml"
+    },
+    {
+        "merged": "com.example.ideapp-debug-66:/layout_item_idea_card.xml.flat",
+        "source": "com.example.ideapp-main-68:/layout/item_idea_card.xml"
     },
     {
         "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-debug-66:\\layout_example_card_layout.xml.flat",

@@ -31,6 +31,9 @@ public final class ItemAdminIdeaBinding implements ViewBinding {
   public final Button btnSendMessage;
 
   @NonNull
+  public final Button btnWork;
+
+  @NonNull
   public final EditText etAdminMessage;
 
   @NonNull
@@ -49,13 +52,15 @@ public final class ItemAdminIdeaBinding implements ViewBinding {
   public final TextView tvSubmitterName;
 
   private ItemAdminIdeaBinding(@NonNull CardView rootView, @NonNull Button btnApprove,
-      @NonNull Button btnReject, @NonNull Button btnSendMessage, @NonNull EditText etAdminMessage,
-      @NonNull TextView tvCreatedAt, @NonNull TextView tvIdeaText, @NonNull TextView tvStatus,
-      @NonNull TextView tvSubmitterEmail, @NonNull TextView tvSubmitterName) {
+      @NonNull Button btnReject, @NonNull Button btnSendMessage, @NonNull Button btnWork,
+      @NonNull EditText etAdminMessage, @NonNull TextView tvCreatedAt, @NonNull TextView tvIdeaText,
+      @NonNull TextView tvStatus, @NonNull TextView tvSubmitterEmail,
+      @NonNull TextView tvSubmitterName) {
     this.rootView = rootView;
     this.btnApprove = btnApprove;
     this.btnReject = btnReject;
     this.btnSendMessage = btnSendMessage;
+    this.btnWork = btnWork;
     this.etAdminMessage = etAdminMessage;
     this.tvCreatedAt = tvCreatedAt;
     this.tvIdeaText = tvIdeaText;
@@ -109,6 +114,12 @@ public final class ItemAdminIdeaBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.btnWork;
+      Button btnWork = ViewBindings.findChildViewById(rootView, id);
+      if (btnWork == null) {
+        break missingId;
+      }
+
       id = R.id.etAdminMessage;
       EditText etAdminMessage = ViewBindings.findChildViewById(rootView, id);
       if (etAdminMessage == null) {
@@ -146,7 +157,8 @@ public final class ItemAdminIdeaBinding implements ViewBinding {
       }
 
       return new ItemAdminIdeaBinding((CardView) rootView, btnApprove, btnReject, btnSendMessage,
-          etAdminMessage, tvCreatedAt, tvIdeaText, tvStatus, tvSubmitterEmail, tvSubmitterName);
+          btnWork, etAdminMessage, tvCreatedAt, tvIdeaText, tvStatus, tvSubmitterEmail,
+          tvSubmitterName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
