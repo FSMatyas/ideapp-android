@@ -43,6 +43,25 @@
     <color name="warning_color">#FFFFC107</color>
     <color name="white">#FFFFFFFF</color>
     <dimen name="pagination_button_margin">8dp</dimen>
+    <string name="about_us">About the App</string>
+    <string name="about_us_description"><![CDATA[
+    This app was born from a simple idea:<br/>
+    <b>I want to help people bring to life useful applications that make everyday life easier</b> , without unnecessary complexity.<br/><br/>
+
+    As a beginner developer, this project gives me the opportunity to create apps based on real ideas from real people.<br/><br/>
+
+    If you have an idea for a simple but helpful app, just share it with me, and if it is doable, I will build it for you completely free.<br/><br/>
+
+    Here is something important to know:<br/>
+    The app I create based on your idea might later be published to the store, where others will pay for it.<br/><br/>
+
+    This allows me to keep learning, improving, and building even more useful apps for others.<br/><br/>
+
+    No ads. No personal data required. Just an email address, so I can reach you if the app breaks.<br/><br/>
+
+    You bring the idea, I will bring the app, and maybe the world gets just a little bit simpler. &#128522;
+    ]]></string>
+    <string name="about_us_title">About the App</string>
     <string name="agree_terms">I agree to the Terms of Service and Privacy Policy</string>
     <string name="app_idea_title">App Idea Title</string>
     <string name="app_name">IdeaApp</string>

@@ -12,4 +12,8 @@
         android:id="@+id/nav_my_apps"
         android:title="My Apps"
         android:icon="@drawable/ic_apps" />
+    <item
+        android:id="@+id/nav_about_us"
+        android:title="About Us"
+        android:icon="@drawable/ic_info" />
 </menu>

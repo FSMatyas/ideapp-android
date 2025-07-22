@@ -3142,6 +3142,7 @@ drawable ic_email
 drawable ic_facebook
 drawable ic_google
 drawable ic_home
+drawable ic_info
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -3260,6 +3261,8 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id about_us_description
+id about_us_title
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -3488,6 +3491,7 @@ id etUserReplyDialog
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id facebook_logo
 id fade
 id fill
 id fill_horizontal
@@ -3618,6 +3622,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id nav_about_us
 id nav_admin_completed
 id nav_admin_home
 id nav_admin_work
@@ -4017,6 +4022,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_about_us
 layout activity_admin
 layout activity_admin_login
 layout activity_admin_nav
@@ -4161,6 +4167,9 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string about_us
+string about_us_description
+string about_us_title
 string agree_terms
 string androidx_startup
 string app_idea_title

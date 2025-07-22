@@ -4,17 +4,7 @@
             "outputFile": "com.example.ideapp-mergeDebugResources-64:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "I:\\Androidcache\\GradleCache\\caches\\8.13\\transforms\\aee108a1ecd9138610eb7c4fafb7bd16\\transformed\\work-runtime-2.9.0\\res\\values-v23\\values-v23.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,121",
-                        "endColumns": "65,62",
-                        "endOffsets": "116,179"
-                    }
-                },
-                {
-                    "source": "I:\\Androidcache\\GradleCache\\caches\\8.13\\transforms\\2935716475862bdcf100fef7701936eb\\transformed\\material-1.11.0\\res\\values-v23\\values-v23.xml",
+                    "source": "I:\\Androidcache\\GradleCache\\caches\\8.13\\transforms\\14720b64b6d796c2f61ce7eeadf69e92\\transformed\\material-1.11.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,5,9,13,16,19,22,25,28,32",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -33,7 +23,17 @@
                     }
                 },
                 {
-                    "source": "I:\\Androidcache\\GradleCache\\caches\\8.13\\transforms\\97b6d39977b5225326dd3835890d0d2a\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "I:\\Androidcache\\GradleCache\\caches\\8.13\\transforms\\f47597602e40fd07a2008214a5627d92\\transformed\\work-runtime-2.9.0\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,121",
+                        "endColumns": "65,62",
+                        "endOffsets": "116,179"
+                    }
+                },
+                {
+                    "source": "I:\\Androidcache\\GradleCache\\caches\\8.13\\transforms\\ed007968b8e4db50f2ebdcd5a0180bd0\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -52,7 +52,7 @@
                     }
                 },
                 {
-                    "source": "I:\\Androidcache\\GradleCache\\caches\\8.13\\transforms\\c33f9b986c66f5edbb7a265365f7bc34\\transformed\\appcompat-1.6.1\\res\\values-v23\\values-v23.xml",
+                    "source": "I:\\Androidcache\\GradleCache\\caches\\8.13\\transforms\\102e2a63d1f3967a2455ec54ea359145\\transformed\\appcompat-1.6.1\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
