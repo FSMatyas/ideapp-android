@@ -45,6 +45,8 @@
     <string name="category_productivity">Productividad</string>
     <string name="category_utilities">Utilidades</string>
     <string name="contact_helper">Ayuda de contacto</string>
+    <string name="count_in_progress">%1$d en progreso</string>
+    <string name="count_ready">%1$d lista</string>
     <string name="create_account">Crear cuenta</string>
     <string name="dashboard">Panel</string>
     <string name="date">Fecha</string>
@@ -82,6 +84,10 @@
     <string name="learn_more">Aprender más</string>
     <string name="my_completed_apps">Mis Apps Completadas</string>
     <string name="my_ideas_and_apps">Mis Ideas &amp; Apps</string>
+    <string name="nav_about_us">Acerca de</string>
+    <string name="nav_categories">Categorías</string>
+    <string name="nav_home">Inicio</string>
+    <string name="nav_my_apps">Mis Apps</string>
     <string name="new_message_received">Nuevo mensaje recibido</string>
     <string name="no_ideas_in_category">Aún no hay ideas en esta categoría</string>
     <string name="one_ready">1 lista</string>

@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">IdeaApp</string>
+    <string name="toolbar_title_ideaapps">ÖtletAppok</string>
+    <string name="toolbar_title_category_detail">Kategória részletei</string>
+    <string name="category_detail_page">Kategória oldal</string>
+    <string name="toolbar_title_business">Üzlet</string>
+    <string name="business">Üzlet</string>
+    <string name="toolbar_title_family">Család</string>
+    <string name="family">Család</string>
+    <string name="toolbar_title_finance">Pénzügy</string>
+    <string name="finance">Pénzügy</string>
+    <string name="toolbar_title_health">Egészség</string>
+    <string name="health">Egészség</string>
+    <string name="toolbar_title_education">Oktatás</string>
+    <string name="education">Oktatás</string>
+    <string name="toolbar_title_entertainment">Szórakozás</string>
+    <string name="entertainment">Szórakozás</string>
+    <string name="toolbar_title_productivity">Produktivitás</string>
+    <string name="productivity">Produktivitás</string>
+    <string name="toolbar_title_utilities">Segédprogramok</string>
+    <string name="utilities">Segédprogramok</string>
+    <string name="bulb_icon">Izzó ikon</string>
+    <string name="my_ideas_and_apps">Saját ötletek és alkalmazások</string>
+    <string name="track_submitted_ideas">Kövesd nyomon a beküldött ötleteidet és töltsd le a kész alkalmazásokat</string>
+    <string name="my_completed_apps">Elkészült alkalmazásaim</string>
+    <string name="one_ready">1 kész</string>
+    <string name="in_progress">Folyamatban</string>
+    <string name="zero_in_progress">0 folyamatban</string>
+    <string name="bulb_emoji">💡</string>
+    <string name="have_more_app_ideas">Van még ötleted?</string>
+    <string name="submit_more_ideas">Küldj be több ötletet a Főoldalról, hogy még több egyedi alkalmazást készíthessünk neked!</string>
+    <string name="idea_title">Ötlet címe</string>
+    <string name="approved">Jóváhagyva</string>
+    <string name="category">Kategória</string>
+    <string name="submitted_by_name">Beküldő neve</string>
+    <string name="date">Dátum</string>
+    <string name="idea_description_placeholder">Az ötlet leírása ide kerül...</string>
+    <string name="zero">0</string>
+    <string name="browse_by_category">Böngéssz kategóriák szerint</string>
+    <string name="explore_ideas_by_area">Fedezd fel az ötleteket különböző területeken</string>
+    <string name="phone_emoji">📱</string>
+    <string name="category_productivity">Produktivitás</string>
+    <string name="family_emoji">👨‍👩‍👧‍👦</string>
+    <string name="category_family">Család</string>
+    <string name="business_emoji">💼</string>
+    <string name="category_business">Üzlet</string>
+    <string name="entertainment_emoji">🎮</string>
+    <string name="category_entertainment">Szórakozás</string>
+    <string name="finance_emoji">💰</string>
+    <string name="category_finance">Pénzügy</string>
+    <string name="health_emoji">🏥</string>
+    <string name="category_health">Egészség</string>
+    <string name="education_emoji">🎓</string>
+    <string name="category_education">Oktatás</string>
+    <string name="utilities_emoji">🔧</string>
+    <string name="category_utilities">Segédprogramok</string>
+    <string name="got_a_problem">Van egy problémád? Oldjuk meg!</string>
+    <string name="share_problem_desc">Oszd meg mindennapi problémáidat, és mi elkészítjük a személyre szabott alkalmazást - teljesen ingyen!</string>
+    <string name="share_your_problem">Oszd meg a problémádat</string>
+    <string name="recent_ideas">Legutóbbi ötletek</string>
+    <string name="idea_title_label">Ötlet címe</string>
+    <string name="category_label">Kategória</string>
+    <string name="submitted_by_label">Beküldő neve</string>
+    <string name="date_label">Dátum</string>
+    <string name="full_idea_description_placeholder">Az ötlet teljes leírása ide kerül...</string>
+    <string name="category_detail_phone_emoji">📱</string>
+    <string name="category_detail_productivity">Produktivitás</string>
+    <string name="category_detail_ideas_count">12 ötlet ebben a kategóriában</string>
+    <string name="ideas_in_this_category">Ötletek ebben a kategóriában</string>
+    <string name="sort_by_recent">Rendezés: Legújabb</string>
+    <string name="search_emoji">🔍</string>
+    <string name="no_ideas_in_category">Még nincs ötlet ebben a kategóriában</string>
+    <string name="be_first_to_submit">Légy te az első, aki ötletet küld ebbe a kategóriába!</string>
+    <string name="welcome_title">Üdvözlünk&#10;Készítsünk egy alkalmazást!</string>
+    <string name="build_amazing_apps">Készíts lenyűgöző alkalmazásokat lépésről lépésre</string>
+    <string name="get_started">Kezdd el</string>
+    <string name="learn_more">Tudj meg többet</string>
+    <string name="create_account">Fiók létrehozása</string>
+    <string name="fill_info_to_get_started">Töltsd ki az alábbi adatokat a kezdéshez</string>
+    <string name="agree_terms">Elfogadom a felhasználási feltételeket és az adatvédelmi szabályzatot</string>
+    <string name="sign_in_instead">Bejelentkezés helyette</string>
+    <string name="or_continue_with">Vagy folytasd ezzel</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="dashboard">Vezérlőpult</string>
+    <string name="welcome_back">Üdv újra! Íme, mi történik.</string>
+    <string name="favorites">Kedvencek</string>
+    <string name="settings">Beállítások</string>
+    <string name="recent_activities">Legutóbbi tevékenységek</string>
+    <string name="task_completed">Feladat befejezve</string>
+    <string name="two_minutes_ago">2 perce</string>
+    <string name="new_message_received">Új üzenet érkezett</string>
+    <string name="five_minutes_ago">5 perce</string>
+    <string name="dialog_share_your_problem">Oszd meg a problémádat</string>
+    <string name="dialog_tell_us_about_problem">Mesélj egy mindennapi problémádról. Elkészítjük rá a személyre szabott alkalmazást!</string>
+    <string name="cancel">Mégse</string>
+    <string name="submit_idea">Ötlet beküldése</string>
+    <string name="app_idea_title">Alkalmazás ötlet címe</string>
+    <string name="describe_your_problem">Írd le részletesen a problémádat</string>
+    <string name="full_name">Teljes név</string>
+    <string name="email_address">Email cím</string>
+    <string name="password">Jelszó</string>
+    <string name="your_name">Neved</string>
+    <string name="contact_helper">Elérhetőségi segítő</string>
+    <string name="pending_approval">Jóváhagyásra vár</string>
+    <string name="about_us_title">Az alkalmazásról</string>
+    <string name="about_us_description"><![CDATA[
+    Ez az alkalmazás egy egyszerű ötletből született:<br/>
+    <b>Szeretnék segíteni az embereknek abban, hogy hasznos, a mindennapokat megkönnyítő alkalmazások szülessenek</b> – felesleges bonyolítás nélkül.<br/><br/>
+
+    Kezdő fejlesztőként ez a projekt lehetőséget ad arra, hogy valódi emberek valódi ötletei alapján készítsek appokat.<br/><br/>
+
+    Ha van egy egyszerű, de hasznos alkalmazásötleted, csak oszd meg velem, és ha megvalósítható, teljesen ingyen elkészítem neked.<br/><br/>
+
+    Fontos tudni:<br/>
+    Az általad javasolt ötletből készült app később akár a boltba is kikerülhet, ahol mások fizethetnek érte.<br/><br/>
+
+    Ez lehetővé teszi számomra, hogy folyamatosan tanuljak, fejlődjek, és még több hasznos alkalmazást készítsek másoknak.<br/><br/>
+
+    Nincsenek reklámok. Nem kell megadnod személyes adatokat. Csak egy e-mail cím szükséges, hogy elérhesselek, ha az app nem működik.<br/><br/>
+
+    Te hozod az ötletet, én hozom az appot, és talán a világ egy kicsit egyszerűbb lesz. &#128522;
+    ]]></string>
+    <string name="nav_home">Kezdőlap</string>
+    <string name="nav_categories">Kategóriák</string>
+    <string name="nav_my_apps">Saját appok</string>
+    <string name="nav_about_us">Rólunk</string>
+</resources>

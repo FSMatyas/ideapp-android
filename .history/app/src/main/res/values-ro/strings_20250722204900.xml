@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">IdeaApp</string>
+    <string name="toolbar_title_ideaapps">IdeaApps</string>
+    <string name="toolbar_title_category_detail">Detalii categorie</string>
+    <string name="category_detail_page">Pagină detalii categorie</string>
+    <string name="toolbar_title_business">Afaceri</string>
+    <string name="business">Afaceri</string>
+    <string name="toolbar_title_family">Familie</string>
+    <string name="family">Familie</string>
+    <string name="toolbar_title_finance">Finanțe</string>
+    <string name="finance">Finanțe</string>
+    <string name="toolbar_title_health">Sănătate</string>
+    <string name="health">Sănătate</string>
+    <string name="toolbar_title_education">Educație</string>
+    <string name="education">Educație</string>
+    <string name="toolbar_title_entertainment">Divertisment</string>
+    <string name="entertainment">Divertisment</string>
+    <string name="toolbar_title_productivity">Productivitate</string>
+    <string name="productivity">Productivitate</string>
+    <string name="toolbar_title_utilities">Utilitare</string>
+    <string name="utilities">Utilitare</string>
+    <string name="bulb_icon">Pictogramă bec</string>
+    <string name="my_ideas_and_apps">Ideile &amp; aplicațiile mele</string>
+    <string name="track_submitted_ideas">Urmărește ideile trimise și descarcă aplicațiile finalizate</string>
+    <string name="my_completed_apps">Aplicațiile mele finalizate</string>
+    <string name="one_ready">1 gata</string>
+    <string name="in_progress">În curs</string>
+    <string name="zero_in_progress">0 în curs</string>
+    <string name="bulb_emoji">💡</string>
+    <string name="have_more_app_ideas">Ai mai multe idei de aplicații?</string>
+    <string name="submit_more_ideas">Trimite mai multe idei din fila Acasă pentru a primi mai multe aplicații personalizate!</string>
+    <string name="idea_title">Titlul ideii</string>
+    <string name="approved">Aprobat</string>
+    <string name="category">Categorie</string>
+    <string name="submitted_by_name">Trimis de Nume</string>
+    <string name="date">Data</string>
+    <string name="idea_description_placeholder">Descrierea ideii se introduce aici...</string>
+    <string name="zero">0</string>
+    <string name="browse_by_category">Caută după categorie</string>
+    <string name="explore_ideas_by_area">Explorează idei din diferite domenii de probleme</string>
+    <string name="phone_emoji">📱</string>
+    <string name="category_productivity">Productivitate</string>
+    <string name="family_emoji">👨‍👩‍👧‍👦</string>
+    <string name="category_family">Familie</string>
+    <string name="business_emoji">💼</string>
+    <string name="category_business">Afaceri</string>
+    <string name="entertainment_emoji">🎮</string>
+    <string name="category_entertainment">Divertisment</string>
+    <string name="finance_emoji">💰</string>
+    <string name="category_finance">Finanțe</string>
+    <string name="health_emoji">🏥</string>
+    <string name="category_health">Sănătate</string>
+    <string name="education_emoji">🎓</string>
+    <string name="category_education">Educație</string>
+    <string name="utilities_emoji">🔧</string>
+    <string name="category_utilities">Utilitare</string>
+    <string name="got_a_problem">Ai o problemă? Hai să o rezolvăm!</string>
+    <string name="share_problem_desc">Împărtășește problemele tale zilnice și îți vom construi o aplicație personalizată pentru a le rezolva – complet gratuit!</string>
+    <string name="share_your_problem">Împărtășește problema ta</string>
+    <string name="recent_ideas">Idei recente</string>
+    <string name="idea_title_label">Titlul ideii</string>
+    <string name="category_label">Categorie</string>
+    <string name="submitted_by_label">Trimis de Nume</string>
+    <string name="date_label">Data</string>
+    <string name="full_idea_description_placeholder">Descrierea completă a ideii se introduce aici...</string>
+    <string name="category_detail_phone_emoji">📱</string>
+    <string name="category_detail_productivity">Productivitate</string>
+    <string name="category_detail_ideas_count">12 idei în această categorie</string>
+    <string name="ideas_in_this_category">Idei în această categorie</string>
+    <string name="sort_by_recent">Sortează după: Recente</string>
+    <string name="search_emoji">🔍</string>
+    <string name="no_ideas_in_category">Nu există idei în această categorie încă</string>
+    <string name="be_first_to_submit">Fii primul care trimite o idee în această categorie!</string>
+    <string name="welcome_title">Bine ai venit la&#10;Hai să facem o aplicație!</string>
+    <string name="build_amazing_apps">Construiește aplicații uimitoare pas cu pas</string>
+    <string name="get_started">Începe</string>
+    <string name="learn_more">Află mai multe</string>
+    <string name="create_account">Creează cont</string>
+    <string name="fill_info_to_get_started">Completează informațiile de mai jos pentru a începe</string>
+    <string name="agree_terms">Sunt de acord cu Termenii de utilizare și Politica de confidențialitate</string>
+    <string name="sign_in_instead">Autentifică-te în schimb</string>
+    <string name="or_continue_with">Sau continuă cu</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="dashboard">Tablou de bord</string>
+    <string name="welcome_back">Bine ai revenit! Iată ce se întâmplă.</string>
+    <string name="favorites">Favorite</string>
+    <string name="settings">Setări</string>
+    <string name="recent_activities">Activități recente</string>
+    <string name="task_completed">Sarcină finalizată</string>
+    <string name="two_minutes_ago">Acum 2 minute</string>
+    <string name="new_message_received">Mesaj nou primit</string>
+    <string name="five_minutes_ago">Acum 5 minute</string>
+    <string name="dialog_share_your_problem">Împărtășește problema ta</string>
+    <string name="dialog_tell_us_about_problem">Spune-ne despre o problemă cu care te confrunți zilnic. Îți vom construi o aplicație personalizată pentru a o rezolva!</string>
+    <string name="cancel">Anulează</string>
+    <string name="submit_idea">Trimite ideea</string>
+    <string name="app_idea_title">Titlul ideii aplicației</string>
+    <string name="describe_your_problem">Descrie problema ta în detaliu</string>
+    <string name="full_name">Nume complet</string>
+    <string name="email_address">Adresă de email</string>
+    <string name="password">Parolă</string>
+    <string name="your_name">Numele tău</string>
+    <string name="contact_helper">Ajutor contact</string>
+    <string name="about_us_title">Despre aplicație</string>
+    <string name="about_us_description"><![CDATA[
+    Această aplicație s-a născut dintr-o idee simplă:<br/>
+    <b>Vreau să ajut oamenii să aducă la viață aplicații utile care fac viața de zi cu zi mai ușoară</b> – fără complicații inutile.<br/><br/>
+
+    Ca dezvoltator începător, acest proiect îmi oferă oportunitatea de a crea aplicații bazate pe idei reale de la oameni reali.<br/><br/>
+
+    Dacă ai o idee pentru o aplicație simplă, dar utilă, împărtășește-o cu mine, iar dacă este realizabilă, o voi construi pentru tine complet gratuit.<br/><br/>
+
+    Un lucru important de știut:<br/>
+    Aplicația pe care o creez pe baza ideii tale ar putea fi publicată ulterior în magazin, unde alții vor plăti pentru ea.<br/><br/>
+
+    Acest lucru îmi permite să continui să învăț, să mă perfecționez și să creez aplicații și mai utile pentru ceilalți.<br/><br/>
+
+    Fără reclame. Fără date personale necesare. Doar o adresă de e-mail, ca să te pot contacta dacă aplicația nu funcționează.<br/><br/>
+
+    Tu vii cu ideea, eu vin cu aplicația, și poate lumea va deveni puțin mai simplă. &#128522;
+    ]]></string>
+    <string name="nav_home">Acasă</string>
+    <string name="nav_categories">Categorii</string>
+    <string name="nav_my_apps">Aplicațiile mele</string>
+    <string name="nav_about_us">Despre noi</string>
+</resources>

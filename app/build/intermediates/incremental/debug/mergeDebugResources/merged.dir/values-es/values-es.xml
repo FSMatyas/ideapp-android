@@ -110,6 +110,8 @@
     <string name="common_signin_button_text_long">Iniciar sesión con Google</string>
     <string name="contact_helper">Ayuda de contacto</string>
     <string msgid="3260749812566568062" name="copy_toast_msg">"Enlace copiado en el portapapeles"</string>
+    <string name="count_in_progress">%1$d en progreso</string>
+    <string name="count_ready">%1$d lista</string>
     <string name="create_account">Crear cuenta</string>
     <string name="dashboard">Panel</string>
     <string name="date">Fecha</string>
@@ -209,8 +211,12 @@
     <string name="mtrl_timepicker_confirm">Aceptar</string>
     <string name="my_completed_apps">Mis Apps Completadas</string>
     <string name="my_ideas_and_apps">Mis Ideas &amp; Apps</string>
+    <string name="nav_about_us">Acerca de</string>
     <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"Desplazarse hacia arriba"</string>
     <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"Abrir panel de navegación"</string>
+    <string name="nav_categories">Categorías</string>
+    <string name="nav_home">Inicio</string>
+    <string name="nav_my_apps">Mis Apps</string>
     <string name="new_message_received">Nuevo mensaje recibido</string>
     <string name="no_ideas_in_category">Aún no hay ideas en esta categoría</string>
     <string name="one_ready">1 lista</string>

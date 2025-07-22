@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">IdeaApp</string>
+    <string name="toolbar_title_ideaapps">IdeaApps</string>
+    <string name="toolbar_title_category_detail">Detalle de Categoría</string>
+    <string name="category_detail_page">Página de Detalle de Categoría</string>
+    <string name="toolbar_title_business">Negocios</string>
+    <string name="business">Negocios</string>
+    <string name="toolbar_title_family">Familia</string>
+    <string name="family">Familia</string>
+    <string name="toolbar_title_finance">Finanzas</string>
+    <string name="finance">Finanzas</string>
+    <string name="toolbar_title_health">Salud</string>
+    <string name="health">Salud</string>
+    <string name="toolbar_title_education">Educación</string>
+    <string name="education">Educación</string>
+    <string name="toolbar_title_entertainment">Entretenimiento</string>
+    <string name="entertainment">Entretenimiento</string>
+    <string name="toolbar_title_productivity">Productividad</string>
+    <string name="productivity">Productividad</string>
+    <string name="toolbar_title_utilities">Utilidades</string>
+    <string name="utilities">Utilidades</string>
+    <string name="bulb_icon">Icono de bombilla</string>
+    <string name="my_ideas_and_apps">Mis Ideas &amp; Apps</string>
+    <string name="track_submitted_ideas">Haz seguimiento de tus ideas enviadas y descarga apps completadas</string>
+    <string name="my_completed_apps">Mis Apps Completadas</string>
+    <string name="one_ready">1 lista</string>
+    <string name="in_progress">En progreso</string>
+    <string name="zero_in_progress">0 en progreso</string>
+    <string name="bulb_emoji">💡</string>
+    <string name="have_more_app_ideas">¿Tienes más ideas de apps?</string>
+    <string name="submit_more_ideas">¡Envía más ideas desde la pestaña Inicio para que te construyamos más apps personalizadas!</string>
+    <string name="idea_title">Título de la Idea</string>
+    <string name="approved">Aprobado</string>
+    <string name="category">Categoría</string>
+    <string name="submitted_by_name">Enviado por Nombre</string>
+    <string name="date">Fecha</string>
+    <string name="idea_description_placeholder">La descripción de la idea va aquí...</string>
+    <string name="zero">0</string>
+    <string name="browse_by_category">Explorar por Categoría</string>
+    <string name="explore_ideas_by_area">Explora ideas por diferentes áreas de problema</string>
+    <string name="phone_emoji">📱</string>
+    <string name="category_productivity">Productividad</string>
+    <string name="family_emoji">👨‍👩‍👧‍👦</string>
+    <string name="category_family">Familia</string>
+    <string name="business_emoji">💼</string>
+    <string name="category_business">Negocios</string>
+    <string name="entertainment_emoji">🎮</string>
+    <string name="category_entertainment">Entretenimiento</string>
+    <string name="finance_emoji">💰</string>
+    <string name="category_finance">Finanzas</string>
+    <string name="health_emoji">🏥</string>
+    <string name="category_health">Salud</string>
+    <string name="education_emoji">🎓</string>
+    <string name="category_education">Educación</string>
+    <string name="utilities_emoji">🔧</string>
+    <string name="category_utilities">Utilidades</string>
+    <string name="got_a_problem">¿Tienes un problema? ¡Vamos a resolverlo!</string>
+    <string name="share_problem_desc">Comparte tus problemas diarios y te construiremos una app personalizada para resolverlos - ¡completamente gratis!</string>
+    <string name="share_your_problem">Comparte tu problema</string>
+    <string name="recent_ideas">Ideas recientes</string>
+    <string name="idea_title_label">Título de la Idea</string>
+    <string name="category_label">Categoría</string>
+    <string name="submitted_by_label">Enviado por Nombre</string>
+    <string name="date_label">Fecha</string>
+    <string name="full_idea_description_placeholder">La descripción completa de la idea va aquí...</string>
+    <string name="category_detail_phone_emoji">📱</string>
+    <string name="category_detail_productivity">Productividad</string>
+    <string name="category_detail_ideas_count">12 ideas en esta categoría</string>
+    <string name="ideas_in_this_category">Ideas en esta categoría</string>
+    <string name="sort_by_recent">Ordenar por: Reciente</string>
+    <string name="search_emoji">🔍</string>
+    <string name="no_ideas_in_category">Aún no hay ideas en esta categoría</string>
+    <string name="be_first_to_submit">¡Sé el primero en enviar una idea en esta categoría!</string>
+    <string name="welcome_title">¡Bienvenido a&#10;Vamos a hacer una app!</string>
+    <string name="build_amazing_apps">Crea apps increíbles paso a paso</string>
+    <string name="get_started">Comenzar</string>
+    <string name="learn_more">Aprender más</string>
+    <string name="create_account">Crear cuenta</string>
+    <string name="fill_info_to_get_started">Completa la información a continuación para comenzar</string>
+    <string name="agree_terms">Acepto los Términos de Servicio y la Política de Privacidad</string>
+    <string name="sign_in_instead">Iniciar sesión en su lugar</string>
+    <string name="or_continue_with">O continuar con</string>
+    <string name="google">Google</string>
+    <string name="facebook">Facebook</string>
+    <string name="dashboard">Panel</string>
+    <string name="welcome_back">¡Bienvenido de nuevo! Esto es lo que está sucediendo.</string>
+    <string name="favorites">Favoritos</string>
+    <string name="settings">Configuración</string>
+    <string name="recent_activities">Actividades recientes</string>
+    <string name="task_completed">Tarea completada</string>
+    <string name="two_minutes_ago">Hace 2 minutos</string>
+    <string name="new_message_received">Nuevo mensaje recibido</string>
+    <string name="five_minutes_ago">Hace 5 minutos</string>
+    <string name="dialog_share_your_problem">Comparte tu problema</string>
+    <string name="dialog_tell_us_about_problem">Cuéntanos sobre un problema que enfrentas a diario. ¡Te construiremos una app personalizada para resolverlo!</string>
+    <string name="cancel">Cancelar</string>
+    <string name="submit_idea">Enviar idea</string>
+    <string name="app_idea_title">Título de la idea de la app</string>
+    <string name="describe_your_problem">Describe tu problema en detalle</string>
+    <string name="full_name">Nombre completo</string>
+    <string name="email_address">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="your_name">Tu Nombre</string>
+    <string name="contact_helper">Ayuda de contacto</string>
+    <string name="about_us_title">Acerca de la aplicación</string>
+    <string name="about_us_description"><![CDATA[
+    Esta aplicación nació de una idea simple:<br/>
+    <b>Quiero ayudar a las personas a dar vida a aplicaciones útiles que hagan la vida cotidiana más fácil</b>, sin complejidad innecesaria.<br/><br/>
+
+    Como desarrollador principiante, este proyecto me da la oportunidad de crear aplicaciones basadas en ideas reales de personas reales.<br/><br/>
+
+    Si tienes una idea para una aplicación simple pero útil, compártela conmigo, y si es posible, la crearé para ti completamente gratis.<br/><br/>
+
+    Algo importante que debes saber:<br/>
+    La aplicación que cree a partir de tu idea podría publicarse más adelante en la tienda, donde otros pagarán por ella.<br/><br/>
+
+    Esto me permite seguir aprendiendo, mejorando y creando aplicaciones aún más útiles para los demás.<br/><br/>
+
+    Sin anuncios. No se requieren datos personales. Solo una dirección de correo electrónico, para poder contactarte si la aplicación falla.<br/><br/>
+
+    Tú traes la idea, yo traigo la aplicación, y tal vez el mundo se vuelva un poco más sencillo. &#128522;
+    ]]></string>
+    <string name="nav_home">Inicio</string>
+    <string name="nav_categories">Categorías</string>
+    <string name="nav_my_apps">Mis Apps</string>
+    <string name="nav_about_us">Acerca de</string>
+</resources>

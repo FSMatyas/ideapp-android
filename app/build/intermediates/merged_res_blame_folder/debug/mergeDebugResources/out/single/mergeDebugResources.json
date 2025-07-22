@@ -96,6 +96,10 @@
         "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\drawable\\ic_bulb.xml"
     },
     {
+        "merged": "com.example.ideapp-debug-66:/menu_bottom_navigation.xml.flat",
+        "source": "com.example.ideapp-main-68:/menu/bottom_navigation.xml"
+    },
+    {
         "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-debug-66:\\layout_activity_productivity.xml.flat",
         "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\activity_productivity.xml"
     },
@@ -234,10 +238,6 @@
     {
         "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-debug-66:\\layout_activity_admin_login.xml.flat",
         "source": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-main-68:\\layout\\activity_admin_login.xml"
-    },
-    {
-        "merged": "com.example.ideapp-debug-66:/layout_activity_about_us.xml.flat",
-        "source": "com.example.ideapp-main-68:/layout/activity_about_us.xml"
     },
     {
         "merged": "I:\\Androidcache\\GradleCache\\daemon\\8.13\\com.example.ideapp-debug-66:\\menu_bottom_navigation.xml.flat",

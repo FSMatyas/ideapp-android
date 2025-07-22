@@ -289,6 +289,8 @@ string category_productivity
 string category_utilities
 string com.google.firebase.crashlytics.mapping_file_id
 string contact_helper
+string count_in_progress
+string count_ready
 string create_account
 string dashboard
 string date
@@ -337,6 +339,10 @@ string learn_more
 string messages
 string my_completed_apps
 string my_ideas_and_apps
+string nav_about_us
+string nav_categories
+string nav_home
+string nav_my_apps
 string new_message_received
 string no_description
 string no_ideas_in_category

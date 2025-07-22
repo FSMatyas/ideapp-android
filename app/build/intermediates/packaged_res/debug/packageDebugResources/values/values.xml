@@ -90,6 +90,8 @@
     <string name="category_utilities">Utilities</string>
     <string name="com.google.firebase.crashlytics.mapping_file_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">00000000000000000000000000000000</string>
     <string name="contact_helper">Contact Helper</string>
+    <string name="count_in_progress">%1$d in progress</string>
+    <string name="count_ready">%1$d ready</string>
     <string name="create_account">Create Account</string>
     <string name="dashboard">Dashboard</string>
     <string name="date">Date</string>
@@ -138,6 +140,10 @@
     <string name="messages">Messages</string>
     <string name="my_completed_apps">My Completed Apps</string>
     <string name="my_ideas_and_apps">My Ideas &amp; Apps</string>
+    <string name="nav_about_us">About Us</string>
+    <string name="nav_categories">Categories</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_my_apps">My Apps</string>
     <string name="new_message_received">New message received</string>
     <string name="no_description">(No description provided)</string>
     <string name="no_ideas_in_category">No ideas in this category yet</string>

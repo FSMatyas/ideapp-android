@@ -45,6 +45,8 @@
     <string name="category_productivity">Verimlilik</string>
     <string name="category_utilities">Araçlar</string>
     <string name="contact_helper">İletişim Yardımı</string>
+    <string name="count_in_progress">%1$d devam ediyor</string>
+    <string name="count_ready">%1$d hazır</string>
     <string name="create_account">Hesap Oluştur</string>
     <string name="dashboard">Kontrol Paneli</string>
     <string name="date">Tarih</string>
@@ -82,6 +84,10 @@
     <string name="learn_more">Daha Fazla Bilgi</string>
     <string name="my_completed_apps">Tamamlanan Uygulamalarım</string>
     <string name="my_ideas_and_apps">Fikirlerim &amp; Uygulamalarım</string>
+    <string name="nav_about_us">Hakkımızda</string>
+    <string name="nav_categories">Kategoriler</string>
+    <string name="nav_home">Ana Sayfa</string>
+    <string name="nav_my_apps">Uygulamalarım</string>
     <string name="new_message_received">Yeni mesaj alındı</string>
     <string name="no_ideas_in_category">Bu kategoride henüz fikir yok</string>
     <string name="one_ready">1 hazır</string>

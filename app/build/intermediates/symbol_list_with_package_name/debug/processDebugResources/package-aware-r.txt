@@ -4236,6 +4236,8 @@ string common_signin_button_text
 string common_signin_button_text_long
 string contact_helper
 string copy_toast_msg
+string count_in_progress
+string count_ready
 string create_account
 string dashboard
 string date
@@ -4396,8 +4398,12 @@ string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
 string my_completed_apps
 string my_ideas_and_apps
+string nav_about_us
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
+string nav_categories
+string nav_home
+string nav_my_apps
 string new_message_received
 string no_description
 string no_ideas_in_category

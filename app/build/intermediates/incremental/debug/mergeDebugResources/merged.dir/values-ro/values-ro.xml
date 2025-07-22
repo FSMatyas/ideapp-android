@@ -111,6 +111,8 @@
     <string name="common_signin_button_text_long">Conectați-vă cu Google</string>
     <string name="contact_helper">Ajutor contact</string>
     <string msgid="3260749812566568062" name="copy_toast_msg">"Linkul a fost copiat în clipboard"</string>
+    <string name="count_in_progress">%1$d în curs</string>
+    <string name="count_ready">%1$d gata</string>
     <string name="create_account">Creează cont</string>
     <string name="dashboard">Tablou de bord</string>
     <string name="date">Data</string>
@@ -210,8 +212,12 @@
     <string name="mtrl_timepicker_confirm">OK</string>
     <string name="my_completed_apps">Aplicațiile mele finalizate</string>
     <string name="my_ideas_and_apps">Ideile &amp; aplicațiile mele</string>
+    <string name="nav_about_us">Despre noi</string>
     <string msgid="6301633601645100427" name="nav_app_bar_navigate_up_description">"Navigați în sus"</string>
     <string msgid="7456070600745802113" name="nav_app_bar_open_drawer_description">"Deschideți panoul de navigare"</string>
+    <string name="nav_categories">Categorii</string>
+    <string name="nav_home">Acasă</string>
+    <string name="nav_my_apps">Aplicațiile mele</string>
     <string name="new_message_received">Mesaj nou primit</string>
     <string name="no_ideas_in_category">Nu există idei în această categorie încă</string>
     <string name="one_ready">1 gata</string>
